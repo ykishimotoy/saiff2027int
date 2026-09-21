@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ＜仮＞ドメイン。言語版を追加したら各 url に xhtml:link の alternate を言語数ぶん追加する。archive は Phase 4 で追加 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://saiff.example/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/"/></url>
+  <url><loc>https://saiff.example/about.html</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/about.html"/></url>
+  <url><loc>https://saiff.example/submit.html</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/submit.html"/></url>
+  <url><loc>https://saiff.example/program.html</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/program.html"/></url>
+  <url><loc>https://saiff.example/tickets.html</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/tickets.html"/></url>
+  <url><loc>https://saiff.example/partners.html</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/partners.html"/></url>
+  <url><loc>https://saiff.example/news.html</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/news.html"/></url>
+  <url><loc>https://saiff.example/legal.html</loc><xhtml:link rel="alternate" hreflang="ja" href="https://saiff.example/legal.html"/></url>
+</urlset>

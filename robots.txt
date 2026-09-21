@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saiff.example/sitemap.xml

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+<defs>
+<radialGradient id="a" cx=".5" cy=".42" r=".6"><stop offset="0" stop-color="#5a1a16"/><stop offset=".45" stop-color="#2a1010"/><stop offset="1" stop-color="#0D0909"/></radialGradient>
+<radialGradient id="b" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#E8CF8A" stop-opacity=".5"/><stop offset="1" stop-color="#E8CF8A" stop-opacity="0"/></radialGradient>
+<pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="28" fill="#C9A24B" opacity=".12"/></pattern>
+</defs>
+<rect width="1920" height="1080" fill="url(#a)"/>
+<rect width="1920" height="1080" fill="url(#p)"/>
+<ellipse cx="960" cy="470" rx="520" ry="300" fill="url(#b)"/>
+<rect x="40" y="40" width="1840" height="1000" fill="none" stroke="#C9A24B" stroke-opacity=".35" stroke-dasharray="10 10"/>
+<text x="70" y="1010" fill="#C9A24B" font-family="Georgia,serif" font-style="italic" font-size="26" letter-spacing="5">HERO LOOP VIDEO / KEY VISUAL — placeholder (assets/video/hero-loop.mp4, poster: assets/img/hero-poster)</text>
+</svg>
