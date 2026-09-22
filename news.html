@@ -19,7 +19,9 @@
 <meta property="og:image" content="https://saiff.example/assets/img/ogp.jpg"><!-- ＜仮＞OGP画像 1200×630 未配置 -->
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/config.js"></script>
@@ -30,12 +32,21 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="index.html" aria-label="札幌国際AI映画祭 トップページ">
-      <img src="assets/img/mark.svg" alt="" width="38" height="38">
+      <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
       <span class="brand__text">
         <span class="brand__ja">札幌国際AI映画祭</span>
         <span class="brand__en">Sapporo International AI Film Festival</span>
       </span>
     </a>
+    <div class="gnav__cta">
+      <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
+      <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
+      <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
+    </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニュー"><span></span><span></span><span></span></button>
     <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
       <ul class="gnav__list">
@@ -44,13 +55,6 @@
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
       </ul>
-      <div class="gnav__cta">
-        <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
-        <a class="btn btn--primary btn--sm" data-show="1" href="submit.html">作品を応募する</a>
-        <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
-        <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
-        <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
-      </div>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
         <ul>
@@ -105,7 +109,7 @@
           </div>
         </fieldset>
         <button class="btn btn--primary" type="submit">メール登録へ進む <span class="ext" aria-hidden="true">↗</span></button>
-        <span class="ext-note">外部の登録フォーム＜仮＞に移動します。登録情報の取り扱いは <a href="legal.html#privacy">プライバシーポリシー</a> をご覧ください。</span>
+        <span class="ext-note">外部の登録フォーム＜仮＞に移動します。登録情報の取り扱いは <a href="privacy.html">プライバシーポリシー</a> をご覧ください。</span>
       </form>
     </div>
   </section>
@@ -116,7 +120,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="index.html">
-          <img src="assets/img/mark.svg" alt="" width="38" height="38">
+          <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
         <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
@@ -138,6 +142,7 @@
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="legal.html">Legal</a></li>
         </ul>
       </nav>
@@ -155,13 +160,18 @@
   </div>
 </footer>
 
-<div class="cookie" role="dialog" aria-label="Cookieの使用について" hidden>
-  <p>本サイトは、利用状況の把握と改善のためにCookie等を使用します。同意いただいた場合のみアクセス解析を有効にします。詳しくは <a href="legal.html#cookie">Cookieについて</a>。</p>
-  <div class="btn-row">
-    <button class="btn btn--ghost btn--sm" type="button" data-consent="declined">必須のみ</button>
-    <button class="btn btn--primary btn--sm" type="button" data-consent="accepted">同意する</button>
+<!-- モバイル用 固定CTAバー（画面下・親指の届く位置・常時表示）。応募と購入の両方を常に押せるようにする -->
+<div class="cta-bar" data-cta-bar>
+  <div class="cta-bar__inner">
+      <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
+      <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+      <a class="btn btn--primary" data-show="2 3" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>
+
 
 <script src="assets/js/data.js"></script>
 <script src="assets/js/site.js"></script>

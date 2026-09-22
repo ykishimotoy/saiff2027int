@@ -1,6 +1,6 @@
 /* ==========================================================================
    札幌国際AI映画祭 — 共通スクリプト（依存ライブラリなし・最小限）
-   JS無効でも本文・ナビ・外部リンクは機能する。ここで足すのは演出と送客計測のみ。
+   JS無効でも本文・ナビ・外部リンクは機能する。ここで足すのは演出のみ（解析タグは持たない）。
    ========================================================================== */
 (function () {
   "use strict";
@@ -24,12 +24,11 @@
     try { if (val === undefined) return localStorage.getItem(key); localStorage.setItem(key, val); } catch (e) { return null; }
   }
 
-  /* ---------- 計測：外部送客クリック（軸＝言語 × ターゲット × フェーズ） ---------- */
+  /* ---------- 計測：アクセス解析は Cloudflare Web Analytics（Cloudflare側で自動挿入）に一本化。
+     サイト側には解析タグ・Cookie・ストレージを持たない。track() はプレビュー時のコンソール出力のみ ---------- */
   function track(name, params) {
-    params = Object.assign({ lang: S.currentLocale, phase: S.phase, page: page }, params || {});
-    if (typeof window.gtag === "function") window.gtag("event", name, params);
-    if (typeof window.plausible === "function") window.plausible(name, { props: params });
-    if (S.phasePreview) console.info("[track]", name, params);
+    if (!S.phasePreview) return;
+    console.info("[track]", name, Object.assign({ lang: S.currentLocale, phase: S.phase, page: page }, params || {}));
   }
   function withUtm(url, content) {
     try {
@@ -60,13 +59,28 @@
   function initHeader() {
     var header = $(".site-header");
     if (!header) return;
-    var onScroll = function () { header.classList.toggle("is-solid", window.scrollY > 40); };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-
     var toggle = $(".nav-toggle"), nav = $(".gnav");
+
+    // スマートヘッダー：下へスクロールしたら退避、上へ戻したら即再表示（主CTAを常に呼び戻せる）
+    var lastY = window.scrollY, THRESHOLD = 8;
+    function show() { header.classList.remove("is-hidden"); }
+    function update() {
+      var y = window.scrollY;
+      header.classList.toggle("is-solid", y > 40);
+      var navOpen = nav && nav.classList.contains("is-open");
+      if (y < 24 || navOpen) show();
+      else if (y > lastY + THRESHOLD && y > header.offsetHeight) header.classList.add("is-hidden");
+      else if (y < lastY - THRESHOLD) show();
+      lastY = y;
+    }
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    // キーボード操作でヘッダー内にフォーカスが入ったら必ず見せる
+    header.addEventListener("focusin", show);
+
     if (toggle && nav) {
       toggle.addEventListener("click", function () {
+        show();
         var open = nav.classList.toggle("is-open");
         toggle.setAttribute("aria-expanded", String(open));
         document.body.style.overflow = open ? "hidden" : "";
@@ -301,32 +315,6 @@
     });
   }
 
-  /* ---------- Cookie同意（同意後にのみ計測タグをロード） ---------- */
-  function loadAnalytics() {
-    var a = S.analytics || {};
-    if (a.provider === "ga4" && a.ga4Id) {
-      var s = document.createElement("script"); s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + a.ga4Id; document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || []; window.gtag = function () { window.dataLayer.push(arguments); };
-      window.gtag("js", new Date()); window.gtag("config", a.ga4Id, { anonymize_ip: true });
-    } else if (a.provider === "plausible" && a.plausibleDomain) {
-      var p = document.createElement("script"); p.defer = true; p.setAttribute("data-domain", a.plausibleDomain); p.src = "https://plausible.io/js/script.outbound-links.js"; document.head.appendChild(p);
-    }
-  }
-  function initCookie() {
-    var bar = $(".cookie");
-    var consent = store("saiff-consent");
-    if (consent === "accepted") loadAnalytics();
-    if (!bar || consent) return;
-    bar.hidden = false;
-    $$("button[data-consent]", bar).forEach(function (b) {
-      b.addEventListener("click", function () {
-        var v = b.getAttribute("data-consent");
-        store("saiff-consent", v); bar.hidden = true;
-        if (v === "accepted") loadAnalytics();
-      });
-    });
-  }
-
   /* ---------- スクロール時のフェードイン（控えめ） ---------- */
   function initReveal() {
     var els = $$(".reveal");
@@ -355,7 +343,7 @@
     renderPeople(); renderNews(); renderPartners();
     initHeader(); initLang(); initExtLinks(); initNewsletter();
     initCountdown(); initEmbers(); initFilmModal(); initTimetableNow();
-    initCookie(); initReveal(); initPhasePreview();
+    initReveal(); initPhasePreview();
     var y = $("[data-year]"); if (y) y.textContent = new Date().getFullYear();
   });
 })();

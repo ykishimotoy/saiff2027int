@@ -16,13 +16,17 @@ window.SAIFF = {
   /* チケット販売状態。false にすると /tickets の購入ボタンが「発売通知を受け取る」に差し替わる */
   ticketsOnSale: true,
 
+  /* 作品応募の受付状態（フェーズとは独立）。true の間は、全ページの常時CTA（ヘッダー／モバイル下部バー）と
+     トップのHero・分岐カード・中盤帯に「作品を応募する」が出る。締切後は false にする */
+  submissionsOpen: true,
+
   /* 各ページが公開される最小フェーズ（未公開フェーズで直接開かれたらトップへ戻す） */
-  pageMinPhase: { index: 0, about: 0, partners: 0, legal: 0, submit: 1, news: 1, program: 2, tickets: 2, archive: 4 },
+  pageMinPhase: { index: 0, about: 0, partners: 0, legal: 0, privacy: 0, submit: 1, guideline: 1, news: 1, program: 2, tickets: 2, archive: 4 },
 
   /* ---- 日付 ---- */
   dates: {
     festival: "2027-05-04T10:00:00+09:00",        // 開催日（確定）。開場時刻は＜仮＞
-    submitDeadline: "2027-01-31T23:59:59+09:00"   // 応募締切＜仮＞
+    submitDeadline: "2027-03-31T23:59:59+09:00"   // 応募締切（確定：2027年3月31日 水 23:59 JST）
   },
 
   /* ---- 外部サービス（CVはすべて外部。サイトは説得と送客に専念） ----
@@ -43,12 +47,9 @@ window.SAIFF = {
     note:         "https://note.com/"                    // ＜仮＞長文レポート掲載先
   },
 
-  /* ---- 計測（Cookie同意後にのみロード） ---- */
-  analytics: {
-    provider: "none",      // "ga4" | "plausible" | "none"
-    ga4Id: "G-XXXXXXXXXX", // ＜仮＞
-    plausibleDomain: "saiff.example" // ＜仮＞
-  },
+  /* ---- 計測 ----
+     Cloudflare Web Analytics を Cloudflare 側の設定で有効化し、自動挿入を使う。
+     サイト側に解析タグは置かない（GA4／GTM／Meta Pixel／Plausible 等は追加しないこと）。 */
 
   /* ---- 多言語（第1段階は日本語のみ。追加手順は README 参照） ----
      available:true にした言語だけスイッチャーで有効になり、/{code}/ 配下の同名ページへ遷移する */
@@ -79,6 +80,7 @@ window.SAIFF = {
 
   html.setAttribute("data-phase", String(S.phase));
   html.setAttribute("data-tickets", S.ticketsOnSale ? "on" : "off");
+  html.setAttribute("data-submit", S.submissionsOpen ? "on" : "off");
 
   // 未公開フェーズのページはトップへ（Coming Soon ページを量産しない）
   var page = html.getAttribute("data-page");

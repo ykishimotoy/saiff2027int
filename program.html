@@ -19,7 +19,9 @@
 <meta property="og:image" content="https://saiff.example/assets/img/ogp.jpg"><!-- ＜仮＞OGP画像 1200×630 未配置 -->
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/config.js"></script>
@@ -30,12 +32,21 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="index.html" aria-label="札幌国際AI映画祭 トップページ">
-      <img src="assets/img/mark.svg" alt="" width="38" height="38">
+      <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
       <span class="brand__text">
         <span class="brand__ja">札幌国際AI映画祭</span>
         <span class="brand__en">Sapporo International AI Film Festival</span>
       </span>
     </a>
+    <div class="gnav__cta">
+      <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
+      <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
+      <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
+    </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニュー"><span></span><span></span><span></span></button>
     <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
       <ul class="gnav__list">
@@ -44,13 +55,6 @@
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
       </ul>
-      <div class="gnav__cta">
-        <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
-        <a class="btn btn--primary btn--sm" data-show="1" href="submit.html">作品を応募する</a>
-        <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
-        <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
-        <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
-      </div>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
         <ul>
@@ -70,7 +74,7 @@
   <section class="page-hero">
     <div class="container">
       <p class="page-hero__en">Program — 2027.5.4</p>
-      <h1>物語を浴びる。創造力を知る。<br>未来を起動する。</h1>
+      <h1><span class="nb">物語を浴びる。</span><span class="nb">創造力を知る。</span><br class="br-pc"><span class="nb">未来を起動する。</span></h1>
       <p class="page-hero__lead">上映、講演・創作講座、交流会。三つは別々の企画ではなく、一本の流れです。鑑賞だけで終わらない、次の創造へつながる一日を。</p>
       <ul class="anchor-nav">
         <li><a href="#films">上映作品</a></li>
@@ -96,7 +100,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「雪の記憶」のサムネイル（プレースホルダー）">作品サムネイル 01<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">短編部門</p>
+            <p class="film__cat">ストーリー</p>
             <h3 class="film__title">雪の記憶<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>日本｜12分</p>
             <div class="film__more">
@@ -110,7 +114,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「The Last Lighthouse」のサムネイル（プレースホルダー）">作品サムネイル 02<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">短編部門</p>
+            <p class="film__cat">アート</p>
             <h3 class="film__title">The Last Lighthouse<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>フランス｜9分</p>
             <div class="film__more">
@@ -124,7 +128,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「声のない街」のサムネイル（プレースホルダー）">作品サムネイル 03<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">中編部門</p>
+            <p class="film__cat">ストーリー</p>
             <h3 class="film__title">声のない街<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>韓国｜28分</p>
             <div class="film__more">
@@ -138,7 +142,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「Ember」のサムネイル（プレースホルダー）">作品サムネイル 04<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">中編部門</p>
+            <p class="film__cat">ドキュメンタリー</p>
             <h3 class="film__title">Ember<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>ドイツ｜34分</p>
             <div class="film__more">
@@ -152,7 +156,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「ポリフォニー」のサムネイル（プレースホルダー）">作品サムネイル 05<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">MV／実験映像部門</p>
+            <p class="film__cat">MV</p>
             <h3 class="film__title">ポリフォニー<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>日本｜5分</p>
             <div class="film__more">
@@ -166,7 +170,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「Latent Garden」のサムネイル（プレースホルダー）">作品サムネイル 06<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">MV／実験映像部門</p>
+            <p class="film__cat">アート</p>
             <h3 class="film__title">Latent Garden<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>アメリカ｜7分</p>
             <div class="film__more">
@@ -180,7 +184,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「放課後のロケット」のサムネイル（プレースホルダー）">作品サムネイル 07<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">学生部門</p>
+            <p class="film__cat">ストーリー</p>
             <h3 class="film__title">放課後のロケット<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>日本｜11分</p>
             <div class="film__more">
@@ -194,7 +198,7 @@
         <article class="film reveal">
           <div class="ph" role="img" aria-label="「Mother Tongue」のサムネイル（プレースホルダー）">作品サムネイル 08<br>16:9＜プレースホルダー＞</div>
           <div class="film__body">
-            <p class="film__cat">学生部門</p>
+            <p class="film__cat">アニメーション</p>
             <h3 class="film__title">Mother Tongue<span class="tbd">＜仮＞</span></h3>
             <p class="film__meta">クリエイター名＜仮＞<br>中国｜14分</p>
             <div class="film__more">
@@ -223,7 +227,7 @@
     <div class="container">
       <header class="sec-head reveal">
         <span class="sec-head__en">II — Talks &amp; Workshops</span>
-        <h2 class="sec-head__ja">創造力を知る ｜ クリエイター講演・創作講座</h2>
+        <h2 class="sec-head__ja"><span class="nb">創造力を知る ｜</span> <span class="nb">クリエイター講演・創作講座</span></h2>
         <p class="sec-head__lead">著名な方の話を聞いて終わる講演会ではありません。他者の創造力に触れることで、自分自身の創造力を知る時間です。</p>
       </header>
 
@@ -318,9 +322,9 @@
       <ol class="timetable reveal">
         <li data-start="10:00" data-end="10:30"><time>10:00</time><div><h4>開場・受付</h4></div></li>
         <li data-start="10:30" data-end="10:45"><time>10:30 – 10:45</time><div><h4>オープニング</h4><p>開幕宣言、審査員紹介</p></div></li>
-        <li data-start="10:45" data-end="12:45"><time>10:45 – 12:45</time><div><h4>上映プログラム A<span class="pillar">物語を浴びる</span></h4><p>短編部門・学生部門 入選作品</p></div></li>
+        <li data-start="10:45" data-end="12:45"><time>10:45 – 12:45</time><div><h4>上映プログラム A<span class="pillar">物語を浴びる</span></h4><p>入選作品（前半）</p></div></li>
         <li data-start="12:45" data-end="13:45"><time>12:45 – 13:45</time><div><h4>休憩</h4></div></li>
-        <li data-start="13:45" data-end="15:30"><time>13:45 – 15:30</time><div><h4>上映プログラム B<span class="pillar">物語を浴びる</span></h4><p>中編部門、ミュージックビデオ／実験映像部門 入選作品</p></div></li>
+        <li data-start="13:45" data-end="15:30"><time>13:45 – 15:30</time><div><h4>上映プログラム B<span class="pillar">物語を浴びる</span></h4><p>入選作品（後半）</p></div></li>
         <li data-start="15:45" data-end="17:15"><time>15:45 – 17:15</time><div><h4>クリエイター講演・創作講座<span class="pillar">創造力を知る</span></h4><p>Talk Session 1・2／創作講座（並行開催）</p></div></li>
         <li data-start="17:30" data-end="18:30"><time>17:30 – 18:30</time><div><h4>授賞式<span class="pillar">物語を浴びる</span></h4><p>各賞発表、グランプリ作品の再上映、審査員講評</p></div></li>
         <li data-start="19:00" data-end="21:00"><time>19:00 – 21:00</time><div><h4>交流会<span class="pillar">未来を起動する</span></h4><p>入選クリエイター、審査員、登壇者、パートナー企業、来場者</p></div></li>
@@ -330,7 +334,7 @@
 
   <section class="band">
     <div class="container">
-      <h2 class="band__title">同じ時間、同じ場所で、一つの物語を。</h2>
+      <h2 class="band__title"><span class="nb">同じ時間、</span><span class="nb">同じ場所で、</span><span class="nb">一つの物語を。</span></h2>
       <p class="band__text">配信でいつでも観られる時代だからこそ、映画館で、大勢の人と分かち合う一日を。</p>
       <div class="btn-row btn-row--center"><a class="btn btn--primary btn--lg" href="tickets.html">チケットを買う</a></div>
     </div>
@@ -342,7 +346,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="index.html">
-          <img src="assets/img/mark.svg" alt="" width="38" height="38">
+          <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
         <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
@@ -364,6 +368,7 @@
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="legal.html">Legal</a></li>
         </ul>
       </nav>
@@ -381,13 +386,18 @@
   </div>
 </footer>
 
-<div class="cookie" role="dialog" aria-label="Cookieの使用について" hidden>
-  <p>本サイトは、利用状況の把握と改善のためにCookie等を使用します。同意いただいた場合のみアクセス解析を有効にします。詳しくは <a href="legal.html#cookie">Cookieについて</a>。</p>
-  <div class="btn-row">
-    <button class="btn btn--ghost btn--sm" type="button" data-consent="declined">必須のみ</button>
-    <button class="btn btn--primary btn--sm" type="button" data-consent="accepted">同意する</button>
+<!-- モバイル用 固定CTAバー（画面下・親指の届く位置・常時表示）。応募と購入の両方を常に押せるようにする -->
+<div class="cta-bar" data-cta-bar>
+  <div class="cta-bar__inner">
+      <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
+      <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+      <a class="btn btn--primary" data-show="2 3" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>
+
 
 <script src="assets/js/data.js"></script>
 <script src="assets/js/site.js"></script>

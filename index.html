@@ -19,7 +19,9 @@
 <meta property="og:image" content="https://saiff.example/assets/img/ogp.jpg"><!-- ＜仮＞OGP画像 1200×630 未配置 -->
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/config.js"></script>
@@ -66,12 +68,21 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="index.html" aria-label="札幌国際AI映画祭 トップページ">
-      <img src="assets/img/mark.svg" alt="" width="38" height="38">
+      <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
       <span class="brand__text">
         <span class="brand__ja">札幌国際AI映画祭</span>
         <span class="brand__en">Sapporo International AI Film Festival</span>
       </span>
     </a>
+    <div class="gnav__cta">
+      <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
+      <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
+      <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
+    </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニュー"><span></span><span></span><span></span></button>
     <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
       <ul class="gnav__list">
@@ -80,13 +91,6 @@
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
       </ul>
-      <div class="gnav__cta">
-        <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
-        <a class="btn btn--primary btn--sm" data-show="1" href="submit.html">作品を応募する</a>
-        <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
-        <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
-        <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
-      </div>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
         <ul>
@@ -106,25 +110,23 @@
   <!-- ============ 1. Hero：暗闇から映像が立ち上がる。下端に赤い帯（カーペット） ============ -->
   <section class="hero" aria-label="メインビジュアル">
     <div class="hero__media">
-      <!-- 無音ループ映像（数MB）。assets/video/hero-loop.mp4 を置けば再生される。未配置時は poster を表示＜プレースホルダー＞ -->
-      <video autoplay muted loop playsinline poster="assets/img/hero-poster.svg" aria-hidden="true" tabindex="-1">
-        <source src="assets/video/hero-loop.mp4" type="video/mp4">
-      </video>
+      <!-- 札幌文化芸術劇場 hitaru の客席（2560w／1280w）。無音ループ映像に差し替える場合は <video poster="assets/img/gekijo01.jpg"> にする -->
+      <img src="assets/img/gekijo01.jpg" srcset="assets/img/gekijo01-1280.jpg 1280w, assets/img/gekijo01.jpg 2560w" sizes="100vw" width="2560" height="1709" alt="" fetchpriority="high" decoding="async">
     </div>
     <div class="hero__shade"></div>
     <div class="hero__beams" aria-hidden="true"></div>
     <canvas class="hero__embers" aria-hidden="true"></canvas>
 
     <div class="hero__inner">
-      <p class="hero__edition">The 1st Sapporo International AI Film Festival &amp; Incubation</p>
+      <p class="hero__title"><span class="nb">札幌国際AI映画祭</span> <span class="hero__title-year">2027</span></p>
+      <p class="hero__edition">Sapporo International AI Film Festival &amp; Incubation</p>
       <h1 class="hero__copy">
         <span>物語を解き放て。</span>
         <span>魂を揺さぶれ。</span>
         <span><span>種火はもう、</span><span>その手にある。</span></span>
       </h1>
-      <p class="hero__open">札幌国際AI映画祭、開幕。</p>
       <p class="hero__meta">
-        <span><b>2027.5.4</b> TUE（祝）</span>
+        <span><b>2027.5.4</b> （火・祝）</span>
         <span>札幌文化芸術劇場 hitaru</span>
       </p>
 
@@ -133,17 +135,24 @@
         <a class="btn btn--primary btn--lg" data-show="0" href="#newsletter">最新情報を受け取る</a>
 
         <!-- Phase 1 応募受付 -->
-        <div class="countdown" data-show="1" data-countdown="submitDeadline" role="timer" aria-label="応募締切までの残り時間">
-          <span class="countdown__label">応募締切 2027.1.31＜仮＞ まで</span>
+        <div class="countdown countdown--inline" data-show="1" data-countdown="submitDeadline" role="timer" aria-label="応募締切までの残り時間">
+          <span class="countdown__label">応募締切まで</span>
           <span class="countdown__unit"><b data-d>--</b>日</span>
           <span class="countdown__unit"><b data-h>--</b>時間</span>
           <span class="countdown__unit"><b data-m>--</b>分</span>
           <span class="countdown__unit"><b data-s>--</b>秒</span>
         </div>
-        <a class="btn btn--primary btn--lg" data-show="1" href="submit.html">作品を応募する</a>
+        <a class="btn btn--gold btn--lg" data-show="1" href="submit.html">作品を応募する</a>
 
         <!-- Phase 2 入選発表・チケット販売 -->
-        <div class="countdown" data-show="2" data-countdown="festival" role="timer" aria-label="開幕までの残り時間">
+        <div class="countdown countdown--inline" data-show="2" data-submit="on" data-countdown="submitDeadline" role="timer" aria-label="応募締切までの残り時間">
+          <span class="countdown__label">応募締切まで</span>
+          <span class="countdown__unit"><b data-d>--</b>日</span>
+          <span class="countdown__unit"><b data-h>--</b>時間</span>
+          <span class="countdown__unit"><b data-m>--</b>分</span>
+          <span class="countdown__unit"><b data-s>--</b>秒</span>
+        </div>
+        <div class="countdown countdown--inline" data-show="2" data-countdown="festival" role="timer" aria-label="開幕までの残り時間">
           <span class="countdown__label">開幕まで</span>
           <span class="countdown__unit"><b data-d>--</b>日</span>
           <span class="countdown__unit"><b data-h>--</b>時間</span>
@@ -151,8 +160,9 @@
           <span class="countdown__unit"><b data-s>--</b>秒</span>
         </div>
         <div class="btn-row btn-row--center" data-show="2">
+          <a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a>
           <a class="btn btn--primary btn--lg" href="tickets.html">チケットを買う</a>
-          <a class="btn btn--ghost btn--lg" href="program.html">プログラムを見る</a>
+          <a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a>
         </div>
 
         <!-- Phase 3 会期中 -->
@@ -178,24 +188,35 @@
     <div class="container container--narrow concept">
       <header class="sec-head reveal">
         <span class="sec-head__en">Concept</span>
-        <h2 class="sec-head__ja">種火は、誰もの手に渡った。</h2>
+        <!-- 見出しは非表示（宣言3行だけを見せる）
+        <h2 class="sec-head__ja sec-head__ja--long"><span class="nb">「創りたい」が、</span><span class="nb">「創れる」に</span><span class="nb">変わった時代の、</span><br class="br-pc"><span class="nb">祝祭の炎。</span></h2>
+        -->
       </header>
 
-      <p class="concept__lead reveal">いま、かつてないほど多くの人が、<br>物語を形にする力を手にした。</p>
+      <!-- 3行の宣言だけを見せる。全文は about.html#concept -->
+      <p class="concept__statement reveal">
+        <span class="concept__statement-l1"><span class="nb">札幌国際AI映画祭は、</span><span class="nb"><em>炎</em>だ。</span></span>
+        <span class="concept__statement-l2"><span class="nb">新しい創作手段を</span><span class="nb">手にした人々から</span><span class="nb">生まれる物語を、</span><span class="nb">体感し、称え、</span></span>
+        <span class="concept__statement-l2"><span class="nb">そこから</span><span class="nb">次の創り手と</span><span class="nb">次の物語を</span><span class="nb">生み出していくための、</span><span class="nb">祝祭の炎だ。</span></span>
+      </p>
+
+      <!-- 以下、長文はトップでは非表示（about.html#concept に全文あり）
+      <p class="concept__lead reveal"><span class="nb">いま、</span><span class="nb">かつてないほど</span><span class="nb">多くの人が、</span><br><span class="nb">物語を形にする力を</span><span class="nb">手にした。</span></p>
 
       <p class="reveal">これまで大きな資金や設備、専門技術がなければ届かなかった表現に、一人の人間でも手を伸ばせるようになった。</p>
 
-      <p class="verse reveal">頭の中にしかなかった景色を映像にする。<br>聞こえていた音を鳴らす。<br>存在しなかった人物を生み出す。<br>そして、自分の物語を世界へ届ける。</p>
+      <p class="verse reveal"><span class="nb">頭の中にしかなかった景色を</span><span class="nb">映像にする。</span><br>聞こえていた音を鳴らす。<br><span class="nb">存在しなかった人物を</span><span class="nb">生み出す。</span><br><span class="nb">そして、</span><span class="nb">自分の物語を</span><span class="nb">世界へ届ける。</span></p>
 
       <p class="reveal">AIは、そのための強力な手段を、種火を、誰もに渡した。<br>だからこそ、これから問われるのは「何ができるか」だけではない。</p>
 
-      <p class="ask reveal">何を創りたいのか。<br>何を伝えたいのか。<br>そして、その物語で誰の心を動かしたいのか。</p>
+      <p class="ask reveal">何を創りたいのか。<br>何を伝えたいのか。<br><span class="nb">そして、</span><span class="nb">その物語で</span><span class="nb">誰の心を</span><span class="nb">動かしたいのか。</span></p>
 
       <p class="reveal">技術がどれだけ変わっても、創作の中心にいるのは人間だ。</p>
 
-      <p class="flame reveal">そして、札幌国際AI映画祭は、<em>炎</em>だ。<br>新しい創作手段を手にした人々から生まれる物語を、体感し、称え、<br>そこから次の創り手と次の物語を生み出していくための、祝祭の炎だ。</p>
+      <p class="flame reveal"><span class="nb">そして、</span><span class="nb">札幌国際AI映画祭は、<em>炎</em>だ。</span><br><span class="nb">新しい創作手段を</span><span class="nb">手にした人々から</span><span class="nb">生まれる物語を、</span><span class="nb">体感し、称え、</span><br><span class="nb">そこから</span><span class="nb">次の創り手と</span><span class="nb">次の物語を</span><span class="nb">生み出していくための、</span><span class="nb">祝祭の炎だ。</span></p>
+      -->
 
-      <p class="reveal" style="margin-top:3em"><a class="text-link" href="about.html#concept">コンセプト全文を読む</a></p>
+      <p class="concept__more reveal"><a class="text-link" href="about.html#concept">コンセプト全文を読む</a></p>
     </div>
   </section>
 
@@ -206,7 +227,7 @@
     <div class="container">
       <header class="sec-head reveal">
         <span class="sec-head__en">Choose your path</span>
-        <h2 class="sec-head__ja">あなたは、どの立場で参加しますか。</h2>
+        <h2 class="sec-head__ja"><span class="nb">あなたは、</span><span class="nb">どの立場で</span><span class="nb">参加しますか。</span></h2>
       </header>
 
       <div class="gate">
@@ -220,14 +241,9 @@
         <a class="gate__card reveal" href="submit.html" data-show="1 2 3 4">
           <span class="gate__en">For Creators</span>
           <h3 class="gate__title">創る人へ</h3>
-          <p class="gate__text">あなたは何を創る？ 見せてくれ。全部見届けるから。世界中から、AIを創作に用いた映像作品を募集します。</p>
-          <ul class="gate__list">
-            <li>締切・賞・応募料</li>
-            <li>審査基準と審査員</li>
-            <li>AI利用規定・権利の扱い</li>
-          </ul>
-          <span class="gate__go" data-show="1">応募要項を見る</span>
-          <span class="gate__go" data-show="2 3 4">応募要項（受付終了）</span>
+          <p class="gate__text">物語を解き放て。世界中から、AIを創作に用いた映像作品を募集します。</p>
+          <span class="gate__go" data-submit="on">応募要項を見る</span>
+          <span class="gate__go" data-submit="off">応募要項（受付終了）</span>
         </a>
 
         <!-- 観る人へ -->
@@ -241,11 +257,6 @@
           <span class="gate__en">For Audiences</span>
           <h3 class="gate__title">観る人へ</h3>
           <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。隣の誰かが息を呑み、笑い、泣く。物語を、全身で浴びる一日。</p>
-          <ul class="gate__list">
-            <li>何が観られるか・タイムテーブル</li>
-            <li>券種と料金</li>
-            <li>会場アクセス・札幌滞在ガイド</li>
-          </ul>
           <span class="gate__go">チケット・来場案内</span>
         </a>
 
@@ -254,11 +265,6 @@
           <span class="gate__en">For Partners</span>
           <h3 class="gate__title">支える人へ</h3>
           <p class="gate__text">次の創り手と、最初に出会う場所。交流会でのクリエイターとの接点を中心に、協賛パートナーを募集しています。</p>
-          <ul class="gate__list">
-            <li>開催趣旨と想定規模</li>
-            <li>協賛で得られるもの</li>
-            <li>資料請求・面談予約</li>
-          </ul>
           <span class="gate__go">協賛について</span>
         </a>
       </div>
@@ -270,7 +276,7 @@
     <div class="container">
       <header class="sec-head reveal">
         <span class="sec-head__en">One day, one flow</span>
-        <h2 class="sec-head__ja">物語を浴びる。創造力を知る。未来を起動する。</h2>
+        <h2 class="sec-head__ja"><span class="nb">物語を浴びる。</span><span class="nb">創造力を知る。</span><span class="nb">未来を起動する。</span></h2>
         <p class="sec-head__lead">上映、講演・創作講座、交流会を、別々の企画ではなく一つの流れとして設計します。鑑賞だけで終わらない、次の創造へつながる一日。</p>
       </header>
 
@@ -306,6 +312,31 @@
     </div>
   </section>
 
+  <!-- ============ 4b. 中盤CTA（フェーズ連動）。Hero以降で最初の購入・応募導線 ============ -->
+  <section class="band" aria-label="参加への案内">
+    <div class="container">
+      <h2 class="band__title" data-show="0"><span class="nb">最初の炎を、</span><span class="nb">見逃さないために。</span></h2>
+      <p class="band__text" data-show="0">募集開始・審査員発表・チケット発売を、メールでお届けします。</p>
+      <div class="btn-row btn-row--center" data-show="0"><a class="btn btn--primary btn--lg" href="#newsletter">最新情報を受け取る</a></div>
+
+      <h2 class="band__title" data-show="1"><span class="nb">あなたは何を創る？</span><span class="nb">見せてくれ。</span></h2>
+      <p class="band__text" data-show="1">応募締切 2027年3月31日（水）23:59。3〜15分・16:9・ジャンル不問。グランプリ、審査員特別賞、スポンサー特別賞、SAPPORO賞、優秀作品賞。</p>
+      <div class="btn-row btn-row--center" data-show="1"><a class="btn btn--primary btn--lg" href="submit.html">応募要項を見る</a><a class="btn btn--ghost btn--lg" href="submit.html#awards">賞・審査基準</a></div>
+
+      <h2 class="band__title" data-show="2"><span class="nb">同じ時間、同じ場所で、</span><span class="nb">一つの物語を。</span></h2>
+      <p class="band__text" data-show="2">2027年5月4日、札幌文化芸術劇場 hitaru。1日通し券なら上映・講演・交流会のすべてを体験できます。席数に限りがあります。<span data-submit="on">作品の応募も受付中です。</span></p>
+      <div class="btn-row btn-row--center" data-show="2"><a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a><a class="btn btn--primary btn--lg" href="tickets.html#buy">チケットを買う</a><a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a></div>
+
+      <h2 class="band__title" data-show="3">本日、開催中。</h2>
+      <p class="band__text" data-show="3">当日券・タイムテーブル・会場アクセスはこちら。</p>
+      <div class="btn-row btn-row--center" data-show="3"><a class="btn btn--primary btn--lg" href="program.html#timetable">本日のタイムテーブル</a><a class="btn btn--ghost btn--lg" href="tickets.html#access">会場・アクセス</a></div>
+
+      <h2 class="band__title" data-show="4"><span class="nb">次は、</span><span class="nb">あなたの物語を。</span></h2>
+      <p class="band__text" data-show="4">第1回の受賞作と記録を公開中。次回の募集開始はニュースレターでお知らせします。</p>
+      <div class="btn-row btn-row--center" data-show="4"><a class="btn btn--primary btn--lg" href="archive.html">受賞作を見る</a><a class="btn btn--ghost btn--lg" href="#newsletter">次回の通知を受け取る</a></div>
+    </div>
+  </section>
+
   <!-- ============ 5. 開催概要 ============ -->
   <section class="section" id="overview">
     <div class="container">
@@ -314,7 +345,9 @@
         <h2 class="sec-head__ja">開催概要</h2>
       </header>
       <div class="split split--top">
-        <div class="ph reveal" role="img" aria-label="会場外観・劇場内観の写真（プレースホルダー）" style="aspect-ratio:4/3">会場写真（札幌文化芸術劇場 hitaru 劇場内観）<br>4:3＜プレースホルダー＞</div>
+        <figure class="photo reveal" style="aspect-ratio:4/3">
+          <img src="assets/img/gekijo02.jpg" srcset="assets/img/gekijo02-1280.jpg 1280w, assets/img/gekijo02.jpg 2560w" sizes="(max-width: 860px) 100vw, 50vw" width="2560" height="1709" alt="札幌文化芸術劇場 hitaru 劇場内観" loading="lazy" decoding="async">
+        </figure>
         <dl class="spec reveal">
           <div><dt>名称</dt><dd>札幌国際AI映画祭<br><span class="muted small">Sapporo International AI Film Festival &amp; Incubation</span></dd></div>
           <div><dt>日程</dt><dd>2027年5月4日（火・祝）<br><span class="muted small">開場 10:00／終演 21:00 <span class="tbd">＜仮＞</span></span></dd></div>
@@ -394,7 +427,7 @@
           </div>
         </fieldset>
         <button class="btn btn--primary" type="submit">メール登録へ進む <span class="ext" aria-hidden="true">↗</span></button>
-        <span class="ext-note">外部の登録フォーム＜仮＞に移動します。登録情報の取り扱いは <a href="legal.html#privacy">プライバシーポリシー</a> をご覧ください。</span>
+        <span class="ext-note">外部の登録フォーム＜仮＞に移動します。登録情報の取り扱いは <a href="privacy.html">プライバシーポリシー</a> をご覧ください。</span>
       </form>
     </div>
   </section>
@@ -405,7 +438,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="index.html">
-          <img src="assets/img/mark.svg" alt="" width="38" height="38">
+          <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
         <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
@@ -427,6 +460,7 @@
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="legal.html">Legal</a></li>
         </ul>
       </nav>
@@ -444,13 +478,18 @@
   </div>
 </footer>
 
-<div class="cookie" role="dialog" aria-label="Cookieの使用について" hidden>
-  <p>本サイトは、利用状況の把握と改善のためにCookie等を使用します。同意いただいた場合のみアクセス解析を有効にします。詳しくは <a href="legal.html#cookie">Cookieについて</a>。</p>
-  <div class="btn-row">
-    <button class="btn btn--ghost btn--sm" type="button" data-consent="declined">必須のみ</button>
-    <button class="btn btn--primary btn--sm" type="button" data-consent="accepted">同意する</button>
+<!-- モバイル用 固定CTAバー（画面下・親指の届く位置・常時表示）。応募と購入の両方を常に押せるようにする -->
+<div class="cta-bar" data-cta-bar>
+  <div class="cta-bar__inner">
+      <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
+      <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+      <a class="btn btn--primary" data-show="2 3" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>
+
 
 <script src="assets/js/data.js"></script>
 <script src="assets/js/site.js"></script>

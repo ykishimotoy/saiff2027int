@@ -19,7 +19,9 @@
 <meta property="og:image" content="https://saiff.example/assets/img/ogp.jpg"><!-- ＜仮＞OGP画像 1200×630 未配置 -->
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/config.js"></script>
@@ -30,12 +32,21 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="index.html" aria-label="札幌国際AI映画祭 トップページ">
-      <img src="assets/img/mark.svg" alt="" width="38" height="38">
+      <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
       <span class="brand__text">
         <span class="brand__ja">札幌国際AI映画祭</span>
         <span class="brand__en">Sapporo International AI Film Festival</span>
       </span>
     </a>
+    <div class="gnav__cta">
+      <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
+      <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
+      <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
+    </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニュー"><span></span><span></span><span></span></button>
     <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
       <ul class="gnav__list">
@@ -44,13 +55,6 @@
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
       </ul>
-      <div class="gnav__cta">
-        <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
-        <a class="btn btn--primary btn--sm" data-show="1" href="submit.html">作品を応募する</a>
-        <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
-        <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
-        <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
-      </div>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
         <ul>
@@ -70,7 +74,7 @@
   <section class="page-hero">
     <div class="container">
       <p class="page-hero__en">For Partners</p>
-      <h1>次の創り手と、<br>最初に出会う場所。</h1>
+      <h1><span class="nb">次の創り手と、</span><br class="br-pc"><span class="nb">最初に出会う場所。</span></h1>
       <p class="page-hero__lead">札幌国際AI映画祭は、第1回の開催をともに創る協賛パートナーを募集しています。</p>
       <div class="btn-row btn-row--center" style="margin-top:36px">
         <a class="btn btn--primary btn--lg" data-ext="sponsorForm" data-target="sponsor" data-pos="fv" href="https://tally.so/">協賛資料を請求する <span class="ext" aria-hidden="true">↗</span></a>
@@ -85,11 +89,11 @@
     <div class="container container--narrow concept">
       <header class="sec-head reveal">
         <span class="sec-head__en">Why now</span>
-        <h2 class="sec-head__ja">創る力が、誰もにひらかれた。</h2>
+        <h2 class="sec-head__ja"><span class="nb">創る力が、</span><span class="nb">誰もにひらかれた。</span></h2>
       </header>
       <p class="reveal">AIによって、これまで「創りたい」と思っていても手段を持たなかった人が、「創れる」に変わりました。学生も、会社員も、音楽家も、エンジニアも。一人の人間が、自分の物語を映像にして世界へ届けられる時代です。</p>
       <p class="reveal">札幌国際AI映画祭は、そこから生まれる物語を大スクリーンで体感し、称え、次の創り手と次の物語を生み出していくための場です。上映で終わらず、講演・創作講座、交流会までを一つの流れとして設計しています。</p>
-      <p class="ask reveal">物語を浴びる。創造力を知る。未来を起動する。</p>
+      <p class="ask reveal"><span class="nb">物語を浴びる。</span><span class="nb">創造力を知る。</span><span class="nb">未来を起動する。</span></p>
       <p class="reveal"><a class="text-link" href="about.html">映画祭について詳しく</a></p>
     </div>
   </section>
@@ -144,6 +148,7 @@
         <div class="card reveal"><p class="card__label">Exposure</p><h3 class="h4">ブランド露出</h3><p>公式サイト（多言語）、会場サイネージ、印刷物、公式SNS、プレスリリースへのロゴ・社名掲載。</p></div>
         <div class="card reveal"><p class="card__label">Invitation</p><h3 class="h4">ご招待</h3><p>1日通し券のご提供。お取引先・社員の皆さまの研修・視察の機会としてもご活用いただけます。</p></div>
       </div>
+      <p class="next-cta reveal"><a class="btn btn--primary" data-ext="sponsorForm" data-target="sponsor" data-pos="value" href="https://tally.so/">協賛資料を請求する <span class="ext" aria-hidden="true">↗</span></a></p>
     </div>
   </section>
 
@@ -155,7 +160,7 @@
         <h2 class="sec-head__ja">協賛メニュー概要</h2>
         <p class="sec-head__lead">金額を含む詳細資料は、資料請求フォームをお送りいただいた後に個別にお届けします。<span class="tbd">＜メニュー構成は仮＞</span></p>
       </header>
-      <div class="table-wrap reveal">
+      <div class="table-wrap table-wrap--scroll reveal">
         <table>
           <thead><tr><th>メニュー</th><th>交流会ブース・ピッチ</th><th>冠賞</th><th>上映前CM</th><th>ロゴ掲載</th><th>ご招待</th></tr></thead>
           <tbody>
@@ -190,7 +195,7 @@
   <!-- ============ 主CV：資料請求・面談予約 ／ 副CV：概要1枚PDF ============ -->
   <section class="band" id="contact">
     <div class="container">
-      <h2 class="band__title">まずは、資料請求か面談予約を。</h2>
+      <h2 class="band__title"><span class="nb">まずは、</span><span class="nb">資料請求か</span><span class="nb">面談予約を。</span></h2>
       <p class="band__text">金額入りの協賛メニュー詳細をお送りします。ご検討段階でのご相談も歓迎します。</p>
       <div class="btn-row btn-row--center">
         <a class="btn btn--primary btn--lg" data-ext="sponsorForm" data-target="sponsor" data-pos="bottom" href="https://tally.so/">協賛資料を請求する <span class="ext" aria-hidden="true">↗</span></a>
@@ -207,7 +212,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="index.html">
-          <img src="assets/img/mark.svg" alt="" width="38" height="38">
+          <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
         <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
@@ -229,6 +234,7 @@
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="legal.html">Legal</a></li>
         </ul>
       </nav>
@@ -246,13 +252,16 @@
   </div>
 </footer>
 
-<div class="cookie" role="dialog" aria-label="Cookieの使用について" hidden>
-  <p>本サイトは、利用状況の把握と改善のためにCookie等を使用します。同意いただいた場合のみアクセス解析を有効にします。詳しくは <a href="legal.html#cookie">Cookieについて</a>。</p>
-  <div class="btn-row">
-    <button class="btn btn--ghost btn--sm" type="button" data-consent="declined">必須のみ</button>
-    <button class="btn btn--primary btn--sm" type="button" data-consent="accepted">同意する</button>
+<!-- モバイル用 固定CTAバー（画面下・親指の届く位置・常時表示）。応募と購入の両方を常に押せるようにする -->
+<div class="cta-bar" data-cta-bar>
+  <div class="cta-bar__inner">
+      <div class="btn-row">
+        <a class="btn btn--primary" data-ext="sponsorForm" data-target="sponsor" data-pos="bar" href="https://tally.so/">協賛資料を請求する <span class="ext" aria-hidden="true">↗</span></a>
+        <a class="btn btn--ghost" data-ext="sponsorMeet" data-target="sponsor" data-pos="bar" href="https://timerex.net/">面談を予約する <span class="ext" aria-hidden="true">↗</span></a>
+      </div>
   </div>
 </div>
+
 
 <script src="assets/js/data.js"></script>
 <script src="assets/js/site.js"></script>
