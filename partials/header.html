@@ -1,0 +1,57 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="札幌国際AI映画祭 トップページ">
+      <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
+      <span class="brand__text">
+        <span class="brand__ja">札幌国際AI映画祭</span>
+        <span class="brand__en">Sapporo International AI Film Festival</span>
+      </span>
+    </a>
+    <div class="gnav__cta">
+      <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
+{{#except submit}}
+      <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
+{{/except}}
+{{#only submit}}
+      <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
+{{/only}}
+      <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+{{#except submit}}
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
+{{/except}}
+{{#only submit}}
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
+      <a class="btn btn--ghost btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+{{/only}}
+{{#except submit,tickets}}
+      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+{{/except}}
+{{#only tickets}}
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="on" data-ext="tickets" data-target="audience" data-pos="header" href="https://peatix.com/">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="off" data-ext="ticketNotify" data-target="audience" data-pos="header" href="https://tally.so/">発売通知を受け取る</a>
+{{/only}}
+      <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
+      <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニュー"><span></span><span></span><span></span></button>
+    <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
+      <ul class="gnav__list">
+        <li><a href="about.html">About</a></li>
+        <li data-show="2 3 4"><a href="program.html">Program</a></li>
+        <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
+        <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
+      </ul>
+      <details class="lang">
+        <summary aria-label="言語を選択 / Language">日本語</summary>
+        <ul>
+          <li><a href="{{page}}.html" lang="ja" aria-current="true">日本語</a></li>
+          <li><span lang="en">English <small>準備中</small></span></li>
+          <li><span lang="fr">Français <small>準備中</small></span></li>
+          <li><span lang="de">Deutsch <small>準備中</small></span></li>
+          <li><span lang="zh-Hans">简体中文 <small>準備中</small></span></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+</header>
+<div class="lang-banner" hidden><a href="#"></a><button type="button" aria-label="閉じる">×</button></div>

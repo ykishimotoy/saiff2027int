@@ -15,6 +15,8 @@ python3 -m http.server 8765   # → http://127.0.0.1:8765/
 ## 構成
 
 ```
+build.py        共通パーツ展開スクリプト（partials/ → 各HTML）
+partials/       共通パーツの原本（head-assets／header／footer／cta-bar）
 index.html      トップ（振り分けハブ）：Hero／コンセプト短文／3分岐カード／映画祭の構造／開催概要／審査員／News／パートナー／ニュースレター
 about.html      コンセプト（長文の要点）／映画祭の構造／#incubation／#organizer／#press／#contact
 submit.html     応募LP：FV（締切・賞・形式・応募ボタン）／#criteria／#awards／#categories（単一部門）／#jury／#rules 応募条件／#faq（＋#guide 日本語手順）
@@ -37,6 +39,23 @@ assets/
   video/          hero-loop.mp4 を置くと Hero で無音ループ再生される（未配置）
   docs/           プレスキット・協賛概要PDFの置き場（未配置）
 ```
+
+## 共通パーツの編集（ヘッダー／フッター／モバイルCTAバー／head共通）
+共通パーツは `partials/` にだけ書く。各ページ側は `<!-- @partial header --> … <!-- @/partial header -->` のマーカーで囲まれた自動生成部分なので**直接編集しない**。
+
+```sh
+python3 build.py          # partials を全ページに展開（依存なし）
+python3 build.py --check  # 展開漏れがあれば exit 1（コミット前・CI用）
+```
+
+| ファイル | 内容 |
+|---|---|
+| `partials/head-assets.html` | favicon・フォント・CSS・config.js の読み込み |
+| `partials/header.html` | ヘッダー（ブランド、PC用CTA、ナビ、言語スイッチャー、言語バナー） |
+| `partials/footer.html` | フッター |
+| `partials/cta-bar.html` | モバイル固定CTAバー |
+
+partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#only submit,tickets}} … {{/only}}`（列挙ページのみ出力）／`{{#except partners}} … {{/except}}`（列挙ページを除外）が使える。応募ページ・チケットページのCTAが外部サイトへ直行する、協賛ページのバーが資料請求＋面談予約になる、といったページ差はこのブロックで表現している。新しいページを作るときは、既存ページからマーカーごとコピーして `build.py` を実行すればよい。
 
 ## 運用で触るのは基本この2ファイル
 
@@ -87,7 +106,7 @@ HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェー�
 ## 要件定義からの変更点・未実装
 | 項目 | 状態 |
 |---|---|
-| SSG（Astro推奨） | **素の HTML/CSS/JS に変更**（ユーザー判断）。そのためヘッダー／フッター／ニュースレターは各HTMLに同一内容を複製している。変更時は全11ファイル（privacy.html・guideline.html 含む）を一括置換すること |
+| SSG（Astro推奨） | **素の HTML/CSS/JS に変更**（ユーザー判断）。共通パーツ（head共通・ヘッダー・フッター・モバイルCTAバー）は `partials/` に1か所で持ち、`python3 build.py` で全11ページに展開する（下記「共通パーツの編集」） |
 | 5言語展開 | **第1段階は日本語のみ**。言語スイッチャー（他言語は「準備中」表示）、`locales` 設定、初回訪問バナー、同一ページ同一位置への遷移ロジックは実装済み。翻訳パイプライン・用語集・`i18n/*.json` は未作成 |
 | 言語の追加手順 | ① `/en/` などのディレクトリに同名HTMLを置く（`<html lang>`、アセットパスを `../assets/` に、`config.js` の `currentLocale` をページ側で上書き）② `locales` の `available` を `true` に ③ 各ページの `hreflang` と `sitemap.xml` に alternate を追加（`x-default` は `/en/`） |
 | 映像埋め込みの lite-embed | モーダル内は予告編プレースホルダーのみ（実URL確定後に実装） |

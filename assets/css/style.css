@@ -101,6 +101,12 @@ small, .small { font-size: .82rem; }
   color: var(--color-gold); margin-bottom: 10px; text-transform: none;
 }
 .sec-head__ja { font-size: clamp(1.6rem, 3.6vw, 2.35rem); }
+/* ルビ：見出し用。金色の小さな読みを上に載せ、行間はルビ分だけ確保する */
+ruby { ruby-align: center; }
+rt { font-family: var(--font-sans); font-size: .38em; font-weight: 400; letter-spacing: .12em; color: var(--color-gold); line-height: 1; text-transform: none; ruby-align: space-around; }
+rp { display: none; }
+.sec-head__ja:has(ruby) { line-height: 1.9; padding-top: .35em; }
+@media (max-width: 640px) { .sec-head__ja:has(ruby) { line-height: 2; } }
 /* 長い見出し（20字超）：PCでは2行に収まるよう一段小さく */
 .sec-head__ja--long { font-size: clamp(1.5rem, 3vw, 1.95rem); }
 .sec-head__lead { max-width: 660px; margin: 22px auto 0; color: var(--color-text-muted); font-size: 1rem; }
@@ -152,7 +158,11 @@ small, .small { font-size: .82rem; }
   display: flex; align-items: center; transition: background-color .3s, border-color .3s;
   border-bottom: 1px solid transparent;
 }
-.site-header.is-solid, .no-hero .site-header { background: rgba(13, 9, 9, .92); backdrop-filter: blur(10px); border-bottom-color: var(--line-gold); }
+/* 背景と backdrop-filter は擬似要素に持たせる。ヘッダー自身に filter を掛けると、その中の
+   position:fixed なモバイルナビ（.gnav）がヘッダーを包含ブロックにしてしまい、画面全体に広がらなくなる */
+.site-header::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; transition: background-color .3s; }
+.site-header.is-solid::before, .no-hero .site-header::before { background: rgba(13, 9, 9, .92); backdrop-filter: blur(10px); }
+.site-header.is-solid, .no-hero .site-header { border-bottom-color: var(--line-gold); }
 /* スマートヘッダー：下スクロールで退避、上スクロールで即再表示（site.js が is-hidden を付け外し） */
 .site-header { transition: background-color .3s, border-color .3s, transform .3s ease; }
 .site-header.is-hidden { transform: translateY(-100%); }
