@@ -743,6 +743,8 @@ a[aria-disabled="true"] { opacity: .5; pointer-events: none; }
   .cta-bar .btn-row { flex: 1; flex-direction: row; gap: 8px; }
   /* バーの分だけ本文とフッターの下端を空ける */
   body { padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px)); }
+  /* トップのHero内のボタンは固定バーと重複するので出さない（カウントダウンは残す）。PC（961px以上）はそのまま */
+  .hero__cta > .btn, .hero__cta > .btn-row { display: none; }
   .phase-preview { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
 }
 @media print { .cta-bar { display: none !important; } }
