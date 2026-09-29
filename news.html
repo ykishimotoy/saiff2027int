@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="news" data-phase="2" data-tickets="on">
+<html lang="ja" class="no-js" data-page="news" data-phase="2" data-tickets="presale">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,8 @@
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
       <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
     </div>
@@ -100,7 +101,7 @@
       <header class="sec-head reveal">
         <span class="sec-head__en">Newsletter</span>
         <h2 class="sec-head__ja">最新情報を受け取る</h2>
-        <p class="sec-head__lead">募集開始、審査員発表、チケット発売。あなたに関係のある知らせだけを、メールでお届けします。</p>
+        <p class="sec-head__lead">募集開始、審査員発表、クラウドファンディング開始、チケット発売。あなたに関係のある知らせだけを、メールでお届けします。</p>
       </header>
       <!-- 完全静的サイトのため、登録は外部フォームへ送客する。選択したセグメントは ?segment= で引き継ぐ（JS無効でも動作） -->
       <form class="nl-form reveal" action="https://tally.so/" method="get" target="_blank" rel="noopener" data-ext-form="newsletter" data-pos="newsletter">
@@ -128,7 +129,7 @@
           <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
-        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
+        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru／SCARTS<br><span class="small">（札幌市民交流プラザ）</span><br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
       </div>
       <nav class="footer-col" aria-label="フッター：映画祭">
         <h2>Festival</h2>
@@ -174,7 +175,8 @@
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary" data-show="2 3" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>

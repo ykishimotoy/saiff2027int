@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="program" data-phase="2" data-tickets="on">
+<html lang="ja" class="no-js" data-page="program" data-phase="2" data-tickets="presale">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>プログラム | 札幌国際AI映画祭</title>
-<meta name="description" content="上映作品、クリエイター講演・創作講座、交流会、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru。">
+<meta name="description" content="劇場上映・授賞式、SCARTSでのセレクション上映（無料）、クリエイター講演・トーク、交流会、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。">
 <meta name="theme-color" content="#0D0909">
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://saiff.example/program.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="札幌国際AI映画祭">
 <meta property="og:title" content="プログラム | 札幌国際AI映画祭">
-<meta property="og:description" content="上映作品、クリエイター講演・創作講座、交流会、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru。">
+<meta property="og:description" content="劇場上映・授賞式、SCARTSでのセレクション上映（無料）、クリエイター講演・トーク、交流会、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。">
 <meta property="og:url" content="https://saiff.example/program.html">
 <meta property="og:image" content="https://saiff.example/assets/img/ogp.jpg"><!-- ＜仮＞OGP画像 1200×630 未配置 -->
 <meta property="og:locale" content="ja_JP">
@@ -46,7 +46,8 @@
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
       <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
     </div>
@@ -79,10 +80,11 @@
     <div class="container">
       <p class="page-hero__en">Program — 2027.5.4</p>
       <h1><span class="nb">物語を浴びる。</span><span class="nb">創造力を知る。</span><br class="br-pc"><span class="nb">未来を起動する。</span></h1>
-      <p class="page-hero__lead">上映、講演・創作講座、交流会。三つは別々の企画ではなく、一本の流れです。鑑賞だけで終わらない、次の創造へつながる一日を。</p>
+      <p class="page-hero__lead">上映、講演・トーク、交流会。三つは別々の企画ではなく、一本の流れです。鑑賞だけで終わらない、次の創造へつながる一日を。</p>
       <ul class="anchor-nav">
-        <li><a href="#films">上映作品</a></li>
-        <li><a href="#talks">講演・創作講座</a></li>
+        <li><a href="#films">劇場上映</a></li>
+        <li><a href="#selection">セレクション上映</a></li>
+        <li><a href="#talks">講演・トーク</a></li>
         <li><a href="#meetup">交流会</a></li>
         <li><a href="#jury">審査員・登壇者</a></li>
         <li><a href="#timetable">タイムテーブル</a></li>
@@ -96,9 +98,11 @@
     <div class="container">
       <header class="sec-head reveal">
         <span class="sec-head__en">I — Screening &amp; Awards</span>
-        <h2 class="sec-head__ja">物語を浴びる ｜ 上映作品</h2>
-        <p class="sec-head__lead">世界中から集まった入選作品を、札幌文化芸術劇場 hitaru の大スクリーンで。会場の笑い、静寂、驚きまで含めて、物語を浴びるように体感してください。<span class="tbd">＜以下の作品情報はすべて仮のダミーです＞</span></p>
+        <h2 class="sec-head__ja">物語を浴びる ｜ 劇場上映・授賞式</h2>
+        <p class="sec-head__lead">最終選考を通過した作品（ファイナリスト）を、札幌文化芸術劇場 hitaru の大スクリーンで。12:00〜15:00、上映から授賞式まで。劇場に広告・CMは流しません。会場の笑い、静寂、驚きまで含めて、物語を浴びるように体感してください。</p>
       </header>
+
+      <h3 class="h3 reveal" style="text-align:center;margin-bottom:28px">最終選考通過作品<span class="tbd">＜2027年4月15日発表。以下の作品情報はすべて仮のダミーです＞</span></h3>
 
       <div class="grid grid--4">
         <article class="film reveal">
@@ -215,9 +219,30 @@
         </article>
       </div>
 
-      <p class="notice reveal">上映はすべて<strong>日本語・英語の2言語字幕</strong>＜仮＞で行います。上映プログラムA・Bの振り分けは <a href="#timetable">タイムテーブル</a> をご覧ください。最後に授賞式を行い、グランプリほか各賞を発表します。</p>
+      <p class="notice reveal">上映はすべて<strong>日本語・英語の2言語字幕</strong>で行います（英語字幕は主催者が付けます）。劇場上映は 12:00〜15:00 の一本で、上映に続けて授賞式を行い、グランプリほか各賞を発表します。入場は1,000円（開場 11:30）。</p>
 
-      <p class="next-cta reveal"><a class="btn btn--primary" href="tickets.html">上映のチケットを見る</a></p>
+      <p class="next-cta reveal"><a class="btn btn--primary" href="tickets.html">劇場入場のチケットを見る</a></p>
+    </div>
+  </section>
+
+  <!-- ============ I-b. セレクション上映（SCARTS・無料） ============ -->
+  <section class="section section--surface" id="selection">
+    <div class="container">
+      <header class="sec-head reveal">
+        <span class="sec-head__en">I — Selection Screening</span>
+        <h2 class="sec-head__ja"><span class="nb">物語を浴びる ｜</span> <span class="nb">セレクション上映</span></h2>
+        <p class="sec-head__lead">二次選考を通過した作品を、同じ建物の SCARTS で上映します。<strong>無料・入場自由</strong>、チケットは要りません。最終選考を通過した作品は、劇場で上映します。</p>
+      </header>
+
+      <dl class="spec reveal" style="max-width:760px;margin-inline:auto">
+        <div><dt>SCARTS スタジオ1・2（2F）</dt><dd>10:00〜21:00</dd></div>
+        <div><dt>SCARTS コート（1F）</dt><dd>9:00〜14:00</dd></div>
+        <div><dt>入場</dt><dd>無料・入場自由（チケット不要）</dd></div>
+        <div><dt>字幕</dt><dd>日本語・英語の2言語字幕</dd></div>
+      </dl>
+
+      <h3 class="h3 reveal" style="text-align:center;margin-top:64px">二次選考通過作品</h3>
+      <p class="notice reveal" style="max-width:760px;margin-inline:auto">2027年4月15日、最終選考通過作品とあわせて発表します。</p>
     </div>
   </section>
 
@@ -226,35 +251,24 @@
     <div class="modal__body"></div>
   </dialog>
 
-  <!-- ============ II. 講演・創作講座 ============ -->
-  <section class="section section--surface" id="talks">
+  <!-- ============ II. 講演・トーク（単一トラック） ============ -->
+  <section class="section" id="talks">
     <div class="container">
       <header class="sec-head reveal">
-        <span class="sec-head__en">II — Talks &amp; Workshops</span>
-        <h2 class="sec-head__ja"><span class="nb">創造力を知る ｜</span> <span class="nb">クリエイター講演・創作講座</span></h2>
+        <span class="sec-head__en">II — Talks</span>
+        <h2 class="sec-head__ja"><span class="nb">創造力を知る ｜</span> <span class="nb">クリエイター講演・トーク</span></h2>
         <p class="sec-head__lead">著名な方の話を聞いて終わる講演会ではありません。他者の創造力に触れることで、自分自身の創造力を知る時間です。</p>
       </header>
 
-      <div class="grid grid--3">
-        <article class="card card--gold reveal">
-          <p class="card__label">Talk Session 1＜仮＞</p>
-          <h3 class="h3">AIと映画を創るということ</h3>
-          <p>AIを実制作に使う映画監督・映像作家が、発想から完成までのプロセスと、その過程で悩み、試してきたことを共有します。</p>
-          <p class="small">登壇：登壇者 A＜調整中＞、審査員 B＜調整中＞</p>
-        </article>
-        <article class="card card--gold reveal">
-          <p class="card__label">Talk Session 2＜仮＞</p>
-          <h3 class="h3">映像と音楽が交わるところ</h3>
-          <p>映像と音。異なる領域の創り手が、AI時代の共作のかたちを語ります。受賞クリエイターを交えたクロストーク。</p>
-          <p class="small">登壇：登壇者 B＜調整中＞ ほか</p>
-        </article>
-        <article class="card card--gold reveal">
-          <p class="card__label">Workshop＜仮＞</p>
-          <h3 class="h3">はじめての一本を創る 創作講座</h3>
-          <p>まだ自分をクリエイターだと思っていない方へ。頭の中の景色を、最初の映像にするまでを実演つきで。「自分にもできるかもしれない」を持ち帰る講座です。</p>
-          <p class="small">講師：講師 A＜調整中＞</p>
-        </article>
-      </div>
+      <p class="reveal" style="max-width:760px;margin-inline:auto">AIを実制作に使う創り手が、発想から完成までのプロセスと、その過程で悩み、試してきたことを共有します。講演内で実演を行う場合があります。</p>
+
+      <dl class="spec reveal" style="margin-top:32px;max-width:760px;margin-inline:auto">
+        <div><dt>日時</dt><dd>2027年5月4日（火・祝）16:30〜17:45</dd></div>
+        <div><dt>会場</dt><dd>SCARTS コート（1F）</dd></div>
+        <div><dt>登壇</dt><dd><span class="tbd">＜調整中・順次発表＞</span></dd></div>
+        <div><dt>参加</dt><dd>会場での聴講は「現地 講演＆交流会」（先行販売・50席限定）の方と招待者が対象です。</dd></div>
+        <div><dt>アーカイブ</dt><dd>講演は収録し、<strong>オンラインアーカイブ配信</strong>を行います（2,000円）。</dd></div>
+      </dl>
 
       <div class="grid grid--3" style="margin-top:28px">
         <div class="card reveal"><h4 class="h4">すでに創作している方へ</h4><p>次の作品づくりにつながる視点と刺激を。</p></div>
@@ -262,12 +276,12 @@
         <div class="card reveal"><h4 class="h4">まだ創り手だと思っていない方へ</h4><p>自分の中にも、表現したいものと創る力があるという気づきを。</p></div>
       </div>
 
-      <p class="next-cta reveal"><a class="btn btn--primary" href="tickets.html">講演・創作講座のチケットを見る</a></p>
+      <p class="next-cta reveal"><a class="btn btn--primary" href="tickets.html#buy">講演のチケット・アーカイブを見る</a></p>
     </div>
   </section>
 
   <!-- ============ III. 交流会（Incubation の中核） ============ -->
-  <section class="section" id="meetup">
+  <section class="section section--surface" id="meetup">
     <div class="container">
       <div class="split">
         <div class="reveal">
@@ -277,7 +291,7 @@
           </header>
           <p>交流会は、この映画祭の名前にある <strong>「&amp; Incubation」の中核</strong>です。単なる懇親会ではなく、未来を起動するための最初の一歩として位置づけています。</p>
           <p class="muted">「あの作品が面白かったです」と声をかける。「一緒に何か創れませんか」と話してみる。企業の方がクリエイターに新しい仕事や支援の可能性を相談する。そうした小さな会話から、次の作品、チーム、仕事、プロジェクトが始まります。</p>
-          <p class="muted">そこで生まれた作品が、翌年の映画祭のスクリーンに還ってくる。その循環をつくる場です。</p>
+          <p class="muted">そこで生まれた作品が、いつかまたスクリーンに還ってくる。そんな循環の起点になる場です。</p>
         </div>
         <div class="ph reveal" role="img" aria-label="交流会のイメージ写真（プレースホルダー）" style="aspect-ratio:4/3">交流会イメージ写真<br>4:3＜プレースホルダー＞</div>
       </div>
@@ -291,18 +305,19 @@
       </div>
 
       <dl class="spec reveal" style="margin-top:48px;max-width:760px;margin-inline:auto">
-        <div><dt>日時</dt><dd>2027年5月4日（火・祝）19:00〜21:00<span class="tbd">＜仮＞</span></dd></div>
-        <div><dt>会場</dt><dd>札幌市民交流プラザ内<span class="tbd">＜仮・調整中＞</span></dd></div>
-        <div><dt>参加</dt><dd>交流会券または1日通し券が必要です。軽食・ドリンク付き<span class="tbd">＜仮＞</span>。入選クリエイター、審査員、登壇者、パートナー企業が参加します。</dd></div>
+        <div><dt>日時</dt><dd>2027年5月4日（火・祝）17:45〜19:00</dd></div>
+        <div><dt>会場</dt><dd>SCARTS コート（1F）</dd></div>
+        <div><dt>参加</dt><dd>先行販売（クラウドファンディング）でお申し込みの方（50席）と招待者のみ。一般販売はありません。最終選考通過クリエイター、審査員、登壇者、パートナー企業が参加します。</dd></div>
+        <div><dt>内容</dt><dd>交流のほか、協賛企業による企業賞の授与を行う場合があります<span class="tbd">＜仮・調整中＞</span>。</dd></div>
         <div><dt>言語</dt><dd>日本語・英語。会場に通訳ボランティアを配置<span class="tbd">＜仮＞</span>。</dd></div>
       </dl>
 
-      <p class="next-cta reveal"><a class="btn btn--primary" href="tickets.html">交流会のチケットを見る</a></p>
+      <p class="next-cta reveal"><a class="btn btn--primary" data-sale="off presale" href="tickets.html#buy">先行販売の案内を見る</a></p>
     </div>
   </section>
 
   <!-- ============ 審査員・登壇者（共通コンポーネント） ============ -->
-  <section class="section section--surface" id="jury">
+  <section class="section" id="jury">
     <div class="container">
       <header class="sec-head reveal">
         <span class="sec-head__en">Jury &amp; Speakers</span>
@@ -316,23 +331,23 @@
   </section>
 
   <!-- ============ タイムテーブル ============ -->
-  <section class="section" id="timetable">
+  <section class="section section--surface" id="timetable">
     <div class="container container--narrow">
       <header class="sec-head reveal">
         <span class="sec-head__en">Timetable</span>
         <h2 class="sec-head__ja">タイムテーブル</h2>
-        <p class="sec-head__lead">2027年5月4日（火・祝）／札幌文化芸術劇場 hitaru<span class="tbd">＜時刻・内容はすべて仮＞</span></p>
+        <p class="sec-head__lead">2027年5月4日（火・祝）／札幌文化芸術劇場 hitaru・SCARTS（札幌市民交流プラザ）</p>
       </header>
       <ol class="timetable reveal">
-        <li data-start="10:00" data-end="10:30"><time>10:00</time><div><h4>開場・受付</h4></div></li>
-        <li data-start="10:30" data-end="10:45"><time>10:30 – 10:45</time><div><h4>オープニング</h4><p>開幕宣言、審査員紹介</p></div></li>
-        <li data-start="10:45" data-end="12:45"><time>10:45 – 12:45</time><div><h4>上映プログラム A<span class="pillar">物語を浴びる</span></h4><p>入選作品（前半）</p></div></li>
-        <li data-start="12:45" data-end="13:45"><time>12:45 – 13:45</time><div><h4>休憩</h4></div></li>
-        <li data-start="13:45" data-end="15:30"><time>13:45 – 15:30</time><div><h4>上映プログラム B<span class="pillar">物語を浴びる</span></h4><p>入選作品（後半）</p></div></li>
-        <li data-start="15:45" data-end="17:15"><time>15:45 – 17:15</time><div><h4>クリエイター講演・創作講座<span class="pillar">創造力を知る</span></h4><p>Talk Session 1・2／創作講座（並行開催）</p></div></li>
-        <li data-start="17:30" data-end="18:30"><time>17:30 – 18:30</time><div><h4>授賞式<span class="pillar">物語を浴びる</span></h4><p>各賞発表、グランプリ作品の再上映、審査員講評</p></div></li>
-        <li data-start="19:00" data-end="21:00"><time>19:00 – 21:00</time><div><h4>交流会<span class="pillar">未来を起動する</span></h4><p>入選クリエイター、審査員、登壇者、パートナー企業、来場者</p></div></li>
+        <li data-start="09:00" data-end="14:00"><time>9:00 – 14:00</time><div><h4>セレクション上映<span class="pillar">物語を浴びる</span></h4><p>SCARTS コート（1F）｜二次選考通過作品｜無料・入場自由</p></div></li>
+        <li data-start="10:00" data-end="21:00"><time>10:00 – 21:00</time><div><h4>セレクション上映<span class="pillar">物語を浴びる</span></h4><p>SCARTS スタジオ1・2（2F）｜二次選考通過作品｜無料・入場自由</p></div></li>
+        <li data-start="11:30" data-end="12:00"><time>11:30</time><div><h4>劇場 開場</h4><p>劇場 hitaru（入口 4F）</p></div></li>
+        <li data-start="12:00" data-end="15:00"><time>12:00 – 15:00</time><div><h4>劇場上映・授賞式<span class="pillar">物語を浴びる</span></h4><p>劇場 hitaru｜最終選考通過作品の上映、各賞発表、審査員講評｜入場 1,000円</p></div></li>
+        <li data-start="16:00" data-end="16:30"><time>16:00 – 16:30</time><div><h4>スポンサーセッション</h4><p>SCARTS コート（1F）</p></div></li>
+        <li data-start="16:30" data-end="17:45"><time>16:30 – 17:45</time><div><h4>クリエイター講演・トーク<span class="pillar">創造力を知る</span></h4><p>SCARTS コート（1F）｜収録あり（オンラインアーカイブ配信 2,000円）</p></div></li>
+        <li data-start="17:45" data-end="19:00"><time>17:45 – 19:00</time><div><h4>交流会<span class="pillar">未来を起動する</span></h4><p>SCARTS コート（1F）｜先行販売でお申し込みの方（50席）と招待者のみ</p></div></li>
       </ol>
+      <p class="notice reveal">劇場上映のあとも、SCARTS スタジオでのセレクション上映は 21:00 まで続きます。SCARTS モールでは、スポンサーブース（11:30〜12:00／15:00〜16:00）を設けます。スポンサーセッションは、講演オンラインアーカイブには含まれません。</p>
     </div>
   </section>
 
@@ -340,7 +355,7 @@
     <div class="container">
       <h2 class="band__title"><span class="nb">同じ時間、</span><span class="nb">同じ場所で、</span><span class="nb">一つの物語を。</span></h2>
       <p class="band__text">配信でいつでも観られる時代だからこそ、映画館で、大勢の人と分かち合う一日を。</p>
-      <div class="btn-row btn-row--center"><a class="btn btn--primary btn--lg" href="tickets.html">チケットを買う</a></div>
+      <div class="btn-row btn-row--center"><a class="btn btn--primary btn--lg" data-sale="off presale" href="tickets.html">チケット先行販売</a><a class="btn btn--primary btn--lg" data-sale="general" href="tickets.html">チケットを買う</a></div>
     </div>
   </section>
 </main>
@@ -354,7 +369,7 @@
           <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
-        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
+        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru／SCARTS<br><span class="small">（札幌市民交流プラザ）</span><br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
       </div>
       <nav class="footer-col" aria-label="フッター：映画祭">
         <h2>Festival</h2>
@@ -400,7 +415,8 @@
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary" data-show="2 3" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>

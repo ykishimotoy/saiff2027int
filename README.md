@@ -1,6 +1,6 @@
 # 札幌国際AI映画祭 Webサイト
 
-Sapporo International AI Film Festival & Incubation — 2027年5月4日／札幌文化芸術劇場 hitaru
+Sapporo International AI Film Festival & Incubation — 2027年5月4日／札幌文化芸術劇場 hitaru・SCARTS（札幌市民交流プラザ）
 
 `concept.md`（コンセプト原文）と `sapporo-ai-film-festival-website-spec.md`（構成・要件定義 v0.2）を元にした、**ビルド不要の完全静的サイト**（素の HTML / CSS / JS、依存ライブラリなし）。
 
@@ -21,8 +21,8 @@ index.html      トップ（振り分けハブ）：Hero／コンセプト短文
 about.html      コンセプト（長文の要点）／映画祭の構造／#incubation／#organizer／#press／#contact
 submit.html     応募LP：FV（締切・賞・形式・応募ボタン）／#criteria／#awards／#categories（単一部門）／#jury／#rules 応募条件／#faq（＋#guide 日本語手順）
 guideline.html  制作ガイドライン（01 AIの使い方〜08 主催者の判断。応募条件から参照）
-program.html    #films（カード＋モーダル）／#talks／#meetup／#jury／#timetable
-tickets.html    #buy 券種・料金／#notes 注意事項（字幕・通訳）／#access／#stay
+program.html    #films 劇場上映（カード＋モーダル）／#selection セレクション上映（SCARTS・無料）／#talks 講演・トーク／#meetup／#jury／#timetable
+tickets.html    #buy 券種・料金（先行販売＝CAMPFIRE／一般販売＝teket）／#notes 注意事項（字幕・通訳・キャンセル）／#access／#stay
 partners.html   協賛LP：趣旨／#reach／#value（クリエイター接点が主役）／#menu／#current／#contact
 news.html       お知らせ一覧（1ページ完結）
 legal.html      #privacy（privacy.html への案内）／#tokusho／#terms
@@ -63,32 +63,32 @@ partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#
 | 設定 | 内容 |
 |---|---|
 | `phase` | **手動フェーズフラグ**（0 ティザー／1 応募受付／2 チケット販売／3 会期中／4 アーカイブ）。Hero主CTA・カウントダウン対象・ナビ・各LPの表示ブロック・公開ページが一括で切り替わる。現在 **2** |
-| `ticketsOnSale` | `false` で /tickets の購入ボタンが「発売通知を受け取る」に差し替わる |
+| `ticketSale` | チケット販売状態。`"off"`（販売前：「先行販売の通知を受け取る」）／`"presale"`（先行販売＝CAMPFIRE：「チケット先行販売」）／`"general"`（一般販売＝teket：「チケットを買う」）。常時CTA・/tickets の購入導線が一括で切り替わる。現在 **presale** |
 | `submissionsOpen` | 応募受付中フラグ（フェーズと独立）。`true` の間は常時CTA（PCヘッダー／モバイル下部バー）・Hero・分岐カード・中盤帯に「作品を応募する」が並び、/submit は受付中の表示。締切後に `false` |
 | `dates` | 開催日（確定）、応募締切（確定：2027-03-31 23:59 JST） |
-| `ext` | 外部サービスURLの一元管理（FilmFreeway／Peatix／Tally／TimeRex／SNS…すべて＜仮＞）。HTML側は `<a data-ext="キー">`。UTMは自動付与 |
+| `ext` | 外部サービスURLの一元管理（FilmFreeway／CAMPFIRE `crowdfunding`／teket `tickets`／Tally／TimeRex／SNS…すべて＜仮＞）。HTML側は `<a data-ext="キー">`。UTMは自動付与 |
 | （計測） | **Cloudflare Web Analytics** を Cloudflare 側で有効化・自動挿入。サイト側に解析タグ・Cookie・ストレージなし、同意バナーなし。GA4／GTM／Meta Pixel／Plausible 等は追加しない |
 | `locales` | 言語一覧。`available:true` にした言語だけスイッチャーで有効化 |
 
 **フェーズのプレビュー**：URLに `?phase=0`〜`?phase=4` を付けるとそのタブ内だけ切り替わる（左下にプレビューバッジ。`?phase=off` で解除）。未公開フェーズのページを直接開くとトップへ戻る（Coming Soon ページは作らない）。
 
-HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェーズのときだけ表示される（CSSのみで切替。JS無効時は Phase 2 の状態で表示）。同様に `data-submit="on|off"`（応募受付）、`data-sale="on|off"`（チケット販売）で表示を切り替える。
+HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェーズのときだけ表示される（CSSのみで切替。JS無効時は Phase 2 の状態で表示）。同様に `data-submit="on|off"`（応募受付）、`data-sale="off|presale|general"`（チケット販売。空白区切りで複数指定可）で表示を切り替える。
 
 ### `assets/js/data.js`
 審査員・登壇者（トップ／submit#jury／program#jury の3か所で再利用）、News（トップ最新3件／news 全件）、パートナーロゴ（トップ／partners）。
 
 ## 計測（KPI＝外部送客クリック数）
-アクセス解析は **Cloudflare Web Analytics**（Cloudflare 側で有効化・自動挿入。サイト側にスクリプトなし・Cookie／localStorage 不使用・同意バナーなし）。カスタムイベントは送信しない。`data-ext` 付きリンクのクリックは `?phase=N` プレビュー時のみコンソールに `outbound_click` を出力（`ext`／`target`＝creator・audience・sponsor／`pos`／`lang`／`phase`／`page`）。外部送客の実数は、UTM 付きURLで遷移先（FilmFreeway／Peatix／Tally 等）側の計測から把握する。UTMは `utm_source=saiff_site&utm_medium=referral&utm_campaign=phase{N}_{lang}&utm_content={page}_{ext}_{pos}`。軸は **言語 × ターゲット × フェーズ**。
+アクセス解析は **Cloudflare Web Analytics**（Cloudflare 側で有効化・自動挿入。サイト側にスクリプトなし・Cookie／localStorage 不使用・同意バナーなし）。カスタムイベントは送信しない。`data-ext` 付きリンクのクリックは `?phase=N` プレビュー時のみコンソールに `outbound_click` を出力（`ext`／`target`＝creator・audience・sponsor／`pos`／`lang`／`phase`／`page`）。外部送客の実数は、UTM 付きURLで遷移先（FilmFreeway／CAMPFIRE／teket／Tally 等）側の計測から把握する。UTMは `utm_source=saiff_site&utm_medium=referral&utm_campaign=phase{N}_{lang}&utm_content={page}_{ext}_{pos}`。軸は **言語 × ターゲット × フェーズ**。
 
 ## ＜仮＞で置いている情報（要確定）
-確定：**開催日 2027-05-04／応募締切 2027-03-31 23:59 JST／会場 札幌文化芸術劇場 hitaru／主催 札幌国際AI映画祭実行委員会・札幌すごいAI会**。それ以外はすべて仮：
+確定：**開催日 2027-05-04／応募締切 2027-03-31 23:59 JST／会場 札幌文化芸術劇場 hitaru＋SCARTS／時間割／券種・料金（劇場入場1,000・講演アーカイブ2,000・現地 講演＆交流会5,000・SCARTS上映は無料）／審査の三段階（4/15発表）／協賛メニュー構成・申込締切 2027-01-31／主催 札幌国際AI映画祭実行委員会・札幌すごいAI会**（2026-09-29 確定。`saiff-site-fix-requirements` 参照）。それ以外は仮：
 
-- 開場・終演時刻、タイムテーブル全体、交流会会場
-- 会場住所・アクセス情報（＜要確認＞表記。公式情報と照合すること）、5月の気候
-- 応募開始日、入選発表日（締切 2027-03-31 は確定）、応募料（現在「無料」）、応募本数、応募プラットフォーム（FilmFreeway か国内フォームか）
+- 保留：施設回答（劇場内の協賛表示・料金区分）、実行委員の実名（about で非表示中）、交流会のドリンク提供
+- アクセス情報の細部（＜要確認＞表記。公式情報と照合すること）、5月の気候
+- 応募開始日、応募料（現在「無料」）、応募本数、応募プラットフォーム（FilmFreeway か国内フォームか）
 - 賞の選出方法（賞名は確定：グランプリ／審査員特別賞／スポンサー特別賞／SAPPORO賞／優秀賞＝当日現地参加したファイナリストに授与。賞金は設けない）、審査員・登壇者（全員「調整中」）、講演・講座タイトル
-- 上映作品8本（完全なダミー）、券種・料金、字幕・通訳の方針
-- 想定来場・応募数、協賛メニュー構成、協賛申込締切
+- 上映作品8本（完全なダミー）、講演アーカイブの配信期間、年齢制限・座席
+- 想定来場・応募数
 - 応募条件（#rules）・制作ガイドライン（/guideline）・/legal の全文（**法務確認前ドラフト**）
 - 外部サービスURL、SNS、本番ドメイン（`https://saiff.example/`：canonical／OGP／sitemap／JSON-LD に使用）
 - 実行委員の氏名・肩書、主催団体の紹介文

@@ -7,14 +7,18 @@ window.SAIFF = {
   /* ---- フェーズ（手動フラグ。日付による自動切替はしない） ----
      0: ティザー            … Hero主CTA「最新情報を受け取る」
      1: 応募受付            … 「作品を応募する」＋締切カウントダウン
-     2: 入選発表・チケット販売 … 「チケットを買う」＋開催日カウントダウン
+     2: 選考結果発表・チケット販売 … 「チケット先行販売／チケットを買う」＋開催日カウントダウン
      3: 会期中              … 「本日のタイムテーブル」
      4: アーカイブ           … 「受賞作を見る／次回の通知」
      ※ URLに ?phase=0〜4 を付けると、そのタブ内だけプレビューできる（?phase=off で解除） */
   phase: 2,
 
-  /* チケット販売状態。false にすると /tickets の購入ボタンが「発売通知を受け取る」に差し替わる */
-  ticketsOnSale: true,
+  /* チケット販売状態（手動で切り替える）
+     "off"     … 販売前。/tickets の購入ボタンが「先行販売の通知を受け取る」になる
+     "presale" … 先行販売（CAMPFIRE・10月中旬〜11月末）。常時CTAは「チケット先行販売」
+     "general" … 一般販売（teket・12月〜）。常時CTAは「チケットを買う」
+     HTML側は data-sale="off|presale|general"（空白区切りで複数指定可） */
+  ticketSale: "presale",
 
   /* 作品応募の受付状態（フェーズとは独立）。true の間は、全ページの常時CTA（ヘッダー／モバイル下部バー）と
      トップのHero・分岐カード・中盤帯に「作品を応募する」が出る。締切後は false にする */
@@ -25,7 +29,7 @@ window.SAIFF = {
 
   /* ---- 日付 ---- */
   dates: {
-    festival: "2027-05-04T10:00:00+09:00",        // 開催日（確定）。開場時刻は＜仮＞
+    festival: "2027-05-04T09:00:00+09:00",        // 開催日（確定）。9:00＝SCARTSコートのセレクション上映開始（劇場開場は11:30）
     submitDeadline: "2027-03-31T23:59:59+09:00"   // 応募締切（確定：2027年3月31日 水 23:59 JST）
   },
 
@@ -35,8 +39,9 @@ window.SAIFF = {
     submit:       "https://filmfreeway.com/",            // ＜仮＞FilmFreeway 映画祭ページ
     remind:       "https://tally.so/",                   // ＜仮＞締切リマインド登録フォーム
     discord:      "https://discord.com/",                // ＜仮＞クリエイター向けDiscord招待
-    tickets:      "https://peatix.com/",                 // ＜仮＞チケット販売ページ
-    ticketNotify: "https://tally.so/",                   // ＜仮＞発売通知登録フォーム
+    crowdfunding: "https://camp-fire.jp/",               // ＜仮＞先行販売（CAMPFIRE プロジェクトページ。公開後に実URLへ）
+    tickets:      "https://teket.jp/",                   // ＜仮＞一般販売（teket イベントページ。公開後に実URLへ）
+    ticketNotify: "https://tally.so/",                   // ＜仮＞先行販売・発売通知の登録フォーム
     newsletter:   "https://tally.so/",                   // ＜仮＞ニュースレター登録フォーム（?segment= を受け取る）
     sponsorForm:  "https://tally.so/",                   // ＜仮＞協賛資料請求フォーム
     sponsorMeet:  "https://timerex.net/",                // ＜仮＞面談予約
@@ -79,7 +84,7 @@ window.SAIFF = {
   } catch (e) { /* storage不可でも既定フェーズで動く */ }
 
   html.setAttribute("data-phase", String(S.phase));
-  html.setAttribute("data-tickets", S.ticketsOnSale ? "on" : "off");
+  html.setAttribute("data-tickets", /^(off|presale|general)$/.test(S.ticketSale) ? S.ticketSale : "off");
   html.setAttribute("data-submit", S.submissionsOpen ? "on" : "off");
 
   // 未公開フェーズのページはトップへ（Coming Soon ページを量産しない）

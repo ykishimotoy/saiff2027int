@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="index" data-phase="2" data-tickets="on">
+<html lang="ja" class="no-js" data-page="index" data-phase="2" data-tickets="presale">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,16 +33,18 @@
   "@type": "Festival",
   "name": "札幌国際AI映画祭",
   "alternateName": "Sapporo International AI Film Festival & Incubation",
-  "description": "AIを創作に用いた映像作品の国際映画祭。上映・作品表彰、クリエイター講演・創作講座、交流会を一つの流れとして開催する。",
-  "startDate": "2027-05-04T10:00:00+09:00",
+  "description": "AIを創作に用いた映像作品の国際映画祭。劇場上映・授賞式、SCARTSでのセレクション上映（無料）、クリエイター講演・トーク、交流会を一つの流れとして開催する。",
+  "startDate": "2027-05-04T09:00:00+09:00",
   "endDate": "2027-05-04T21:00:00+09:00",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
-    "name": "札幌文化芸術劇場 hitaru",
+    "name": "札幌文化芸術劇場 hitaru／札幌文化芸術交流センター SCARTS（札幌市民交流プラザ）",
     "address": {
       "@type": "PostalAddress",
+      "postalCode": "060-0001",
+      "streetAddress": "北1条西1丁目",
       "addressLocality": "札幌市中央区",
       "addressRegion": "北海道",
       "addressCountry": "JP"
@@ -82,7 +84,8 @@
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
       <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
     </div>
@@ -148,7 +151,7 @@
         </div>
         <a class="btn btn--gold btn--lg" data-show="1" href="submit.html">作品を応募する</a>
 
-        <!-- Phase 2 入選発表・チケット販売 -->
+        <!-- Phase 2 選考結果発表・チケット販売 -->
         <div class="countdown countdown--inline" data-show="2" data-submit="on" data-countdown="submitDeadline" role="timer" aria-label="応募締切までの残り時間">
           <span class="countdown__label">応募締切まで</span>
           <span class="countdown__unit"><b data-d>--</b>日</span>
@@ -165,7 +168,8 @@
         </div>
         <div class="btn-row btn-row--center" data-show="2">
           <a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a>
-          <a class="btn btn--primary btn--lg" href="tickets.html">チケットを買う</a>
+          <a class="btn btn--primary btn--lg" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+          <a class="btn btn--primary btn--lg" data-sale="general" href="tickets.html">チケットを買う</a>
           <a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a>
         </div>
 
@@ -254,14 +258,15 @@
         <a class="gate__card reveal" href="#newsletter" data-show="0 1">
           <span class="gate__en">For Audiences</span>
           <h3 class="gate__title">観る人へ</h3>
-          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。物語を、全身で浴びる一日。チケット発売をメールでお知らせします。</p>
-          <span class="gate__go">発売通知を受け取る</span>
+          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。物語を、全身で浴びる一日。10月中旬、クラウドファンディングで先行販売。劇場入場1,000円。</p>
+          <span class="gate__go">先行販売の通知を受け取る</span>
         </a>
         <a class="gate__card reveal" href="tickets.html" data-show="2 3 4">
           <span class="gate__en">For Audiences</span>
           <h3 class="gate__title">観る人へ</h3>
-          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。隣の誰かが息を呑み、笑い、泣く。物語を、全身で浴びる一日。</p>
-          <span class="gate__go">チケット・来場案内</span>
+          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。隣の誰かが息を呑み、笑い、泣く。物語を、全身で浴びる一日。<span data-sale="off presale">10月中旬、クラウドファンディングで先行販売。</span>劇場入場1,000円、SCARTSでの上映は無料。</p>
+          <span class="gate__go" data-sale="off presale">チケット先行販売・来場案内</span>
+          <span class="gate__go" data-sale="general">チケット・来場案内</span>
         </a>
 
         <!-- 支える人へ -->
@@ -281,27 +286,27 @@
       <header class="sec-head reveal">
         <span class="sec-head__en">One day, one flow</span>
         <h2 class="sec-head__ja"><span class="nb">物語を浴びる。</span><span class="nb">創造力を知る。</span><span class="nb">未来を起動する。</span></h2>
-        <p class="sec-head__lead">上映、講演・創作講座、交流会を、別々の企画ではなく一つの流れとして設計します。鑑賞だけで終わらない、次の創造へつながる一日。</p>
+        <p class="sec-head__lead">上映、講演・トーク、交流会を、別々の企画ではなく一つの流れとして設計します。鑑賞だけで終わらない、次の創造へつながる一日。</p>
       </header>
 
       <ol class="flow" style="list-style:none;padding:0;margin:0">
         <li class="flow__step reveal">
           <div class="flow__num"><span>I</span></div>
-          <p class="flow__time">Daytime＜仮＞</p>
+          <p class="flow__time">12:00 – 15:00</p>
           <h3 class="flow__title">物語を浴びる</h3>
-          <p class="flow__sub">映画祭（上映・作品表彰）</p>
-          <p class="flow__text">世界中から集まった作品を、大スクリーンで。会場の笑い、静寂、驚きまで含めて、一つの作品を受け取る。優れた作品とクリエイターを称える授賞式も。</p>
+          <p class="flow__sub">劇場上映・授賞式（hitaru）</p>
+          <p class="flow__text">最終選考を通過した作品を、劇場の大スクリーンで。会場の笑い、静寂、驚きまで含めて、一つの作品を受け取る。優れた作品とクリエイターを称える授賞式も。二次選考通過作品は、SCARTSで終日・無料上映。</p>
         </li>
         <li class="flow__step reveal">
           <div class="flow__num"><span>II</span></div>
-          <p class="flow__time">Afternoon＜仮＞</p>
+          <p class="flow__time">16:30 – 17:45</p>
           <h3 class="flow__title">創造力を知る</h3>
-          <p class="flow__sub">クリエイター講演・創作講座</p>
+          <p class="flow__sub">クリエイター講演・トーク（SCARTSコート）</p>
           <p class="flow__text">AIを実際の映像制作に使う創り手が、発想と試行錯誤を共有。他者の創造力に触れ、「自分にも創れるかもしれないもの」が少し増えて帰る。</p>
         </li>
         <li class="flow__step reveal">
           <div class="flow__num"><span>III</span></div>
-          <p class="flow__time">Evening＜仮＞</p>
+          <p class="flow__time">17:45 – 19:00</p>
           <h3 class="flow__title">未来を起動する</h3>
           <p class="flow__sub">交流会（Incubation）</p>
           <p class="flow__text">クリエイターと企業、学生とプロ、日本と海外。「そこがつながるのか」という出会いから、次の作品、チーム、仕事が動き始める。</p>
@@ -320,7 +325,7 @@
   <section class="band" aria-label="参加への案内">
     <div class="container">
       <h2 class="band__title" data-show="0"><span class="nb">最初の炎を、</span><span class="nb">見逃さないために。</span></h2>
-      <p class="band__text" data-show="0">募集開始・審査員発表・チケット発売を、メールでお届けします。</p>
+      <p class="band__text" data-show="0">募集開始・審査員発表・クラウドファンディング開始・チケット発売を、メールでお届けします。</p>
       <div class="btn-row btn-row--center" data-show="0"><a class="btn btn--primary btn--lg" href="#newsletter">最新情報を受け取る</a></div>
 
       <h2 class="band__title" data-show="1"><span class="nb">あなたは何を創る？</span><span class="nb">見せてくれ。</span></h2>
@@ -328,11 +333,11 @@
       <div class="btn-row btn-row--center" data-show="1"><a class="btn btn--primary btn--lg" href="submit.html">応募要項を見る</a><a class="btn btn--ghost btn--lg" href="submit.html#awards">賞・審査基準</a></div>
 
       <h2 class="band__title" data-show="2"><span class="nb">同じ時間、同じ場所で、</span><span class="nb">一つの物語を。</span></h2>
-      <p class="band__text" data-show="2">2027年5月4日、札幌文化芸術劇場 hitaru。1日通し券なら上映・講演・交流会のすべてを体験できます。席数に限りがあります。<span data-submit="on">作品の応募も受付中です。</span></p>
-      <div class="btn-row btn-row--center" data-show="2"><a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a><a class="btn btn--primary btn--lg" href="tickets.html#buy">チケットを買う</a><a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a></div>
+      <p class="band__text" data-show="2">2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。劇場入場は1,000円、SCARTSでの上映は無料。<span data-sale="off presale">先行販売（クラウドファンディング）は10月中旬から。</span><span data-submit="on">作品の応募も受付中です。</span></p>
+      <div class="btn-row btn-row--center" data-show="2"><a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a><a class="btn btn--primary btn--lg" data-sale="off presale" href="tickets.html#buy">チケット先行販売</a><a class="btn btn--primary btn--lg" data-sale="general" href="tickets.html#buy">チケットを買う</a><a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a></div>
 
       <h2 class="band__title" data-show="3">本日、開催中。</h2>
-      <p class="band__text" data-show="3">当日券・タイムテーブル・会場アクセスはこちら。</p>
+      <p class="band__text" data-show="3">チケット・タイムテーブル・会場アクセスはこちら。SCARTSでの上映は無料・入場自由です。</p>
       <div class="btn-row btn-row--center" data-show="3"><a class="btn btn--primary btn--lg" href="program.html#timetable">本日のタイムテーブル</a><a class="btn btn--ghost btn--lg" href="tickets.html#access">会場・アクセス</a></div>
 
       <h2 class="band__title" data-show="4"><span class="nb">次は、</span><span class="nb">あなたの物語を。</span></h2>
@@ -354,9 +359,9 @@
         </figure>
         <dl class="spec reveal">
           <div><dt>名称</dt><dd>札幌国際AI映画祭<br><span class="muted small">Sapporo International AI Film Festival &amp; Incubation</span></dd></div>
-          <div><dt>日程</dt><dd>2027年5月4日（火・祝）<br><span class="muted small">開場 10:00／終演 21:00 <span class="tbd">＜仮＞</span></span></dd></div>
-          <div><dt>会場</dt><dd>札幌文化芸術劇場 hitaru<br><span class="muted small">札幌市中央区北1条西1丁目 札幌市民交流プラザ内 <span class="tbd">＜要確認＞</span></span></dd></div>
-          <div><dt>内容</dt><dd>入選作品上映・授賞式／クリエイター講演・創作講座／交流会</dd></div>
+          <div><dt>日程</dt><dd>2027年5月4日（火・祝）<br><span class="muted small">劇場：開場 11:30／上映・授賞式 12:00〜15:00<br>講演・トーク、交流会：16:00〜19:00（SCARTSコート）<br>SCARTS上映：9:00〜21:00（コート 9:00〜14:00／スタジオ 10:00〜21:00）</span></dd></div>
+          <div><dt>会場</dt><dd>札幌文化芸術劇場 hitaru／札幌文化芸術交流センター SCARTS<br><span class="muted small">〒060-0001 札幌市中央区北1条西1丁目 札幌市民交流プラザ内</span></dd></div>
+          <div><dt>内容</dt><dd>最終選考通過作品の劇場上映・授賞式／二次選考通過作品のSCARTS上映（無料）／講演・トーク／交流会</dd></div>
           <div><dt>主催</dt><dd>札幌国際AI映画祭実行委員会<br>札幌すごいAI会</dd></div>
           <div><dt>後援・協力</dt><dd><span class="tbd">＜仮・調整中＞</span></dd></div>
         </dl>
@@ -406,7 +411,7 @@
       <div data-component="partners"></div>
       <div class="cta-panel reveal" style="margin-top:56px">
         <h3 class="h3 h3--gold">協賛パートナー募集中</h3>
-        <p>第1回の開催をともに創るパートナーを募集しています。ロゴ露出だけでなく、交流会でのクリエイターとの接点を。</p>
+        <p>第1回の開催をともに創るパートナーを募集しています。ロゴ露出だけでなく、交流会でのクリエイターとの接点を。ここは、劇場に広告を流さない映画祭です。</p>
         <div class="btn-row btn-row--center"><a class="btn btn--ghost" href="partners.html">協賛について詳しく</a></div>
       </div>
     </div>
@@ -418,7 +423,7 @@
       <header class="sec-head reveal">
         <span class="sec-head__en">Newsletter</span>
         <h2 class="sec-head__ja">最新情報を受け取る</h2>
-        <p class="sec-head__lead">募集開始、審査員発表、チケット発売。あなたに関係のある知らせだけを、メールでお届けします。</p>
+        <p class="sec-head__lead">募集開始、審査員発表、クラウドファンディング開始、チケット発売。あなたに関係のある知らせだけを、メールでお届けします。</p>
       </header>
       <!-- 完全静的サイトのため、登録は外部フォームへ送客する。選択したセグメントは ?segment= で引き継ぐ（JS無効でも動作） -->
       <form class="nl-form reveal" action="https://tally.so/" method="get" target="_blank" rel="noopener" data-ext-form="newsletter" data-pos="newsletter">
@@ -446,7 +451,7 @@
           <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
-        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
+        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru／SCARTS<br><span class="small">（札幌市民交流プラザ）</span><br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
       </div>
       <nav class="footer-col" aria-label="フッター：映画祭">
         <h2>Festival</h2>
@@ -492,7 +497,8 @@
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary" data-show="2 3" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>

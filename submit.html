@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="submit" data-phase="2" data-tickets="on">
+<html lang="ja" class="no-js" data-page="submit" data-phase="2" data-tickets="presale">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,8 @@
       <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
-      <a class="btn btn--ghost btn--sm" data-show="2" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--ghost btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--ghost btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
       <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
     </div>
@@ -84,7 +85,7 @@
 
       <dl class="fv-facts">
         <div><dt>DEADLINE ／ 応募締切</dt><dd>2027.3.31（水）23:59 JST</dd></div>
-        <div><dt>AWARDS ／ 賞</dt><dd>グランプリほか5賞 <span class="tbd">＜仮＞</span></dd></div>
+        <div><dt>AWARDS ／ 賞</dt><dd>グランプリほか各賞</dd></div>
         <div><dt>FORMAT ／ 形式</dt><dd>3〜15分・16:9・全年齢</dd></div>
       </dl>
 
@@ -108,7 +109,7 @@
       <div data-submit="off">
         <p class="notice notice--red" style="max-width:640px;margin-inline:auto;text-align:left"><strong>第1回の作品応募は締め切りました。</strong>たくさんのご応募をありがとうございました。次回の募集開始はニュースレターでお知らせします。応募されたすべての方へ――ぜひ会場で、他の創り手の物語を浴びてください。</p>
         <div class="btn-row btn-row--center">
-          <a class="btn btn--primary" href="tickets.html" data-show="2 3">チケット・交流会の案内</a>
+          <a class="btn btn--primary" href="tickets.html" data-show="2 3">チケット案内</a>
           <a class="btn btn--ghost" href="index.html#newsletter">次回の募集通知を受け取る</a>
         </div>
       </div>
@@ -138,7 +139,15 @@
         <article class="card card--gold reveal"><p class="card__label">02 — Experience</p><h3 class="h3">どんな体験を生んだか</h3><p>映像、音、時間の設計。大スクリーンと劇場の暗闇の中で、観客が物語を「浴びる」体験になっているか。</p></article>
         <article class="card card--gold reveal"><p class="card__label">03 — Impact</p><h3 class="h3">心をどこまで動かしたか</h3><p>笑わせる。泣かせる。驚かせる。考えさせる。観た人に、何かを残したか。</p></article>
       </div>
-      <p class="notice reveal"><strong>技術は、物語を支える限りにおいて見ます。</strong>映像や音の破綻、人物や世界の一貫性の乱れといったAI特有のほころびを、創り手がどこまで制御し、作品の体験を損なわずに仕上げたか。そして新しい表現手法への挑戦。これらは上記3点を支える副次的な要素として評価します。<span class="tbd">＜仮：審査プロセス（一次審査／最終審査）は確定後に記載＞</span></p>
+      <p class="notice reveal"><strong>技術は、物語を支える限りにおいて見ます。</strong>映像や音の破綻、人物や世界の一貫性の乱れといったAI特有のほころびを、創り手がどこまで制御し、作品の体験を損なわずに仕上げたか。そして新しい表現手法への挑戦。これらは上記3点を支える副次的な要素として評価します。</p>
+
+      <h3 class="h3 reveal" id="process" style="margin-top:64px;text-align:center">審査の流れ</h3>
+      <ol class="steps reveal" style="max-width:760px;margin:24px auto 0">
+        <li><h4 class="h4">一次審査</h4><p class="muted small">応募されたすべての作品を審査します。</p></li>
+        <li><h4 class="h4">二次選考通過 ―― SCARTSで上映</h4><p class="muted small">二次選考を通過した作品は、映画祭当日、SCARTS スタジオ・コートで上映します（セレクション上映／入場無料）。</p></li>
+        <li><h4 class="h4">最終選考通過（ファイナリスト） ―― 劇場で上映</h4><p class="muted small">最終選考を通過した作品は、札幌文化芸術劇場 hitaru の大スクリーンで上映し、各賞の審査対象になります。</p></li>
+      </ol>
+      <p class="notice reveal" style="max-width:760px;margin-inline:auto">二次選考通過作品と最終選考通過作品は、<strong>2027年4月15日</strong>に同時に発表します。</p>
     </div>
   </section>
 
@@ -148,19 +157,19 @@
       <header class="sec-head reveal">
         <span class="sec-head__en">Awards</span>
         <h2 class="sec-head__ja">賞</h2>
-        <p class="sec-head__lead">受賞作は、2027年5月4日の授賞式にて札幌文化芸術劇場 hitaru の大スクリーンで上映・表彰します。問うのは技術の新しさではなく、その物語が人の心をどこまで動かしたか。<span class="tbd">＜賞名・選出方法は仮＞</span></p>
+        <p class="sec-head__lead">各賞は、最終選考を通過し、2027年5月4日に札幌文化芸術劇場 hitaru の大スクリーンで上映される作品の中から選びます。問うのは技術の新しさではなく、その物語が人の心をどこまで動かしたか。<span class="tbd">＜選出方法は仮＞</span></p>
       </header>
       <div class="grid grid--4">
-        <div class="award award--grand reveal"><img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="64" height="64"><p class="award__en">Grand Prix</p><p class="award__name">グランプリ</p><p class="award__sub">最優秀作品</p><p class="award__note">全応募作品の頂点。物語の力で、この夜もっとも深く人の心を動かした一作に。トロフィー授与と、翌年の映画祭での特別上映。</p></div>
+        <div class="award award--grand reveal"><img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="64" height="64"><p class="award__en">Grand Prix</p><p class="award__name">グランプリ</p><p class="award__sub">最優秀作品</p><p class="award__note">全応募作品の頂点。物語の力で、この日もっとも深く人の心を動かした一作に。トロフィーを授与します。</p></div>
         <div class="award reveal"><p class="award__en">Jury Prize</p><p class="award__name">審査員特別賞</p><p class="award__note">審査員一人ひとりが、自らの名において選ぶ一作。順位ではなく「この作品を、見届けずにはいられなかった」という個人の確信に贈る賞。</p></div>
-        <div class="award reveal"><p class="award__en">Sponsor Prize</p><p class="award__name">スポンサー特別賞</p><p class="award__note">映画祭を支えるパートナー企業が、自社の眼で選ぶ一作。創り手と企業の、最初の出会いを刻む賞。</p></div>
+        <div class="award reveal"><p class="award__en">Sponsor Prize</p><p class="award__name">スポンサー特別賞</p><p class="award__note">協賛企業（最大3社）がそれぞれ選ぶ賞。創り手と企業の、最初の出会いを刻む賞。<span class="tbd">＜授与の方法は調整中＞</span></p></div>
         <div class="award reveal"><p class="award__en">SAPPORO Prize</p><p class="award__name">SAPPORO賞</p><p class="award__note">札幌にゆかりのある創り手の作品、または札幌を題材にした作品に。この街から世界へ向かう物語を称える賞。</p></div>
         <div class="award reveal"><p class="award__en">Excellence Award</p><p class="award__name">優秀賞</p><p class="award__note">劇場上映ファイナリストのうち、映画祭当日に札幌の会場へ来場したクリエイターに授与します。物語を携えて、この街まで来てくれたことへの賞。</p></div>
       </div>
 
       <div class="notice reveal" style="max-width:880px;margin:40px auto 0" id="finalist">
         <p class="card__label" style="margin-bottom:8px">Finalists &amp; On-site Award</p>
-        <p><strong>ファイナリストの選出は、来場予定の有無にかかわらず、作品だけを基準に行います。</strong>入選作は当日 札幌文化芸術劇場 hitaru の大スクリーンで上映されます。</p>
+        <p><strong>ファイナリスト（最終選考通過作品）の選出は、来場予定の有無にかかわらず、作品だけを基準に行います。</strong>ファイナリストの作品は当日 札幌文化芸術劇場 hitaru の大スクリーンで上映されます。</p>
         <ul style="margin:10px 0 0">
           <li><strong>優秀賞</strong>は、ファイナリストのうち映画祭当日に現地参加したクリエイターに授与します。</li>
           <li><strong>グランプリ、審査員特別賞、スポンサー特別賞、SAPPORO賞</strong>は、現地参加の有無にかかわらず審査対象となり、受賞できます。</li>
@@ -192,8 +201,8 @@
           <div><dt>応募料</dt><dd>無料<span class="tbd">＜仮＞</span></dd></div>
         </dl>
         <dl class="spec reveal">
-          <div><dt>ファイル形式</dt><dd>MP4 または MOV（H.264／H.265）、1920×1080以上推奨、16:9、ステレオ音声<span class="tbd">＜仮＞</span><br><span class="muted small">入選後、上映用マスターの提出をお願いする場合があります。</span></dd></div>
-          <div><dt>字幕</dt><dd>日本語以外の作品、または日本語が不自然な作品は<strong>日本語字幕が必須</strong>。海外審査員・来場者のため、英語字幕の併記を推奨します。</dd></div>
+          <div><dt>ファイル形式</dt><dd>MP4 または MOV（H.264／H.265）、1920×1080以上推奨、16:9、ステレオ音声<span class="tbd">＜仮＞</span><br><span class="muted small">選考通過後、上映用マスターの提出をお願いする場合があります。</span></dd></div>
+          <div><dt>字幕</dt><dd>日本語以外の作品、または日本語が不自然な作品は<strong>日本語字幕が必須</strong>。海外審査員・来場者のため、英語字幕の併記を推奨します。上映時の英語字幕は主催者が用意します。</dd></div>
           <div><dt>応募本数</dt><dd>1人（1チーム）あたり3作品まで<span class="tbd">＜仮＞</span></dd></div>
         </dl>
       </div>
@@ -202,8 +211,8 @@
       <ul class="timetable reveal" style="margin-top:24px">
         <li><time datetime="2026-10-01">2026.10.1</time><div><h4>応募受付開始</h4></div></li>
         <li><time datetime="2027-03-31">2027.3.31</time><div><h4>応募締切（水曜・23:59 日本時間）</h4></div></li>
-        <li><time datetime="2027-04-15">2027.4.15</time><div><h4>入選作品発表</h4><p>応募者全員にメールで結果をお知らせします。</p></div></li>
-        <li><time datetime="2027-05-04">2027.5.4</time><div><h4>上映・授賞式（札幌文化芸術劇場 hitaru）</h4><p>入選者は映画祭にご招待します<span class="tbd">＜仮：招待範囲は調整中＞</span>。</p></div></li>
+        <li><time datetime="2027-04-15">2027.4.15</time><div><h4>二次選考通過作品・最終選考通過作品の発表</h4><p>応募者全員にメールで結果をお知らせします。</p></div></li>
+        <li><time datetime="2027-05-04">2027.5.4</time><div><h4>上映・授賞式（札幌文化芸術劇場 hitaru／SCARTS）</h4><p>最終選考通過者は、劇場と「講演＆交流会」にご招待します。渡航費は「クリエイター招聘基金」の範囲で支援します。二次選考通過作品は SCARTS で上映します（入場無料。ご招待の対象は最終選考通過者です<span class="tbd">＜仮＞</span>）。</p></div></li>
       </ul>
     </div>
   </section>
@@ -243,7 +252,7 @@
         <li><a href="guideline.html">札幌国際AI映画祭 2027 制作ガイドライン</a>に準拠していること</li>
       </ol>
 
-      <p class="notice reveal">応募作品の著作権は応募者に帰属します。入選作品の会場上映、オンライン配信・アーカイブ公開、広報での使用については <a href="guideline.html#rights-use">制作ガイドライン 04</a> をご覧ください。<span class="tbd">＜仮・法務確認前のドラフト＞</span></p>
+      <p class="notice reveal">応募作品の著作権は応募者に帰属します。最終選考通過作品の劇場上映、二次選考通過作品の SCARTS（スタジオ・コート）での上映、オンライン配信・アーカイブ公開、広報での使用については <a href="guideline.html#rights-use">制作ガイドライン 04</a> をご覧ください。<span class="tbd">＜仮・法務確認前のドラフト＞</span></p>
       <p class="next-cta reveal"><a class="btn btn--ghost" href="guideline.html">制作ガイドラインを読む</a></p>
     </div>
   </section>
@@ -273,12 +282,12 @@
       <div class="faq reveal">
         <details><summary>AIをどの程度使っていれば応募できますか？</summary><div class="answer">生成AIを「主要な制作手法」として用いていれば応募できます。全編AI生成である必要はなく、実写との組み合わせも歓迎します。ノイズ除去やアップスケールなど目立たない補正だけにAIを使った作品は、趣旨に合わない場合があります。使用したツールと工程は応募フォームで申告してください（<a href="guideline.html#ai">ガイドライン 01</a>）。</div></details>
         <details><summary>Discordへの投稿は必須ですか？</summary><div class="answer">はい。Discord（札幌すごいAI会）の映画祭チャンネルで「応募します！」と投稿することを応募条件にしています。制作中の相談や、ガイドラインの不明点もそこで気軽に聞いてください。</div></details>
-        <details><summary>作品の著作権はどうなりますか？</summary><div class="answer">応募者に帰属します。主催者に権利が移ることはありません。応募をもって、会場上映、YouTube等での配信・アーカイブ公開、広報での使用を許諾いただきます（<a href="guideline.html#rights-use">ガイドライン 04</a>）。</div></details>
+        <details><summary>作品の著作権はどうなりますか？</summary><div class="answer">応募者に帰属します。主催者に権利が移ることはありません。応募をもって、会場上映（劇場および SCARTS スタジオ・コート）、YouTube等での配信・アーカイブ公開、広報での使用を許諾いただきます（<a href="guideline.html#rights-use">ガイドライン 04</a>）。</div></details>
         <details><summary>他の映画祭に出品した作品、すでにネットで公開している作品でも応募できますか？</summary><div class="answer">応募できます＜仮＞。プレミア要件は設けていません。</div></details>
         <details><summary>字幕は必須ですか？</summary><div class="answer">日本語以外の作品、または日本語が不自然な作品には日本語字幕が必須です。自然な日本語の作品は不要ですが、海外審査員・来場者のため英語字幕の併記を推奨します。</div></details>
         <details><summary>海外から応募できますか？ Can I submit from outside Japan?</summary><div class="answer">はい、世界中から応募できます。Yes — submissions are open worldwide via FilmFreeway＜仮＞. Japanese subtitles are required for non-Japanese works.</div></details>
         <details><summary>日本語で応募したいのですが、国内向けの応募フォームはありますか？</summary><div class="answer">管理を一本化するため、応募窓口は外部プラットフォームのみです。上の「日本語ガイド」をご覧ください。作品情報の英語入力が難しい場合は、翻訳ツールをご利用のうえ、日本語を併記いただいて構いません。</div></details>
-        <details><summary>入選した場合、札幌に行く必要がありますか？</summary><div class="answer">必須ではありません。ファイナリストの選出も、グランプリほか各賞の審査も、来場の有無にかかわらず作品を基準に行います。ただし<strong>優秀賞</strong>は、当日に現地参加したファイナリストに授与する賞です（<a href="#finalist">賞の説明</a>）。ぜひお越しください。入選者は映画祭にご招待します＜仮：招待範囲・渡航費補助の有無は調整中＞。落選された方も、交流会は次の創作につながる出会いの場です。</div></details>
+        <details><summary>選考を通過した場合、札幌に行く必要がありますか？</summary><div class="answer">必須ではありません。ファイナリストの選出も、グランプリほか各賞の審査も、来場の有無にかかわらず作品を基準に行います。ただし<strong>優秀賞</strong>は、当日に現地参加したファイナリストに授与する賞です（<a href="#finalist">賞の説明</a>）。ぜひお越しください。最終選考通過者は、劇場と「講演＆交流会」にご招待します。渡航費は「クリエイター招聘基金」の範囲で支援します。最終選考に至らなかった方も、劇場上映と SCARTS でのセレクション上映（無料）にお越しください。</div></details>
         <details><summary>応募後に作品を差し替えられますか？</summary><div class="answer">締切前であれば、応募プラットフォーム上で差し替え可能です＜仮＞。締切後の差し替えは、主催者の判断により認められる場合があります（<a href="guideline.html#decision">ガイドライン 08</a>）。</div></details>
       </div>
     </div>
@@ -298,9 +307,9 @@
         <span class="ext-note">いずれも外部サービスに移動します。FilmFreeway は英語の画面です。</span>
       </div>
       <div data-submit="off">
-        <p class="band__text">応募者は、最も熱い観客です。入選・落選にかかわらず、会場で物語を浴び、交流会で次の仲間と出会ってください。</p>
+        <p class="band__text">応募者は、最も熱い観客です。選考の結果にかかわらず、会場で、他の創り手の物語を浴びてください。</p>
         <div class="btn-row btn-row--center">
-          <a class="btn btn--primary btn--lg" href="tickets.html" data-show="2 3">チケット・交流会の案内</a>
+          <a class="btn btn--primary btn--lg" href="tickets.html" data-show="2 3">チケット案内</a>
           <a class="btn btn--ghost" data-ext="discord" data-target="creator" data-pos="bottom" href="https://discord.com/">Discordに参加する <span class="ext" aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -317,7 +326,7 @@
           <img src="assets/img/logo-160.png" srcset="assets/img/logo.png 2x" alt="" width="38" height="38">
           <span class="brand__text"><span class="brand__ja">札幌国際AI映画祭</span><span class="brand__en" style="display:block">Sapporo International AI Film Festival &amp; Incubation</span></span>
         </a>
-        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru<br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
+        <p>2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru／SCARTS<br><span class="small">（札幌市民交流プラザ）</span><br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
       </div>
       <nav class="footer-col" aria-label="フッター：映画祭">
         <h2>Festival</h2>
@@ -363,7 +372,8 @@
       <a class="btn btn--gold" data-show="1" data-ext="submit" data-target="creator" data-pos="bar" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="bar" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
-      <a class="btn btn--ghost" data-show="2 3" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--ghost" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--ghost" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>

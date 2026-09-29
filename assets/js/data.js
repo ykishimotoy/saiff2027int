@@ -13,23 +13,26 @@ window.SAIFF_DATA = {
     { kind: "jury",    role: "Jury",           name: "審査員 C＜調整中＞", title: "映画プロデューサー＜仮＞",        bio: "国際共同製作を多数手がけるプロデューサー。＜仮のプロフィール文＞" },
     { kind: "speaker", role: "Speaker",        name: "登壇者 A＜調整中＞", title: "映像作家＜仮＞",                 bio: "AIを実制作に組み込んだワークフローを公開している映像作家。＜仮のプロフィール文＞" },
     { kind: "speaker", role: "Speaker",        name: "登壇者 B＜調整中＞", title: "音楽家／サウンドデザイナー＜仮＞", bio: "映像と音楽の境界で活動。＜仮のプロフィール文＞" },
-    { kind: "speaker", role: "Lecturer",       name: "講師 A＜調整中＞",   title: "AIクリエイター＜仮＞",           bio: "はじめての人に向けた創作講座を担当。＜仮のプロフィール文＞" },
+    { kind: "speaker", role: "Speaker",        name: "登壇者 C＜調整中＞", title: "AIクリエイター＜仮＞",           bio: "講演内の実演パートを担当。＜仮のプロフィール文＞" },
     { kind: "speaker", role: "Moderator",      name: "モデレーター＜調整中＞", title: "実行委員会＜仮＞",            bio: "札幌国際AI映画祭実行委員会メンバー。＜仮のプロフィール文＞" }
   ],
 
   news: [
-    { date: "2027-03-20", cat: "チケット", title: "チケットの販売を開始しました＜仮＞", body: "1日通し券、上映券、講演・創作講座券、交流会券を販売中です。席数に限りがあります。", link: "tickets.html", linkLabel: "チケット情報へ" },
-    { date: "2027-03-15", cat: "プログラム", title: "入選作品を発表しました＜仮＞", body: "世界各地から寄せられた応募作品の中から、上映作品が決定しました。", link: "program.html#films", linkLabel: "上映作品を見る" },
-    { date: "2027-02-10", cat: "プログラム", title: "審査員・登壇者を公開しました＜仮＞", body: "第1回の審査員と、クリエイター講演・創作講座の登壇者を公開しました。", link: "program.html#jury", linkLabel: "審査員・登壇者へ" },
-    { date: "2027-02-01", cat: "応募", title: "作品応募の受付を終了しました＜仮＞", body: "たくさんのご応募をありがとうございました。入選発表は3月中旬を予定しています。", link: "", linkLabel: "" },
+    { date: "2027-04-15", cat: "チケット", title: "チケットの一般販売を行っています＜仮＞", body: "劇場入場（1,000円）と講演オンラインアーカイブ（2,000円）を販売中です。SCARTSでのセレクション上映は無料・チケット不要です。", link: "tickets.html", linkLabel: "チケット情報へ" },
+    { date: "2027-04-15", cat: "プログラム", title: "最終選考通過作品・二次選考通過作品を発表しました＜仮＞", body: "最終選考通過作品は劇場 hitaru で、二次選考通過作品は SCARTS スタジオ・コートで上映します。", link: "program.html#films", linkLabel: "上映作品を見る" },
+    { date: "2027-04-01", cat: "応募", title: "作品応募の受付を終了しました＜仮＞", body: "たくさんのご応募をありがとうございました。選考結果は4月15日に発表します。", link: "", linkLabel: "" },
+    { date: "2027-02-10", cat: "プログラム", title: "審査員・登壇者を公開しました＜仮＞", body: "第1回の審査員と、クリエイター講演・トークの登壇者を公開しました。", link: "program.html#jury", linkLabel: "審査員・登壇者へ" },
+    /* ▼ クラウドファンディング開始の第1報（準備済み）。開始日に date を確定し、この行のコメントを外して公開する
+    { date: "2026-10-15", cat: "チケット", title: "クラウドファンディングで、チケットの先行販売を開始しました", body: "CAMPFIRE にて、11月末まで。劇場入場（1,000円・先行300席）、講演オンラインアーカイブ（2,000円）、現地 講演＆交流会（劇場入場込み 5,000円・50席限定）。SCARTSでの上映は無料です。", link: "tickets.html", linkLabel: "チケット先行販売へ" },
+    */
     { date: "2026-10-01", cat: "応募", title: "作品応募の受付を開始しました＜仮＞", body: "応募は外部の応募プラットフォームで受け付けます。応募規約とAI利用規定を必ずご確認ください。", link: "submit.html", linkLabel: "応募要項へ" },
     { date: "2026-09-21", cat: "お知らせ", title: "札幌国際AI映画祭 公式サイトを公開しました", body: "2027年5月4日、札幌文化芸術劇場 hitaru にて第1回を開催します。協賛パートナーを募集しています。", link: "partners.html", linkLabel: "協賛について" }
   ],
 
   partners: [
-    { tier: "Platinum Partner",  items: ["協賛企業ロゴ＜仮＞"] },
+    { tier: "Platinum Partners", items: ["協賛企業ロゴ＜仮＞"] },
     { tier: "Gold Partners",     items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
     { tier: "Silver Partners",   items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
-    { tier: "Support / 後援・協力", items: ["後援団体ロゴ＜仮＞", "後援団体ロゴ＜仮＞", "協力団体ロゴ＜仮＞", "メディアパートナー＜仮＞"] }
+    { tier: "Support / 後援・協力", items: ["後援団体ロゴ＜仮＞", "後援団体ロゴ＜仮＞", "協力団体ロゴ＜仮＞"] }
   ]
 };

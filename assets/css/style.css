@@ -36,13 +36,16 @@
 }
 
 /* ---------- 2. フェーズ／販売状態による表示切替（config.js が <html> に属性を付与） ---------- */
+[hidden] { display: none !important; }
 html[data-phase="0"] [data-show]:not([data-show~="0"]),
 html[data-phase="1"] [data-show]:not([data-show~="1"]),
 html[data-phase="2"] [data-show]:not([data-show~="2"]),
 html[data-phase="3"] [data-show]:not([data-show~="3"]),
 html[data-phase="4"] [data-show]:not([data-show~="4"]) { display: none !important; }
-html[data-tickets="off"] [data-sale="on"],
-html[data-tickets="on"] [data-sale="off"] { display: none !important; }
+/* チケット販売状態（config.js の ticketSale：off／presale／general）。JS無効時は各HTMLの data-tickets の値で表示 */
+html[data-tickets="off"] [data-sale]:not([data-sale~="off"]),
+html[data-tickets="presale"] [data-sale]:not([data-sale~="presale"]),
+html[data-tickets="general"] [data-sale]:not([data-sale~="general"]) { display: none !important; }
 /* 応募受付状態（config.js の submissionsOpen）。JS無効時は受付中として表示 */
 html[data-submit="off"] [data-submit="on"],
 html[data-submit="on"] [data-submit="off"] { display: none !important; }
