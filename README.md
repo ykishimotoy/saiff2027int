@@ -66,7 +66,7 @@ partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#
 | `ticketSale` | チケット販売状態。`"off"`（販売前：「先行販売の通知を受け取る」）／`"presale"`（先行販売＝CAMPFIRE：「チケット先行販売」）／`"general"`（一般販売＝teket：「チケットを買う」）。常時CTA・/tickets の購入導線が一括で切り替わる。現在 **presale** |
 | `submissionsOpen` | 応募受付中フラグ（フェーズと独立）。`true` の間は常時CTA（PCヘッダー／モバイル下部バー）・Hero・分岐カード・中盤帯に「作品を応募する」が並び、/submit は受付中の表示。締切後に `false` |
 | `dates` | 開催日（確定）、応募締切（確定：2027-03-31 23:59 JST） |
-| `ext` | 外部サービスURLの一元管理（FilmFreeway／CAMPFIRE `crowdfunding`／teket `tickets`／Tally／TimeRex／SNS…すべて＜仮＞）。HTML側は `<a data-ext="キー">`。UTMは自動付与 |
+| `ext` | 外部サービスURLの一元管理（応募＝Google フォーム `submit`／CAMPFIRE `crowdfunding`／teket `tickets`／Tally／TimeRex／SNS…すべて＜仮＞）。HTML側は `<a data-ext="キー">`。UTMは自動付与 |
 | （計測） | **Cloudflare Web Analytics** を Cloudflare 側で有効化・自動挿入。サイト側に解析タグ・Cookie・ストレージなし、同意バナーなし。GA4／GTM／Meta Pixel／Plausible 等は追加しない |
 | `locales` | 言語一覧。`available:true` にした言語だけスイッチャーで有効化 |
 
@@ -78,14 +78,14 @@ HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェー�
 審査員・登壇者（トップ／submit#jury／program#jury の3か所で再利用）、News（トップ最新3件／news 全件）、パートナーロゴ（トップ／partners）。
 
 ## 計測（KPI＝外部送客クリック数）
-アクセス解析は **Cloudflare Web Analytics**（Cloudflare 側で有効化・自動挿入。サイト側にスクリプトなし・Cookie／localStorage 不使用・同意バナーなし）。カスタムイベントは送信しない。`data-ext` 付きリンクのクリックは `?phase=N` プレビュー時のみコンソールに `outbound_click` を出力（`ext`／`target`＝creator・audience・sponsor／`pos`／`lang`／`phase`／`page`）。外部送客の実数は、UTM 付きURLで遷移先（FilmFreeway／CAMPFIRE／teket／Tally 等）側の計測から把握する。UTMは `utm_source=saiff_site&utm_medium=referral&utm_campaign=phase{N}_{lang}&utm_content={page}_{ext}_{pos}`。軸は **言語 × ターゲット × フェーズ**。
+アクセス解析は **Cloudflare Web Analytics**（Cloudflare 側で有効化・自動挿入。サイト側にスクリプトなし・Cookie／localStorage 不使用・同意バナーなし）。カスタムイベントは送信しない。`data-ext` 付きリンクのクリックは `?phase=N` プレビュー時のみコンソールに `outbound_click` を出力（`ext`／`target`＝creator・audience・sponsor／`pos`／`lang`／`phase`／`page`）。外部送客の実数は、UTM 付きURLで遷移先（CAMPFIRE／teket／Tally 等）側の計測から把握する。UTMは `utm_source=saiff_site&utm_medium=referral&utm_campaign=phase{N}_{lang}&utm_content={page}_{ext}_{pos}`。軸は **言語 × ターゲット × フェーズ**。
 
 ## ＜仮＞で置いている情報（要確定）
 確定：**開催日 2027-05-04／応募締切 2027-03-31 23:59 JST／会場 札幌文化芸術劇場 hitaru＋SCARTS／時間割／券種・料金（劇場入場1,000・講演アーカイブ2,000・現地 講演＆交流会5,000・SCARTS上映は無料）／審査の三段階（4/15発表）／協賛メニュー構成・申込締切 2027-01-31／主催 札幌国際AI映画祭実行委員会・札幌すごいAI会**（2026-09-29 確定。`saiff-site-fix-requirements` 参照）。それ以外は仮：
 
 - 保留：施設回答（劇場内の協賛表示・料金区分）、実行委員の実名（about で非表示中）、交流会のドリンク提供
 - アクセス情報の細部（＜要確認＞表記。公式情報と照合すること）、5月の気候
-- 応募開始日、応募料（現在「無料」）、応募本数、応募プラットフォーム（FilmFreeway か国内フォームか）
+- 応募開始日、応募料（現在「無料」）、応募本数、応募フォーム（Google フォーム）のURLと項目
 - 賞の選出方法（賞名は確定：グランプリ／審査員特別賞／スポンサー特別賞／SAPPORO賞／優秀賞＝当日現地参加したファイナリストに授与。賞金は設けない）、審査員・登壇者（全員「調整中」）、講演・講座タイトル
 - 上映作品8本（完全なダミー）、講演アーカイブの配信期間、年齢制限・座席
 - 想定来場・応募数
@@ -114,7 +114,7 @@ HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェー�
 | 送信ドメイン認証 | サイト外の作業（SPF／DKIM／DMARC） |
 
 ## モバイル（640px以下）の設計方針
-- **主CTAは画面下の固定バー**（`.cta-bar`、各HTMLの末尾）：親指の届く位置に常設。ページごとに中身を変える（応募ページ＝応募プラットフォームへ直行、チケットページ＝購入サイトへ直行、協賛ページ＝資料請求＋面談予約、その他＝フェーズ別CTA）。常時表示（自動で隠さない）。PC用のヘッダーCTA（`.gnav__cta`）はモバイルでは非表示。
+- **主CTAは画面下の固定バー**（`.cta-bar`、各HTMLの末尾）：親指の届く位置に常設。ページごとに中身を変える（応募ページ＝応募フォームへ直行、チケットページ＝購入サイトへ直行、協賛ページ＝資料請求＋面談予約、その他＝フェーズ別CTA）。常時表示（自動で隠さない）。PC用のヘッダーCTA（`.gnav__cta`）はモバイルでは非表示。
 - **スマートヘッダー**：下スクロールで退避（`.site-header.is-hidden`）、上スクロールで即再表示。ナビ展開中・ヘッダー内フォーカス時・ページ最上部では常に表示（`site.js` の `initHeader`）。
 - **文節単位の折り返し**：中央揃えの見出し・詩行は文節ごとに `<span class="nb">` で囲む（`display:inline-block`）。iOS Safari は `word-break:auto-phrase` 非対応のため必須。PC専用の改行は `<br class="br-pc">`（モバイルで無効化）。長い本文段落は左揃え。
 - **ファーストビュー**：`.fv-facts` は「ラベル｜値」の1行×3段に圧縮、ボタンは縦積み・全幅。

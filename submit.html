@@ -43,9 +43,9 @@
     </a>
     <div class="gnav__cta">
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
-      <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
+      <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://docs.google.com/forms/">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
-      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://docs.google.com/forms/">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--ghost btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
@@ -99,10 +99,10 @@
           <span class="countdown__unit"><b data-s>--</b>秒</span>
         </div>
         <div class="btn-row btn-row--center">
-          <a class="btn btn--gold btn--lg" data-ext="submit" data-target="creator" data-pos="fv" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
+          <a class="btn btn--gold btn--lg" data-ext="submit" data-target="creator" data-pos="fv" href="https://docs.google.com/forms/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
           <a class="btn btn--ghost btn--lg" href="#rules">応募条件を読む</a>
         </div>
-        <span class="ext-note">応募は外部プラットフォーム FilmFreeway＜仮＞で受け付けます。ここから先は英語の画面になります（<a href="#guide">日本語の手順ガイド</a>）。</span>
+        <span class="ext-note">応募は応募フォーム（Google フォーム＜仮＞）で受け付けます。外部サービスに移動します（<a href="#guide">応募の手順</a>）。</span>
       </div>
 
       <!-- Phase 2以降：受付終了 -->
@@ -266,18 +266,17 @@
       </header>
 
       <div class="card card--gold reveal" id="guide" style="margin-bottom:48px">
-        <p class="card__label">Guide for Japanese speakers</p>
-        <h3 class="h3">FilmFreeway＜仮＞での応募手順（日本語ガイド）</h3>
-        <p style="margin-bottom:1.6em">応募窓口は外部プラットフォーム1本に統一しています。画面は英語ですが、手順は以下の5ステップです。</p>
+        <p class="card__label">How to submit</p>
+        <h3 class="h3">応募の手順（Google フォーム＜仮＞）</h3>
+        <p style="margin-bottom:1.6em">応募窓口は応募フォーム1本に統一しています。手順は以下の5ステップです。<span class="tbd">＜仮：フォームの項目は公開時に確定＞</span></p>
         <ol class="steps">
-          <li><strong>アカウントを作成する</strong><br>FilmFreeway にアクセスし、「Sign Up」から無料アカウントを作成（メールアドレスのみで可）。</li>
-          <li><strong>作品（Project）を登録する</strong><br>「My Projects」→「Add a Project」。タイトル、尺、あらすじ（英語）、制作者情報を入力します。</li>
-          <li><strong>映像ファイルをアップロードする</strong><br>本編ファイルを直接アップロード、または Vimeo／YouTube の限定公開URLを登録します。</li>
-          <li><strong>本映画祭のページから「Submit Now」</strong><br>AIツール申告欄（Custom Questions）に使用ツールと工程を記入します。</li>
-          <li><strong>送信して完了</strong><br>完了メールが届けば応募完了です。忘れずに Discord の映画祭チャンネルで「応募します！」と投稿してください。</li>
+          <li><strong>応募条件とガイドラインを読む</strong><br><a href="#rules">応募条件</a>と<a href="guideline.html">制作ガイドライン</a>を確認します。</li>
+          <li><strong>作品の視聴用URLを用意する</strong><br>本編を YouTube／Vimeo の限定公開、またはオンラインストレージにアップロードし、視聴用のURLを用意します。</li>
+          <li><strong>応募フォームに作品情報を入力する</strong><br>「作品を応募する」から応募フォームを開き、タイトル、尺、あらすじ、制作者情報、視聴用URLを入力します。</li>
+          <li><strong>使用したAIツールを申告する</strong><br>フォームの申告欄に、使用したAIツールと工程を記入します。</li>
+          <li><strong>送信して完了</strong><br>送信完了の画面が表示されれば応募完了です。忘れずに Discord の映画祭チャンネルで「応募します！」と投稿してください。</li>
         </ol>
-        <p class="small muted">＜仮：実際の画面に合わせ、スクリーンショット付きの詳細ガイド（note等の外部記事）へのリンクを追加予定＞</p>
-      </div>
+              </div>
 
       <div class="faq reveal">
         <details><summary>AIをどの程度使っていれば応募できますか？</summary><div class="answer">生成AIを「主要な制作手法」として用いていれば応募できます。全編AI生成である必要はなく、実写との組み合わせも歓迎します。ノイズ除去やアップスケールなど目立たない補正だけにAIを使った作品は、趣旨に合わない場合があります。使用したツールと工程は応募フォームで申告してください（<a href="guideline.html#ai">ガイドライン 01</a>）。</div></details>
@@ -285,10 +284,10 @@
         <details><summary>作品の著作権はどうなりますか？</summary><div class="answer">応募者に帰属します。主催者に権利が移ることはありません。応募をもって、会場上映（劇場および SCARTS スタジオ・コート）、YouTube等での配信・アーカイブ公開、広報での使用を許諾いただきます（<a href="guideline.html#rights-use">ガイドライン 04</a>）。</div></details>
         <details><summary>他の映画祭に出品した作品、すでにネットで公開している作品でも応募できますか？</summary><div class="answer">応募できます＜仮＞。プレミア要件は設けていません。</div></details>
         <details><summary>字幕は必須ですか？</summary><div class="answer">日本語以外の作品、または日本語が不自然な作品には日本語字幕が必須です。自然な日本語の作品は不要ですが、海外審査員・来場者のため英語字幕の併記を推奨します。</div></details>
-        <details><summary>海外から応募できますか？ Can I submit from outside Japan?</summary><div class="answer">はい、世界中から応募できます。Yes — submissions are open worldwide via FilmFreeway＜仮＞. Japanese subtitles are required for non-Japanese works.</div></details>
-        <details><summary>日本語で応募したいのですが、国内向けの応募フォームはありますか？</summary><div class="answer">管理を一本化するため、応募窓口は外部プラットフォームのみです。上の「日本語ガイド」をご覧ください。作品情報の英語入力が難しい場合は、翻訳ツールをご利用のうえ、日本語を併記いただいて構いません。</div></details>
+        <details><summary>海外から応募できますか？ Can I submit from outside Japan?</summary><div class="answer">はい、世界中から応募できます。Yes — submissions are open worldwide via our entry form (Google Forms)＜仮＞. Japanese subtitles are required for non-Japanese works.</div></details>
+        <details><summary>応募にアカウント登録や費用は必要ですか？</summary><div class="answer">応募は応募フォーム（Google フォーム＜仮＞）から行います。応募料は無料＜仮＞です。作品情報は日本語または英語で入力できます。手順は上の「応募の手順」をご覧ください。</div></details>
         <details><summary>選考を通過した場合、札幌に行く必要がありますか？</summary><div class="answer">必須ではありません。ファイナリストの選出も、グランプリほか各賞の審査も、来場の有無にかかわらず作品を基準に行います。ただし<strong>優秀賞</strong>は、当日に現地参加したファイナリストに授与する賞です（<a href="#finalist">賞の説明</a>）。ぜひお越しください。最終選考通過者は、劇場と「講演＆交流会」にご招待します。渡航費は「クリエイター招聘基金」の範囲で支援します。最終選考に至らなかった方も、劇場上映と SCARTS でのセレクション上映（無料）にお越しください。</div></details>
-        <details><summary>応募後に作品を差し替えられますか？</summary><div class="answer">締切前であれば、応募プラットフォーム上で差し替え可能です＜仮＞。締切後の差し替えは、主催者の判断により認められる場合があります（<a href="guideline.html#decision">ガイドライン 08</a>）。</div></details>
+        <details><summary>応募後に作品を差し替えられますか？</summary><div class="answer">締切前であれば、応募フォームから改めて送信することで差し替えできます＜仮＞。締切後の差し替えは、主催者の判断により認められる場合があります（<a href="guideline.html#decision">ガイドライン 08</a>）。</div></details>
       </div>
     </div>
   </section>
@@ -300,11 +299,11 @@
       <div data-submit="on">
         <p class="band__text">応募締切は 2027年3月31日（水）23:59（日本時間）。まだ決めきれない方は、締切リマインドの登録を。</p>
         <div class="btn-row btn-row--center">
-          <a class="btn btn--gold btn--lg" data-ext="submit" data-target="creator" data-pos="bottom" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
+          <a class="btn btn--gold btn--lg" data-ext="submit" data-target="creator" data-pos="bottom" href="https://docs.google.com/forms/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
           <a class="btn btn--ghost" data-ext="remind" data-target="creator" data-pos="bottom" href="https://tally.so/">締切リマインドを受け取る <span class="ext" aria-hidden="true">↗</span></a>
           <a class="btn btn--ghost" data-ext="discord" data-target="creator" data-pos="bottom" href="https://discord.com/">Discordに参加する <span class="ext" aria-hidden="true">↗</span></a>
         </div>
-        <span class="ext-note">いずれも外部サービスに移動します。FilmFreeway は英語の画面です。</span>
+        <span class="ext-note">いずれも外部サービスに移動します。</span>
       </div>
       <div data-submit="off">
         <p class="band__text">応募者は、最も熱い観客です。選考の結果にかかわらず、会場で、他の創り手の物語を浴びてください。</p>
@@ -369,9 +368,9 @@
 <div class="cta-bar" data-cta-bar>
   <div class="cta-bar__inner">
       <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
-      <a class="btn btn--gold" data-show="1" data-ext="submit" data-target="creator" data-pos="bar" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
+      <a class="btn btn--gold" data-show="1" data-ext="submit" data-target="creator" data-pos="bar" href="https://docs.google.com/forms/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
-      <a class="btn btn--gold" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="bar" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
+      <a class="btn btn--gold" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="bar" href="https://docs.google.com/forms/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
       <a class="btn btn--ghost" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--ghost" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>

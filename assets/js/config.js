@@ -29,14 +29,14 @@ window.SAIFF = {
 
   /* ---- 日付 ---- */
   dates: {
-    festival: "2027-05-04T09:00:00+09:00",        // 開催日（確定）。9:00＝SCARTSコートのセレクション上映開始（劇場開場は11:30）
+    festival: "2027-05-04T10:00:00+09:00",        // 開催日（確定）。10:00＝最初のプログラム（SCARTSセレクション上映）の開場。劇場開場は11:30
     submitDeadline: "2027-03-31T23:59:59+09:00"   // 応募締切（確定：2027年3月31日 水 23:59 JST）
   },
 
   /* ---- 外部サービス（CVはすべて外部。サイトは説得と送客に専念） ----
      HTML側は <a data-ext="キー"> と書く。URLはここで一元管理し、UTMも自動付与される */
   ext: {
-    submit:       "https://filmfreeway.com/",            // ＜仮＞FilmFreeway 映画祭ページ
+    submit:       "https://docs.google.com/forms/",      // ＜仮＞作品応募フォーム（Google フォーム。公開後に実URLへ）
     remind:       "https://tally.so/",                   // ＜仮＞締切リマインド登録フォーム
     discord:      "https://discord.com/",                // ＜仮＞クリエイター向けDiscord招待
     crowdfunding: "https://camp-fire.jp/",               // ＜仮＞先行販売（CAMPFIRE プロジェクトページ。公開後に実URLへ）
