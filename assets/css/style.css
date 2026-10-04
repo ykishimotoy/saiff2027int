@@ -46,10 +46,15 @@ html[data-phase="4"] [data-show]:not([data-show~="4"]) { display: none !importan
 html[data-tickets="off"] [data-sale]:not([data-sale~="off"]),
 html[data-tickets="presale"] [data-sale]:not([data-sale~="presale"]),
 html[data-tickets="general"] [data-sale]:not([data-sale~="general"]) { display: none !important; }
-/* 応募受付状態（config.js の submissionsOpen）。JS無効時は受付中として表示 */
-html[data-submit="off"] [data-submit="on"],
-html[data-submit="on"] [data-submit="off"] { display: none !important; }
-html:not([data-submit]) [data-submit="off"] { display: none !important; }
+/* 応募受付状態（config.js の submissions：soon／open／closed → data-submit="soon|on|off"）。JS無効時は各HTMLの data-submit の値で表示 */
+html[data-submit="soon"] [data-submit]:not([data-submit~="soon"]),
+html[data-submit="on"] [data-submit]:not([data-submit~="on"]),
+html[data-submit="off"] [data-submit]:not([data-submit~="off"]) { display: none !important; }
+html:not([data-submit]) [data-submit="off"], html:not([data-submit]) [data-submit="on"] { display: none !important; }
+/* セレクション上映（config.js の selectionScreening）。ストレッチゴール達成前は data-selection="on" を一切出さない */
+html[data-selection="off"] [data-selection="on"],
+html[data-selection="on"] [data-selection="off"] { display: none !important; }
+html:not([data-selection]) [data-selection="on"] { display: none !important; }
 
 /* ---------- 3. ベース ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -148,6 +153,18 @@ rp { display: none; }
 .btn--sm { min-height: 40px; padding: 6px 20px; font-size: .82rem; }
 .btn--lg { min-height: 60px; padding: 14px 48px; font-size: 1.02rem; }
 .btn[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+/* 受付開始前の応募ボタン：グレーアウト（押せない）。「11月受付開始予定」と併記して使う */
+.btn--soon { background: linear-gradient(180deg, #3A3434 0%, #2A2525 100%); border-color: #5A5252; color: #A9A1A1; text-shadow: none; cursor: not-allowed; pointer-events: none; box-shadow: none; }
+.btn--soon .soon-tag { font-size: .72em; letter-spacing: .08em; font-weight: 500; opacity: .9; }
+/* 支援者紹介（種火ナンバー） */
+.supporters { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px 14px; list-style: none; margin: 0; padding: 0; }
+.supporters li { display: grid; grid-template-columns: auto 1fr; gap: 0 14px; align-items: baseline; padding: 12px 14px; border: 1px solid var(--line-faint); background: var(--color-surface); }
+.supporters .no { font-family: var(--font-serif); color: var(--color-gold-light); letter-spacing: .08em; font-size: .95rem; white-space: nowrap; }
+.supporters .name { font-size: .95rem; overflow-wrap: anywhere; }
+.supporters .tier-tag { grid-column: 2; font-size: .7rem; letter-spacing: .14em; color: var(--color-gold); margin-top: 2px; }
+.supporters--featured { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.supporters--featured li { border-color: var(--line-gold); padding: 18px 20px; }
+.supporters--featured .name { font-size: 1.1rem; font-family: var(--font-serif); }
 .btn .ext { font-size: .8em; opacity: .8; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
 .btn-row--center { justify-content: center; }

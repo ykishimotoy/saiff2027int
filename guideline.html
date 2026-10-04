@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="guideline" data-phase="2" data-tickets="presale">
+<html lang="ja" class="no-js" data-page="guideline" data-phase="2" data-tickets="presale" data-submit="soon" data-selection="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +45,8 @@
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <!-- 受付開始前（config.js submissions:"soon"）：グレーアウト。FilmFreeway 承認後に "open" へ -->
+      <a class="btn btn--soon btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
@@ -58,6 +60,7 @@
         <li data-show="2 3 4"><a href="program.html">Program</a></li>
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
       </ul>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
@@ -100,10 +103,19 @@
       <p class="notice notice--red"><strong>＜仮・法務確認前のドラフトです＞</strong> 本ガイドラインの正文は日本語版とします。その他の言語は参考訳であり、解釈に相違がある場合は正文に従います。</p>
       <p class="notice">本映画祭の応募作品はすべて<strong>全年齢対象</strong>とします。子どもから大人まで、誰もが安心して鑑賞できる作品をお待ちしています。</p>
 
+      <h2 class="h3 rule-title" id="entry" style="margin-top:56px"><span class="num">00</span>応募規定（要点）</h2>
+      <dl class="spec">
+        <div><dt>応募窓口</dt><dd>FilmFreeway（公開リスティング）。他の応募経路は設けません。</dd></div>
+        <div><dt>応募本数</dt><dd>1人（1チーム）1本。最大2本まで。</dd></div>
+        <div><dt>応募料</dt><dd>Early Bird：$0（受付開始〜2027年1月31日）／Regular：$10（2027年2月1日〜3月31日）。FilmFreeway 上で決済。</dd></div>
+        <div><dt>締切</dt><dd>2027年3月31日（水）23:59 日本時間</dd></div>
+        <div><dt>選考</dt><dd>一次審査 → 二次選考通過 → 最終選考通過（劇場上映・各賞の対象）。2027年4月15日に発表。通過本数は非公開。</dd></div>
+      </dl>
+
       <h2 class="h3 rule-title" id="ai" style="margin-top:56px"><span class="num">01</span>AIの使い方について</h2>
       <div class="articles">
         <div class="article"><p>本映画祭は、<strong>生成AIを主要な制作手法として用いた映像作品</strong>を対象としています。編集補助や軽微な補正のみにAIを使った作品は、趣旨に合わない場合があります。</p>
-          <p>使用するAIツールの種類や数に制限はありません。触りたてのツール一本でも構いません。どのAIをどう使ったか、応募フォームの記載欄に書いてください。</p>
+          <p>使用するAIツールの種類や数に制限はありません。触りたてのツール一本でも構いません。どのAIをどう使ったか、FilmFreeway の作品情報（説明欄・質問欄）に書いてください。</p>
           <p>一部AI生成・一部実写の組み合わせも可です。「AIで生成した映像に実写を合成した」「実写をベースにAIで加工した」といった作品も歓迎します。</p>
           <p>作品内で使用する言語は自由です。日本語・英語にかぎらず、架空の言語・人造言語・存在しない言語など、どんな言語表現も認めます（日本語以外・日本語が不自然な作品には日本語字幕を付けてください）。</p></div>
         <div class="article"><ul>
@@ -141,8 +153,8 @@
           <p>ただし、応募をもって、主催者が以下の目的で作品を使用・公開することを許諾いただいたものとみなします。</p>
           <ul>
             <li>映画祭当日の会場（札幌文化芸術劇場 hitaru）スクリーンでの上映（最終選考通過作品）</li>
-            <li>映画祭当日の札幌文化芸術交流センター SCARTS（スタジオ・コート）での上映（二次選考通過作品）</li>
-            <li>YouTubeおよびその他配信プラットフォームでの放映・アーカイブ公開</li>
+            <li data-selection="on">映画祭当日の札幌文化芸術交流センター SCARTS（スタジオ・コート）での上映（二次選考通過作品）</li>
+            <li>受賞作品の、開催後のオンライン公開（公式YouTubeおよびその他配信プラットフォームでの放映・アーカイブ公開。クラウドファンディング支援者向けの先行上映を含む）</li>
             <li>映画祭の事前・事後広報（SNS、公式サイト、告知動画、報道資料等）への使用</li>
             <li>作品への映画祭ロゴ・クレジットの貼り付け</li>
             <li>広報・紹介目的での部分的な切り抜きや編集</li>
@@ -176,7 +188,7 @@
 
       <h2 class="h3 rule-title" id="transparency" style="margin-top:72px"><span class="num">07</span>透明性・説明責任</h2>
       <div class="articles">
-        <div class="article"><p>応募フォームには、使用したAIツールを記載する欄があります。どんなツールをどう使ったか詳細に書いてくれると、審査に役立ちます（主催者側も新しい使い方を知れて嬉しいです）。</p>
+        <div class="article"><p>FilmFreeway の作品情報には、使用したAIツールを記載してください。どんなツールをどう使ったか詳細に書いてくれると、審査に役立ちます（主催者側も新しい使い方を知れて嬉しいです）。</p>
           <p>主催者が権利侵害やガイドライン違反の疑義を持った場合、追加の説明や資料提出を求めることがあります。正当な理由なく説明を拒んだ場合、選考対象外となる可能性があります。</p></div>
       </div>
 
@@ -195,7 +207,8 @@
         <h3 class="h3 h3--gold">ご不明な点は Discord でお気軽にどうぞ</h3>
         <p>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会</p>
         <div class="btn-row btn-row--center">
-          <a class="btn btn--gold btn--lg" data-submit="on" data-ext="submit" data-target="creator" data-pos="guideline" href="https://docs.google.com/forms/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
+          <span class="btn btn--soon btn--lg" data-submit="soon" aria-disabled="true">FilmFreeway で応募する <span class="soon-tag">11月受付開始予定</span></span>
+          <a class="btn btn--gold btn--lg" data-submit="on" data-ext="submit" data-target="creator" data-pos="guideline" href="https://filmfreeway.com/">FilmFreeway で応募する <span class="ext" aria-hidden="true">↗</span></a>
           <a class="btn btn--ghost" data-ext="discord" data-target="creator" data-pos="guideline" href="https://discord.com/">Discordに参加する <span class="ext" aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -229,6 +242,7 @@
         <h2>Information</h2>
         <ul>
           <li><a href="partners.html">Partners ― 協賛募集中</a></li>
+          <li><a href="supporters.html">Supporters ― 支援者紹介</a></li>
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
@@ -258,6 +272,7 @@
       <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--soon" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>

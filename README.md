@@ -2,7 +2,7 @@
 
 Sapporo International AI Film Festival & Incubation — 2027年5月4日／札幌文化芸術劇場 hitaru・SCARTS（札幌市民交流プラザ）
 
-`concept.md`（コンセプト原文）と `sapporo-ai-film-festival-website-spec.md`（構成・要件定義 v0.2）を元にした、**ビルド不要の完全静的サイト**（素の HTML / CSS / JS、依存ライブラリなし）。
+`concept.md`（コンセプト原文）と `sapporo-ai-film-festival-website-spec.md`（構成・要件定義 v0.2）を元にした、**ビルド不要の完全静的サイト**（素の HTML / CSS / JS、依存ライブラリなし）。最新の確定事項は `saiff-site-fix-requirements-v2.md`（2026-10-04）。
 
 ## 見かた
 
@@ -17,12 +17,13 @@ python3 -m http.server 8765   # → http://127.0.0.1:8765/
 ```
 build.py        共通パーツ展開スクリプト（partials/ → 各HTML）
 partials/       共通パーツの原本（head-assets／header／footer／cta-bar）
-index.html      トップ（振り分けハブ）：Hero／コンセプト短文／3分岐カード／映画祭の構造／開催概要／審査員／News／パートナー／ニュースレター
+index.html      トップ（振り分けハブ）：Hero／コンセプト短文／3分岐カード／映画祭の構造／#crowdfunding クラファン導線／開催概要／審査員／News／パートナー／ニュースレター
 about.html      コンセプト（長文の要点）／映画祭の構造／#incubation／#organizer／#press／#contact
-submit.html     応募LP：FV（締切・賞・形式・応募ボタン）／#criteria／#awards／#categories（単一部門）／#jury／#rules 応募条件／#faq（＋#guide 日本語手順）
+submit.html     応募LP：FV（締切・応募料・形式・FilmFreeway Submitボタン）／#criteria（審査の三段階）／#awards／#categories（単一部門・応募料・応募本数）／#jury／#rules 応募条件／#faq（＋#guide FilmFreeway手順）
 guideline.html  制作ガイドライン（01 AIの使い方〜08 主催者の判断。応募条件から参照）
-program.html    #films 劇場上映（カード＋モーダル）／#selection セレクション上映（SCARTS・無料）／#talks 講演・トーク／#meetup／#jury／#timetable
-tickets.html    #buy 券種・料金（先行販売＝CAMPFIRE／一般販売＝teket）／#notes 注意事項（字幕・通訳・キャンセル）／#access／#stay
+program.html    #films 劇場上映（カード＋モーダル）／#selection セレクション上映（SCARTS・無料。ストレッチ達成後のみ表示）／#talks 講演・トーク／#meetup／#jury／#timetable
+tickets.html    #buy 券種・料金（先行支援＝CAMPFIRE／一般販売＝teket・指定席・引換コード）／#notes 注意事項（字幕・座席・受賞作品の公開・キャンセル）／#access／#stay
+supporters.html 支援者紹介（種火ナンバー）：ファウンディング／プレミアム／全支援者。データは assets/js/supporters.js
 partners.html   協賛LP：趣旨／#reach／#value（クリエイター接点が主役）／#menu／#current／#contact
 news.html       お知らせ一覧（1ページ完結）
 legal.html      #privacy（privacy.html への案内）／#tokusho／#terms
@@ -33,6 +34,7 @@ assets/
   css/style.css   デザイントークン＋全スタイル
   js/config.js    ★サイト設定（フェーズ、日付、外部リンク、言語）
   js/data.js      ★共通データ（審査員・登壇者／News／パートナー）
+  js/supporters.js ★クラファン支援者（種火ナンバー・表記名・コース）。支援が入るたびに1行追記
   js/site.js      共通スクリプト（ヘッダー、固定CTAバー、カウントダウン、火の粉、モーダル等）
   fonts/          セルフホストWebフォント（woff2・CJKは unicode-range 分割サブセット）
   img/            logo.png（ロゴ原本 500px）／logo-160.png（ヘッダー・フッター用）／favicon.ico・favicon-32.png・apple-touch-icon.png（logo.png から生成）／gekijo01.jpg・gekijo02.jpg（劇場写真）
@@ -64,9 +66,10 @@ partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#
 |---|---|
 | `phase` | **手動フェーズフラグ**（0 ティザー／1 応募受付／2 チケット販売／3 会期中／4 アーカイブ）。Hero主CTA・カウントダウン対象・ナビ・各LPの表示ブロック・公開ページが一括で切り替わる。現在 **2** |
 | `ticketSale` | チケット販売状態。`"off"`（販売前：「先行販売の通知を受け取る」）／`"presale"`（先行販売＝CAMPFIRE：「チケット先行販売」）／`"general"`（一般販売＝teket：「チケットを買う」）。常時CTA・/tickets の購入導線が一括で切り替わる。現在 **presale** |
-| `submissionsOpen` | 応募受付中フラグ（フェーズと独立）。`true` の間は常時CTA（PCヘッダー／モバイル下部バー）・Hero・分岐カード・中盤帯に「作品を応募する」が並び、/submit は受付中の表示。締切後に `false` |
-| `dates` | 開催日（確定）、応募締切（確定：2027-03-31 23:59 JST） |
-| `ext` | 外部サービスURLの一元管理（応募＝Google フォーム `submit`／CAMPFIRE `crowdfunding`／teket `tickets`／Tally／TimeRex／SNS…すべて＜仮＞）。HTML側は `<a data-ext="キー">`。UTMは自動付与 |
+| `submissions` | 応募受付状態（フェーズと独立）。`"soon"`（受付開始前：応募ボタンはグレーアウトし「11月受付開始予定」。公式サイト公開〜FilmFreeway承認まで）／`"open"`（受付中：ボタンが FilmFreeway へ直行）／`"closed"`（締切後）。HTML側は `data-submit="soon|on|off"`。現在 **soon**。各HTMLの `<html data-submit>` も揃える（JS無効時用） |
+| `selectionScreening` | セレクション上映（二次選考通過作品の SCARTS 無料上映）の掲載フラグ。クラファン50万円ストレッチ達成で解放する演出のため、達成前は `false`（一切掲載しない）。達成後に `true` にし、各HTMLの `<html data-selection="off">` を `"on"` に揃える。HTML側は `data-selection="on"`（達成後に出す）／`"off"`（未達のときだけ出す）。現在 **false** |
+| `dates` | 開催日（確定・カウントダウンは劇場開場 11:30）、応募締切（確定：2027-03-31 23:59 JST）、Early Bird 終了（2027-01-31）、クラファン終了（2026-11-30） |
+| `ext` | 外部サービスURLの一元管理（応募＝FilmFreeway `submit`／CAMPFIRE `crowdfunding`／teket `tickets`／Tally／TimeRex／SNS…すべて＜仮＞。実URL確定後に差し替え）。HTML側は `<a data-ext="キー">`。UTMは自動付与 |
 | （計測） | **Cloudflare Web Analytics** を Cloudflare 側で有効化・自動挿入。サイト側に解析タグ・Cookie・ストレージなし、同意バナーなし。GA4／GTM／Meta Pixel／Plausible 等は追加しない |
 | `locales` | 言語一覧。`available:true` にした言語だけスイッチャーで有効化 |
 
@@ -75,20 +78,32 @@ partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#
 HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェーズのときだけ表示される（CSSのみで切替。JS無効時は Phase 2 の状態で表示）。同様に `data-submit="on|off"`（応募受付）、`data-sale="off|presale|general"`（チケット販売。空白区切りで複数指定可）で表示を切り替える。
 
 ### `assets/js/data.js`
-審査員・登壇者（トップ／submit#jury／program#jury の3か所で再利用）、News（トップ最新3件／news 全件）、パートナーロゴ（トップ／partners）。
+審査員・登壇者（トップ／submit#jury／program#jury の3か所で再利用。審査員：久保俊哉 確定）、News（トップ最新3件／news 全件。未来の予定はコメントのまま置き、公開日に date を確定して有効化）、パートナーロゴ（トップ／partners）。
+
+### `assets/js/supporters.js`
+クラウドファンディング支援者の一覧。`{ no, name, tier }` を支援確定順に追記するだけで supporters.html に反映される（`no` 昇順で自動ソート、`tier` は `founding`／`premium`／空）。`updated` を更新日に。公開時から掲載し、少なくとも開催後1年間（2028年5月まで）維持する。
+
+### 運用スケジュールと切替（`saiff-site-fix-requirements-v2.md` §11）
+| 時期 | 作業 |
+|---|---|
+| 10/17〜 | CAMPFIRE 開始。`ext.crowdfunding` を実URLに。支援が入るたびに `supporters.js` に追記。50万円ストレッチ達成の見込みが立ったら `selectionScreening:true` ＋各HTMLの `data-selection="on"` |
+| 11月前半 | 公式サイト公開。`data.js` news 第1報の date を確定。同日 FilmFreeway 申請 |
+| 11月中旬 | FilmFreeway 承認 → `ext.submit` を実URLに、`submissions:"open"` ＋各HTMLの `data-submit="on"` |
+| 12月 | teket 公開 → `ext.tickets` を実URLに、`ticketSale:"general"` ＋各HTMLの `data-tickets="general"`。partners の実績欄コメントを外す |
+| 4/15 | 作品情報・入選発表（program のダミー差し替え） |
 
 ## 計測（KPI＝外部送客クリック数）
 アクセス解析は **Cloudflare Web Analytics**（Cloudflare 側で有効化・自動挿入。サイト側にスクリプトなし・Cookie／localStorage 不使用・同意バナーなし）。カスタムイベントは送信しない。`data-ext` 付きリンクのクリックは `?phase=N` プレビュー時のみコンソールに `outbound_click` を出力（`ext`／`target`＝creator・audience・sponsor／`pos`／`lang`／`phase`／`page`）。外部送客の実数は、UTM 付きURLで遷移先（CAMPFIRE／teket／Tally 等）側の計測から把握する。UTMは `utm_source=saiff_site&utm_medium=referral&utm_campaign=phase{N}_{lang}&utm_content={page}_{ext}_{pos}`。軸は **言語 × ターゲット × フェーズ**。
 
 ## ＜仮＞で置いている情報（要確定）
-確定：**開催日 2027-05-04／応募締切 2027-03-31 23:59 JST／会場 札幌文化芸術劇場 hitaru＋SCARTS／時間割／券種・料金（劇場入場1,000・講演アーカイブ2,000・現地 講演＆交流会5,000・SCARTS上映は無料）／審査の三段階（4/15発表）／協賛メニュー構成・申込締切 2027-01-31／主催 札幌国際AI映画祭実行委員会・札幌すごいAI会**（2026-09-29 確定。`saiff-site-fix-requirements` 参照）。それ以外は仮：
+確定：**開催日 2027-05-04／応募締切 2027-03-31 23:59 JST／会場 札幌文化芸術劇場 hitaru（4F・1〜2階席1,686席）＋SCARTS／想定来場 約1,000人／時間割／券種・料金（劇場入場2,000・指定席／オンラインアーカイブ2,000／現地フル参加5,000＝劇場2,000＋講演2,000＋交流会1,000。通し券・学生券なし）／販売（CAMPFIRE 10/17〜11/30 → teket 12月公開・4/15本格販売）／応募料 Early Bird $0（〜2027-01-31）・Regular $10／応募本数 1人1本（最大2本）／応募窓口 FilmFreeway／審査の三段階（4/15発表・本数非公開・「落選」不使用）／受賞作品は開催後オンライン公開（支援者に1週間先行）／セレクション上映はクラファン50万ストレッチ達成後のみ掲載／協賛メニュー構成・申込締切 2027-01-31／審査員 久保俊哉／主催 札幌国際AI映画祭実行委員会・札幌すごいAI会（非営利）**（2026-10-04 確定。`saiff-site-fix-requirements-v2.md` 参照）。それ以外は仮：
 
 - 保留：施設回答（劇場内の協賛表示・料金区分）、実行委員の実名（about で非表示中）、交流会のドリンク提供
 - アクセス情報の細部（＜要確認＞表記。公式情報と照合すること）、5月の気候
-- 応募開始日、応募料（現在「無料」）、応募本数、応募フォーム（Google フォーム）のURLと項目
+- 応募開始日の日付（公式サイト公開日＝11月○日）、FilmFreeway の実URL（承認後）
 - 賞の選出方法（賞名は確定：グランプリ／審査員特別賞／スポンサー特別賞／SAPPORO賞／優秀賞＝当日現地参加したファイナリストに授与。賞金は設けない）、審査員・登壇者（全員「調整中」）、講演・講座タイトル
-- 上映作品8本（完全なダミー）、講演アーカイブの配信期間、年齢制限・座席
-- 想定来場・応募数
+- 上映作品8本（完全なダミー）、年齢制限、通訳の有無、交流会のドリンク
+- 想定応募数・応募国数（想定来場は約1,000人で確定）
 - 応募条件（#rules）・制作ガイドライン（/guideline）・/legal の全文（**法務確認前ドラフト**）
 - 外部サービスURL、SNS、本番ドメイン（`https://saiff.example/`：canonical／OGP／sitemap／JSON-LD に使用）
 - 実行委員の氏名・肩書、主催団体の紹介文

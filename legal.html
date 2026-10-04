@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="legal" data-phase="2" data-tickets="presale">
+<html lang="ja" class="no-js" data-page="legal" data-phase="2" data-tickets="presale" data-submit="soon" data-selection="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +45,8 @@
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <!-- 受付開始前（config.js submissions:"soon"）：グレーアウト。FilmFreeway 承認後に "open" へ -->
+      <a class="btn btn--soon btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
@@ -58,6 +60,7 @@
         <li data-show="2 3 4"><a href="program.html">Program</a></li>
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
       </ul>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
@@ -100,17 +103,17 @@
 
       <!-- ============ 特定商取引法に基づく表記 ============ -->
       <h2 class="h3 rule-title" id="tokusho" style="margin-top:72px"><span class="num">2</span>特定商取引法に基づく表記</h2>
-      <p class="notice"><strong>本サイト上では、販売・決済を行いません。</strong>チケットの先行販売はクラウドファンディング（CAMPFIRE）、一般販売および講演オンラインアーカイブの販売は teket で行い、決済はすべて外部サービス上で行われます。各サービス上の表記・規約が適用されます。以下は、主催者としての表記です。</p>
+      <p class="notice"><strong>本サイト上では、販売・決済を行いません。</strong>チケットの先行販売はクラウドファンディング（CAMPFIRE）での支援として、一般販売およびオンラインアーカイブ（配信）の販売は teket で、作品の応募料は FilmFreeway で、それぞれ決済が行われます。各サービス上の表記・規約が適用されます。以下は、主催者としての表記です。</p>
       <dl class="spec">
         <div><dt>販売事業者</dt><dd>札幌国際AI映画祭実行委員会</dd></div>
         <div><dt>運営責任者</dt><dd><span class="tbd">＜仮＞</span></dd></div>
         <div><dt>所在地・電話番号</dt><dd><span class="tbd">＜仮＞</span>（請求があった場合、遅滞なく開示します）</dd></div>
         <div><dt>連絡先</dt><dd><a href="about.html#contact">お問い合わせフォーム</a></dd></div>
-        <div><dt>販売価格</dt><dd>チケット・講演オンラインアーカイブ：<a href="tickets.html#buy">券種・料金</a>に表示／クラウドファンディングの支援コース：CAMPFIRE のプロジェクトページに表示／応募料：<a href="submit.html#categories">応募要項</a>に表示（いずれも税込）</dd></div>
+        <div><dt>販売価格</dt><dd>チケット・オンラインアーカイブ：<a href="tickets.html#buy">券種・料金</a>に表示（税込）／クラウドファンディングの支援コース：CAMPFIRE のプロジェクトページに表示／応募料：<a href="submit.html#categories">応募要項</a>に表示（米ドル建て。Early Bird $0／Regular $10）</dd></div>
         <div><dt>代金以外の費用</dt><dd>外部サービス所定の手数料、通信費</dd></div>
         <div><dt>支払方法・時期</dt><dd>外部サービスの定めによる（クレジットカード等。購入・支援・応募時に決済）</dd></div>
-        <div><dt>引渡時期</dt><dd>先行販売（CAMPFIRE）：プロジェクト終了後、プロジェクトページに記載の時期にチケット等の特典をお届けします。<br>一般販売（teket）：決済完了後、teket 上で電子チケットを発行します。<br>講演オンラインアーカイブ（デジタル商品）：映画祭の開催後、視聴用の配信URLをメールでお送りします。配信期間は約1か月<span class="tbd">＜仮＞</span>。</dd></div>
-        <div><dt>キャンセル・返金</dt><dd>先行販売（CAMPFIRE）：支援金は返金できません。取り扱いは CAMPFIRE の規約に従います。<br>一般販売（teket）：購入後のキャンセル、返金はお受けできません。主催者の都合により映画祭を中止した場合のチケット代金は、teket の手続きに従い返金します。<br>講演オンラインアーカイブ：デジタル商品の性質上、購入後のキャンセル、返金はお受けできません。<br>作品応募：応募後のキャンセルによる返金はありません。</dd></div>
+        <div><dt>引渡時期</dt><dd>先行販売（CAMPFIRE）：プロジェクト終了後、2026年12月に teket の引換コードをお送りします（teket 上で座席を選び発券）。その他の特典はプロジェクトページに記載の時期にお届けします。種火ナンバーは支援確定後、支援者紹介ページに掲載します。<br>一般販売（teket）：決済完了後、teket 上で電子チケット（指定席）を発行します。<br>オンラインアーカイブ（デジタル商品）：映画祭の開催後、teket 経由で配信します。配信期間は約1か月。<br>応募料（FilmFreeway）：決済完了をもって応募受理となります。</dd></div>
+        <div><dt>キャンセル・返金</dt><dd>先行販売（CAMPFIRE）：支援金は返金できません。取り扱いは CAMPFIRE の規約に従います。<br>一般販売（teket）：購入後のキャンセル、返金はお受けできません。主催者の都合により映画祭を中止した場合のチケット代金は、teket の手続きに従い返金します。<br>オンラインアーカイブ（配信）：デジタル商品の性質上、購入後のキャンセル、返金はお受けできません。<br>作品応募（FilmFreeway）：応募後のキャンセルによる応募料の返金はありません。</dd></div>
       </dl>
 
       <!-- ============ サイト利用条件 ============ -->
@@ -152,6 +155,7 @@
         <h2>Information</h2>
         <ul>
           <li><a href="partners.html">Partners ― 協賛募集中</a></li>
+          <li><a href="supporters.html">Supporters ― 支援者紹介</a></li>
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
@@ -181,6 +185,7 @@
       <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--soon" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>

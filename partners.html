@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="partners" data-phase="2" data-tickets="presale">
+<html lang="ja" class="no-js" data-page="partners" data-phase="2" data-tickets="presale" data-submit="soon" data-selection="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +45,8 @@
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <!-- 受付開始前（config.js submissions:"soon"）：グレーアウト。FilmFreeway 承認後に "open" へ -->
+      <a class="btn btn--soon btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
@@ -58,6 +60,7 @@
         <li data-show="2 3 4"><a href="program.html">Program</a></li>
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
       </ul>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
@@ -113,18 +116,19 @@
         <p class="sec-head__lead">第1回のため、以下はすべて計画値です。<span class="tbd">＜数値はすべて仮＞</span></p>
       </header>
       <div class="stats reveal">
-        <div class="stat"><b>1,500<small style="font-size:.5em">人</small></b><span>想定来場者数＜仮＞</span></div>
+        <div class="stat"><b>約1,000<small style="font-size:.5em">人</small></b><span>想定来場者数（席数ではなく来場想定）</span></div>
         <div class="stat"><b>500<small style="font-size:.5em">作品</small></b><span>想定応募作品数＜仮＞</span></div>
         <div class="stat"><b>30<small style="font-size:.5em">か国</small></b><span>想定応募国・地域数＜仮＞</span></div>
         <div class="stat"><b>5<small style="font-size:.5em">言語</small></b><span>公式サイト対応言語（順次）</span></div>
       </div>
-      <!-- 実績欄：クラウドファンディング終了後（12月以降）に数値を入れて公開する
-      <div class="stats reveal" style="margin-top:28px">
-        <div class="stat"><b>○○<small style="font-size:.5em">人</small></b><span>クラウドファンディング支援者数</span></div>
+      <!-- 実績欄：クラウドファンディング終了後（12月）に数値を入れてコメントを外す。「実績」として書けるのは確定した数字だけ
+      <div class="stats reveal" style="margin-top:28px;grid-template-columns:repeat(2,1fr)">
+        <div class="stat"><b>○○<small style="font-size:.5em">人</small></b><span>クラウドファンディング支援者数（実績・2026年11月30日時点）</span></div>
+        <div class="stat"><b>300<small style="font-size:.5em">席</small></b><span>劇場先行席 完売（実績）</span></div>
       </div>
       -->
       <div class="grid grid--3" style="margin-top:28px">
-        <div class="card reveal"><h3 class="h4">来場者</h3><p>AIクリエイター、映像・音楽・ゲーム等のクリエイター、学生、エンジニア、企業の新規事業・クリエイティブ・採用担当、一般の映画ファン。劇場は1,686席で運用し、SCARTSでの上映は無料開放します。チケットを持たない方にも作品が届きます。</p></div>
+        <div class="card reveal"><h3 class="h4">来場者</h3><p>AIクリエイター、映像・音楽・ゲーム等のクリエイター、学生、エンジニア、企業の新規事業・クリエイティブ・採用担当、一般の映画ファン。劇場 hitaru（1〜2階席 1,686席）は指定席・入場2,000円で運用し、来場は約1,000人を想定しています。<span data-selection="on">SCARTSでのセレクション上映は無料開放し、チケットを持たない方にも作品が届きます。</span>受賞作品は開催後にオンライン公開するため、会場の外にも届きます。</p></div>
         <div class="card reveal"><h3 class="h4">応募者</h3><p>国内外のAI映像クリエイター。公式サイト（多言語）・公式SNSと海外AI映画祭コミュニティ経由で、日・英・仏・独・中国語圏へ告知します。</p></div>
         <div class="card reveal"><h3 class="h4">メディア・オンライン</h3><p>公式サイト（多言語）、公式SNS、ニュースレター、報道露出。<span class="tbd">＜仮：メディアパートナーは調整中＞</span></p></div>
       </div>
@@ -155,9 +159,9 @@
       </div>
 
       <div class="grid grid--3">
-        <div class="card reveal"><p class="card__label">Presence</p><h3 class="h4">会場での存在感</h3><p>講演会場（SCARTS コート）でのスポンサーセッション、モールBのブース、交流会での企業賞授与、講演アーカイブ冒頭のクレジット。</p></div>
-        <div class="card reveal"><p class="card__label">Exposure</p><h3 class="h4">ブランド露出</h3><p>公式サイト（多言語）、当日スライド、モール看板、講演アーカイブ、公式SNSへのロゴ・社名掲載。</p></div>
-        <div class="card reveal"><p class="card__label">Invitation</p><h3 class="h4">ご招待</h3><p>劇場入場、現地 講演＆交流会、講演アーカイブに、プラン別の人数をご招待。お取引先・社員の皆さまの研修・視察の機会としてもご活用いただけます。</p></div>
+        <div class="card reveal"><p class="card__label">Presence</p><h3 class="h4">会場での存在感</h3><p>講演会場（SCARTS コート）でのスポンサーセッション、モールBのブース、交流会での企業賞授与、オンラインアーカイブ冒頭のクレジット。</p></div>
+        <div class="card reveal"><p class="card__label">Exposure</p><h3 class="h4">ブランド露出</h3><p>公式サイト（多言語）、当日スライド、モール看板、オンラインアーカイブ、公式SNSへのロゴ・社名掲載。</p></div>
+        <div class="card reveal"><p class="card__label">Invitation</p><h3 class="h4">ご招待</h3><p>劇場入場、講演＆交流会、オンラインアーカイブに、プラン別の人数をご招待。お取引先・社員の皆さまの研修・視察の機会としてもご活用いただけます。</p></div>
       </div>
       <p class="next-cta reveal"><a class="btn btn--primary" data-ext="sponsorForm" data-target="sponsor" data-pos="value" href="https://tally.so/">協賛資料を請求する <span class="ext" aria-hidden="true">↗</span></a></p>
     </div>
@@ -182,7 +186,7 @@
           </tbody>
         </table>
       </div>
-      <p class="notice reveal">劇場内の協賛表示（企業賞・授賞式登壇・エンディング映像）は、プラチナスポンサー成立時に全プランへ解放されます。基本特典は、コート・モール・交流会・講演アーカイブ・公式サイトで確定提供します。<span class="tbd">＜仮：施設との協議後に文面確定＞</span></p>
+      <p class="notice reveal">劇場内の協賛表示（企業賞・授賞式登壇・エンディング映像）は、プラチナスポンサー成立時に全プランへ解放されます。基本特典は、コート・モール・交流会・オンラインアーカイブ・公式サイトで確定提供します。<span class="tbd">＜仮：施設との協議後に文面確定＞</span></p>
       <p class="notice reveal"><strong>オプション：クリエイター招聘パートナー（20万円／口）</strong> ―― 最終選考を通過したクリエイターを札幌へ招くための協賛です。</p>
     </div>
   </section>
@@ -200,6 +204,7 @@
         <div><dt>主催</dt><dd>札幌国際AI映画祭実行委員会／札幌すごいAI会（<a href="about.html#organizer">主催者について</a>）</dd></div>
         <div><dt>日程・会場</dt><dd>2027年5月4日（火・祝）／札幌文化芸術劇場 hitaru・SCARTS（札幌市民交流プラザ）</dd></div>
         <div><dt>協賛申込締切</dt><dd>2027年1月31日</dd></div>
+        <div><dt>想定来場</dt><dd>約1,000人（劇場 hitaru 1〜2階席 1,686席・指定席）</dd></div>
       </dl>
     </div>
   </section>
@@ -244,6 +249,7 @@
         <h2>Information</h2>
         <ul>
           <li><a href="partners.html">Partners ― 協賛募集中</a></li>
+          <li><a href="supporters.html">Supporters ― 支援者紹介</a></li>
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>

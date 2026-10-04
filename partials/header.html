@@ -13,14 +13,16 @@
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
 {{/except}}
 {{#only submit}}
-      <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://docs.google.com/forms/">作品を応募する</a>
+      <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
 {{/only}}
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <!-- 受付開始前（config.js submissions:"soon"）：グレーアウト。FilmFreeway 承認後に "open" へ -->
+      <a class="btn btn--soon btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
 {{#except submit}}
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
 {{/except}}
 {{#only submit}}
-      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://docs.google.com/forms/">作品を応募する</a>
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--ghost btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
 {{/only}}
@@ -43,6 +45,7 @@
         <li data-show="2 3 4"><a href="program.html">Program</a></li>
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
       </ul>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>

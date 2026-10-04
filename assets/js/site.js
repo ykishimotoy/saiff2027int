@@ -182,6 +182,31 @@
     });
   }
 
+  /* ---------- 共通コンポーネント：支援者紹介（種火ナンバー）。データは assets/js/supporters.js ---------- */
+  function renderSupporters() {
+    var SUP = window.SAIFF_SUPPORTERS || {};
+    var all = (SUP.list || []).slice().sort(function (a, b) { return a.no - b.no; });
+    $$('[data-component="supporters"]').forEach(function (box) {
+      var tier = box.getAttribute("data-tier"); // founding | premium | (空=全員)
+      var list = tier ? all.filter(function (s) { return s.tier === tier; }) : all;
+      var empty = box.getAttribute("data-empty") || "準備中";
+      box.textContent = "";
+      if (!list.length) { box.appendChild(h("p", { class: "muted small", style: "text-align:center", text: empty })); return; }
+      var ul = h("ul", { class: "supporters" + (tier ? " supporters--featured" : "") });
+      list.forEach(function (s) {
+        var li = h("li", {}, [
+          h("span", { class: "no", text: "No." + String(s.no).padStart(3, "0") }),
+          h("span", { class: "name", text: s.name || "（表記名なし）" })
+        ]);
+        if (!tier && s.tier && SUP.tiers && SUP.tiers[s.tier]) li.appendChild(h("span", { class: "tier-tag", text: SUP.tiers[s.tier] }));
+        ul.appendChild(li);
+      });
+      box.appendChild(ul);
+    });
+    $$("[data-supporters-count]").forEach(function (el) { el.textContent = String(all.length); });
+    $$("[data-supporters-updated]").forEach(function (el) { if (SUP.updated) el.textContent = SUP.updated.replace(/-/g, "."); });
+  }
+
   /* ---------- 共通コンポーネント：パートナーロゴ ---------- */
   function renderPartners() {
     $$('[data-component="partners"]').forEach(function (box) {
@@ -329,6 +354,8 @@
   function initPhasePreview() {
     if (!S.phasePreview) return;
     var names = ["0 ティザー", "1 応募受付", "2 チケット販売", "3 会期中", "4 アーカイブ"];
+    // 補助フラグも表示（submit／sale／selection は config.js で切り替える。URLからは変えられない）
+    var flags = " submit:" + html.getAttribute("data-submit") + " sale:" + html.getAttribute("data-tickets") + " selection:" + html.getAttribute("data-selection");
     var box = h("div", { class: "phase-preview", role: "status" }, [document.createTextNode("PREVIEW phase:")]);
     names.forEach(function (n, i) {
       var a = h("a", { href: "?phase=" + i, title: n, text: String(i) });
@@ -336,11 +363,12 @@
       box.appendChild(a);
     });
     box.appendChild(h("a", { href: "?phase=off", text: "解除" }));
+    box.appendChild(document.createTextNode(flags));
     document.body.appendChild(box);
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    renderPeople(); renderNews(); renderPartners();
+    renderPeople(); renderNews(); renderPartners(); renderSupporters();
     initHeader(); initLang(); initExtLinks(); initNewsletter();
     initCountdown(); initEmbers(); initFilmModal(); initTimetableNow();
     initReveal(); initPhasePreview();

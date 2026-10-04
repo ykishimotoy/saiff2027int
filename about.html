@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="about" data-phase="2" data-tickets="presale">
+<html lang="ja" class="no-js" data-page="about" data-phase="2" data-tickets="presale" data-submit="soon" data-selection="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +45,8 @@
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <!-- 受付開始前（config.js submissions:"soon"）：グレーアウト。FilmFreeway 承認後に "open" へ -->
+      <a class="btn btn--soon btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
@@ -58,6 +60,7 @@
         <li data-show="2 3 4"><a href="program.html">Program</a></li>
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
       </ul>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
@@ -142,7 +145,7 @@
           <p class="card__label">I — Screening &amp; Awards</p>
           <h3 class="h3">物語を浴びる</h3>
           <p><strong>映画祭（上映・作品表彰）</strong></p>
-          <p>最終選考を通過した作品は劇場 hitaru の大スクリーンで、二次選考を通過した作品は SCARTS で（無料）上映します。世界中から集まった作品を、観客の皆さまと一緒に体感します。会場の笑い、静寂、驚き、緊張感まで含めて、一つの作品を受け取る。単に「見る」のではなく、物語を浴びるように体感することを大切にします。</p>
+          <p>最終選考を通過した作品は劇場 hitaru の大スクリーンで上映し、各賞の対象とします。<span data-selection="on">二次選考を通過した作品は SCARTS で（無料）上映します。</span>受賞作品は開催後、オンラインで公開します。世界中から集まった作品を、観客の皆さまと一緒に体感します。会場の笑い、静寂、驚き、緊張感まで含めて、一つの作品を受け取る。単に「見る」のではなく、物語を浴びるように体感することを大切にします。</p>
           <p>審査では、どのAIや技術を利用したかだけではなく、その作品が何を描き、どのような体験を生み、観客の心をどこまで動かしたのかを重視します。</p>
         </article>
         <article class="card card--gold reveal">
@@ -172,12 +175,13 @@
             <span class="sec-head__en">&amp; Incubation</span>
             <h2 class="sec-head__ja"><span class="nb"><ruby>映画祭<rp>（</rp><rt>シネマ</rt><rp>）</rp></ruby>であり、</span><br class="br-pc"><span class="nb"><ruby>孵化装置<rp>（</rp><rt>インキュベーター</rt><rp>）</rp></ruby>である。</span></h2>
           </header>
-          <p>英語名称の「&amp; Incubation」は飾りではありません。この映画祭では、<strong>講演・トーク（実演を含む）</strong>、<strong>交流会</strong>、そして<strong>次の作品への循環</strong>の三つを合わせて Incubation と呼びます。</p>
+          <p>英語名称の「&amp; Incubation」は飾りではありません。この映画祭では、<strong>講演・トーク（実演を含む）</strong>、<strong>交流会</strong>、<strong>受賞作品のオンライン公開</strong>、そして<strong>次の作品への循環</strong>の四つを合わせて Incubation と呼びます。</p>
           <p class="muted">観客として参加した方が、いつか作品を創る側になっている。交流会で出会った二人が、一緒に創った作品をスクリーンに映している。そんな循環が生まれることを願っています。完成した作品を集めて上映するだけの場ではなく、物語を体感し、自分の創造力を知り、次の創造が動き始める場にしていきます。</p>
         </div>
         <ol class="steps reveal" style="margin:0">
           <li><h3 class="h4">講演・トーク ―― 創り始める</h3><p class="muted small">創り手の発想と試行錯誤に、実演を交えて触れる。はじめての人が「自分にもできるかもしれない」と感じ、最初の一本に手をつけるきっかけに。</p></li>
           <li><h3 class="h4">交流会 ―― 出会い、組む</h3><p class="muted small">クリエイター・企業・学生・海外ゲストが出会い、次の作品、チーム、仕事、プロジェクトが始まる。</p></li>
+          <li><h3 class="h4">受賞作品のオンライン公開 ―― 届ける</h3><p class="muted small">受賞作品は開催後、公式チャンネル等でオンライン公開する。会場に来られなかった人にも物語が届き、創り手の次の機会につながる。</p></li>
           <li><h3 class="h4">次の作品への循環 ―― スクリーンに還る</h3><p class="muted small">ここでの出会いから、次の作品が生まれ、またどこかのスクリーンに映る。観客が創り手になる循環を目指す。</p></li>
         </ol>
       </div>
@@ -197,7 +201,7 @@
         <article class="card reveal">
           <div class="ph ph--logo" role="img" aria-label="実行委員会ロゴ（プレースホルダー）" style="max-width:260px;margin-bottom:20px">実行委員会ロゴ＜プレースホルダー＞</div>
           <h3 class="h3">札幌国際AI映画祭実行委員会</h3>
-          <p>札幌国際AI映画祭の企画・運営を行う、営利を目的としない実行委員会です。<span class="tbd">＜仮：設立趣旨・構成団体・委員長名などを記載＞</span></p>
+          <p>札幌国際AI映画祭の企画・運営を行う、有志による<strong>非営利</strong>の実行委員会です。特定の企業が主催するものではなく、開催資金はクラウドファンディング、チケット、協賛で賄います。<span class="tbd">＜仮：設立趣旨・構成団体などを記載＞</span></p>
         </article>
         <article class="card reveal">
           <div class="ph ph--logo" role="img" aria-label="札幌すごいAI会ロゴ（プレースホルダー）" style="max-width:260px;margin-bottom:20px">札幌すごいAI会ロゴ＜プレースホルダー＞</div>
@@ -274,6 +278,7 @@
         <h2>Information</h2>
         <ul>
           <li><a href="partners.html">Partners ― 協賛募集中</a></li>
+          <li><a href="supporters.html">Supporters ― 支援者紹介</a></li>
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
@@ -303,6 +308,7 @@
       <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--soon" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>

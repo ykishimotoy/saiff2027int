@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js" data-page="program" data-phase="2" data-tickets="presale">
+<html lang="ja" class="no-js" data-page="program" data-phase="2" data-tickets="presale" data-submit="soon" data-selection="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>プログラム | 札幌国際AI映画祭</title>
-<meta name="description" content="劇場上映・授賞式、SCARTSでのセレクション上映（無料）、クリエイター講演・トーク、交流会、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。">
+<meta name="description" content="最終選考通過作品の劇場上映・授賞式（12:00〜15:00・入場2,000円）、クリエイター講演・トーク、交流会、受賞作品のオンライン公開、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。">
 <meta name="theme-color" content="#0D0909">
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://saiff.example/program.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="札幌国際AI映画祭">
 <meta property="og:title" content="プログラム | 札幌国際AI映画祭">
-<meta property="og:description" content="劇場上映・授賞式、SCARTSでのセレクション上映（無料）、クリエイター講演・トーク、交流会、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。">
+<meta property="og:description" content="最終選考通過作品の劇場上映・授賞式（12:00〜15:00・入場2,000円）、クリエイター講演・トーク、交流会、受賞作品のオンライン公開、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。">
 <meta property="og:url" content="https://saiff.example/program.html">
 <meta property="og:image" content="https://saiff.example/assets/img/ogp.jpg"><!-- ＜仮＞OGP画像 1200×630 未配置 -->
 <meta property="og:locale" content="ja_JP">
@@ -45,6 +45,8 @@
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <!-- 受付開始前（config.js submissions:"soon"）：グレーアウト。FilmFreeway 承認後に "open" へ -->
+      <a class="btn btn--soon btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
@@ -58,6 +60,7 @@
         <li data-show="2 3 4"><a href="program.html">Program</a></li>
         <li data-show="1 2 3 4"><a href="submit.html">Submit</a></li>
         <li data-show="2 3 4"><a href="tickets.html">Tickets</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
       </ul>
       <details class="lang">
         <summary aria-label="言語を選択 / Language">日本語</summary>
@@ -83,7 +86,7 @@
       <p class="page-hero__lead">上映、講演・トーク、交流会。三つは別々の企画ではなく、一本の流れです。鑑賞だけで終わらない、次の創造へつながる一日を。</p>
       <ul class="anchor-nav">
         <li><a href="#films">劇場上映</a></li>
-        <li><a href="#selection">セレクション上映</a></li>
+        <li data-selection="on"><a href="#selection">セレクション上映</a></li>
         <li><a href="#talks">講演・トーク</a></li>
         <li><a href="#meetup">交流会</a></li>
         <li><a href="#jury">審査員・登壇者</a></li>
@@ -219,14 +222,15 @@
         </article>
       </div>
 
-      <p class="notice reveal">上映はすべて<strong>日本語・英語の2言語字幕</strong>で行います（英語字幕は主催者が付けます）。劇場上映は 12:00〜15:00 の一本で、上映に続けて授賞式を行い、グランプリほか各賞を発表します。入場は1,000円（開場 11:30）。</p>
+      <p class="notice reveal">上映はすべて<strong>日本語・英語の2言語字幕</strong>で行います（英語字幕は主催者が付けます）。劇場上映は 12:00〜15:00 の一本で、上映に続けて授賞式を行い、グランプリほか各賞を発表します（15:00 終了）。入場は2,000円・指定席（開場 11:30）。</p>
+      <p class="notice reveal"><strong>受賞作品は開催後、オンラインで公開します</strong>（公式YouTube等）。クラウドファンディング支援者には、開催翌日から1週間の先行上映があります。</p>
 
       <p class="next-cta reveal"><a class="btn btn--primary" href="tickets.html">劇場入場のチケットを見る</a></p>
     </div>
   </section>
 
-  <!-- ============ I-b. セレクション上映（SCARTS・無料） ============ -->
-  <section class="section section--surface" id="selection">
+  <!-- ============ I-b. セレクション上映（SCARTS・無料）：クラファン50万円ストレッチ達成後にだけ掲載（config.js selectionScreening） ============ -->
+  <section class="section section--surface" id="selection" data-selection="on">
     <div class="container">
       <header class="sec-head reveal">
         <span class="sec-head__en">I — Selection Screening</span>
@@ -236,7 +240,7 @@
 
       <dl class="spec reveal" style="max-width:760px;margin-inline:auto">
         <div><dt>SCARTS スタジオ1・2（2F）</dt><dd>10:00〜21:00</dd></div>
-        <div><dt>SCARTS コート（1F）</dt><dd>10:00〜14:00</dd></div>
+        <div><dt>SCARTS コート（1F）</dt><dd>9:00〜14:00</dd></div>
         <div><dt>入場</dt><dd>無料・入場自由（チケット不要）</dd></div>
         <div><dt>字幕</dt><dd>日本語・英語の2言語字幕</dd></div>
       </dl>
@@ -266,8 +270,9 @@
         <div><dt>日時</dt><dd>2027年5月4日（火・祝）16:30〜17:45</dd></div>
         <div><dt>会場</dt><dd>SCARTS コート（1F）</dd></div>
         <div><dt>登壇</dt><dd><span class="tbd">＜調整中・順次発表＞</span></dd></div>
-        <div><dt>参加</dt><dd>会場での聴講は「現地 講演＆交流会」（先行販売・50席限定）の方と招待者が対象です。</dd></div>
-        <div><dt>アーカイブ</dt><dd>講演は収録し、<strong>オンラインアーカイブ配信</strong>を行います（2,000円）。</dd></div>
+        <div><dt>参加</dt><dd>会場での聴講は「現地フル参加」（CAMPFIRE限定・50席）の方と招待者が対象です。</dd></div>
+        <div><dt>スポンサーセッション</dt><dd>16:00〜16:30、同じ会場で協賛企業のセッションを行います（アーカイブには含まれません）。</dd></div>
+        <div><dt>アーカイブ</dt><dd>講演は収録し、<strong>オンラインアーカイブ配信</strong>を行います（2,000円・開催後に teket 経由で約1か月）。</dd></div>
       </dl>
 
       <div class="grid grid--3" style="margin-top:28px">
@@ -307,7 +312,7 @@
       <dl class="spec reveal" style="margin-top:48px;max-width:760px;margin-inline:auto">
         <div><dt>日時</dt><dd>2027年5月4日（火・祝）17:45〜19:00</dd></div>
         <div><dt>会場</dt><dd>SCARTS コート（1F）</dd></div>
-        <div><dt>参加</dt><dd>先行販売（クラウドファンディング）でお申し込みの方（50席）と招待者のみ。一般販売はありません。最終選考通過クリエイター、審査員、登壇者、パートナー企業が参加します。</dd></div>
+        <div><dt>参加</dt><dd>先行支援（CAMPFIRE「現地フル参加」・50席）の方と招待者のみ。一般販売はありません。最終選考通過クリエイター、審査員、登壇者、協賛企業が参加します。</dd></div>
         <div><dt>内容</dt><dd>交流のほか、協賛企業による企業賞の授与を行う場合があります<span class="tbd">＜仮・調整中＞</span>。</dd></div>
         <div><dt>言語</dt><dd>日本語・英語。会場に通訳ボランティアを配置<span class="tbd">＜仮＞</span>。</dd></div>
       </dl>
@@ -339,15 +344,16 @@
         <p class="sec-head__lead">2027年5月4日（火・祝）／札幌文化芸術劇場 hitaru・SCARTS（札幌市民交流プラザ）</p>
       </header>
       <ol class="timetable reveal">
-        <li data-start="10:00" data-end="14:00"><time>10:00 – 14:00</time><div><h4>セレクション上映<span class="pillar">物語を浴びる</span></h4><p>SCARTS コート（1F）｜二次選考通過作品｜無料・入場自由</p></div></li>
-        <li data-start="10:00" data-end="21:00"><time>10:00 – 21:00</time><div><h4>セレクション上映<span class="pillar">物語を浴びる</span></h4><p>SCARTS スタジオ1・2（2F）｜二次選考通過作品｜無料・入場自由</p></div></li>
+        <li data-selection="on" data-start="09:00" data-end="14:00"><time>9:00 – 14:00</time><div><h4>セレクション上映<span class="pillar">物語を浴びる</span></h4><p>SCARTS コート（1F）｜二次選考通過作品｜無料・入場自由</p></div></li>
+        <li data-selection="on" data-start="10:00" data-end="21:00"><time>10:00 – 21:00</time><div><h4>セレクション上映<span class="pillar">物語を浴びる</span></h4><p>SCARTS スタジオ1・2（2F）｜二次選考通過作品｜無料・入場自由</p></div></li>
         <li data-start="11:30" data-end="12:00"><time>11:30</time><div><h4>劇場 開場</h4><p>劇場 hitaru（入口 4F）</p></div></li>
-        <li data-start="12:00" data-end="15:00"><time>12:00 – 15:00</time><div><h4>劇場上映・授賞式<span class="pillar">物語を浴びる</span></h4><p>劇場 hitaru｜最終選考通過作品の上映、各賞発表、審査員講評｜入場 1,000円</p></div></li>
+        <li data-start="12:00" data-end="15:00"><time>12:00 – 15:00</time><div><h4>劇場上映・授賞式<span class="pillar">物語を浴びる</span></h4><p>劇場 hitaru｜最終選考通過作品の上映、各賞発表｜入場 2,000円・指定席</p></div></li>
+        <li data-start="15:00" data-end="16:00"><time>15:00 – 16:00</time><div><h4>休憩・移動</h4><p>劇場 退場／SCARTS コート 転換。モールのスポンサーブースへ</p></div></li>
         <li data-start="16:00" data-end="16:30"><time>16:00 – 16:30</time><div><h4>スポンサーセッション</h4><p>SCARTS コート（1F）</p></div></li>
-        <li data-start="16:30" data-end="17:45"><time>16:30 – 17:45</time><div><h4>クリエイター講演・トーク<span class="pillar">創造力を知る</span></h4><p>SCARTS コート（1F）｜収録あり（オンラインアーカイブ配信 2,000円）</p></div></li>
-        <li data-start="17:45" data-end="19:00"><time>17:45 – 19:00</time><div><h4>交流会<span class="pillar">未来を起動する</span></h4><p>SCARTS コート（1F）｜先行販売でお申し込みの方（50席）と招待者のみ</p></div></li>
+        <li data-start="16:30" data-end="17:45"><time>16:30 – 17:45</time><div><h4>クリエイター講演・トーク<span class="pillar">創造力を知る</span></h4><p>SCARTS コート（1F）｜単一トラック・収録あり（オンラインアーカイブ配信 2,000円）</p></div></li>
+        <li data-start="17:45" data-end="19:00"><time>17:45 – 19:00</time><div><h4>交流会<span class="pillar">未来を起動する</span></h4><p>SCARTS コート（1F）｜先行支援「現地フル参加」（50席）の方と招待者のみ</p></div></li>
       </ol>
-      <p class="notice reveal">劇場上映のあとも、SCARTS スタジオでのセレクション上映は 21:00 まで続きます。SCARTS モールでは、スポンサーブース（11:30〜12:00／15:00〜16:00）を設けます。スポンサーセッションは、講演オンラインアーカイブには含まれません。</p>
+      <p class="notice reveal"><span data-selection="on">劇場上映のあとも、SCARTS スタジオでのセレクション上映は 21:00 まで続きます。</span>SCARTS モールでは、スポンサーブース（11:30〜12:00／15:00〜16:00）を設けます。スポンサーセッションは、オンラインアーカイブには含まれません。受賞作品は開催後、オンラインで公開します。</p>
     </div>
   </section>
 
@@ -385,6 +391,7 @@
         <h2>Information</h2>
         <ul>
           <li><a href="partners.html">Partners ― 協賛募集中</a></li>
+          <li><a href="supporters.html">Supporters ― 支援者紹介</a></li>
           <li data-show="1 2 3 4"><a href="news.html">News</a></li>
           <li><a href="about.html#press">Press Kit</a></li>
           <li><a href="about.html#contact">Contact</a></li>
@@ -414,6 +421,7 @@
       <a class="btn btn--primary" data-show="0" href="index.html#newsletter">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#newsletter">最新情報を受け取る</a>
+      <a class="btn btn--soon" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は11月受付開始予定">作品を応募する <span class="soon-tag">11月受付開始予定</span></a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
       <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
