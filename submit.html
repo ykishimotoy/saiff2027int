@@ -42,17 +42,15 @@
       </span>
     </a>
     <div class="gnav__cta">
+      <!-- 全ページ共通（ページ別の出し分けはしない）。並び：チケット（左）→ 作品応募（右） -->
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#follow">最新情報を受け取る</a>
-      <!-- 並び順：チケット（左）→ 作品応募（右） -->
-      <!-- チケット -->
-      <a class="btn btn--ghost btn--sm btn--stack" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
-      <a class="btn btn--ghost btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
-      <!-- 作品応募 -->
-      <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
+      <a class="btn btn--primary btn--sm btn--stack" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
+      <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#follow">最新情報を受け取る</a>
       <!-- 受付開始前（config.js submissions:"soon"）：応募ページへ誘導する2段ボタン。FilmFreeway 承認後に "open" へ -->
       <a class="btn btn--gold btn--stack btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品応募<span class="soon-tag">12月受付開始予定</span></a>
-      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
+      <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
       <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
     </div>
@@ -89,7 +87,13 @@
     <div class="container">
       <p class="page-hero__en">Call for Entries</p>
       <h1><span class="nb">あなたは何を創る？</span><br class="br-pc"><span class="nb">見せてくれ。</span><span class="nb">全部見届けるから。</span></h1>
-      <p class="page-hero__lead">AIを創作に用いた映像作品を、世界中から募集します。問うのは技術の新しさではなく、その物語が人の心をどこまで動かすか。</p>
+      <p class="page-hero__lead">AIを創作に用いた映像作品を、世界中から募集します。<br>問うのは、その物語が人の心をどこまで動かすか。</p>
+
+      <!-- 上映の約束（最前面）：二次選考通過＝SCARTS、最終選考通過＝劇場 hitaru -->
+      <dl class="fv-facts fv-facts--stage">
+        <div><dt>SECOND SELECTION ／ 二次選考通過</dt><dd><strong><span class="nb">SCARTS コート・</span><span class="nb">スタジオで上映</span></strong><span class="small">入場無料のセレクション上映（同じ建物の 1F／2F）</span></dd></div>
+        <div><dt>FINAL SELECTION ／ 最終選考通過</dt><dd><strong><span class="nb">劇場 hitaru の</span><span class="nb">大スクリーンで上映</span></strong><span class="small">1,686席・各賞の審査対象</span></dd></div>
+      </dl>
 
       <dl class="fv-facts">
         <div><dt>DEADLINE ／ 応募締切</dt><dd>2027.3.31（水）23:59 JST</dd></div>
@@ -398,16 +402,16 @@
 <!-- @/partial footer -->
 
 <!-- @partial cta-bar -->
-<!-- モバイル用 固定CTAバー（画面下・親指の届く位置・常時表示）。応募と購入の両方を常に押せるようにする -->
+<!-- モバイル用 固定CTAバー（画面下・常時表示）。全ページ共通（スポンサーページだけメール問い合わせ）。並びはヘッダーと同じ：チケット→作品応募 -->
 <div class="cta-bar" data-cta-bar>
   <div class="cta-bar__inner">
       <a class="btn btn--primary" data-show="0" href="index.html#follow">最新情報を受け取る</a>
-      <a class="btn btn--gold" data-show="1" data-ext="submit" data-target="creator" data-pos="bar" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
+      <a class="btn btn--primary btn--stack" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
+      <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#follow">最新情報を受け取る</a>
-      <span class="btn btn--soon" data-show="1 2 3" data-submit="soon" aria-disabled="true">作品を応募する <span class="soon-tag">12月受付開始予定</span></span>
-      <a class="btn btn--gold" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="bar" href="https://filmfreeway.com/">作品を応募する <span class="ext" aria-hidden="true">↗</span></a>
-      <a class="btn btn--ghost btn--stack" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
-      <a class="btn btn--ghost" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
+      <a class="btn btn--gold btn--stack" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品応募<span class="soon-tag">12月受付開始予定</span></a>
+      <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
       <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>
 </div>

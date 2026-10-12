@@ -617,6 +617,13 @@ a.logo:hover { border-color: var(--color-gold); }
 .fv-facts > div + div { border-left: 1px solid var(--line-faint); }
 .fv-facts dt { font-size: .74rem; letter-spacing: .2em; color: var(--color-gold); margin-bottom: 4px; }
 .fv-facts dd { margin: 0; font-family: var(--font-serif); font-size: clamp(1rem, 1.9vw, 1.25rem); letter-spacing: .04em; line-height: 1.5; }
+/* 上映の約束（応募ページ最前面）：2列・強調 */
+.fv-facts--stage { grid-template-columns: repeat(2, 1fr); margin-bottom: 0; border-color: var(--color-gold); background: radial-gradient(ellipse 70% 100% at 50% 0, rgba(177, 18, 31, .28), transparent 70%), rgba(13, 9, 9, .7); }
+.fv-facts--stage + .fv-facts { margin-top: 12px; }
+.fv-facts--stage > div { padding: 26px 18px; }
+.fv-facts--stage dd strong { display: block; font-weight: 500; font-size: clamp(1.05rem, 2vw, 1.35rem); letter-spacing: .04em; text-wrap: balance; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.fv-facts--stage dd .small { display: block; margin-top: 6px; font-family: var(--font-sans); color: var(--color-text-muted); letter-spacing: .04em; }
+@media (max-width: 600px) { .fv-facts--stage { grid-template-columns: 1fr; } .fv-facts--stage > div + div { border-left: 0; border-top: 1px solid var(--line-faint); } }
 @media (max-width: 640px) { .fv-facts { grid-template-columns: 1fr; } .fv-facts > div + div { border-left: 0; border-top: 1px solid var(--line-faint); } }
 
 .notice { border-left: 2px solid var(--color-gold); background: var(--color-surface); padding: 18px 22px; font-size: .88rem; color: var(--color-text-muted); margin-block: 28px; }
@@ -757,6 +764,10 @@ a[aria-disabled="true"] { opacity: .5; pointer-events: none; }
   .fv-facts > div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 14px; text-align: left; }
   .fv-facts dt { margin: 0; flex: none; font-size: .68rem; }
   .fv-facts dd { font-size: 1rem; text-align: right; }
+  /* 上映の約束ブロックは縦積み・中央のまま */
+  .fv-facts--stage > div { display: block; text-align: center; padding: 18px 14px; }
+  .fv-facts--stage dt { margin-bottom: 6px; }
+  .fv-facts--stage dd { text-align: center; }
   .anchor-nav { margin-top: 24px; gap: 8px; }
   .anchor-nav a { padding: 9px 16px; }
 
