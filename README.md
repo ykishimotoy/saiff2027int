@@ -78,7 +78,7 @@ partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#
 HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェーズのときだけ表示される（CSSのみで切替。JS無効時は Phase 2 の状態で表示）。同様に `data-submit="on|off"`（応募受付）、`data-sale="off|presale|general"`（チケット販売。空白区切りで複数指定可）で表示を切り替える。
 
 ### `assets/js/data.js`
-審査員・登壇者（トップ／submit#jury／program#jury の3か所で再利用。審査員：久保俊哉 確定）、News（トップ最新3件／news 全件。未来の予定はコメントのまま置き、公開日に date を確定して有効化）、パートナーロゴ（トップ／partners）。
+審査員・登壇者（トップ／submit#jury／program#jury の3か所で再利用。審査員：久保俊哉 確定）、News（トップ最新3件／news 全件。未来の予定はコメントのまま置き、公開日に date を確定して有効化）、スポンサーロゴ（トップ／partners。確定ロゴは data.js の partners に { name, img } で追加）。
 
 ### `assets/js/supporters.js`
 クラウドファンディング支援者の一覧。`{ no, name, tier }` を支援確定順に追記するだけで supporters.html に反映される（`no` 昇順で自動ソート、`tier` は `founding`／`premium`／空）。`updated` を更新日に。公開時から掲載し、少なくとも開催後1年間（2028年5月まで）維持する。

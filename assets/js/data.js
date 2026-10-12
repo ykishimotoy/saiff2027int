@@ -2,7 +2,7 @@
    共通データ（データは1か所、表示は複数ページで再利用）
    - people   … 審査員・登壇者（/ , /submit#jury , /program#jury で表示）
    - news     … お知らせ（/ に最新3件 , /news に全件）
-   - partners … パートナー（/ , /partners で表示）
+   - partners … スポンサーロゴ（/ , /partners で表示）。items は文字列（＜仮＞プレースホルダー）か { name, img, url? }（確定ロゴ）
    ※ 現在はすべて＜仮＞のダミー。確定次第ここだけ差し替える
    ========================================================================== */
 window.SAIFF_DATA = {
@@ -38,11 +38,11 @@ window.SAIFF_DATA = {
   ],
 
   partners: [
-    { tier: "Platinum Partners", items: ["協賛企業ロゴ＜仮＞"] },
-    { tier: "Gold Partners",     items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
-    { tier: "Silver Partners",   items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
-    { tier: "Supporter Partners", items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
-    { tier: "Creator Invitation Partners", items: ["協賛企業ロゴ＜仮＞"] },
+    { tier: "Platinum Sponsors", items: ["協賛企業ロゴ＜仮＞"] },
+    { tier: "Gold Sponsors",     items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
+    { tier: "Silver Sponsors",   items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
+    { tier: "Supporter Sponsors", items: [{ name: "AI駆動開発勉強会 札幌支部", img: "assets/img/aiddsapporo-480.png" }] },
+    { tier: "Creator Invitation Sponsors", items: ["協賛企業ロゴ＜仮＞"] },
     { tier: "Support / 後援・協力", items: ["後援団体ロゴ＜仮＞", "後援団体ロゴ＜仮＞", "協力団体ロゴ＜仮＞"] }
   ]
 };

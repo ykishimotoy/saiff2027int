@@ -207,7 +207,7 @@
     $$("[data-supporters-updated]").forEach(function (el) { if (SUP.updated) el.textContent = SUP.updated.replace(/-/g, "."); });
   }
 
-  /* ---------- 共通コンポーネント：パートナーロゴ ---------- */
+  /* ---------- 共通コンポーネント：スポンサーロゴ ---------- */
   function renderPartners() {
     $$('[data-component="partners"]').forEach(function (box) {
       box.textContent = "";
@@ -218,8 +218,16 @@
         grid.style.marginInline = "auto";
         if (i === 0) grid.style.gridTemplateColumns = "1fr";
         if (i === 1) grid.style.gridTemplateColumns = "1fr 1fr";
-        t.items.forEach(function (name) {
-          grid.appendChild(h("div", { class: "ph ph--logo", role: "img", "aria-label": name, text: name }));
+        t.items.forEach(function (item) {
+          if (typeof item === "string") {
+            grid.appendChild(h("div", { class: "ph ph--logo", role: "img", "aria-label": item, text: item }));
+            return;
+          }
+          var fig = h(item.url ? "a" : "div", item.url ? { class: "logo", href: item.url, target: "_blank", rel: "noopener" } : { class: "logo" }, [
+            h("img", { src: item.img, alt: item.name, loading: "lazy", decoding: "async" }),
+            h("span", { class: "logo__name", text: item.name })
+          ]);
+          grid.appendChild(fig);
         });
         box.appendChild(grid);
       });

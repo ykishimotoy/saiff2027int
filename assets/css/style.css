@@ -512,6 +512,11 @@ dialog.modal::backdrop { background: rgba(5, 3, 3, .85); backdrop-filter: blur(4
 .logos--lg { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 860px) { .logos { grid-template-columns: repeat(3, 1fr); } .logos--lg { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .logos { grid-template-columns: repeat(2, 1fr); } }
+/* 確定ロゴ（data.js partners の { name, img } 項目）。プレースホルダー .ph--logo と同じ枠寸で、画像は枠内に収める */
+.logo { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; aspect-ratio: 5 / 2; width: 100%; padding: 10px 12px; border: 1px solid var(--line-gold); background: #1d1414; color: var(--color-text-muted); text-decoration: none; }
+.logo img { flex: 1 1 auto; min-height: 0; max-height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+.logo__name { font-size: .72rem; letter-spacing: .06em; line-height: 1.4; text-align: center; }
+a.logo:hover { border-color: var(--color-gold); }
 .tier { font-family: var(--font-display); font-style: italic; text-align: center; color: var(--color-gold); letter-spacing: .24em; margin: 40px 0 16px; font-size: .95rem; }
 
 /* 数字 */
