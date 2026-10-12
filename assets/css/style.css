@@ -197,7 +197,8 @@ a[aria-disabled="true"]:not(.btn) { opacity: .5; pointer-events: none; text-deco
 .site-header__inner { display: flex; align-items: center; gap: 24px; width: 100%; padding-inline: var(--gutter); }
 /* 並び順：ブランド → ナビ → 主CTA → メニュー開閉。主CTAはナビの外に置き、モバイルでも常に見える */
 .gnav { order: 1; }
-.lang { order: 1; }   /* DOM順で gnav の次＝ナビとCTAの間。モバイルではハンバーガー（order:3）の左 */
+.lang { order: 1; flex: none; }
+.lang__icon { flex: none; min-width: 18px; }   /* DOM順で gnav の次＝ナビとCTAの間。モバイルではハンバーガー（order:3）の左 */
 .gnav__cta { order: 2; display: flex; flex: none; gap: 10px; }
 .gnav__cta .btn { white-space: nowrap; }
 .nav-toggle { order: 3; }
@@ -623,7 +624,7 @@ a.logo:hover { border-color: var(--color-gold); }
 .fv-facts--stage > div { padding: 26px 18px; }
 .fv-facts--stage dd strong { display: block; font-weight: 500; font-size: clamp(1.05rem, 2vw, 1.35rem); letter-spacing: .04em; text-wrap: balance; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .fv-facts--stage dd .small { display: block; margin-top: 6px; font-family: var(--font-sans); color: var(--color-text-muted); letter-spacing: .04em; }
-@media (max-width: 600px) { .fv-facts--stage { grid-template-columns: 1fr; } .fv-facts--stage > div + div { border-left: 0; border-top: 1px solid var(--line-faint); } }
+@media (max-width: 860px) { .fv-facts--stage { grid-template-columns: 1fr; } .fv-facts--stage > div + div { border-left: 0; border-top: 1px solid var(--line-faint); } }
 @media (max-width: 640px) { .fv-facts { grid-template-columns: 1fr; } .fv-facts > div + div { border-left: 0; border-top: 1px solid var(--line-faint); } }
 
 .notice { border-left: 2px solid var(--color-gold); background: var(--color-surface); padding: 18px 22px; font-size: .88rem; color: var(--color-text-muted); margin-block: 28px; }
@@ -843,3 +844,31 @@ a[aria-disabled="true"] { opacity: .5; pointer-events: none; }
   .phase-preview { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
 }
 @media print { .cta-bar { display: none !important; } }
+
+
+/* ---------- 多言語：言語別の微調整 ---------- */
+:lang(zh-Hans) body, :lang(zh-Hans) .btn { font-family: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Noto Sans JP", sans-serif; }
+:lang(ko) body, :lang(ko) .btn { font-family: "Inter", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans JP", sans-serif; }
+:lang(ko) h1, :lang(ko) h2, :lang(ko) h3, :lang(ko) .h3, :lang(ko) .gnav__list a, :lang(ko) .concept .ask, :lang(ko) .concept__statement { font-family: "Noto Serif KR", "Apple Myungjo", "Batang", "Noto Serif JP", serif; word-break: keep-all; }
+:lang(ko) p, :lang(ko) li, :lang(ko) dd { word-break: keep-all; overflow-wrap: anywhere; }
+:lang(zh-Hans) h1, :lang(zh-Hans) h2, :lang(zh-Hans) h3, :lang(zh-Hans) .h3, :lang(zh-Hans) .gnav__list a, :lang(zh-Hans) .concept .ask, :lang(zh-Hans) .concept__statement { font-family: "Noto Serif SC", "Songti SC", "SimSun", "Noto Serif JP", serif; }
+/* 欧文は和文向けの広い字間を詰める */
+:lang(en) .gnav__list a, :lang(fr) .gnav__list a, :lang(de) .gnav__list a { letter-spacing: .01em; font-size: .86rem; }
+/* 欧文はナビが長いので、ヘッダーの余白と英字ブランド名を詰める */
+html:not(:lang(ja)) .site-header .brand__en { display: none; }
+html:not(:lang(ja)) .site-header__inner { gap: 14px; }
+html:not(:lang(ja)) .gnav, html:not(:lang(ja)) .gnav__list { gap: 16px; }
+html:not(:lang(ja)) .gnav__cta { gap: 8px; }
+html:not(:lang(ja)) .gnav__cta .btn { padding: 6px 12px; font-size: .8rem; }
+html:not(:lang(ja)) .gnav__cta .btn--stack .soon-tag { font-size: .62em; }
+@media (max-width: 1340px) {
+  html:not(:lang(ja)) .site-header .brand__text { display: none; }
+  html:not(:lang(ja)) .gnav, html:not(:lang(ja)) .gnav__list { gap: 12px; }
+}
+:lang(en) h1, :lang(fr) h1, :lang(de) h1, :lang(en) h2, :lang(fr) h2, :lang(de) h2, :lang(en) .h3, :lang(fr) .h3, :lang(de) .h3 { letter-spacing: .04em; }
+:lang(en) .page-hero h1, :lang(fr) .page-hero h1, :lang(de) .page-hero h1 { letter-spacing: .06em; }
+:lang(en) .btn, :lang(fr) .btn, :lang(de) .btn { letter-spacing: .06em; }
+:lang(en) .footer-col h2, :lang(fr) .footer-col h2, :lang(de) .footer-col h2 { letter-spacing: .12em; }
+:lang(en) .concept .ask, :lang(fr) .concept .ask, :lang(de) .concept .ask, :lang(en) .concept__lead, :lang(fr) .concept__lead, :lang(de) .concept__lead { letter-spacing: .04em; line-height: 1.7; }
+:lang(en) .spec dt, :lang(fr) .spec dt, :lang(de) .spec dt { letter-spacing: .06em; }
+@media (max-width: 1100px) { :lang(en) .gnav__list a, :lang(fr) .gnav__list a, :lang(de) .gnav__list a { font-size: .8rem; } }

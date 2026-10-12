@@ -20,6 +20,8 @@
     (children || []).forEach(function (c) { if (c) el.appendChild(c); });
     return el;
   }
+  /* 多言語：assets/js/i18n/<lang>.js が window.SAIFF_I18N（日本語→訳文）を定義する。無ければそのまま返す */
+  function t(s) { var d = window.SAIFF_I18N; return (d && typeof s === "string" && d[s]) || s; }
   function store(key, val) {
     try { if (val === undefined) return localStorage.getItem(key); localStorage.setItem(key, val); } catch (e) { return null; }
   }
@@ -47,7 +49,7 @@
       var key = a.getAttribute("data-ext");
       var url = (S.ext || {})[key];
       if (url === "") { // URL未確定：押せない状態にする（config.js ext に実URLを入れると有効化）
-        a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); a.setAttribute("title", "準備中"); a.classList.add("is-pending");
+        a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); a.setAttribute("title", t("準備中")); a.classList.add("is-pending");
         return;
       }
       if (url) a.href = withUtm(url, page + "_" + key + "_" + (a.getAttribute("data-pos") || i));
@@ -123,7 +125,7 @@
         });
         li.appendChild(a);
       } else {
-        li.appendChild(h("span", { lang: loc.code }, [document.createTextNode(loc.label), h("small", { text: "準備中" })]));
+        li.appendChild(h("span", { lang: loc.code }, [document.createTextNode(loc.label), h("small", { text: t("準備中") })]));
       }
       list.appendChild(li);
     });
@@ -138,24 +140,26 @@
     })[0] || (nav.indexOf("ja") !== 0 ? (S.locales || []).filter(function (l) { return l.available && l.code === "en" && S.currentLocale !== "en"; })[0] : null);
     if (!match) return;
     var link = $("a", banner);
-    link.textContent = match.label + " version is available →";
-    link.href = match.path + file + location.hash;
+    var curPath = (S.locales.filter(function (l) { return l.code === S.currentLocale; })[0] || {}).path || "";
+    link.textContent = match.label + " →";
+    link.href = (curPath ? "../" : "") + match.path + file + location.hash;
     link.lang = match.code;
     banner.hidden = false;
     $("button", banner).addEventListener("click", function () { banner.hidden = true; store("saiff-lang-banner", "dismissed"); });
   }
 
   /* ---------- 共通コンポーネント：人物カード（審査員・登壇者・実行委員） ---------- */
+  var ASSET = (S.currentLocale && S.currentLocale !== "ja") ? "../" : "";  // 言語版ディレクトリからのアセット相対パス
   function personCard(p, withBio) {
     var photo = p.img
-      ? h("div", { class: "photo photo--square" + (p.round ? " photo--round" : "") }, [h("img", { src: p.img, alt: p.name, width: "480", height: "480", loading: "lazy", decoding: "async" })])
-      : h("div", { class: "ph ph--portrait", role: "img", "aria-label": p.name + " の写真（プレースホルダー）", text: "ポートレート写真\n3:4＜プレースホルダー＞" });
+      ? h("div", { class: "photo photo--square" + (p.round ? " photo--round" : "") }, [h("img", { src: ASSET + p.img, alt: t(p.name), width: "480", height: "480", loading: "lazy", decoding: "async" })])
+      : h("div", { class: "ph ph--portrait", role: "img", "aria-label": t(p.name) + t(" の写真（プレースホルダー）"), text: t("ポートレート写真\n3:4＜プレースホルダー＞") });
     return h("article", { class: "person reveal" }, [
       photo,
-      h("p", { class: "person__role", text: p.role }),
-      h("h3", { class: "person__name", text: p.name }),
-      p.title ? h("p", { class: "person__title", text: p.title }) : null,
-      withBio && p.bio ? h("p", { class: "person__bio", text: p.bio }) : null
+      h("p", { class: "person__role", text: t(p.role) }),
+      h("h3", { class: "person__name", text: t(p.name) }),
+      p.title ? h("p", { class: "person__title", text: t(p.title) }) : null,
+      withBio && p.bio ? h("p", { class: "person__bio", text: t(p.bio) }) : null
     ]);
   }
   function renderPeople() {
@@ -182,12 +186,12 @@
       var list = (D.news || []).filter(function (n) { return (minPhaseByCat[n.cat] || 0) <= S.phase; }).slice(0, limit);
       box.textContent = "";
       list.forEach(function (n) {
-        var body = h("p", { class: "news-item__body", text: n.body + " " });
-        if (n.link) body.appendChild(h("a", { href: n.link, text: n.linkLabel || "詳しく見る" }));
+        var body = h("p", { class: "news-item__body", text: t(n.body) + " " });
+        if (n.link) body.appendChild(h("a", { href: n.link, text: t(n.linkLabel || "詳しく見る") }));
         box.appendChild(h("li", { class: "news-item" }, [
           h("time", { datetime: n.date, text: n.date.replace(/-/g, ".") }),
-          h("span", { class: "news-item__cat", text: n.cat }),
-          h("h3", { class: "news-item__title", text: n.title }),
+          h("span", { class: "news-item__cat", text: t(n.cat) }),
+          h("h3", { class: "news-item__title", text: t(n.title) }),
           body
         ]));
       });
@@ -208,7 +212,7 @@
       list.forEach(function (s) {
         var li = h("li", {}, [
           h("span", { class: "no", text: "No." + String(s.no).padStart(3, "0") }),
-          h("span", { class: "name", text: s.name || "（表記名なし）" })
+          h("span", { class: "name", text: s.name || t("（表記名なし）") })
         ]);
         if (!tier && s.tier && SUP.tiers && SUP.tiers[s.tier]) li.appendChild(h("span", { class: "tier-tag", text: SUP.tiers[s.tier] }));
         ul.appendChild(li);
@@ -223,24 +227,24 @@
   function renderSponsors() {
     $$('[data-component="sponsors"]').forEach(function (box) {
       box.textContent = "";
-      (D.sponsors || []).forEach(function (t) {
-        box.appendChild(h("p", { class: "tier", text: t.tier }));
+      (D.sponsors || []).forEach(function (tier) {
+        box.appendChild(h("p", { class: "tier", text: t(tier.tier) }));
         // 枠の大きさはティア名で決める（順番に依存しない）。少数のときは中央寄せ
-        var big = /platinum/i.test(t.tier), mid = /gold/i.test(t.tier), n = t.items.length;
+        var big = /platinum/i.test(tier.tier), mid = /gold/i.test(tier.tier), n = tier.items.length;
         var grid = h("div", { class: big || mid ? "logos logos--lg" : "logos" });
         grid.style.marginInline = "auto";
         grid.style.justifyContent = "center";
         if (big) { grid.style.maxWidth = "360px"; grid.style.gridTemplateColumns = "1fr"; }
         else if (mid) { grid.style.maxWidth = "720px"; grid.style.gridTemplateColumns = "1fr 1fr"; }
         else if (n < 5) { grid.style.gridTemplateColumns = "repeat(" + n + ", minmax(0, 220px))"; }
-        t.items.forEach(function (item) {
+        tier.items.forEach(function (item) {
           if (typeof item === "string") {
-            grid.appendChild(h("div", { class: "ph ph--logo", role: "img", "aria-label": item, text: item }));
+            grid.appendChild(h("div", { class: "ph ph--logo", role: "img", "aria-label": t(item), text: t(item) }));
             return;
           }
           var fig = h(item.url ? "a" : "div", item.url ? { class: "logo", href: item.url, target: "_blank", rel: "noopener" } : { class: "logo" }, [
-            h("img", { src: item.img, alt: item.name, loading: "lazy", decoding: "async" }),
-            h("span", { class: "logo__name", text: item.name })
+            h("img", { src: ASSET + item.img, alt: t(item.name), loading: "lazy", decoding: "async" }),
+            h("span", { class: "logo__name", text: t(item.name) })
           ]);
           grid.appendChild(fig);
         });

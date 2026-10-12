@@ -59,14 +59,15 @@ window.SAIFF = {
      Cloudflare Web Analytics を Cloudflare 側の設定で有効化し、自動挿入を使う。
      サイト側に解析タグは置かない（GA4／GTM／Meta Pixel／Plausible 等は追加しないこと）。 */
 
-  /* ---- 多言語（第1段階は日本語のみ。追加手順は README 参照） ----
+  /* ---- 多言語（ja + en/fr/de/zh-hans。言語版は tools/i18n.py build が生成。各言語ページは currentLocale を上書きする） ----
      available:true にした言語だけスイッチャーで有効になり、/{code}/ 配下の同名ページへ遷移する */
   locales: [
     { code: "ja",      label: "日本語",   path: "",          available: true  },
-    { code: "en",      label: "English",  path: "en/",       available: false },
-    { code: "fr",      label: "Français", path: "fr/",       available: false },
-    { code: "de",      label: "Deutsch",  path: "de/",       available: false },
-    { code: "zh-hans", label: "简体中文", path: "zh-hans/",  available: false }
+    { code: "en",      label: "English",  path: "en/",       available: true  },
+    { code: "fr",      label: "Français", path: "fr/",       available: true  },
+    { code: "de",      label: "Deutsch",  path: "de/",       available: true  },
+    { code: "zh-hans", label: "简体中文", path: "zh-hans/",  available: true  },
+    { code: "ko",      label: "한국어",   path: "ko/",       available: true  }
   ],
   currentLocale: "ja"
 };

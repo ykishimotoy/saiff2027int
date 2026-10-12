@@ -1,0 +1,4412 @@
+[
+ {
+  "id": "s0001",
+  "ctx": "index.html <title>",
+  "ja": "札幌国際AI映画祭 | Sapporo International AI Film Festival &amp; Incubation"
+ },
+ {
+  "id": "s0002",
+  "ctx": "index.html <meta content>",
+  "ja": "物語を解き放て。魂を揺さぶれ。種火はもう、その手にある。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS にて開催。AIを創作に用いた映像作品の国際映画祭。劇場入場1,000円・指定席。先行支援は10月下旬からCAMPFIREで。"
+ },
+ {
+  "id": "s0003",
+  "ctx": "index.html <meta content>",
+  "ja": "札幌国際AI映画祭"
+ },
+ {
+  "id": "s0004",
+  "ctx": "index.html <meta content>",
+  "ja": "札幌国際AI映画祭 | Sapporo International AI Film Festival & Incubation"
+ },
+ {
+  "id": "s0005",
+  "ctx": "index.html <a>",
+  "ja": "本文へスキップ"
+ },
+ {
+  "id": "s0006",
+  "ctx": "index.html <a aria-label>",
+  "ja": "札幌国際AI映画祭 トップページ"
+ },
+ {
+  "id": "s0007",
+  "ctx": "index.html <a>",
+  "ja": "<img src=\"assets/img/logo-160.png\" srcset=\"assets/img/logo.png 2x\" alt width=\"38\" height=\"38\"> <span class=\"brand__text\"> <span class=\"brand__ja\">札幌国際AI映画祭</span> <span class=\"brand__en\">Sapporo International AI Film Festival</span> </span>"
+ },
+ {
+  "id": "s0008",
+  "ctx": "index.html <a>",
+  "ja": "最新情報を受け取る"
+ },
+ {
+  "id": "s0009",
+  "ctx": "index.html <a>",
+  "ja": "チケット先行販売<span class=\"soon-tag\">10月下旬開始予定</span>"
+ },
+ {
+  "id": "s0010",
+  "ctx": "index.html <a>",
+  "ja": "チケットを買う"
+ },
+ {
+  "id": "s0011",
+  "ctx": "index.html <a>",
+  "ja": "作品を応募する"
+ },
+ {
+  "id": "s0012",
+  "ctx": "index.html <a title>",
+  "ja": "作品応募は12月受付開始予定"
+ },
+ {
+  "id": "s0013",
+  "ctx": "index.html <a>",
+  "ja": "作品応募<span class=\"soon-tag\">12月受付開始予定</span>"
+ },
+ {
+  "id": "s0014",
+  "ctx": "index.html <a>",
+  "ja": "本日のタイムテーブル"
+ },
+ {
+  "id": "s0015",
+  "ctx": "index.html <a>",
+  "ja": "受賞作を見る"
+ },
+ {
+  "id": "s0016",
+  "ctx": "index.html <button aria-label>",
+  "ja": "メニュー"
+ },
+ {
+  "id": "s0017",
+  "ctx": "index.html <nav aria-label>",
+  "ja": "グローバルナビゲーション"
+ },
+ {
+  "id": "s0018",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"about.html\">理念</a>"
+ },
+ {
+  "id": "s0019",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"program.html\">プログラム</a>"
+ },
+ {
+  "id": "s0020",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"tickets.html\">チケット</a>"
+ },
+ {
+  "id": "s0021",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"submit.html\">作品応募</a>"
+ },
+ {
+  "id": "s0022",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"sponsors.html\">スポンサー募集</a>"
+ },
+ {
+  "id": "s0023",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"supporters.html\">支援者</a>"
+ },
+ {
+  "id": "s0024",
+  "ctx": "index.html <summary aria-label>",
+  "ja": "言語を選択 / Language"
+ },
+ {
+  "id": "s0025",
+  "ctx": "index.html <span>",
+  "ja": "日本語"
+ },
+ {
+  "id": "s0026",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"index.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0027",
+  "ctx": "index.html <li>",
+  "ja": "<span lang=\"en\">English <small>準備中</small></span>"
+ },
+ {
+  "id": "s0028",
+  "ctx": "index.html <li>",
+  "ja": "<span lang=\"fr\">Français <small>準備中</small></span>"
+ },
+ {
+  "id": "s0029",
+  "ctx": "index.html <li>",
+  "ja": "<span lang=\"de\">Deutsch <small>準備中</small></span>"
+ },
+ {
+  "id": "s0030",
+  "ctx": "index.html <li>",
+  "ja": "<span lang=\"zh-Hans\">简体中文 <small>準備中</small></span>"
+ },
+ {
+  "id": "s0882",
+  "ctx": "index.html <li>",
+  "ja": "<span lang=\"ko\">한국어 <small>準備中</small></span>"
+ },
+ {
+  "id": "s0031",
+  "ctx": "index.html <button aria-label>",
+  "ja": "閉じる"
+ },
+ {
+  "id": "s0032",
+  "ctx": "index.html <section aria-label>",
+  "ja": "メインビジュアル"
+ },
+ {
+  "id": "s0033",
+  "ctx": "index.html <p>",
+  "ja": "<span class=\"nb\">札幌国際AI映画祭</span> <span class=\"hero__title-year\">2027</span>"
+ },
+ {
+  "id": "s0034",
+  "ctx": "index.html <h1>",
+  "ja": "<span>物語を解き放て。</span> <span>魂を揺さぶれ。</span> <span><span>種火はもう、</span><span>その手にある。</span></span>"
+ },
+ {
+  "id": "s0035",
+  "ctx": "index.html <p>",
+  "ja": "<span><b>2027.5.4</b> （火・祝）</span> <span>札幌文化芸術劇場 hitaru／SCARTS</span>"
+ },
+ {
+  "id": "s0036",
+  "ctx": "index.html <div aria-label>",
+  "ja": "応募締切までの残り時間"
+ },
+ {
+  "id": "s0037",
+  "ctx": "index.html <span>",
+  "ja": "応募締切まで"
+ },
+ {
+  "id": "s0038",
+  "ctx": "index.html <span>",
+  "ja": "<b data-d>--</b>日"
+ },
+ {
+  "id": "s0039",
+  "ctx": "index.html <span>",
+  "ja": "<b data-h>--</b>時間"
+ },
+ {
+  "id": "s0040",
+  "ctx": "index.html <span>",
+  "ja": "<b data-m>--</b>分"
+ },
+ {
+  "id": "s0041",
+  "ctx": "index.html <span>",
+  "ja": "<b data-s>--</b>秒"
+ },
+ {
+  "id": "s0042",
+  "ctx": "index.html <div aria-label>",
+  "ja": "開幕までの残り時間"
+ },
+ {
+  "id": "s0043",
+  "ctx": "index.html <span>",
+  "ja": "開幕まで"
+ },
+ {
+  "id": "s0044",
+  "ctx": "index.html <a>",
+  "ja": "プログラムを見る"
+ },
+ {
+  "id": "s0045",
+  "ctx": "index.html <a>",
+  "ja": "会場・アクセス"
+ },
+ {
+  "id": "s0046",
+  "ctx": "index.html <a>",
+  "ja": "次回の通知を受け取る"
+ },
+ {
+  "id": "s0047",
+  "ctx": "index.html <p>",
+  "ja": "<span class=\"concept__statement-l1\"><span class=\"nb\">札幌国際AI映画祭は、</span><span class=\"nb\"><em>炎</em>だ。</span></span> <span class=\"concept__statement-l2\"><span class=\"nb\">新しい創作手段を</span><span class=\"nb\">手にした人々から</span><span class=\"nb\">生まれる物語を、</span><span class=\"nb\">体感し、称え、</span></span> <span class=\"concept__statement-l2\"><span class=\"nb\">そこから</span><span class=\"nb\">次の創り手と</span><span class=\"nb\">次の物語を</span><span class=\"nb\">生み出していくための、</span><span class=\"nb\">祝祭の炎だ。</span></span>"
+ },
+ {
+  "id": "s0048",
+  "ctx": "index.html <p>",
+  "ja": "<a class=\"text-link\" href=\"about.html#concept\">コンセプト全文を読む</a>"
+ },
+ {
+  "id": "s0049",
+  "ctx": "index.html <h2>",
+  "ja": "<span class=\"nb\">あなたは、</span><span class=\"nb\">どの立場で</span><span class=\"nb\">参加しますか。</span>"
+ },
+ {
+  "id": "s0050",
+  "ctx": "index.html <h3>",
+  "ja": "創る人へ"
+ },
+ {
+  "id": "s0051",
+  "ctx": "index.html <p>",
+  "ja": "あなたは何を創る？ 見せてくれ。全部見届けるから。作品募集は近日開始。応募要項の公開をメールでお知らせします。"
+ },
+ {
+  "id": "s0052",
+  "ctx": "index.html <span>",
+  "ja": "募集開始の通知を受け取る"
+ },
+ {
+  "id": "s0053",
+  "ctx": "index.html <p>",
+  "ja": "物語を解き放て。世界中から、AIを創作に用いた映像作品を募集します。<span data-submit=\"soon\">応募受付は12月開始予定。</span><span data-submit=\"on\">応募受付中。</span>応募料は$10、1人1本（最大2本）。ジャンル不問。応募窓口は FilmFreeway。"
+ },
+ {
+  "id": "s0054",
+  "ctx": "index.html <span>",
+  "ja": "応募要項を見る（12月受付開始予定）"
+ },
+ {
+  "id": "s0055",
+  "ctx": "index.html <span>",
+  "ja": "応募要項を見る"
+ },
+ {
+  "id": "s0056",
+  "ctx": "index.html <span>",
+  "ja": "応募要項（受付終了）"
+ },
+ {
+  "id": "s0057",
+  "ctx": "index.html <h3>",
+  "ja": "観る人へ"
+ },
+ {
+  "id": "s0058",
+  "ctx": "index.html <p>",
+  "ja": "暗闇の中で、大スクリーンに世界が立ち上がる。物語を、全身で浴びる一日。10月下旬から、クラウドファンディング（CAMPFIRE）で先行支援を受け付けます。劇場入場1,000円・指定席。"
+ },
+ {
+  "id": "s0059",
+  "ctx": "index.html <span>",
+  "ja": "先行販売の通知を受け取る"
+ },
+ {
+  "id": "s0060",
+  "ctx": "index.html <p>",
+  "ja": "暗闇の中で、大スクリーンに世界が立ち上がる。隣の誰かが息を呑み、笑い、泣く。物語を、全身で浴びる一日。<span data-sale=\"off presale\">先行支援は10月下旬から（CAMPFIRE・11月下旬まで）。</span>劇場入場1,000円・指定席。<span data-sale=\"off presale\">一般販売は12月から。</span><span data-selection=\"on\">SCARTSでのセレクション上映は無料。</span>"
+ },
+ {
+  "id": "s0061",
+  "ctx": "index.html <span>",
+  "ja": "チケット先行販売・来場案内"
+ },
+ {
+  "id": "s0062",
+  "ctx": "index.html <span>",
+  "ja": "チケット・来場案内"
+ },
+ {
+  "id": "s0063",
+  "ctx": "index.html <h3>",
+  "ja": "支える人へ"
+ },
+ {
+  "id": "s0064",
+  "ctx": "index.html <p>",
+  "ja": "次の創り手と、最初に出会う場所。交流会でのクリエイターとの接点を中心に、スポンサーを募集しています。"
+ },
+ {
+  "id": "s0065",
+  "ctx": "index.html <span>",
+  "ja": "協賛について"
+ },
+ {
+  "id": "s0066",
+  "ctx": "index.html <h2>",
+  "ja": "<span class=\"nb\">物語を浴びる。</span><span class=\"nb\">創造力を知る。</span><span class=\"nb\">未来を起動する。</span>"
+ },
+ {
+  "id": "s0067",
+  "ctx": "index.html <p>",
+  "ja": "上映、講演・トーク、交流会を、別々の企画ではなく一つの流れとして設計します。鑑賞だけで終わらない、次の創造へつながる一日。"
+ },
+ {
+  "id": "s0068",
+  "ctx": "index.html <h3>",
+  "ja": "物語を浴びる"
+ },
+ {
+  "id": "s0069",
+  "ctx": "index.html <p>",
+  "ja": "劇場上映・授賞式（hitaru）"
+ },
+ {
+  "id": "s0070",
+  "ctx": "index.html <p>",
+  "ja": "最終選考を通過した作品を、劇場の大スクリーンで。会場の笑い、静寂、驚きまで含めて、一つの作品を受け取る。優れた作品とクリエイターを称える授賞式も。<span data-selection=\"on\">二次選考通過作品は、SCARTSで終日・無料上映。</span>"
+ },
+ {
+  "id": "s0071",
+  "ctx": "index.html <h3>",
+  "ja": "創造力を知る"
+ },
+ {
+  "id": "s0072",
+  "ctx": "index.html <p>",
+  "ja": "クリエイター講演・トーク（SCARTSコート）"
+ },
+ {
+  "id": "s0073",
+  "ctx": "index.html <p>",
+  "ja": "AIを実際の映像制作に使う創り手が、発想と試行錯誤を共有。他者の創造力に触れ、「自分にも創れるかもしれないもの」が少し増えて帰る。"
+ },
+ {
+  "id": "s0074",
+  "ctx": "index.html <h3>",
+  "ja": "未来を起動する"
+ },
+ {
+  "id": "s0075",
+  "ctx": "index.html <p>",
+  "ja": "交流会（Incubation）"
+ },
+ {
+  "id": "s0076",
+  "ctx": "index.html <p>",
+  "ja": "クリエイターと企業、学生とプロ、日本と海外。「そこがつながるのか」という出会いから、次の作品、チーム、仕事が動き始める。"
+ },
+ {
+  "id": "s0077",
+  "ctx": "index.html <p>",
+  "ja": "受賞作品は開催後、公式チャンネル等で<b>オンライン公開</b>します。会場に来られなかった人にも、物語は届きます。"
+ },
+ {
+  "id": "s0078",
+  "ctx": "index.html <p>",
+  "ja": "<a class=\"text-link\" href=\"program.html\" data-show=\"2 3 4\">プログラムを見る</a> <a class=\"text-link\" href=\"about.html#structure\" data-show=\"0 1\">映画祭の構造について</a>"
+ },
+ {
+  "id": "s0079",
+  "ctx": "index.html <section aria-label>",
+  "ja": "参加への案内"
+ },
+ {
+  "id": "s0080",
+  "ctx": "index.html <h2>",
+  "ja": "<span class=\"nb\">最初の炎を、</span><span class=\"nb\">見逃さないために。</span>"
+ },
+ {
+  "id": "s0081",
+  "ctx": "index.html <p>",
+  "ja": "募集開始・審査員発表・クラウドファンディングの進捗・チケット発売を、メールでお届けします。"
+ },
+ {
+  "id": "s0082",
+  "ctx": "index.html <h2>",
+  "ja": "<span class=\"nb\">あなたは何を創る？</span><span class=\"nb\">見せてくれ。</span>"
+ },
+ {
+  "id": "s0083",
+  "ctx": "index.html <p>",
+  "ja": "応募締切 2027年3月31日（水）23:59。3〜15分・16:9・ジャンル不問。グランプリ、審査員特別賞、企業賞、SAPPORO賞、優秀賞。"
+ },
+ {
+  "id": "s0084",
+  "ctx": "index.html <a>",
+  "ja": "賞・審査基準"
+ },
+ {
+  "id": "s0085",
+  "ctx": "index.html <h2>",
+  "ja": "<span class=\"nb\">同じ時間、同じ場所で、</span><span class=\"nb\">一つの物語を。</span>"
+ },
+ {
+  "id": "s0086",
+  "ctx": "index.html <p>",
+  "ja": "2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。劇場入場1,000円・指定席。<span data-selection=\"on\">SCARTSでのセレクション上映は無料。</span><span data-sale=\"off presale\">先行支援は10月下旬から CAMPFIRE で（11月下旬まで）。</span><span data-sale=\"general\">チケットは teket で販売中。</span><span data-submit=\"on\">作品の応募も受付中です。</span><span data-submit=\"soon\">作品応募は12月に受付開始予定です。</span>"
+ },
+ {
+  "id": "s0087",
+  "ctx": "index.html <h2>",
+  "ja": "本日、開催中。"
+ },
+ {
+  "id": "s0088",
+  "ctx": "index.html <p>",
+  "ja": "チケット・タイムテーブル・会場アクセスはこちら。<span data-selection=\"on\">SCARTSでの上映は無料・入場自由です。</span>"
+ },
+ {
+  "id": "s0089",
+  "ctx": "index.html <h2>",
+  "ja": "<span class=\"nb\">次は、</span><span class=\"nb\">あなたの物語を。</span>"
+ },
+ {
+  "id": "s0090",
+  "ctx": "index.html <p>",
+  "ja": "第1回の受賞作と記録を公開中。次回の募集開始は X でお知らせします。"
+ },
+ {
+  "id": "s0091",
+  "ctx": "index.html <h2>",
+  "ja": "<span class=\"nb\">最初の炎を、</span><span class=\"nb\">いっしょに。</span>"
+ },
+ {
+  "id": "s0092",
+  "ctx": "index.html <p>",
+  "ja": "第1回の開催資金を、クラウドファンディング（CAMPFIRE）で募ります。チケットの先行支援もここで。<strong>2026年10月下旬〜11月下旬</strong>。"
+ },
+ {
+  "id": "s0093",
+  "ctx": "index.html <p>",
+  "ja": "クラウドファンディング（CAMPFIRE・2026年10月下旬〜11月下旬）は終了しました。ご支援いただいた皆さまは、種火ナンバーとともに支援者紹介ページに掲載しています。"
+ },
+ {
+  "id": "s0094",
+  "ctx": "index.html <h3>",
+  "ja": "劇場入場（指定席）"
+ },
+ {
+  "id": "s0095",
+  "ctx": "index.html <p>",
+  "ja": "1,000円"
+ },
+ {
+  "id": "s0096",
+  "ctx": "index.html <p>",
+  "ja": "最終選考通過作品の上映・授賞式（hitaru・12:00〜15:00）。先行枠300席。座席は12月に teket の引換コードで選べます。"
+ },
+ {
+  "id": "s0097",
+  "ctx": "index.html <h3>",
+  "ja": "オンラインアーカイブ"
+ },
+ {
+  "id": "s0098",
+  "ctx": "index.html <p>",
+  "ja": "講演・トークの収録映像を、開催後に約1か月配信。遠方の方も。"
+ },
+ {
+  "id": "s0099",
+  "ctx": "index.html <h3>",
+  "ja": "現地フル参加（劇場入場込み）"
+ },
+ {
+  "id": "s0100",
+  "ctx": "index.html <p>",
+  "ja": "5,000円"
+ },
+ {
+  "id": "s0101",
+  "ctx": "index.html <p>",
+  "ja": "劇場入場＋講演・トーク（会場）＋交流会。CAMPFIRE限定・50席。"
+ },
+ {
+  "id": "s0102",
+  "ctx": "index.html <p>",
+  "ja": "支援者全員に<strong>種火ナンバー</strong>を付与し、<a href=\"supporters.html\">支援者紹介ページ</a>に表記名を掲載します（少なくとも開催後1年間）。受賞作品は、支援者に開催翌日から1週間の先行上映のあと、オンラインで一般公開します。1万円コースは「プレミアムサポーター」、5万円コースは「ファウンディングサポーター」。"
+ },
+ {
+  "id": "s0103",
+  "ctx": "index.html <a>",
+  "ja": "支援者紹介"
+ },
+ {
+  "id": "s0104",
+  "ctx": "index.html <span>",
+  "ja": "先行販売の決済は CAMPFIRE 上で行われ、支援金は返金できません。"
+ },
+ {
+  "id": "s0105",
+  "ctx": "index.html <a>",
+  "ja": "支援者紹介を見る"
+ },
+ {
+  "id": "s0106",
+  "ctx": "index.html <h2>",
+  "ja": "開催概要"
+ },
+ {
+  "id": "s0107",
+  "ctx": "index.html <img alt>",
+  "ja": "札幌文化芸術劇場 hitaru 劇場内観"
+ },
+ {
+  "id": "s0108",
+  "ctx": "index.html <dt>",
+  "ja": "名称"
+ },
+ {
+  "id": "s0109",
+  "ctx": "index.html <dd>",
+  "ja": "札幌国際AI映画祭<br><span class=\"muted small\">Sapporo International AI Film Festival &amp; Incubation</span>"
+ },
+ {
+  "id": "s0110",
+  "ctx": "index.html <dt>",
+  "ja": "日程"
+ },
+ {
+  "id": "s0111",
+  "ctx": "index.html <dd>",
+  "ja": "2027年5月4日（火・祝）<br><span class=\"muted small\">劇場：開場 11:30／上映・授賞式 12:00〜15:00<br>スポンサーセッション・講演・トーク・交流会：16:00〜19:00（SCARTSコート）<span data-selection=\"on\"><br>セレクション上映：10:00 開始（SCARTS コート 10:00〜13:00／スタジオA・B 10:00〜21:00）</span></span>"
+ },
+ {
+  "id": "s0112",
+  "ctx": "index.html <dt>",
+  "ja": "会場"
+ },
+ {
+  "id": "s0113",
+  "ctx": "index.html <dd>",
+  "ja": "札幌文化芸術劇場 hitaru／札幌文化芸術交流センター SCARTS<br><span class=\"muted small\">〒060-0001 札幌市中央区北1条西1丁目 札幌市民交流プラザ内<br>劇場：4F（1〜2階席 1,686席・指定席）／SCARTS コート：1F／スタジオA・B：2F／モールA・B</span>"
+ },
+ {
+  "id": "s0114",
+  "ctx": "index.html <dt>",
+  "ja": "内容"
+ },
+ {
+  "id": "s0115",
+  "ctx": "index.html <dd>",
+  "ja": "最終選考通過作品の劇場上映・授賞式／<span data-selection=\"on\">二次選考通過作品のセレクション上映（SCARTS・無料）／</span>講演・トーク／交流会／受賞作品のオンライン公開（開催後）"
+ },
+ {
+  "id": "s0116",
+  "ctx": "index.html <dt>",
+  "ja": "料金"
+ },
+ {
+  "id": "s0117",
+  "ctx": "index.html <dd>",
+  "ja": "劇場入場 1,000円（指定席）／オンラインアーカイブ 1,000円／現地フル参加 5,000円（CAMPFIRE限定）<br><span class=\"muted small\">想定来場 約1,000人</span>"
+ },
+ {
+  "id": "s0118",
+  "ctx": "index.html <dt>",
+  "ja": "主催"
+ },
+ {
+  "id": "s0119",
+  "ctx": "index.html <dd>",
+  "ja": "札幌国際AI映画祭実行委員会<br>札幌すごいAI会"
+ },
+ {
+  "id": "s0120",
+  "ctx": "index.html <dt>",
+  "ja": "後援・協力"
+ },
+ {
+  "id": "s0121",
+  "ctx": "index.html <dd>",
+  "ja": "<span class=\"tbd\">＜仮・調整中＞</span>"
+ },
+ {
+  "id": "s0122",
+  "ctx": "index.html <h2>",
+  "ja": "審査員・登壇者"
+ },
+ {
+  "id": "s0123",
+  "ctx": "index.html <p>",
+  "ja": "審査員・登壇者の一覧を表示するにはJavaScriptを有効にしてください。"
+ },
+ {
+  "id": "s0124",
+  "ctx": "index.html <p>",
+  "ja": "<a class=\"text-link\" href=\"program.html#jury\" data-show=\"2 3 4\">すべての審査員・登壇者</a> <a class=\"text-link\" href=\"submit.html#jury\" data-show=\"1\">審査員を見る</a>"
+ },
+ {
+  "id": "s0125",
+  "ctx": "index.html <h2>",
+  "ja": "お知らせ"
+ },
+ {
+  "id": "s0126",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"news.html\">お知らせ一覧はこちら</a>"
+ },
+ {
+  "id": "s0127",
+  "ctx": "index.html <p>",
+  "ja": "<a class=\"text-link\" href=\"news.html\">お知らせ一覧</a>"
+ },
+ {
+  "id": "s0128",
+  "ctx": "index.html <h2>",
+  "ja": "スポンサー"
+ },
+ {
+  "id": "s0129",
+  "ctx": "index.html <h3>",
+  "ja": "スポンサー募集中"
+ },
+ {
+  "id": "s0130",
+  "ctx": "index.html <p>",
+  "ja": "第1回の開催をともに創るスポンサーを募集しています。ロゴ露出だけでなく、交流会でのクリエイターとの接点を。ここは、hitaru の客席とスクリーンに広告を流さない映画祭です。協賛申込締切は2027年4月25日。"
+ },
+ {
+  "id": "s0131",
+  "ctx": "index.html <a>",
+  "ja": "協賛について詳しく"
+ },
+ {
+  "id": "s0132",
+  "ctx": "index.html <p>",
+  "ja": "募集開始、審査員発表、クラウドファンディングの進捗、チケット発売。最新情報は X でお知らせします。クリエイターの方は、Discord で制作の相談や仲間探しもどうぞ。"
+ },
+ {
+  "id": "s0133",
+  "ctx": "index.html <a>",
+  "ja": "X をフォローする <span class=\"ext\" aria-hidden=\"true\">↗</span>"
+ },
+ {
+  "id": "s0134",
+  "ctx": "index.html <a>",
+  "ja": "Discord に参加する <span class=\"ext\" aria-hidden=\"true\">↗</span>"
+ },
+ {
+  "id": "s0135",
+  "ctx": "index.html <span>",
+  "ja": "いずれも外部サービスに移動します。"
+ },
+ {
+  "id": "s0136",
+  "ctx": "index.html <a>",
+  "ja": "<img src=\"assets/img/logo-160.png\" srcset=\"assets/img/logo.png 2x\" alt width=\"38\" height=\"38\"> <span class=\"brand__text\"><span class=\"brand__ja\">札幌国際AI映画祭</span><span class=\"brand__en\" style=\"display:block\">Sapporo International AI Film Festival &amp; Incubation</span></span>"
+ },
+ {
+  "id": "s0137",
+  "ctx": "index.html <p>",
+  "ja": "2027年5月4日（火・祝）<br>札幌文化芸術劇場 hitaru／SCARTS<br><span class=\"small\">（札幌市民交流プラザ）</span><br>主催：札幌国際AI映画祭実行委員会／札幌すごいAI会"
+ },
+ {
+  "id": "s0138",
+  "ctx": "index.html <nav aria-label>",
+  "ja": "フッター：映画祭"
+ },
+ {
+  "id": "s0139",
+  "ctx": "index.html <h2>",
+  "ja": "映画祭"
+ },
+ {
+  "id": "s0140",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"archive.html\">アーカイブ</a>"
+ },
+ {
+  "id": "s0141",
+  "ctx": "index.html <nav aria-label>",
+  "ja": "フッター：情報"
+ },
+ {
+  "id": "s0142",
+  "ctx": "index.html <h2>",
+  "ja": "インフォメーション"
+ },
+ {
+  "id": "s0143",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"news.html\">お知らせ</a>"
+ },
+ {
+  "id": "s0144",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"mailto:info@sugoiai.org?subject=%E3%80%90%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9BAI%E6%98%A0%E7%94%BB%E7%A5%AD%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B\">お問い合わせ（info@sugoiai.org）</a>"
+ },
+ {
+  "id": "s0145",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"privacy.html\">プライバシーポリシー</a>"
+ },
+ {
+  "id": "s0146",
+  "ctx": "index.html <li>",
+  "ja": "<a href=\"legal.html\">法的表記</a>"
+ },
+ {
+  "id": "s0147",
+  "ctx": "index.html <nav aria-label>",
+  "ja": "フッター：SNS"
+ },
+ {
+  "id": "s0148",
+  "ctx": "index.html <h2>",
+  "ja": "フォロー"
+ },
+ {
+  "id": "s0149",
+  "ctx": "index.html <li>",
+  "ja": "<a data-ext=\"x\" data-target=\"general\" data-pos=\"footer\" href=\"https://x.com/ykishimotoy\">X（@ykishimotoy）</a>"
+ },
+ {
+  "id": "s0150",
+  "ctx": "index.html <li>",
+  "ja": "<a data-ext=\"discord\" data-target=\"creator\" data-pos=\"footer\" href=\"https://discord.gg/Ve2tQeN7cw\">Discord（クリエイター向け）</a>"
+ },
+ {
+  "id": "s0151",
+  "ctx": "index.html <p>",
+  "ja": "© <span data-year>2026</span> 札幌国際AI映画祭実行委員会 / Sapporo International AI Film Festival &amp; Incubation"
+ },
+ {
+  "id": "s0152",
+  "ctx": "index.html ld.description",
+  "ja": "AIを創作に用いた映像作品の国際映画祭。最終選考通過作品の劇場上映・授賞式、クリエイター講演・トーク、交流会を一つの流れとして開催し、受賞作品は開催後にオンラインで公開する。"
+ },
+ {
+  "id": "s0153",
+  "ctx": "index.html ld.location.name",
+  "ja": "札幌文化芸術劇場 hitaru／札幌文化芸術交流センター SCARTS（札幌市民交流プラザ）"
+ },
+ {
+  "id": "s0154",
+  "ctx": "index.html ld.organizer[0].name",
+  "ja": "札幌国際AI映画祭実行委員会"
+ },
+ {
+  "id": "s0155",
+  "ctx": "index.html ld.organizer[1].name",
+  "ja": "札幌すごいAI会"
+ },
+ {
+  "id": "s0156",
+  "ctx": "about.html <title>",
+  "ja": "理念 | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0157",
+  "ctx": "about.html <meta content>",
+  "ja": "札幌国際AI映画祭のコンセプト、映画祭の構造（物語を浴びる／創造力を知る／未来を起動する）、Incubation、主催者、お問い合わせ。"
+ },
+ {
+  "id": "s0158",
+  "ctx": "about.html <li>",
+  "ja": "<a href=\"about.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0159",
+  "ctx": "about.html <h1>",
+  "ja": "理念"
+ },
+ {
+  "id": "s0160",
+  "ctx": "about.html <p>",
+  "ja": "創る力が誰もにひらかれた時代の、羅針盤であり、祝祭の炎。"
+ },
+ {
+  "id": "s0161",
+  "ctx": "about.html <li>",
+  "ja": "<a href=\"#concept\">コンセプト</a>"
+ },
+ {
+  "id": "s0162",
+  "ctx": "about.html <li>",
+  "ja": "<a href=\"#structure\">映画祭の構造</a>"
+ },
+ {
+  "id": "s0163",
+  "ctx": "about.html <li>",
+  "ja": "<a href=\"#organizer\">主催者</a>"
+ },
+ {
+  "id": "s0164",
+  "ctx": "about.html <li>",
+  "ja": "<a href=\"#contact\">お問い合わせ</a>"
+ },
+ {
+  "id": "s0165",
+  "ctx": "about.html <h2>",
+  "ja": "<span class=\"nb\">札幌国際AI映画祭は、</span><span class=\"nb\">炎だ。</span>"
+ },
+ {
+  "id": "s0166",
+  "ctx": "about.html <p>",
+  "ja": "<span class=\"nb\">新しい創作手段を手にした人々から</span><span class=\"nb\">生まれる物語を、体感し、称え、</span><br><span class=\"nb\">そこから次の創り手と次の物語を</span><span class=\"nb\">生み出していくための、祝祭の炎だ。</span>"
+ },
+ {
+  "id": "s0167",
+  "ctx": "about.html <p>",
+  "ja": "人類は太古の昔から、頭の中に物語を持っていた。"
+ },
+ {
+  "id": "s0168",
+  "ctx": "about.html <p>",
+  "ja": "見たことのない景色。<br>まだ存在しない人物。<br>忘れられない記憶。<br>言葉にできない感情。<br>誰かに伝えたい世界。"
+ },
+ {
+  "id": "s0169",
+  "ctx": "about.html <p>",
+  "ja": "想像することそのものは、ずっと誰にでもできた。けれど、それを形にすることは簡単ではなかった。カメラ、俳優、スタッフ、音楽、編集、CG、時間、資金。どれほど鮮烈な世界を思い描いていても、それを映像として完成させ、誰かに届けられる人は限られていた。"
+ },
+ {
+  "id": "s0170",
+  "ctx": "about.html <p>",
+  "ja": "しかし今、その壁がAIによって破壊された。一人の人間が、自分の想像から映像を創る。音を創る。声を創る。人物を生み出す。そして、一つの物語を立ち上げる。"
+ },
+ {
+  "id": "s0171",
+  "ctx": "about.html <p>",
+  "ja": "いま、かつてないほど多くの人が、自分の物語を形にできる時代が始まっている。"
+ },
+ {
+  "id": "s0172",
+  "ctx": "about.html <p>",
+  "ja": "私たちが面白いと思っているのは、AIそのものではない。これまで「創りたい」と思っていても手段を持たなかった人が、「創れる」に変わったことだ。学生でもいい。会社員でもいい。音楽家でも、画家でも、エンジニアでもいい。映画を一度も創ったことがなかった人が、自分の中にある物語を映像にできる。"
+ },
+ {
+  "id": "s0173",
+  "ctx": "about.html <p>",
+  "ja": "AIが人間の代わりに創作するからではない。<strong>人間の中に眠っていた創造性を、外の世界へ連れ出せる範囲が、かつてないほど大きく広がったからだ。</strong>"
+ },
+ {
+  "id": "s0174",
+  "ctx": "about.html <p>",
+  "ja": "創る力が多くの人にひらかれるほど、次の問いが重要になる。"
+ },
+ {
+  "id": "s0175",
+  "ctx": "about.html <p>",
+  "ja": "あなたは、何を創りたいのか。"
+ },
+ {
+  "id": "s0176",
+  "ctx": "about.html <p>",
+  "ja": "美しい映像を創れる。壮大な世界を描ける。一人でも映画を完成させられる。それは確かに大きな変化だ。しかし、それだけじゃ人の心は動かない。なぜ、その物語を語るのか。観た人に、どんな感情を残したいのか。使える技術が増えるほど、最後に残る問いは、むしろ人間的になる。"
+ },
+ {
+  "id": "s0177",
+  "ctx": "about.html <p>",
+  "ja": "だから、私たちが本当に求めているものは、「AI作品」という枠そのものではない。映画かもしれない。アニメーションかもしれない。音楽やゲーム、インタラクティブな体験かもしれない。表現の形は変わっていい。使う技術も変わっていい。"
+ },
+ {
+  "id": "s0178",
+  "ctx": "about.html <p>",
+  "ja": "そして、その中心にいるのは、何かを伝えようとする人間だ。"
+ },
+ {
+  "id": "s0179",
+  "ctx": "about.html <p>",
+  "ja": "映画はただ「見る」だけのものではない。暗闇の中で、大スクリーンに世界が立ち上がる。音が身体に響く。隣の誰かが息を呑み、笑い、泣く。同じ時間、同じ場所で、一つの物語を大勢の人と共有する。<strong>映画館だからこそ生まれる、物語を全身で体感する瞬間がある。</strong>"
+ },
+ {
+  "id": "s0180",
+  "ctx": "about.html <p>",
+  "ja": "配信によって、いつでもどこでも作品に触れられる時代だからこそ、映画祭という場には意味がある。そこまで届いたとき、技術は背景へ退いていく。残るのは、作品であり、物語であり、それを創った人間と、受け取った人間の間に生まれる何かだ。"
+ },
+ {
+  "id": "s0181",
+  "ctx": "about.html <p>",
+  "ja": "私たちが見たいのは、技術の性能競争ではない。"
+ },
+ {
+  "id": "s0182",
+  "ctx": "about.html <p>",
+  "ja": "新しい力を手にした人間が、何を生み出すのか。<br>その物語が、どこまで人の心を動かせるのか、だ。"
+ },
+ {
+  "id": "s0183",
+  "ctx": "about.html <p>",
+  "ja": "あなたは何を創る？<br>見せてくれ。全部見届けるから。"
+ },
+ {
+  "id": "s0184",
+  "ctx": "about.html <p>",
+  "ja": "<span class=\"nb\">物語を解き放て。</span><span class=\"nb\">魂を揺さぶれ。</span><br><span class=\"nb\">種火はもう、</span><span class=\"nb\">その手にある。</span><small>札幌国際AI映画祭、開幕。</small>"
+ },
+ {
+  "id": "s0185",
+  "ctx": "about.html <h2>",
+  "ja": "映画祭の構造"
+ },
+ {
+  "id": "s0186",
+  "ctx": "about.html <p>",
+  "ja": "上映、講演・トーク、交流会を、それぞれ独立した企画としてではなく、一つの流れとして設計します。"
+ },
+ {
+  "id": "s0187",
+  "ctx": "about.html <p>",
+  "ja": "<strong>映画祭（上映・作品表彰）</strong>"
+ },
+ {
+  "id": "s0188",
+  "ctx": "about.html <p>",
+  "ja": "最終選考を通過した作品は劇場 hitaru の大スクリーンで上映し、各賞の対象とします。<span data-selection=\"on\">二次選考を通過した作品は SCARTS で（無料）上映します。</span>受賞作品は開催後、オンラインで公開します。世界中から集まった作品を、観客の皆さまと一緒に体感します。会場の笑い、静寂、驚き、緊張感まで含めて、一つの作品を受け取る。単に「見る」のではなく、物語を浴びるように体感することを大切にします。"
+ },
+ {
+  "id": "s0189",
+  "ctx": "about.html <p>",
+  "ja": "審査では、どのAIや技術を利用したかだけではなく、その作品が何を描き、どのような体験を生み、観客の心をどこまで動かしたのかを重視します。"
+ },
+ {
+  "id": "s0190",
+  "ctx": "about.html <p>",
+  "ja": "<strong>クリエイター講演・トーク</strong>"
+ },
+ {
+  "id": "s0191",
+  "ctx": "about.html <p>",
+  "ja": "映画監督、アニメーター、映像作家、AIクリエイターなど、AIを映像制作に実際に使っている方々が、どう発想し、何に悩み、何を試してきたのかを共有します。"
+ },
+ {
+  "id": "s0192",
+  "ctx": "about.html <p>",
+  "ja": "著名な方の話を聞いて終わる講演会ではありません。他者の創造力に触れることで、自分自身の創造力を知る。来る前と帰るときで、「自分にも創れるかもしれないもの」が少し増えている状態を目指します。"
+ },
+ {
+  "id": "s0193",
+  "ctx": "about.html <p>",
+  "ja": "<strong>交流会</strong>"
+ },
+ {
+  "id": "s0194",
+  "ctx": "about.html <p>",
+  "ja": "クリエイター同士はもちろん、映像と音楽、クリエイターと企業、学生とプロフェッショナル、日本と海外。普段は別の場所で活動している人々が出会います。"
+ },
+ {
+  "id": "s0195",
+  "ctx": "about.html <p>",
+  "ja": "単なる懇親会ではなく、未来を起動するための最初の一歩。映画とロボティクス、映像と観光――「そこがつながるのか」という出会いから、当日にはまだ存在しなかったものが動き始めます。"
+ },
+ {
+  "id": "s0196",
+  "ctx": "about.html <h2>",
+  "ja": "<span class=\"nb\"><ruby>映画祭<rp>（</rp><rt>シネマ</rt><rp>）</rp></ruby>であり、</span><br class=\"br-pc\"><span class=\"nb\"><ruby>孵化装置<rp>（</rp><rt>インキュベーター</rt><rp>）</rp></ruby>である。</span>"
+ },
+ {
+  "id": "s0197",
+  "ctx": "about.html <p>",
+  "ja": "英語名称の「&amp; Incubation」は飾りではありません。この映画祭では、<strong>講演・トーク（実演を含む）</strong>、<strong>交流会</strong>、<strong>受賞作品のオンライン公開</strong>、そして<strong>次の作品への循環</strong>の四つを合わせて Incubation と呼びます。"
+ },
+ {
+  "id": "s0198",
+  "ctx": "about.html <p>",
+  "ja": "観客として参加した方が、いつか作品を創る側になっている。交流会で出会った二人が、一緒に創った作品をスクリーンに映している。そんな循環が生まれることを願っています。完成した作品を集めて上映するだけの場ではなく、物語を体感し、自分の創造力を知り、次の創造が動き始める場にしていきます。"
+ },
+ {
+  "id": "s0199",
+  "ctx": "about.html <h3>",
+  "ja": "講演・トーク ―― 創り始める"
+ },
+ {
+  "id": "s0200",
+  "ctx": "about.html <p>",
+  "ja": "創り手の発想と試行錯誤に、実演を交えて触れる。はじめての人が「自分にもできるかもしれない」と感じ、最初の一本に手をつけるきっかけに。"
+ },
+ {
+  "id": "s0201",
+  "ctx": "about.html <h3>",
+  "ja": "交流会 ―― 出会い、組む"
+ },
+ {
+  "id": "s0202",
+  "ctx": "about.html <p>",
+  "ja": "クリエイター・企業・学生・海外ゲストが出会い、次の作品、チーム、仕事、プロジェクトが始まる。"
+ },
+ {
+  "id": "s0203",
+  "ctx": "about.html <h3>",
+  "ja": "受賞作品のオンライン公開 ―― 届ける"
+ },
+ {
+  "id": "s0204",
+  "ctx": "about.html <p>",
+  "ja": "受賞作品は開催後、公式チャンネル等でオンライン公開する。会場に来られなかった人にも物語が届き、創り手の次の機会につながる。"
+ },
+ {
+  "id": "s0205",
+  "ctx": "about.html <h3>",
+  "ja": "次の作品への循環 ―― スクリーンに還る"
+ },
+ {
+  "id": "s0206",
+  "ctx": "about.html <p>",
+  "ja": "ここでの出会いから、次の作品が生まれ、またどこかのスクリーンに映る。観客が創り手になる循環を目指す。"
+ },
+ {
+  "id": "s0207",
+  "ctx": "about.html <h2>",
+  "ja": "主催者・実行委員会"
+ },
+ {
+  "id": "s0208",
+  "ctx": "about.html <img alt>",
+  "ja": "札幌国際AI映画祭実行委員会 ロゴ"
+ },
+ {
+  "id": "s0209",
+  "ctx": "about.html <p>",
+  "ja": "札幌国際AI映画祭の企画・運営を行う、有志による<strong>非営利</strong>の実行委員会です。AIが開いた映画の未来を、札幌で具現化することに燃える人材が集まっています。"
+ },
+ {
+  "id": "s0210",
+  "ctx": "about.html <p>",
+  "ja": "札幌を拠点とするAIコミュニティです。「AIってすごい、を体感し、分かち合う」をコンセプトに、札幌市内で本映画祭や、「札幌すごいAIまつり」などのイベントを開催しています。"
+ },
+ {
+  "id": "s0211",
+  "ctx": "about.html <h3>",
+  "ja": "実行委員"
+ },
+ {
+  "id": "s0212",
+  "ctx": "about.html <p>",
+  "ja": "実行委員の一覧を表示するにはJavaScriptを有効にしてください。"
+ },
+ {
+  "id": "s0213",
+  "ctx": "about.html <h2>",
+  "ja": "お問い合わせ"
+ },
+ {
+  "id": "s0214",
+  "ctx": "about.html <p>",
+  "ja": "応募、チケット、協賛、取材、その他のお問い合わせは、すべてメールで受け付けています。"
+ },
+ {
+  "id": "s0215",
+  "ctx": "about.html <p>",
+  "ja": "<strong>お問い合わせは日本語または英語でお願いします。</strong><br><span class=\"small\">Inquiries are accepted in Japanese or English.</span>"
+ },
+ {
+  "id": "s0216",
+  "ctx": "about.html <span>",
+  "ja": "メールソフトが開きます。開かない場合は info@sugoiai.org 宛に直接お送りください。"
+ },
+ {
+  "id": "s0217",
+  "ctx": "submit.html <title>",
+  "ja": "作品応募 | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0218",
+  "ctx": "submit.html <meta content>",
+  "ja": "AIを創作に用いた映像作品を世界中から募集。応募窓口は FilmFreeway。応募料は$10。締切 2027年3月31日。賞、審査基準、募集作品・形式、スケジュール。"
+ },
+ {
+  "id": "s0219",
+  "ctx": "submit.html <li>",
+  "ja": "<a href=\"submit.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0220",
+  "ctx": "submit.html <h1>",
+  "ja": "<span class=\"nb\">あなたは何を創る？</span><br class=\"br-pc\"><span class=\"nb\">見せてくれ。</span><span class=\"nb\">全部見届けるから。</span>"
+ },
+ {
+  "id": "s0221",
+  "ctx": "submit.html <p>",
+  "ja": "AIを創作に用いた映像作品を、世界中から募集します。<br>問うのは、その物語が人の心をどこまで動かすか。"
+ },
+ {
+  "id": "s0222",
+  "ctx": "submit.html <dt>",
+  "ja": "SECOND SELECTION ／ 二次選考通過"
+ },
+ {
+  "id": "s0223",
+  "ctx": "submit.html <dd>",
+  "ja": "<strong><span class=\"nb\">SCARTS コート・</span><span class=\"nb\">スタジオで上映</span></strong><span class=\"small\">入場無料のセレクション上映（同じ建物の 1F／2F）</span>"
+ },
+ {
+  "id": "s0224",
+  "ctx": "submit.html <dt>",
+  "ja": "FINAL SELECTION ／ 最終選考通過"
+ },
+ {
+  "id": "s0225",
+  "ctx": "submit.html <dd>",
+  "ja": "<strong><span class=\"nb\">劇場 hitaru の</span><span class=\"nb\">大スクリーンで上映</span></strong><span class=\"small\">1,686席・各賞の審査対象</span>"
+ },
+ {
+  "id": "s0226",
+  "ctx": "submit.html <dt>",
+  "ja": "DEADLINE ／ 応募締切"
+ },
+ {
+  "id": "s0227",
+  "ctx": "submit.html <dd>",
+  "ja": "2027.3.31（水）23:59 JST"
+ },
+ {
+  "id": "s0228",
+  "ctx": "submit.html <dt>",
+  "ja": "FEE ／ 応募料"
+ },
+ {
+  "id": "s0229",
+  "ctx": "submit.html <dt>",
+  "ja": "FORMAT ／ 形式"
+ },
+ {
+  "id": "s0230",
+  "ctx": "submit.html <dd>",
+  "ja": "3〜15分・16:9・全年齢"
+ },
+ {
+  "id": "s0231",
+  "ctx": "submit.html <span>",
+  "ja": "締切まで"
+ },
+ {
+  "id": "s0232",
+  "ctx": "submit.html <a>",
+  "ja": "FilmFreeway で応募する <span class=\"ext\" aria-hidden=\"true\">↗</span>"
+ },
+ {
+  "id": "s0233",
+  "ctx": "submit.html <a>",
+  "ja": "募集作品・形式を見る"
+ },
+ {
+  "id": "s0234",
+  "ctx": "submit.html <span>",
+  "ja": "応募は FilmFreeway で受け付けます。1人1本（最大2本）。外部サービスに移動します。"
+ },
+ {
+  "id": "s0235",
+  "ctx": "submit.html <span>",
+  "ja": "FilmFreeway で応募する <span class=\"soon-tag\">12月受付開始予定</span>"
+ },
+ {
+  "id": "s0236",
+  "ctx": "submit.html <span>",
+  "ja": "作品応募は <strong>2026年12月</strong>に FilmFreeway で受付開始予定です。応募料は$10。開始は X・Discord でお知らせします。"
+ },
+ {
+  "id": "s0237",
+  "ctx": "submit.html <p>",
+  "ja": "<strong>第1回の作品応募は締め切りました。</strong>たくさんのご応募をありがとうございました。次回の募集開始は X・Discord でお知らせします。応募されたすべての方へ――ぜひ会場で、他の創り手の物語を浴びてください。"
+ },
+ {
+  "id": "s0238",
+  "ctx": "submit.html <a>",
+  "ja": "チケット案内"
+ },
+ {
+  "id": "s0239",
+  "ctx": "submit.html <a>",
+  "ja": "次回の募集通知を受け取る"
+ },
+ {
+  "id": "s0240",
+  "ctx": "submit.html <li>",
+  "ja": "<a href=\"#criteria\">審査基準</a>"
+ },
+ {
+  "id": "s0241",
+  "ctx": "submit.html <li>",
+  "ja": "<a href=\"#awards\">賞</a>"
+ },
+ {
+  "id": "s0242",
+  "ctx": "submit.html <li>",
+  "ja": "<a href=\"#categories\">募集作品・形式</a>"
+ },
+ {
+  "id": "s0243",
+  "ctx": "submit.html <li>",
+  "ja": "<a href=\"#jury\">審査員</a>"
+ },
+ {
+  "id": "s0244",
+  "ctx": "submit.html <li>",
+  "ja": "<a href=\"guideline.html\">制作ガイドライン</a>"
+ },
+ {
+  "id": "s0245",
+  "ctx": "submit.html <h2>",
+  "ja": "<span class=\"nb\">私たちが見たいのは、</span><span class=\"nb\">物語だ。</span>"
+ },
+ {
+  "id": "s0246",
+  "ctx": "submit.html <p>",
+  "ja": "どのAIを使ったか、どれほど新しい技術かは、審査の主題ではありません。その作品が何を語り、どんな体験を生み、観客の心をどこまで動かしたか。物語の力を、まず見ます。"
+ },
+ {
+  "id": "s0247",
+  "ctx": "submit.html <h3>",
+  "ja": "何を描いたか"
+ },
+ {
+  "id": "s0248",
+  "ctx": "submit.html <p>",
+  "ja": "なぜ、その物語を語るのか。何を伝えたいのか。創り手の中にあったものが、作品として立ち上がっているか。"
+ },
+ {
+  "id": "s0249",
+  "ctx": "submit.html <h3>",
+  "ja": "どんな体験を生んだか"
+ },
+ {
+  "id": "s0250",
+  "ctx": "submit.html <p>",
+  "ja": "映像、音、時間の設計。大スクリーンと劇場の暗闇の中で、観客が物語を「浴びる」体験になっているか。"
+ },
+ {
+  "id": "s0251",
+  "ctx": "submit.html <h3>",
+  "ja": "心をどこまで動かしたか"
+ },
+ {
+  "id": "s0252",
+  "ctx": "submit.html <p>",
+  "ja": "笑わせる。泣かせる。驚かせる。考えさせる。観た人に、何かを残したか。"
+ },
+ {
+  "id": "s0253",
+  "ctx": "submit.html <p>",
+  "ja": "<strong>技術は、物語を支える限りにおいて見ます。</strong>映像や音の破綻、人物や世界の一貫性の乱れといったAI特有のほころびを、創り手がどこまで制御し、作品の体験を損なわずに仕上げたか。そして新しい表現手法への挑戦。これらは上記3点を支える副次的な要素として評価します。"
+ },
+ {
+  "id": "s0254",
+  "ctx": "submit.html <h3>",
+  "ja": "審査の流れ"
+ },
+ {
+  "id": "s0255",
+  "ctx": "submit.html <h4>",
+  "ja": "一次審査"
+ },
+ {
+  "id": "s0256",
+  "ctx": "submit.html <p>",
+  "ja": "応募されたすべての作品を審査します。"
+ },
+ {
+  "id": "s0257",
+  "ctx": "submit.html <h4>",
+  "ja": "二次選考通過 ―― SCARTS での上映が確定"
+ },
+ {
+  "id": "s0258",
+  "ctx": "submit.html <p>",
+  "ja": "二次選考を通過した作品は、2027年4月15日に発表し、映画祭当日に SCARTS コート・スタジオA／Bで上映します（セレクション上映／10:00 開始・入場無料）。"
+ },
+ {
+  "id": "s0259",
+  "ctx": "submit.html <h4>",
+  "ja": "最終選考通過（ファイナリスト） ―― 劇場 hitaru での上映が確定"
+ },
+ {
+  "id": "s0260",
+  "ctx": "submit.html <p>",
+  "ja": "最終選考を通過した作品は、さらに札幌文化芸術劇場 hitaru の大スクリーンで上映し、各賞の審査対象になります。"
+ },
+ {
+  "id": "s0261",
+  "ctx": "submit.html <p>",
+  "ja": "二次選考通過作品と最終選考通過作品は、<strong>2027年4月15日</strong>に同時に発表します。通過本数は公表しません。結果は応募者全員に FilmFreeway 経由でお知らせします。"
+ },
+ {
+  "id": "s0262",
+  "ctx": "submit.html <h2>",
+  "ja": "賞"
+ },
+ {
+  "id": "s0263",
+  "ctx": "submit.html <p>",
+  "ja": "各賞は、最終選考を通過し、2027年5月4日に札幌文化芸術劇場 hitaru の大スクリーンで上映される作品の中から選びます。問うのは技術の新しさではなく、その物語が人の心をどこまで動かしたか。<span class=\"tbd\">＜選出方法は調整中＞</span>"
+ },
+ {
+  "id": "s0264",
+  "ctx": "submit.html <p>",
+  "ja": "グランプリ"
+ },
+ {
+  "id": "s0265",
+  "ctx": "submit.html <p>",
+  "ja": "最優秀作品"
+ },
+ {
+  "id": "s0266",
+  "ctx": "submit.html <p>",
+  "ja": "全応募作品の頂点。物語の力で、この日もっとも深く人の心を動かした一作に。トロフィーを授与します。"
+ },
+ {
+  "id": "s0267",
+  "ctx": "submit.html <p>",
+  "ja": "審査員特別賞"
+ },
+ {
+  "id": "s0268",
+  "ctx": "submit.html <p>",
+  "ja": "審査員一人ひとりが、自らの名において選ぶ一作。順位ではなく「この作品を、見届けずにはいられなかった」という個人の確信に贈る賞。"
+ },
+ {
+  "id": "s0269",
+  "ctx": "submit.html <p>",
+  "ja": "企業賞"
+ },
+ {
+  "id": "s0270",
+  "ctx": "submit.html <p>",
+  "ja": "協賛企業（最大3社）がそれぞれ命名し、授賞式で授与する賞。創り手と企業の、最初の出会いを刻む賞。"
+ },
+ {
+  "id": "s0271",
+  "ctx": "submit.html <p>",
+  "ja": "SAPPORO賞"
+ },
+ {
+  "id": "s0272",
+  "ctx": "submit.html <p>",
+  "ja": "札幌にゆかりのある創り手の作品、または札幌を題材にした作品に。この街から世界へ向かう物語を称える賞。"
+ },
+ {
+  "id": "s0273",
+  "ctx": "submit.html <p>",
+  "ja": "優秀賞"
+ },
+ {
+  "id": "s0274",
+  "ctx": "submit.html <p>",
+  "ja": "劇場上映ファイナリストのうち、映画祭当日に札幌の会場へ来場したクリエイターに授与します。物語を携えて、この街まで来てくれたことへの賞。"
+ },
+ {
+  "id": "s0275",
+  "ctx": "submit.html <p>",
+  "ja": "<strong>受賞作品は開催後、公式チャンネル等でオンライン公開します。</strong>クラウドファンディング支援者向けの先行上映（開催翌日から1週間）のあと、一般公開します。"
+ },
+ {
+  "id": "s0276",
+  "ctx": "submit.html <p>",
+  "ja": "<strong>ファイナリスト（最終選考通過作品）の選出は、来場予定の有無にかかわらず、作品だけを基準に行います。</strong>ファイナリストの作品は当日 札幌文化芸術劇場 hitaru の大スクリーンで上映されます。"
+ },
+ {
+  "id": "s0277",
+  "ctx": "submit.html <li>",
+  "ja": "<strong>優秀賞</strong>は、ファイナリストのうち映画祭当日に現地参加したクリエイターに授与します。"
+ },
+ {
+  "id": "s0278",
+  "ctx": "submit.html <li>",
+  "ja": "<strong>グランプリ、審査員特別賞、企業賞、SAPPORO賞</strong>は、現地参加の有無にかかわらず審査対象となり、受賞できます。"
+ },
+ {
+  "id": "s0279",
+  "ctx": "submit.html <li>",
+  "ja": "最終選考通過作品は、上映後のクロージングクレジットにクレジット表記します。"
+ },
+ {
+  "id": "s0280",
+  "ctx": "submit.html <h2>",
+  "ja": "募集作品・形式"
+ },
+ {
+  "id": "s0281",
+  "ctx": "submit.html <p>",
+  "ja": "部門は一つだけ。ストーリーも、アートも、MVも、アニメーションも、ドキュメンタリーも、まだ名前のないジャンルも。問うのは、その物語が人の心を動かすかどうかだけです。"
+ },
+ {
+  "id": "s0282",
+  "ctx": "submit.html <p>",
+  "ja": "<strong>以下は現時点の概要です。</strong>募集作品・形式とスケジュールは変更になる場合があります。応募条件・応募手順の詳細は、決定次第このページで公開します。"
+ },
+ {
+  "id": "s0283",
+  "ctx": "submit.html <h3>",
+  "ja": "メインセレクション"
+ },
+ {
+  "id": "s0284",
+  "ctx": "submit.html <p>",
+  "ja": "ジャンルを問わず、AIと人間の創造性が生み出す、新たな物語を選出する。"
+ },
+ {
+  "id": "s0285",
+  "ctx": "submit.html <p>",
+  "ja": "<b>上映時間</b>3分〜15分 ／ <b>アスペクト比</b>16:9（1080p以上推奨）"
+ },
+ {
+  "id": "s0286",
+  "ctx": "submit.html <p>",
+  "ja": "ストーリー、アート、MV、アニメーション、ドキュメンタリー、実験映像……ジャンルは何でもOK（内容は全年齢対象の範囲で）。AI生成を主要手法として作られた映像作品なら応募できます。一部実写との組み合わせも可。言語自由・架空言語もOK（日本語以外・不自然な日本語の作品は日本語字幕必須）。"
+ },
+ {
+  "id": "s0287",
+  "ctx": "submit.html <dt>",
+  "ja": "応募資格"
+ },
+ {
+  "id": "s0288",
+  "ctx": "submit.html <dd>",
+  "ja": "国籍・年齢・プロ／アマ不問。個人・チームいずれも可。未成年の方は保護者の同意を得てください。"
+ },
+ {
+  "id": "s0289",
+  "ctx": "submit.html <dt>",
+  "ja": "対象作品"
+ },
+ {
+  "id": "s0290",
+  "ctx": "submit.html <dd>",
+  "ja": "生成AIを主要な制作手法として用いた映像作品。一部実写・実写との組み合わせも可。他映画祭への出品歴・公開歴は不問。"
+ },
+ {
+  "id": "s0291",
+  "ctx": "submit.html <dt>",
+  "ja": "応募料"
+ },
+ {
+  "id": "s0292",
+  "ctx": "submit.html <dd>",
+  "ja": "<strong>$10</strong><br><span class=\"muted small\">FilmFreeway 上で決済します（米ドル建て）。</span>"
+ },
+ {
+  "id": "s0293",
+  "ctx": "submit.html <dt>",
+  "ja": "ファイル形式"
+ },
+ {
+  "id": "s0294",
+  "ctx": "submit.html <dd>",
+  "ja": "MP4（H.264）、1920×1080以上推奨、16:9、ステレオ音声<br><span class=\"muted small\">選考通過後、上映用マスターの提出をお願いする場合があります。</span>"
+ },
+ {
+  "id": "s0295",
+  "ctx": "submit.html <dt>",
+  "ja": "字幕"
+ },
+ {
+  "id": "s0296",
+  "ctx": "submit.html <dd>",
+  "ja": "日本語以外の作品、または日本語が不自然な作品は<strong>日本語字幕が必須</strong>。海外審査員・来場者のため、英語字幕の併記を推奨します。"
+ },
+ {
+  "id": "s0297",
+  "ctx": "submit.html <dt>",
+  "ja": "応募本数"
+ },
+ {
+  "id": "s0298",
+  "ctx": "submit.html <dd>",
+  "ja": "1人（1チーム）1本。最大2本まで応募できます。"
+ },
+ {
+  "id": "s0299",
+  "ctx": "submit.html <h3>",
+  "ja": "スケジュール"
+ },
+ {
+  "id": "s0300",
+  "ctx": "submit.html <h4>",
+  "ja": "応募受付開始（FilmFreeway）"
+ },
+ {
+  "id": "s0301",
+  "ctx": "submit.html <p>",
+  "ja": "応募料は$10。開始日は X・Discord でお知らせします。"
+ },
+ {
+  "id": "s0302",
+  "ctx": "submit.html <h4>",
+  "ja": "応募締切（水曜・23:59 日本時間）"
+ },
+ {
+  "id": "s0303",
+  "ctx": "submit.html <h4>",
+  "ja": "二次選考通過作品・最終選考通過作品の発表"
+ },
+ {
+  "id": "s0304",
+  "ctx": "submit.html <p>",
+  "ja": "二次選考通過作品は SCARTS コート・スタジオA／Bで、最終選考通過作品はさらに劇場 hitaru で上映します。応募者全員にメールで結果をお知らせします。"
+ },
+ {
+  "id": "s0305",
+  "ctx": "submit.html <h4>",
+  "ja": "上映・授賞式（札幌文化芸術劇場 hitaru／SCARTS）"
+ },
+ {
+  "id": "s0306",
+  "ctx": "submit.html <p>",
+  "ja": "最終選考通過者は、劇場と講演・トーク＆交流会にご招待します。渡航費は「クリエイター招聘基金」の範囲で支援します。二次選考通過者へのご招待はありません（作品は SCARTS で無料上映します）。"
+ },
+ {
+  "id": "s0307",
+  "ctx": "submit.html <h4>",
+  "ja": "受賞作品のオンライン公開"
+ },
+ {
+  "id": "s0308",
+  "ctx": "submit.html <p>",
+  "ja": "開催後、公式チャンネル等で公開します（クラウドファンディング支援者には1週間の先行上映）。"
+ },
+ {
+  "id": "s0309",
+  "ctx": "submit.html <p>",
+  "ja": "スケジュールは現時点の予定です。変更になる場合は、X・Discord でお知らせします。"
+ },
+ {
+  "id": "s0310",
+  "ctx": "submit.html <h2>",
+  "ja": "審査員"
+ },
+ {
+  "id": "s0311",
+  "ctx": "submit.html <p>",
+  "ja": "あなたの作品を見届ける人たち。<span class=\"tbd\">＜ほかの審査員は順次発表＞</span>"
+ },
+ {
+  "id": "s0312",
+  "ctx": "submit.html <p>",
+  "ja": "審査員の一覧を表示するにはJavaScriptを有効にしてください。"
+ },
+ {
+  "id": "s0313",
+  "ctx": "submit.html <h2>",
+  "ja": "<span class=\"nb\">種火はもう、</span><span class=\"nb\">その手にある。</span>"
+ },
+ {
+  "id": "s0314",
+  "ctx": "submit.html <p>",
+  "ja": "作品応募は2026年12月、FilmFreeway で受付開始予定。応募料は$10。X をフォローして開始を待つか、Discord で先に仲間を見つけておいてください。"
+ },
+ {
+  "id": "s0315",
+  "ctx": "submit.html <a>",
+  "ja": "X で開始を待つ <span class=\"ext\" aria-hidden=\"true\">↗</span>"
+ },
+ {
+  "id": "s0316",
+  "ctx": "submit.html <a>",
+  "ja": "Discordに参加する <span class=\"ext\" aria-hidden=\"true\">↗</span>"
+ },
+ {
+  "id": "s0317",
+  "ctx": "submit.html <p>",
+  "ja": "応募締切は 2027年3月31日（水）23:59（日本時間）。応募料は$10。まだ決めきれない方は、Discord で相談を。"
+ },
+ {
+  "id": "s0318",
+  "ctx": "submit.html <p>",
+  "ja": "応募者は、最も熱い観客です。選考の結果にかかわらず、会場で、他の創り手の物語を浴びてください。"
+ },
+ {
+  "id": "s0319",
+  "ctx": "program.html <title>",
+  "ja": "プログラム | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0320",
+  "ctx": "program.html <meta content>",
+  "ja": "最終選考通過作品の劇場上映・授賞式（12:00〜15:00・入場1,000円）、クリエイター講演・トーク、交流会、受賞作品のオンライン公開、審査員・登壇者、タイムテーブル。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。"
+ },
+ {
+  "id": "s0321",
+  "ctx": "program.html <li>",
+  "ja": "<a href=\"program.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0322",
+  "ctx": "program.html <h1>",
+  "ja": "<span class=\"nb\">物語を浴びる。</span><span class=\"nb\">創造力を知る。</span><br class=\"br-pc\"><span class=\"nb\">未来を起動する。</span>"
+ },
+ {
+  "id": "s0323",
+  "ctx": "program.html <p>",
+  "ja": "上映、講演・トーク、交流会。三つは別々の企画ではなく、一本の流れです。鑑賞だけで終わらない、次の創造へつながる一日を。"
+ },
+ {
+  "id": "s0324",
+  "ctx": "program.html <li>",
+  "ja": "<a href=\"#films\">劇場上映</a>"
+ },
+ {
+  "id": "s0325",
+  "ctx": "program.html <li>",
+  "ja": "<a href=\"#selection\">セレクション上映</a>"
+ },
+ {
+  "id": "s0326",
+  "ctx": "program.html <li>",
+  "ja": "<a href=\"#talks\">講演・トーク</a>"
+ },
+ {
+  "id": "s0327",
+  "ctx": "program.html <li>",
+  "ja": "<a href=\"#meetup\">交流会</a>"
+ },
+ {
+  "id": "s0328",
+  "ctx": "program.html <li>",
+  "ja": "<a href=\"#jury\">審査員・登壇者</a>"
+ },
+ {
+  "id": "s0329",
+  "ctx": "program.html <li>",
+  "ja": "<a href=\"#timetable\">タイムテーブル</a>"
+ },
+ {
+  "id": "s0330",
+  "ctx": "program.html <p>",
+  "ja": "<a class=\"btn btn--primary\" href=\"#timetable\">本日のタイムテーブルへ</a>"
+ },
+ {
+  "id": "s0331",
+  "ctx": "program.html <h2>",
+  "ja": "物語を浴びる ｜ 劇場上映・授賞式"
+ },
+ {
+  "id": "s0332",
+  "ctx": "program.html <p>",
+  "ja": "最終選考を通過した作品（ファイナリスト）を、札幌文化芸術劇場 hitaru の大スクリーンで。12:00〜15:00、上映から授賞式まで。会場の笑い、静寂、驚きまで含めて、物語を浴びるように体感してください。"
+ },
+ {
+  "id": "s0333",
+  "ctx": "program.html <p>",
+  "ja": "最終選考通過作品（ファイナリスト）は、<strong>2027年4月15日</strong>に発表します。"
+ },
+ {
+  "id": "s0334",
+  "ctx": "program.html <dt>",
+  "ja": "日時"
+ },
+ {
+  "id": "s0335",
+  "ctx": "program.html <dd>",
+  "ja": "2027年5月4日（火・祝）12:00〜15:00（開場 11:30）"
+ },
+ {
+  "id": "s0336",
+  "ctx": "program.html <dd>",
+  "ja": "札幌文化芸術劇場 hitaru（1〜2階席・指定席）"
+ },
+ {
+  "id": "s0337",
+  "ctx": "program.html <dt>",
+  "ja": "流れ"
+ },
+ {
+  "id": "s0338",
+  "ctx": "program.html <dd>",
+  "ja": "ファイナリスト作品の上映 → クロージングクレジット（協賛企業・支援者の名前）→ 授賞式"
+ },
+ {
+  "id": "s0339",
+  "ctx": "program.html <dd>",
+  "ja": "グランプリ／審査員特別賞／企業賞／SAPPORO賞／優秀賞"
+ },
+ {
+  "id": "s0340",
+  "ctx": "program.html <dd>",
+  "ja": "日本語・英語の2言語字幕"
+ },
+ {
+  "id": "s0341",
+  "ctx": "program.html <dt>",
+  "ja": "入場"
+ },
+ {
+  "id": "s0342",
+  "ctx": "program.html <dd>",
+  "ja": "1,000円・指定席"
+ },
+ {
+  "id": "s0343",
+  "ctx": "program.html <p>",
+  "ja": "<strong>受賞作品は開催後、オンラインで公開します</strong>（公式YouTube等）。クラウドファンディング支援者には、開催翌日から1週間の先行上映があります。"
+ },
+ {
+  "id": "s0344",
+  "ctx": "program.html <p>",
+  "ja": "<a class=\"btn btn--primary\" href=\"tickets.html\">劇場入場のチケットを見る</a>"
+ },
+ {
+  "id": "s0345",
+  "ctx": "program.html <h2>",
+  "ja": "<span class=\"nb\">物語を浴びる ｜</span> <span class=\"nb\">セレクション上映</span>"
+ },
+ {
+  "id": "s0346",
+  "ctx": "program.html <p>",
+  "ja": "二次選考を通過した作品を、同じ建物の SCARTS コートとスタジオA／Bで上映します。<strong>10:00 開始、無料・入場自由</strong>、チケットは要りません。最終選考を通過した作品は、劇場で上映します。"
+ },
+ {
+  "id": "s0347",
+  "ctx": "program.html <dt>",
+  "ja": "開始"
+ },
+ {
+  "id": "s0348",
+  "ctx": "program.html <dd>",
+  "ja": "10:00（コート・スタジオA／B 同時開始）"
+ },
+ {
+  "id": "s0349",
+  "ctx": "program.html <dt>",
+  "ja": "SCARTS コート（1F）"
+ },
+ {
+  "id": "s0350",
+  "ctx": "program.html <dt>",
+  "ja": "SCARTS スタジオA・B（2F）"
+ },
+ {
+  "id": "s0351",
+  "ctx": "program.html <dd>",
+  "ja": "無料・入場自由（チケット不要）"
+ },
+ {
+  "id": "s0352",
+  "ctx": "program.html <p>",
+  "ja": "セレクション上映のループ内では、協賛企業のCMを放映します。hitaru での上映には含まれません。"
+ },
+ {
+  "id": "s0353",
+  "ctx": "program.html <h3>",
+  "ja": "二次選考通過作品"
+ },
+ {
+  "id": "s0354",
+  "ctx": "program.html <p>",
+  "ja": "2027年4月15日、最終選考通過作品とあわせて発表します。"
+ },
+ {
+  "id": "s0355",
+  "ctx": "program.html <dialog aria-label>",
+  "ja": "作品詳細"
+ },
+ {
+  "id": "s0356",
+  "ctx": "program.html <h2>",
+  "ja": "<span class=\"nb\">創造力を知る ｜</span> <span class=\"nb\">クリエイター講演・トーク</span>"
+ },
+ {
+  "id": "s0357",
+  "ctx": "program.html <p>",
+  "ja": "著名な方の話を聞いて終わる講演会ではありません。他者の創造力に触れることで、自分自身の創造力を知る時間です。"
+ },
+ {
+  "id": "s0358",
+  "ctx": "program.html <p>",
+  "ja": "AIを実制作に使う創り手が、発想から完成までのプロセスと、その過程で悩み、試してきたことを共有します。講演内で実演を行う場合があります。"
+ },
+ {
+  "id": "s0359",
+  "ctx": "program.html <dd>",
+  "ja": "2027年5月4日（火・祝）16:30〜17:45"
+ },
+ {
+  "id": "s0360",
+  "ctx": "program.html <dt>",
+  "ja": "登壇"
+ },
+ {
+  "id": "s0361",
+  "ctx": "program.html <dd>",
+  "ja": "<span class=\"tbd\">＜調整中・順次発表＞</span>"
+ },
+ {
+  "id": "s0362",
+  "ctx": "program.html <dt>",
+  "ja": "参加"
+ },
+ {
+  "id": "s0363",
+  "ctx": "program.html <dd>",
+  "ja": "会場での聴講は「現地フル参加」（CAMPFIRE限定・50席）の方と招待者が対象です。"
+ },
+ {
+  "id": "s0364",
+  "ctx": "program.html <dt>",
+  "ja": "スポンサーセッション"
+ },
+ {
+  "id": "s0365",
+  "ctx": "program.html <dd>",
+  "ja": "16:00〜16:30、同じ会場で協賛企業のセッションを行います（アーカイブには含まれません）。"
+ },
+ {
+  "id": "s0366",
+  "ctx": "program.html <dt>",
+  "ja": "アーカイブ"
+ },
+ {
+  "id": "s0367",
+  "ctx": "program.html <dd>",
+  "ja": "講演は収録し、<strong>オンラインアーカイブ配信</strong>を行います（1,000円・開催後に teket 経由で約1か月）。"
+ },
+ {
+  "id": "s0368",
+  "ctx": "program.html <h4>",
+  "ja": "すでに創作している方へ"
+ },
+ {
+  "id": "s0369",
+  "ctx": "program.html <p>",
+  "ja": "次の作品づくりにつながる視点と刺激を。"
+ },
+ {
+  "id": "s0370",
+  "ctx": "program.html <h4>",
+  "ja": "これから始める方へ"
+ },
+ {
+  "id": "s0371",
+  "ctx": "program.html <p>",
+  "ja": "「自分にもできるかもしれない」という手応えを。"
+ },
+ {
+  "id": "s0372",
+  "ctx": "program.html <h4>",
+  "ja": "まだ創り手だと思っていない方へ"
+ },
+ {
+  "id": "s0373",
+  "ctx": "program.html <p>",
+  "ja": "自分の中にも、表現したいものと創る力があるという気づきを。"
+ },
+ {
+  "id": "s0374",
+  "ctx": "program.html <p>",
+  "ja": "<a class=\"btn btn--primary\" href=\"tickets.html#buy\">講演のチケット・アーカイブを見る</a>"
+ },
+ {
+  "id": "s0375",
+  "ctx": "program.html <h2>",
+  "ja": "未来を起動する ｜ 交流会"
+ },
+ {
+  "id": "s0376",
+  "ctx": "program.html <p>",
+  "ja": "交流会は、この映画祭の名前にある <strong>「&amp; Incubation」の中核</strong>です。単なる懇親会ではなく、未来を起動するための最初の一歩として位置づけています。"
+ },
+ {
+  "id": "s0377",
+  "ctx": "program.html <p>",
+  "ja": "「あの作品が面白かったです」と声をかける。「一緒に何か創れませんか」と話してみる。企業の方がクリエイターに新しい仕事や支援の可能性を相談する。そうした小さな会話から、次の作品、チーム、仕事、プロジェクトが始まります。"
+ },
+ {
+  "id": "s0378",
+  "ctx": "program.html <p>",
+  "ja": "そこで生まれた作品が、いつかまたスクリーンに還ってくる。そんな循環の起点になる場です。"
+ },
+ {
+  "id": "s0379",
+  "ctx": "program.html <h3>",
+  "ja": "「そこがつながるのか」という出会いを。"
+ },
+ {
+  "id": "s0380",
+  "ctx": "program.html <h4>",
+  "ja": "クリエイター × クリエイター"
+ },
+ {
+  "id": "s0381",
+  "ctx": "program.html <p>",
+  "ja": "映像と音楽、アニメーションとロボティクス。"
+ },
+ {
+  "id": "s0382",
+  "ctx": "program.html <h4>",
+  "ja": "クリエイター × 企業"
+ },
+ {
+  "id": "s0383",
+  "ctx": "program.html <p>",
+  "ja": "新しい仕事、共創、支援の相談。"
+ },
+ {
+  "id": "s0384",
+  "ctx": "program.html <h4>",
+  "ja": "学生 × プロフェッショナル"
+ },
+ {
+  "id": "s0385",
+  "ctx": "program.html <p>",
+  "ja": "最初の一歩を踏み出すきっかけ。"
+ },
+ {
+  "id": "s0386",
+  "ctx": "program.html <h4>",
+  "ja": "日本 × 海外"
+ },
+ {
+  "id": "s0387",
+  "ctx": "program.html <p>",
+  "ja": "映像と観光、札幌から世界へ。"
+ },
+ {
+  "id": "s0388",
+  "ctx": "program.html <dd>",
+  "ja": "2027年5月4日（火・祝）17:45〜19:00"
+ },
+ {
+  "id": "s0389",
+  "ctx": "program.html <dd>",
+  "ja": "先行支援（CAMPFIRE「現地フル参加」・50席）の方と招待者のみ。一般販売はありません。最終選考通過クリエイター、審査員、登壇者、協賛企業が参加します。"
+ },
+ {
+  "id": "s0390",
+  "ctx": "program.html <dd>",
+  "ja": "最終選考通過クリエイター、審査員、登壇者、協賛企業が同じ会場で交流します。企業賞の授与は劇場の授賞式で行います。"
+ },
+ {
+  "id": "s0391",
+  "ctx": "program.html <dt>",
+  "ja": "言語"
+ },
+ {
+  "id": "s0392",
+  "ctx": "program.html <dd>",
+  "ja": "日本語・英語。通訳は配置しません。会話の際は、お手元のスマートフォンで ChatGPT などのAI翻訳機能をご活用ください。"
+ },
+ {
+  "id": "s0393",
+  "ctx": "program.html <p>",
+  "ja": "<a class=\"btn btn--primary\" data-sale=\"off presale\" href=\"tickets.html#buy\">先行販売の案内を見る</a>"
+ },
+ {
+  "id": "s0394",
+  "ctx": "program.html <p>",
+  "ja": "<span class=\"tbd\">＜登壇者・ほかの審査員は順次発表＞</span>"
+ },
+ {
+  "id": "s0395",
+  "ctx": "program.html <h2>",
+  "ja": "タイムテーブル"
+ },
+ {
+  "id": "s0396",
+  "ctx": "program.html <p>",
+  "ja": "2027年5月4日（火・祝）／札幌文化芸術劇場 hitaru・SCARTS（札幌市民交流プラザ）"
+ },
+ {
+  "id": "s0397",
+  "ctx": "program.html <h4>",
+  "ja": "セレクション上映<span class=\"pillar\">物語を浴びる</span>"
+ },
+ {
+  "id": "s0398",
+  "ctx": "program.html <p>",
+  "ja": "SCARTS コート（1F）｜二次選考通過作品｜無料・入場自由"
+ },
+ {
+  "id": "s0399",
+  "ctx": "program.html <p>",
+  "ja": "SCARTS スタジオA・B（2F）｜二次選考通過作品｜無料・入場自由"
+ },
+ {
+  "id": "s0400",
+  "ctx": "program.html <h4>",
+  "ja": "劇場 開場"
+ },
+ {
+  "id": "s0401",
+  "ctx": "program.html <p>",
+  "ja": "劇場 hitaru（入口 4F）"
+ },
+ {
+  "id": "s0402",
+  "ctx": "program.html <h4>",
+  "ja": "劇場上映・授賞式<span class=\"pillar\">物語を浴びる</span>"
+ },
+ {
+  "id": "s0403",
+  "ctx": "program.html <p>",
+  "ja": "劇場 hitaru｜最終選考通過作品の上映、各賞発表｜入場 1,000円・指定席"
+ },
+ {
+  "id": "s0404",
+  "ctx": "program.html <h4>",
+  "ja": "休憩・移動"
+ },
+ {
+  "id": "s0405",
+  "ctx": "program.html <p>",
+  "ja": "劇場 退場／SCARTS コート 転換。ホワイエ・モールのスポンサーブースへ"
+ },
+ {
+  "id": "s0406",
+  "ctx": "program.html <h4>",
+  "ja": "クリエイター講演・トーク<span class=\"pillar\">創造力を知る</span>"
+ },
+ {
+  "id": "s0407",
+  "ctx": "program.html <p>",
+  "ja": "SCARTS コート（1F）｜単一トラック・収録あり（オンラインアーカイブ配信 1,000円）"
+ },
+ {
+  "id": "s0408",
+  "ctx": "program.html <h4>",
+  "ja": "交流会<span class=\"pillar\">未来を起動する</span>"
+ },
+ {
+  "id": "s0409",
+  "ctx": "program.html <p>",
+  "ja": "SCARTS コート（1F）｜先行支援「現地フル参加」（50席）の方と招待者のみ"
+ },
+ {
+  "id": "s0410",
+  "ctx": "program.html <p>",
+  "ja": "<span data-selection=\"on\">セレクション上映は 10:00 開始。SCARTS コートは 13:00 まで、スタジオA・Bは劇場上映のあとも 21:00 まで続きます。</span>劇場 hitaru のホワイエ（開場中）と SCARTS モールに、協賛企業のブースを設けます。hitaru の客席・スクリーンでは CM・企業紹介を行わず、上映後にクロージングクレジットを表示します。スポンサーセッション（16:00〜16:30・SCARTS コート）は、オンラインアーカイブには含まれません。受賞作品は開催後、オンラインで公開します。"
+ },
+ {
+  "id": "s0411",
+  "ctx": "program.html <h2>",
+  "ja": "<span class=\"nb\">同じ時間、</span><span class=\"nb\">同じ場所で、</span><span class=\"nb\">一つの物語を。</span>"
+ },
+ {
+  "id": "s0412",
+  "ctx": "program.html <p>",
+  "ja": "配信でいつでも観られる時代だからこそ、映画館で、大勢の人と分かち合う一日を。"
+ },
+ {
+  "id": "s0413",
+  "ctx": "tickets.html <title>",
+  "ja": "チケット先行販売・来場案内 | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0414",
+  "ctx": "tickets.html <meta content>",
+  "ja": "劇場入場1,000円・指定席。先行支援（CAMPFIRE・10月下旬〜11月下旬）と一般販売（teket・12月から）の案内、券種・料金、会場アクセス。"
+ },
+ {
+  "id": "s0415",
+  "ctx": "tickets.html <li>",
+  "ja": "<a href=\"tickets.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0416",
+  "ctx": "tickets.html <h1>",
+  "ja": "物語を、全身で浴びる一日。"
+ },
+ {
+  "id": "s0417",
+  "ctx": "tickets.html <p>",
+  "ja": "暗闇の中で、大スクリーンに世界が立ち上がる。音が身体に響く。隣の誰かが息を呑み、笑い、泣く。"
+ },
+ {
+  "id": "s0418",
+  "ctx": "tickets.html <dt>",
+  "ja": "DATE ／ 日程"
+ },
+ {
+  "id": "s0419",
+  "ctx": "tickets.html <dd>",
+  "ja": "2027.5.4（火・祝）"
+ },
+ {
+  "id": "s0420",
+  "ctx": "tickets.html <dt>",
+  "ja": "VENUE ／ 会場"
+ },
+ {
+  "id": "s0421",
+  "ctx": "tickets.html <dd>",
+  "ja": "札幌文化芸術劇場 hitaru／SCARTS"
+ },
+ {
+  "id": "s0422",
+  "ctx": "tickets.html <dt>",
+  "ja": "PRICE ／ 料金"
+ },
+ {
+  "id": "s0423",
+  "ctx": "tickets.html <dd>",
+  "ja": "劇場入場 1,000円（指定席）"
+ },
+ {
+  "id": "s0424",
+  "ctx": "tickets.html <a>",
+  "ja": "クラウドファンディングへ<span class=\"soon-tag\">10月下旬開始予定</span>"
+ },
+ {
+  "id": "s0425",
+  "ctx": "tickets.html <span>",
+  "ja": "先行販売はクラウドファンディング（CAMPFIRE）での先行支援として行います。期間は2026年10月下旬〜11月下旬。<br>一般販売（teket）は12月から。外部サイトに移動します。"
+ },
+ {
+  "id": "s0426",
+  "ctx": "tickets.html <a>",
+  "ja": "チケットを買う <span class=\"ext\" aria-hidden=\"true\">↗</span>"
+ },
+ {
+  "id": "s0427",
+  "ctx": "tickets.html <span>",
+  "ja": "外部チケットサイト（teket）に移動します。"
+ },
+ {
+  "id": "s0428",
+  "ctx": "tickets.html <a>",
+  "ja": "発売情報は X で <span class=\"ext\" aria-hidden=\"true\">↗</span>"
+ },
+ {
+  "id": "s0429",
+  "ctx": "tickets.html <span>",
+  "ja": "先行販売は10月下旬、クラウドファンディング（CAMPFIRE）で開始します。開始は X・Discord でお知らせします。"
+ },
+ {
+  "id": "s0430",
+  "ctx": "tickets.html <p>",
+  "ja": "第1回のチケット販売は終了しました。ご来場ありがとうございました。次回の開催情報は <a href=\"index.html#follow\">X</a> でお知らせします。"
+ },
+ {
+  "id": "s0431",
+  "ctx": "tickets.html <li>",
+  "ja": "<a href=\"#buy\">券種・料金</a>"
+ },
+ {
+  "id": "s0432",
+  "ctx": "tickets.html <li>",
+  "ja": "<a href=\"#notes\">注意事項</a>"
+ },
+ {
+  "id": "s0433",
+  "ctx": "tickets.html <li>",
+  "ja": "<a href=\"#access\">会場・アクセス</a>"
+ },
+ {
+  "id": "s0434",
+  "ctx": "tickets.html <h2>",
+  "ja": "券種・料金"
+ },
+ {
+  "id": "s0435",
+  "ctx": "tickets.html <p>",
+  "ja": "劇場での上映・授賞式は入場1,000円・<strong>指定席</strong>（1〜2階席）。<span data-selection=\"on\">SCARTS（コート・スタジオA／B）でのセレクション上映は無料で、チケットは要りません。</span>先行販売はクラウドファンディング（CAMPFIRE・10月下旬〜11月下旬）、一般販売は teket（12月公開、2027年4月15日から本格販売）で行います。通し券・学生券はありません。"
+ },
+ {
+  "id": "s0436",
+  "ctx": "tickets.html <th>",
+  "ja": "券種"
+ },
+ {
+  "id": "s0437",
+  "ctx": "tickets.html <th>",
+  "ja": "料金（税込）"
+ },
+ {
+  "id": "s0438",
+  "ctx": "tickets.html <th>",
+  "ja": "販売"
+ },
+ {
+  "id": "s0439",
+  "ctx": "tickets.html <th>",
+  "ja": "劇場入場<br><span class=\"small\">（指定席）</span>"
+ },
+ {
+  "id": "s0440",
+  "ctx": "tickets.html <td>",
+  "ja": "最終選考通過作品の上映・授賞式（劇場 hitaru／開場 11:30・12:00〜15:00）。1〜2階席の指定席。teket で座席を選べます"
+ },
+ {
+  "id": "s0441",
+  "ctx": "tickets.html <td>",
+  "ja": "先行：CAMPFIRE（300席）→ 一般：teket"
+ },
+ {
+  "id": "s0442",
+  "ctx": "tickets.html <td>",
+  "ja": "講演・トークの収録映像をオンラインで視聴。開催後に teket 経由で配信します（配信期間は約1か月）"
+ },
+ {
+  "id": "s0443",
+  "ctx": "tickets.html <td>",
+  "ja": "先行：CAMPFIRE → 一般：teket"
+ },
+ {
+  "id": "s0444",
+  "ctx": "tickets.html <th>",
+  "ja": "現地フル参加<br><span class=\"small\">（劇場入場込み）</span>"
+ },
+ {
+  "id": "s0445",
+  "ctx": "tickets.html <td>",
+  "ja": "劇場入場＋講演・トーク（会場）＋交流会"
+ },
+ {
+  "id": "s0446",
+  "ctx": "tickets.html <td>",
+  "ja": "CAMPFIRE 限定 50席（一般販売なし）"
+ },
+ {
+  "id": "s0447",
+  "ctx": "tickets.html <th>",
+  "ja": "セレクション上映<br><span class=\"small\">（SCARTS コート・スタジオA／B）</span>"
+ },
+ {
+  "id": "s0448",
+  "ctx": "tickets.html <td>",
+  "ja": "無料"
+ },
+ {
+  "id": "s0449",
+  "ctx": "tickets.html <td>",
+  "ja": "二次選考通過作品のセレクション上映。10:00 開始（コート 〜13:00／スタジオA・B 〜21:00）。入場自由"
+ },
+ {
+  "id": "s0450",
+  "ctx": "tickets.html <td>",
+  "ja": "チケット不要"
+ },
+ {
+  "id": "s0451",
+  "ctx": "tickets.html <li>",
+  "ja": "<strong>交流会</strong>は、先行販売（クラウドファンディング）でお申し込みの方（50席）と招待者のみが参加できます。一般販売はありません。"
+ },
+ {
+  "id": "s0452",
+  "ctx": "tickets.html <li>",
+  "ja": "<strong>セレクション上映</strong>は、二次選考を通過した作品を SCARTS コート・スタジオA／Bで無料上映するものです（10:00 開始。コートは 13:00 まで、スタジオA・Bは 21:00 まで）。チケットは要りません。"
+ },
+ {
+  "id": "s0453",
+  "ctx": "tickets.html <li>",
+  "ja": "<strong>座席</strong>は指定席です。一般販売（teket）では購入時に座席を選べます。クラウドファンディングで支援された方には、12月に teket の<strong>引換コード</strong>をお送りします。teket で座席を選び、コードを入力して発券してください（追加料金はかかりません）。"
+ },
+ {
+  "id": "s0454",
+  "ctx": "tickets.html <li>",
+  "ja": "1日通し券、学生券の設定はありません。"
+ },
+ {
+  "id": "s0455",
+  "ctx": "tickets.html <li>",
+  "ja": "<strong>受賞作品</strong>は開催後、公式チャンネル等でオンライン公開します。クラウドファンディング支援者には、開催翌日から1週間の先行上映があります。"
+ },
+ {
+  "id": "s0456",
+  "ctx": "tickets.html <li>",
+  "ja": "クラウドファンディングの支援コース（1万円・5万円など）は、入場料ではなく「支援金＋特典」です。特典に含まれるチケットは、券面額を明記してご案内します。"
+ },
+ {
+  "id": "s0457",
+  "ctx": "tickets.html <h3>",
+  "ja": "先行販売は、クラウドファンディングで"
+ },
+ {
+  "id": "s0458",
+  "ctx": "tickets.html <p>",
+  "ja": "期間は2026年10月下旬〜11月下旬。劇場入場（1,000円・指定席）の先行枠は300席、「現地フル参加」（5,000円）は50席限定です。支援者全員に種火ナンバーを付与し、<a href=\"supporters.html\">支援者紹介ページ</a>に掲載します。一般販売（teket）は12月から。"
+ },
+ {
+  "id": "s0459",
+  "ctx": "tickets.html <span>",
+  "ja": "外部サービス CAMPFIREに移動します。決済は CAMPFIRE 上で行われます。"
+ },
+ {
+  "id": "s0460",
+  "ctx": "tickets.html <h3>",
+  "ja": "チケットは外部サイトで販売しています"
+ },
+ {
+  "id": "s0461",
+  "ctx": "tickets.html <p>",
+  "ja": "決済・発券・座席選択は teket 上で行われます（指定席）。クラウドファンディングで支援された方は、お手元の引換コードを teket で入力して座席を選び、発券してください。本格販売は2027年4月15日からです。"
+ },
+ {
+  "id": "s0462",
+  "ctx": "tickets.html <span>",
+  "ja": "外部サービス teket に移動します。"
+ },
+ {
+  "id": "s0463",
+  "ctx": "tickets.html <h3>",
+  "ja": "先行販売は10月下旬から"
+ },
+ {
+  "id": "s0464",
+  "ctx": "tickets.html <p>",
+  "ja": "クラウドファンディング（CAMPFIRE）で先行販売を行います。開始をメールでお知らせします。"
+ },
+ {
+  "id": "s0465",
+  "ctx": "tickets.html <h2>",
+  "ja": "ご来場前にご確認ください"
+ },
+ {
+  "id": "s0466",
+  "ctx": "tickets.html <dd>",
+  "ja": "上映作品はすべて<strong>日本語・英語の2言語字幕</strong>で上映します。"
+ },
+ {
+  "id": "s0467",
+  "ctx": "tickets.html <dt>",
+  "ja": "通訳"
+ },
+ {
+  "id": "s0468",
+  "ctx": "tickets.html <dd>",
+  "ja": "講演・トーク、交流会に通訳は配置しません。会話の際は、お手元のスマートフォンで ChatGPT などのAI翻訳機能をご活用ください。"
+ },
+ {
+  "id": "s0469",
+  "ctx": "tickets.html <dd>",
+  "ja": "講演・トークは収録し、開催後に teket 経由でオンライン配信します（1,000円・約1か月）。スポンサーセッションはアーカイブに含まれません。"
+ },
+ {
+  "id": "s0470",
+  "ctx": "tickets.html <dt>",
+  "ja": "受賞作品の公開"
+ },
+ {
+  "id": "s0471",
+  "ctx": "tickets.html <dd>",
+  "ja": "受賞作品は開催後、公式チャンネル等でオンライン公開します。クラウドファンディング支援者には開催翌日から1週間の先行上映があります。"
+ },
+ {
+  "id": "s0472",
+  "ctx": "tickets.html <dt>",
+  "ja": "座席"
+ },
+ {
+  "id": "s0473",
+  "ctx": "tickets.html <dd>",
+  "ja": "<strong>指定席</strong>（1〜2階席）。teket で座席を選べます。クラウドファンディング支援者には12月に引換コードを発行します。車椅子席をご希望の方は事前にお問い合わせください。"
+ },
+ {
+  "id": "s0474",
+  "ctx": "tickets.html <dt>",
+  "ja": "年齢制限"
+ },
+ {
+  "id": "s0475",
+  "ctx": "tickets.html <dd>",
+  "ja": "年齢制限はありません。未就学児も入場できる専用席を設けます。上映するのは全年齢対象の作品のみです。"
+ },
+ {
+  "id": "s0476",
+  "ctx": "tickets.html <dt>",
+  "ja": "キャンセル"
+ },
+ {
+  "id": "s0477",
+  "ctx": "tickets.html <dd>",
+  "ja": "<strong>先行販売（CAMPFIRE）</strong>：支援金は返金できません。<strong>一般販売（teket）</strong>：購入後のキャンセル・払い戻しは、主催者都合による中止の場合を除き、お受けできません。<strong>オンラインアーカイブ（配信）</strong>：デジタル商品のため、購入後のキャンセル・返金はできません。詳細は <a href=\"legal.html#tokusho\">特定商取引法に基づく表記</a> をご覧ください。"
+ },
+ {
+  "id": "s0478",
+  "ctx": "tickets.html <dt>",
+  "ja": "撮影"
+ },
+ {
+  "id": "s0479",
+  "ctx": "tickets.html <dd>",
+  "ja": "上映中の撮影・録音は禁止です。会場内では記録・広報用の撮影を行います。"
+ },
+ {
+  "id": "s0480",
+  "ctx": "tickets.html <dt>",
+  "ja": "協賛表示"
+ },
+ {
+  "id": "s0481",
+  "ctx": "tickets.html <dd>",
+  "ja": "劇場 hitaru の客席・スクリーンでは、CM・企業紹介を行いません。劇場での協賛表示は、授賞式での企業賞の授与、上映後のクロージングクレジット（協賛企業・支援者の名前）、ホワイエのスポンサーブースの3つです。協賛企業のCMは、SCARTS でのセレクション上映のループ内で放映します。"
+ },
+ {
+  "id": "s0482",
+  "ctx": "tickets.html <img alt>",
+  "ja": "札幌文化芸術劇場 hitaru 劇場内観（4F・1〜2階席）"
+ },
+ {
+  "id": "s0483",
+  "ctx": "tickets.html <h3>",
+  "ja": "札幌文化芸術劇場 hitaru／<br class=\"br-pc\">札幌文化芸術交流センター SCARTS"
+ },
+ {
+  "id": "s0484",
+  "ctx": "tickets.html <p>",
+  "ja": "〒060-0001 札幌市中央区北1条西1丁目 札幌市民交流プラザ内<br>劇場と SCARTS は同じ建物「札幌市民交流プラザ」の中にあります。劇場 hitaru は4F（1〜2階席 1,686席）、SCARTS コートは1F。"
+ },
+ {
+  "id": "s0485",
+  "ctx": "tickets.html <dt>",
+  "ja": "フロア"
+ },
+ {
+  "id": "s0486",
+  "ctx": "tickets.html <dd>",
+  "ja": "劇場 hitaru：入口 4F（劇場上映・授賞式／1〜2階席・指定席）<br>SCARTS コート：1F（<span data-selection=\"on\">セレクション上映、</span>スポンサーセッション、講演・トーク、交流会）<span data-selection=\"on\"><br>SCARTS スタジオA・B：2F（セレクション上映 10:00〜21:00）</span><br>劇場ホワイエ：4F（スポンサーブース）<br>SCARTS モールA・B：1F（スポンサーブース・看板）"
+ },
+ {
+  "id": "s0487",
+  "ctx": "tickets.html <dt>",
+  "ja": "地下鉄"
+ },
+ {
+  "id": "s0488",
+  "ctx": "tickets.html <dd>",
+  "ja": "東西線・南北線・東豊線「大通」駅から地下歩道で直結"
+ },
+ {
+  "id": "s0489",
+  "ctx": "tickets.html <dd>",
+  "ja": "「札幌」駅 南口から徒歩約10分"
+ },
+ {
+  "id": "s0490",
+  "ctx": "tickets.html <dt>",
+  "ja": "空港から"
+ },
+ {
+  "id": "s0491",
+  "ctx": "tickets.html <dd>",
+  "ja": "新千歳空港 → JR快速エアポートで「札幌」駅まで約40分"
+ },
+ {
+  "id": "s0492",
+  "ctx": "tickets.html <dt>",
+  "ja": "駐車場"
+ },
+ {
+  "id": "s0493",
+  "ctx": "tickets.html <dd>",
+  "ja": "専用駐車場はありません。公共交通機関をご利用ください。"
+ },
+ {
+  "id": "s0494",
+  "ctx": "tickets.html <p>",
+  "ja": "<a class=\"btn btn--ghost btn--sm\" href=\"https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%AD%E5%B9%8C%E6%96%87%E5%8C%96%E8%8A%B8%E8%A1%93%E5%8A%87%E5%A0%B4+hitaru\" target=\"_blank\" rel=\"noopener\">Googleマップで開く <span class=\"ext\" aria-hidden=\"true\">↗</span></a>"
+ },
+ {
+  "id": "s0495",
+  "ctx": "tickets.html <h2>",
+  "ja": "札幌国際AI映画祭、開幕。"
+ },
+ {
+  "id": "s0496",
+  "ctx": "tickets.html <p>",
+  "ja": "2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS で会いましょう。"
+ },
+ {
+  "id": "s0497",
+  "ctx": "tickets.html <span>",
+  "ja": "外部サービスに移動します。"
+ },
+ {
+  "id": "s0498",
+  "ctx": "sponsors.html <title>",
+  "ja": "スポンサー募集 | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0499",
+  "ctx": "sponsors.html <meta content>",
+  "ja": "札幌国際AI映画祭はスポンサーを募集しています。AIで作品を作り切ったクリエイターと出会い、日本のAI映像文化の最初の旗を札幌に立てる。プラチナ・ゴールド・シルバー・スポンサーの4プランと特典のご案内。お問い合わせはメールで。"
+ },
+ {
+  "id": "s0500",
+  "ctx": "sponsors.html <li>",
+  "ja": "<a href=\"sponsors.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0501",
+  "ctx": "sponsors.html <h1>",
+  "ja": "<span class=\"nb\">次の創り手と、</span><br class=\"br-pc\"><span class=\"nb\">最初に出会う場所。</span>"
+ },
+ {
+  "id": "s0502",
+  "ctx": "sponsors.html <p>",
+  "ja": "世界中からAIで物語を作り切ったクリエイターが、札幌に集まる。<br class=\"br-pc\">日本のAI映像シーンの最初の旗を、一緒に立てませんか。"
+ },
+ {
+  "id": "s0503",
+  "ctx": "sponsors.html <li>",
+  "ja": "<a href=\"#why\">スポンサーになる意義</a>"
+ },
+ {
+  "id": "s0504",
+  "ctx": "sponsors.html <li>",
+  "ja": "<a href=\"#plans\">プランと特典</a>"
+ },
+ {
+  "id": "s0505",
+  "ctx": "sponsors.html <li>",
+  "ja": "<a href=\"#notes\">共通事項</a>"
+ },
+ {
+  "id": "s0506",
+  "ctx": "sponsors.html <li>",
+  "ja": "<a href=\"#current\">現在のスポンサー</a>"
+ },
+ {
+  "id": "s0507",
+  "ctx": "sponsors.html <a>",
+  "ja": "メールで問い合わせる <span class=\"ext\" aria-hidden=\"true\">✉</span>"
+ },
+ {
+  "id": "s0508",
+  "ctx": "sponsors.html <span>",
+  "ja": "info@sugoiai.org 宛のメールが開きます。社名とご検討中のプランをお書きください。"
+ },
+ {
+  "id": "s0509",
+  "ctx": "sponsors.html <h2>",
+  "ja": "スポンサーになる意義"
+ },
+ {
+  "id": "s0510",
+  "ctx": "sponsors.html <p>",
+  "ja": "ロゴが並ぶだけの協賛ではありません。この映画祭は、企業がクリエイターと出会い、次の仕事と文化が始まる場として設計しています。"
+ },
+ {
+  "id": "s0511",
+  "ctx": "sponsors.html <h3>",
+  "ja": "「AIで作り切った人」に、一日でまとめて会える"
+ },
+ {
+  "id": "s0512",
+  "ctx": "sponsors.html <p>",
+  "ja": "世界中から応募された作品のうち、最終選考を通過したクリエイターを札幌に招きます。ここに集まるのは、AIを使って作品を完成まで持っていった人たちです。交流会、劇場ホワイエのブース、スポンサーセッション。採用でも、外注でも、共創でも、「話が早い相手」に同じ日に会えます。"
+ },
+ {
+  "id": "s0513",
+  "ctx": "sponsors.html <h3>",
+  "ja": "AI映像文化の「最初の旗」を、札幌に一緒に立てる"
+ },
+ {
+  "id": "s0514",
+  "ctx": "sponsors.html <p>",
+  "ja": "生成AIによる映像制作は、いままさに文化として立ち上がる瞬間にあります。札幌国際AI映画祭はその第1回。10年後に「日本のAI映像シーンは、あの映画祭から広がった」と語られる側に回れるのは、最初の数回だけです。広告枠の購入ではなく、文化の発起人として記憶される投資です。上映後のクロージングクレジットに、貴社の名前が残ります。"
+ },
+ {
+  "id": "s0515",
+  "ctx": "sponsors.html <h3>",
+  "ja": "届く相手は、全員「当事者」"
+ },
+ {
+  "id": "s0516",
+  "ctx": "sponsors.html <p>",
+  "ja": "札幌文化芸術劇場 hitaru の大スクリーンを見上げる約1,000人。講演アーカイブを最後まで観る人。多言語の公式サイトを訪れる海外の応募者。AIで何かを作っている、作りたい、作らせたい人だけに届きます。マス広告の「なんとなく目に入る」露出とは質が違う、深い文脈で届くリーチです。"
+ },
+ {
+  "id": "s0517",
+  "ctx": "sponsors.html <p>",
+  "ja": "<a class=\"btn btn--primary\" href=\"mailto:info@sugoiai.org?subject=%E3%80%90%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9BAI%E6%98%A0%E7%94%BB%E7%A5%AD%E3%80%91%E5%8D%94%E8%B3%9B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6\">メールで問い合わせる <span class=\"ext\" aria-hidden=\"true\">✉</span></a>"
+ },
+ {
+  "id": "s0518",
+  "ctx": "sponsors.html <h2>",
+  "ja": "想定規模"
+ },
+ {
+  "id": "s0519",
+  "ctx": "sponsors.html <p>",
+  "ja": "第1回のため、以下は計画値です。"
+ },
+ {
+  "id": "s0520",
+  "ctx": "sponsors.html <b>",
+  "ja": "約1,000<small style=\"font-size:.5em\">人</small>"
+ },
+ {
+  "id": "s0521",
+  "ctx": "sponsors.html <span>",
+  "ja": "想定来場者数（劇場 hitaru・指定席）"
+ },
+ {
+  "id": "s0522",
+  "ctx": "sponsors.html <b>",
+  "ja": "100<small style=\"font-size:.5em\">作品</small>"
+ },
+ {
+  "id": "s0523",
+  "ctx": "sponsors.html <span>",
+  "ja": "想定応募作品数（国内外）"
+ },
+ {
+  "id": "s0524",
+  "ctx": "sponsors.html <h3>",
+  "ja": "会場に来る人"
+ },
+ {
+  "id": "s0525",
+  "ctx": "sponsors.html <p>",
+  "ja": "AIクリエイター、映像・音楽・ゲームのクリエイター、学生、エンジニア、企業の新規事業・クリエイティブ・採用担当、映画ファン。劇場 hitaru（1〜2階席 1,686席）は指定席・入場1,000円で運用します。<span data-selection=\"on\">SCARTS でのセレクション上映は無料開放し、チケットを持たない方にも作品と貴社のCMが届きます。</span>"
+ },
+ {
+  "id": "s0526",
+  "ctx": "sponsors.html <h3>",
+  "ja": "会場の外に届く人"
+ },
+ {
+  "id": "s0527",
+  "ctx": "sponsors.html <p>",
+  "ja": "講演・トークは収録し、開催後にオンラインアーカイブとして配信します。受賞作品は公式チャンネルでオンライン公開します。公式サイトは多言語で、海外の応募者・AI映画祭コミュニティにも届きます。"
+ },
+ {
+  "id": "s0528",
+  "ctx": "sponsors.html <h2>",
+  "ja": "プランと特典"
+ },
+ {
+  "id": "s0529",
+  "ctx": "sponsors.html <p>",
+  "ja": "プラチナ、ゴールド、シルバー、スポンサーの4プラン。上位プランは、下位プランの特典をすべて含みます。"
+ },
+ {
+  "id": "s0530",
+  "ctx": "sponsors.html <span>",
+  "ja": "限定 3社"
+ },
+ {
+  "id": "s0531",
+  "ctx": "sponsors.html <h3>",
+  "ja": "プラチナスポンサー"
+ },
+ {
+  "id": "s0532",
+  "ctx": "sponsors.html <p>",
+  "ja": "賞に貴社の名前を刻み、<br>受賞者の経歴に残り続ける。"
+ },
+ {
+  "id": "s0533",
+  "ctx": "sponsors.html <p>",
+  "ja": "500,000<small>円</small>"
+ },
+ {
+  "id": "s0534",
+  "ctx": "sponsors.html <p>",
+  "ja": "ゴールドの全特典に加えて、貴社名を冠した「企業賞」を創設し、1,686席の劇場の舞台から授与できます。受賞者のプロフィールに貴社名が残り続ける、広告では買えないブランディングです。"
+ },
+ {
+  "id": "s0535",
+  "ctx": "sponsors.html <p>",
+  "ja": "劇場 hitaru"
+ },
+ {
+  "id": "s0536",
+  "ctx": "sponsors.html <li>",
+  "ja": "<strong>企業賞の命名権。</strong>授賞式でプレゼンターとして登壇し、貴社名を読み上げて授与します（例：○○賞、○○社長賞）"
+ },
+ {
+  "id": "s0537",
+  "ctx": "sponsors.html <li>",
+  "ja": "上映後のクロージングクレジットに、ロゴを最大サイズで掲載"
+ },
+ {
+  "id": "s0538",
+  "ctx": "sponsors.html <li>",
+  "ja": "劇場ホワイエのブースを、優先位置に設置"
+ },
+ {
+  "id": "s0539",
+  "ctx": "sponsors.html <li>",
+  "ja": "<strong>スポンサーセッション10分。</strong>講演直前の 16:00〜16:30、SCARTS コートで貴社のプレゼンテーションを行えます（プラチナ限定）"
+ },
+ {
+  "id": "s0540",
+  "ctx": "sponsors.html <li>",
+  "ja": "コート・スタジオA・Bのループ上映内で、貴社CMを終日放映"
+ },
+ {
+  "id": "s0541",
+  "ctx": "sponsors.html <li>",
+  "ja": "モールにブースと看板を設置"
+ },
+ {
+  "id": "s0542",
+  "ctx": "sponsors.html <p>",
+  "ja": "オンライン・公式サイト"
+ },
+ {
+  "id": "s0543",
+  "ctx": "sponsors.html <li>",
+  "ja": "講演アーカイブの冒頭クレジットに、ロゴを最大サイズで掲載"
+ },
+ {
+  "id": "s0544",
+  "ctx": "sponsors.html <li>",
+  "ja": "公式サイト（多言語）に、ロゴを最大サイズで最上位に掲載"
+ },
+ {
+  "id": "s0545",
+  "ctx": "sponsors.html <p>",
+  "ja": "ご招待"
+ },
+ {
+  "id": "s0546",
+  "ctx": "sponsors.html <li>",
+  "ja": "5名（劇場・講演・交流会）"
+ },
+ {
+  "id": "s0547",
+  "ctx": "sponsors.html <span>",
+  "ja": "限定 5社"
+ },
+ {
+  "id": "s0548",
+  "ctx": "sponsors.html <h3>",
+  "ja": "ゴールドスポンサー"
+ },
+ {
+  "id": "s0549",
+  "ctx": "sponsors.html <p>",
+  "ja": "1,000人の動線にブースを構え、<br>クリエイターと直接話す。"
+ },
+ {
+  "id": "s0550",
+  "ctx": "sponsors.html <p>",
+  "ja": "300,000<small>円</small>"
+ },
+ {
+  "id": "s0551",
+  "ctx": "sponsors.html <p>",
+  "ja": "シルバーの全特典に加えて、劇場 hitaru のホワイエにブースを出せます。開場から退場まで、来場者全員が通る場所です。採用・共創・発注の相談を、その場で始められます。"
+ },
+ {
+  "id": "s0552",
+  "ctx": "sponsors.html <li>",
+  "ja": "<strong>劇場ホワイエにブースを設置。</strong>販促物を配布できます（机・椅子・A1パネルは主催が用意）"
+ },
+ {
+  "id": "s0553",
+  "ctx": "sponsors.html <li>",
+  "ja": "モールに看板を設置"
+ },
+ {
+  "id": "s0554",
+  "ctx": "sponsors.html <li>",
+  "ja": "講演アーカイブの冒頭クレジットに、ロゴを中サイズで掲載"
+ },
+ {
+  "id": "s0555",
+  "ctx": "sponsors.html <li>",
+  "ja": "公式サイト（多言語）に、ロゴを最大サイズで掲載"
+ },
+ {
+  "id": "s0556",
+  "ctx": "sponsors.html <li>",
+  "ja": "3名（劇場・講演・交流会）"
+ },
+ {
+  "id": "s0557",
+  "ctx": "sponsors.html <h3>",
+  "ja": "シルバースポンサー"
+ },
+ {
+  "id": "s0558",
+  "ctx": "sponsors.html <p>",
+  "ja": "SCARTS のスクリーンで貴社の映像を流し、<br>劇場のクレジットに名を連ねる。"
+ },
+ {
+  "id": "s0559",
+  "ctx": "sponsors.html <p>",
+  "ja": "100,000<small>円</small>"
+ },
+ {
+  "id": "s0560",
+  "ctx": "sponsors.html <p>",
+  "ja": "スポンサー（30,000円または同等のサービス等のご提供）の全特典に加えて、SCARTS コート・スタジオのループ上映内で貴社CMを終日放映します。チケットを持たない来場者にも、AIに関心のある層に絞って届きます。"
+ },
+ {
+  "id": "s0561",
+  "ctx": "sponsors.html <li>",
+  "ja": "上映後のクロージングクレジットに、ロゴを中サイズで掲載"
+ },
+ {
+  "id": "s0562",
+  "ctx": "sponsors.html <li>",
+  "ja": "<strong>コート・スタジオA・Bのループ上映内で、貴社CMを終日放映</strong>"
+ },
+ {
+  "id": "s0563",
+  "ctx": "sponsors.html <li>",
+  "ja": "講演アーカイブの冒頭クレジットに、ロゴを掲載"
+ },
+ {
+  "id": "s0564",
+  "ctx": "sponsors.html <li>",
+  "ja": "公式サイト（多言語）に、ロゴを中サイズで掲載"
+ },
+ {
+  "id": "s0565",
+  "ctx": "sponsors.html <li>",
+  "ja": "1名（劇場・講演・交流会）"
+ },
+ {
+  "id": "s0566",
+  "ctx": "sponsors.html <p>",
+  "ja": "「最初から支えた名前」として、<br>クロージングクレジットに残る。"
+ },
+ {
+  "id": "s0567",
+  "ctx": "sponsors.html <p>",
+  "ja": "30,000<small>円</small><span class=\"plan__price-alt\">または同等のサービス等のご提供</span>"
+ },
+ {
+  "id": "s0568",
+  "ctx": "sponsors.html <p>",
+  "ja": "上映が終わり、場内が明るくなる前に流れるクロージングクレジット。そこに並ぶのは、作品と、この映画祭を支えた人の名前だけです。第1回を支えた企業・団体として、記録に残ります。"
+ },
+ {
+  "id": "s0569",
+  "ctx": "sponsors.html <li>",
+  "ja": "<strong>上映後のクロージングクレジットに、ロゴを掲載</strong>"
+ },
+ {
+  "id": "s0570",
+  "ctx": "sponsors.html <li>",
+  "ja": "公式サイト（多言語）に、ロゴを掲載"
+ },
+ {
+  "id": "s0571",
+  "ctx": "sponsors.html <span>",
+  "ja": "オプション・口数自由"
+ },
+ {
+  "id": "s0572",
+  "ctx": "sponsors.html <h3>",
+  "ja": "クリエイター招聘スポンサー"
+ },
+ {
+  "id": "s0573",
+  "ctx": "sponsors.html <p>",
+  "ja": "クリエイターを、<br>札幌まで連れてくる。"
+ },
+ {
+  "id": "s0574",
+  "ctx": "sponsors.html <p>",
+  "ja": "10,000<small>円／口</small>"
+ },
+ {
+  "id": "s0575",
+  "ctx": "sponsors.html <p>",
+  "ja": "最終選考を通過したクリエイターの渡航費にあてる「クリエイター招聘基金」への拠出です。どのプランにも追加でき、単独でもお申し込みいただけます。"
+ },
+ {
+  "id": "s0576",
+  "ctx": "sponsors.html <li>",
+  "ja": "<strong>クロージングクレジットの専用枠</strong>に、「この映画祭にクリエイターを招いた企業」として掲載"
+ },
+ {
+  "id": "s0577",
+  "ctx": "sponsors.html <li>",
+  "ja": "授賞式で、MCが貴社名に言及"
+ },
+ {
+  "id": "s0578",
+  "ctx": "sponsors.html <li>",
+  "ja": "公式サイトに専用枠で掲載"
+ },
+ {
+  "id": "s0579",
+  "ctx": "sponsors.html <summary>",
+  "ja": "4プランを一覧で比較する"
+ },
+ {
+  "id": "s0580",
+  "ctx": "sponsors.html <th>",
+  "ja": "特典"
+ },
+ {
+  "id": "s0581",
+  "ctx": "sponsors.html <th>",
+  "ja": "プラチナ<br><span class=\"small\">3社・500,000円</span>"
+ },
+ {
+  "id": "s0582",
+  "ctx": "sponsors.html <th>",
+  "ja": "ゴールド<br><span class=\"small\">5社・300,000円</span>"
+ },
+ {
+  "id": "s0583",
+  "ctx": "sponsors.html <th>",
+  "ja": "シルバー<br><span class=\"small\">100,000円</span>"
+ },
+ {
+  "id": "s0584",
+  "ctx": "sponsors.html <th>",
+  "ja": "スポンサー<br><span class=\"small\">30,000円 または同等のサービス等</span>"
+ },
+ {
+  "id": "s0585",
+  "ctx": "sponsors.html <th>",
+  "ja": "授賞式"
+ },
+ {
+  "id": "s0586",
+  "ctx": "sponsors.html <td>",
+  "ja": "企業賞の命名権＋プレゼンター登壇＋社名読み上げ"
+ },
+ {
+  "id": "s0587",
+  "ctx": "sponsors.html <th>",
+  "ja": "クロージングクレジット<br><span class=\"small\">（上映後の最終スライド）</span>"
+ },
+ {
+  "id": "s0588",
+  "ctx": "sponsors.html <td>",
+  "ja": "ロゴ大"
+ },
+ {
+  "id": "s0589",
+  "ctx": "sponsors.html <td>",
+  "ja": "ロゴ中"
+ },
+ {
+  "id": "s0590",
+  "ctx": "sponsors.html <td>",
+  "ja": "ロゴ小"
+ },
+ {
+  "id": "s0591",
+  "ctx": "sponsors.html <th>",
+  "ja": "ホワイエ・ブース"
+ },
+ {
+  "id": "s0592",
+  "ctx": "sponsors.html <td>",
+  "ja": "◎（優先位置）"
+ },
+ {
+  "id": "s0593",
+  "ctx": "sponsors.html <th>",
+  "ja": "コート"
+ },
+ {
+  "id": "s0594",
+  "ctx": "sponsors.html <td>",
+  "ja": "ループ上映内CM＋スポンサーセッション10分<br><span class=\"small\">（16:00〜16:30）</span>"
+ },
+ {
+  "id": "s0595",
+  "ctx": "sponsors.html <td>",
+  "ja": "ループ上映内CM"
+ },
+ {
+  "id": "s0596",
+  "ctx": "sponsors.html <th>",
+  "ja": "スタジオA・B"
+ },
+ {
+  "id": "s0597",
+  "ctx": "sponsors.html <th>",
+  "ja": "モール"
+ },
+ {
+  "id": "s0598",
+  "ctx": "sponsors.html <td>",
+  "ja": "ブース＋看板"
+ },
+ {
+  "id": "s0599",
+  "ctx": "sponsors.html <td>",
+  "ja": "看板"
+ },
+ {
+  "id": "s0600",
+  "ctx": "sponsors.html <th>",
+  "ja": "講演アーカイブ冒頭クレジット"
+ },
+ {
+  "id": "s0601",
+  "ctx": "sponsors.html <th>",
+  "ja": "公式サイト"
+ },
+ {
+  "id": "s0602",
+  "ctx": "sponsors.html <th>",
+  "ja": "劇場・講演・交流会"
+ },
+ {
+  "id": "s0603",
+  "ctx": "sponsors.html <td>",
+  "ja": "5名"
+ },
+ {
+  "id": "s0604",
+  "ctx": "sponsors.html <td>",
+  "ja": "3名"
+ },
+ {
+  "id": "s0605",
+  "ctx": "sponsors.html <td>",
+  "ja": "1名"
+ },
+ {
+  "id": "s0606",
+  "ctx": "sponsors.html <h2>",
+  "ja": "共通事項"
+ },
+ {
+  "id": "s0607",
+  "ctx": "sponsors.html <p>",
+  "ja": "<strong>劇場での協賛表示について</strong> ―― hitaru の客席とスクリーンでは、広告・CM・企業紹介を行いません。観客が有料で観に来る場所に広告を入れないためです。劇場で行う協賛表示は、<strong>企業賞の授与、上映後のクロージングクレジット、ホワイエのブース</strong>の3つだけで、各プランに応じて提供します。CM・プレゼンテーションは SCARTS で行います。"
+ },
+ {
+  "id": "s0608",
+  "ctx": "sponsors.html <p>",
+  "ja": "<strong>CM映像について</strong> ―― CM映像は、SCARTS コート・スタジオで終日行う「セレクション上映」のループ内で放映します。hitaru の客席・スクリーンでは放映しません。"
+ },
+ {
+  "id": "s0609",
+  "ctx": "sponsors.html <dt>",
+  "ja": "日時・会場"
+ },
+ {
+  "id": "s0610",
+  "ctx": "sponsors.html <dt>",
+  "ja": "協賛申込締切"
+ },
+ {
+  "id": "s0611",
+  "ctx": "sponsors.html <dd>",
+  "ja": "2027年4月25日"
+ },
+ {
+  "id": "s0612",
+  "ctx": "sponsors.html <dt>",
+  "ja": "データ提出締切"
+ },
+ {
+  "id": "s0613",
+  "ctx": "sponsors.html <dd>",
+  "ja": "2027年4月25日（ロゴ・CM映像・ブース出展内容。いずれもメールでご提出ください）"
+ },
+ {
+  "id": "s0614",
+  "ctx": "sponsors.html <dd>",
+  "ja": "プラチナ限定・3社まで。賞の名称は事前にご指定ください。授与作品は貴社が最終選考通過作品から選ぶことも、審査員に委ねることもできます"
+ },
+ {
+  "id": "s0615",
+  "ctx": "sponsors.html <dt>",
+  "ja": "ホワイエのブース"
+ },
+ {
+  "id": "s0616",
+  "ctx": "sponsors.html <dd>",
+  "ja": "プラチナ・ゴールド限定。机・椅子・A1パネルは主催が用意します。販促物の配布可、物品の販売は不可"
+ },
+ {
+  "id": "s0617",
+  "ctx": "sponsors.html <dd>",
+  "ja": "劇場の招待席は指定席で、主催が座席を割り当てます。交通費・滞在費は各社のご負担となります"
+ },
+ {
+  "id": "s0618",
+  "ctx": "sponsors.html <dt>",
+  "ja": "劇場内"
+ },
+ {
+  "id": "s0619",
+  "ctx": "sponsors.html <dd>",
+  "ja": "hitaru の客席・スクリーンでは、配布物の配布・アナウンスを行いません"
+ },
+ {
+  "id": "s0620",
+  "ctx": "sponsors.html <dt>",
+  "ja": "金額"
+ },
+ {
+  "id": "s0621",
+  "ctx": "sponsors.html <dd>",
+  "ja": "各プランの金額は上記のとおりです。請求書はお申し込み後にお送りします"
+ },
+ {
+  "id": "s0622",
+  "ctx": "sponsors.html <dt>",
+  "ja": "連絡方法"
+ },
+ {
+  "id": "s0623",
+  "ctx": "sponsors.html <dd>",
+  "ja": "お申し込み・ご相談はメール（info@sugoiai.org）で受け付けます。日本語または英語でお願いします"
+ },
+ {
+  "id": "s0624",
+  "ctx": "sponsors.html <h2>",
+  "ja": "現在のスポンサー"
+ },
+ {
+  "id": "s0625",
+  "ctx": "sponsors.html <dd>",
+  "ja": "札幌国際AI映画祭実行委員会／札幌すごいAI会（<a href=\"about.html#organizer\">主催者について</a>）"
+ },
+ {
+  "id": "s0626",
+  "ctx": "sponsors.html <dt>",
+  "ja": "日程・会場"
+ },
+ {
+  "id": "s0627",
+  "ctx": "sponsors.html <dt>",
+  "ja": "想定来場"
+ },
+ {
+  "id": "s0628",
+  "ctx": "sponsors.html <dd>",
+  "ja": "劇場 約1,000人（想定。hitaru 1〜2階席 1,686席・指定席）<span data-selection=\"on\">。SCARTS でのセレクション上映は入場無料で、チケットを持たない来場者にも開かれます</span>"
+ },
+ {
+  "id": "s0629",
+  "ctx": "sponsors.html <h2>",
+  "ja": "<span class=\"nb\">スポンサーのお申し込み・</span><span class=\"nb\">お問い合わせ</span>"
+ },
+ {
+  "id": "s0630",
+  "ctx": "sponsors.html <p>",
+  "ja": "ご検討中のプランと社名をお書き添えのうえ、メールでご連絡ください。検討段階のご相談、プランの組み合わせのご相談も歓迎します。"
+ },
+ {
+  "id": "s0631",
+  "ctx": "sponsors.html <span>",
+  "ja": "info@sugoiai.org 宛のメールが開きます。日本語または英語でお願いします。"
+ },
+ {
+  "id": "s0632",
+  "ctx": "supporters.html <title>",
+  "ja": "支援者紹介 ― 種火ナンバー | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0633",
+  "ctx": "supporters.html <meta content>",
+  "ja": "札幌国際AI映画祭のクラウドファンディング（CAMPFIRE）を支えてくださった皆さまを、種火ナンバーとともに紹介します。"
+ },
+ {
+  "id": "s0634",
+  "ctx": "supporters.html <li>",
+  "ja": "<a href=\"supporters.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0635",
+  "ctx": "supporters.html <h1>",
+  "ja": "<span class=\"nb\">最初の炎を、</span><span class=\"nb\">ともに灯した人たち。</span>"
+ },
+ {
+  "id": "s0636",
+  "ctx": "supporters.html <p>",
+  "ja": "クラウドファンディング（CAMPFIRE）で第1回の開催を支えてくださった皆さまに、支援順の<strong>種火ナンバー</strong>をお贈りし、ここに表記名を掲載します。このページは、少なくとも開催後1年間は残します。"
+ },
+ {
+  "id": "s0637",
+  "ctx": "supporters.html <dt>",
+  "ja": "SUPPORTERS ／ 支援者"
+ },
+ {
+  "id": "s0638",
+  "ctx": "supporters.html <dd>",
+  "ja": "<span data-supporters-count>0</span>人"
+ },
+ {
+  "id": "s0639",
+  "ctx": "supporters.html <dt>",
+  "ja": "PERIOD ／ 期間"
+ },
+ {
+  "id": "s0640",
+  "ctx": "supporters.html <dd>",
+  "ja": "2026.10下旬 – 11下旬"
+ },
+ {
+  "id": "s0641",
+  "ctx": "supporters.html <dt>",
+  "ja": "UPDATED ／ 更新"
+ },
+ {
+  "id": "s0642",
+  "ctx": "supporters.html <a>",
+  "ja": "券種・料金を見る"
+ },
+ {
+  "id": "s0643",
+  "ctx": "supporters.html <span>",
+  "ja": "CAMPFIREに移動します。支援が確定した方から順に、このページに種火ナンバーを掲載します（反映まで数日かかることがあります）。"
+ },
+ {
+  "id": "s0644",
+  "ctx": "supporters.html <h2>",
+  "ja": "ファウンディングサポーター"
+ },
+ {
+  "id": "s0645",
+  "ctx": "supporters.html <p>",
+  "ja": "5万円コースで、第1回の土台を支えてくださった皆さま。"
+ },
+ {
+  "id": "s0646",
+  "ctx": "supporters.html <h2>",
+  "ja": "プレミアムサポーター"
+ },
+ {
+  "id": "s0647",
+  "ctx": "supporters.html <p>",
+  "ja": "1万円コースで支えてくださった皆さま。"
+ },
+ {
+  "id": "s0648",
+  "ctx": "supporters.html <h2>",
+  "ja": "種火ナンバー ― すべての支援者"
+ },
+ {
+  "id": "s0649",
+  "ctx": "supporters.html <p>",
+  "ja": "コースを問わず、支援が確定した順に No.001 から。表記名は支援時にご指定いただいたものです。"
+ },
+ {
+  "id": "s0650",
+  "ctx": "supporters.html <p>",
+  "ja": "支援者の一覧を表示するにはJavaScriptを有効にしてください。"
+ },
+ {
+  "id": "s0651",
+  "ctx": "supporters.html <p>",
+  "ja": "表記名の変更・掲載の取り下げをご希望の方は、メール（<a href=\"mailto:info@sugoiai.org?subject=%E3%80%90%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9BAI%E6%98%A0%E7%94%BB%E7%A5%AD%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B\">info@sugoiai.org</a>）に種火ナンバーを添えてご連絡ください。ニュースでは、クラウドファンディングの進捗を随時お知らせします（<a href=\"news.html\">お知らせ</a>）。"
+ },
+ {
+  "id": "s0652",
+  "ctx": "supporters.html <p>",
+  "ja": "2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS で会いましょう。受賞作品は、支援者の皆さまに開催翌日から1週間先行上映したあと、オンラインで公開します。"
+ },
+ {
+  "id": "s0653",
+  "ctx": "news.html <title>",
+  "ja": "お知らせ | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0654",
+  "ctx": "news.html <meta content>",
+  "ja": "札幌国際AI映画祭からのお知らせ一覧。"
+ },
+ {
+  "id": "s0655",
+  "ctx": "news.html <li>",
+  "ja": "<a href=\"news.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0656",
+  "ctx": "news.html <p>",
+  "ja": "映画祭からの最新情報。"
+ },
+ {
+  "id": "s0657",
+  "ctx": "news.html <li>",
+  "ja": "お知らせを表示するにはJavaScriptを有効にしてください。"
+ },
+ {
+  "id": "s0658",
+  "ctx": "legal.html <title>",
+  "ja": "法的表記 | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0659",
+  "ctx": "legal.html <meta content>",
+  "ja": "特定商取引法に基づく表記、サイト利用条件、プライバシーポリシーへのご案内。"
+ },
+ {
+  "id": "s0660",
+  "ctx": "legal.html <li>",
+  "ja": "<a href=\"legal.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0661",
+  "ctx": "legal.html <h1>",
+  "ja": "法的表記"
+ },
+ {
+  "id": "s0662",
+  "ctx": "legal.html <li>",
+  "ja": "<a href=\"#tokusho\">特定商取引法に基づく表記</a>"
+ },
+ {
+  "id": "s0663",
+  "ctx": "legal.html <li>",
+  "ja": "<a href=\"#terms\">サイト利用条件</a>"
+ },
+ {
+  "id": "s0664",
+  "ctx": "legal.html <p>",
+  "ja": "本ページの正文は日本語版および英語版とします。その他の言語は参考訳であり、解釈に相違がある場合は正文に従います。"
+ },
+ {
+  "id": "s0665",
+  "ctx": "legal.html <h2>",
+  "ja": "<span class=\"num\">1</span>プライバシーポリシー"
+ },
+ {
+  "id": "s0666",
+  "ctx": "legal.html <p>",
+  "ja": "個人情報の取り扱い、およびアクセス解析（Cloudflare Web Analytics）については、<a href=\"privacy.html\">プライバシーポリシー</a>をご覧ください。当サイトはアクセス解析のためのCookieやローカルストレージを使用せず、同意バナーも表示しません。"
+ },
+ {
+  "id": "s0667",
+  "ctx": "legal.html <h2>",
+  "ja": "<span class=\"num\">2</span>特定商取引法に基づく表記"
+ },
+ {
+  "id": "s0668",
+  "ctx": "legal.html <p>",
+  "ja": "<strong>本サイト上では、販売・決済を行いません。</strong>チケットの先行販売はクラウドファンディング（CAMPFIRE）での支援として、一般販売およびオンラインアーカイブ（配信）の販売は teket で、作品の応募料は FilmFreeway で、それぞれ決済が行われます。各サービス上の表記・規約が適用されます。以下は、主催者としての表記です。"
+ },
+ {
+  "id": "s0669",
+  "ctx": "legal.html <dt>",
+  "ja": "販売事業者"
+ },
+ {
+  "id": "s0670",
+  "ctx": "legal.html <dt>",
+  "ja": "運営責任者"
+ },
+ {
+  "id": "s0671",
+  "ctx": "legal.html <dd>",
+  "ja": "岸本悠佑"
+ },
+ {
+  "id": "s0672",
+  "ctx": "legal.html <dt>",
+  "ja": "所在地・電話番号"
+ },
+ {
+  "id": "s0883",
+  "ctx": "legal.html <dd>",
+  "ja": "請求があった場合、遅滞なく開示します"
+ },
+ {
+  "id": "s0674",
+  "ctx": "legal.html <dt>",
+  "ja": "連絡先"
+ },
+ {
+  "id": "s0675",
+  "ctx": "legal.html <dt>",
+  "ja": "販売価格"
+ },
+ {
+  "id": "s0676",
+  "ctx": "legal.html <dd>",
+  "ja": "チケット・オンラインアーカイブ：<a href=\"tickets.html#buy\">券種・料金</a>に表示（税込）／クラウドファンディングの支援コース：CAMPFIRE のプロジェクトページに表示／応募料：<a href=\"submit.html#categories\">応募要項</a>に表示（米ドル建て。$10）"
+ },
+ {
+  "id": "s0677",
+  "ctx": "legal.html <dt>",
+  "ja": "代金以外の費用"
+ },
+ {
+  "id": "s0678",
+  "ctx": "legal.html <dd>",
+  "ja": "外部サービス所定の手数料、通信費"
+ },
+ {
+  "id": "s0679",
+  "ctx": "legal.html <dt>",
+  "ja": "支払方法・時期"
+ },
+ {
+  "id": "s0680",
+  "ctx": "legal.html <dd>",
+  "ja": "外部サービスの定めによる（クレジットカード等。購入・支援・応募時に決済）"
+ },
+ {
+  "id": "s0681",
+  "ctx": "legal.html <dt>",
+  "ja": "引渡時期"
+ },
+ {
+  "id": "s0682",
+  "ctx": "legal.html <dd>",
+  "ja": "先行販売（CAMPFIRE）：プロジェクト終了後、2026年12月に teket の引換コードをお送りします（teket 上で座席を選び発券）。その他の特典はプロジェクトページに記載の時期にお届けします。種火ナンバーは支援確定後、支援者紹介ページに掲載します。<br>一般販売（teket）：決済完了後、teket 上で電子チケット（指定席）を発行します。<br>オンラインアーカイブ（デジタル商品）：映画祭の開催後、teket 経由で配信します。配信期間は約1か月。<br>応募料（FilmFreeway）：決済完了をもって応募受理となります。"
+ },
+ {
+  "id": "s0683",
+  "ctx": "legal.html <dt>",
+  "ja": "キャンセル・返金"
+ },
+ {
+  "id": "s0684",
+  "ctx": "legal.html <dd>",
+  "ja": "先行販売（CAMPFIRE）：支援金は返金できません。取り扱いは CAMPFIRE の規約に従います。<br>一般販売（teket）：購入後のキャンセル、返金はお受けできません。主催者の都合により映画祭を中止した場合のチケット代金は、teket の手続きに従い返金します。<br>オンラインアーカイブ（配信）：デジタル商品の性質上、購入後のキャンセル、返金はお受けできません。<br>作品応募（FilmFreeway）：応募後のキャンセルによる応募料の返金はありません。"
+ },
+ {
+  "id": "s0685",
+  "ctx": "legal.html <h2>",
+  "ja": "<span class=\"num\">3</span>サイト利用条件"
+ },
+ {
+  "id": "s0686",
+  "ctx": "legal.html <h3>",
+  "ja": "著作権"
+ },
+ {
+  "id": "s0687",
+  "ctx": "legal.html <p>",
+  "ja": "本サイトに掲載する文章、画像、映像、ロゴ等の権利は、当委員会または各権利者に帰属します。上映作品に関する画像・映像の権利は各作品の制作者に帰属します。無断での転載・複製・改変を禁じます。報道目的での利用は <a href=\"about.html#contact\">お問い合わせ</a> をご利用ください。"
+ },
+ {
+  "id": "s0688",
+  "ctx": "legal.html <h3>",
+  "ja": "外部リンク"
+ },
+ {
+  "id": "s0689",
+  "ctx": "legal.html <p>",
+  "ja": "本サイトは、応募、チケット購入、各種登録のために外部サービスへリンクします。リンク先のサービスの内容・運用について、当委員会は責任を負いません。"
+ },
+ {
+  "id": "s0690",
+  "ctx": "legal.html <h3>",
+  "ja": "免責"
+ },
+ {
+  "id": "s0691",
+  "ctx": "legal.html <p>",
+  "ja": "掲載情報の正確性には万全を期していますが、プログラム、登壇者、日程等は予告なく変更される場合があります。本サイトの利用により生じた損害について、当委員会は故意または重過失がある場合を除き責任を負いません。"
+ },
+ {
+  "id": "s0692",
+  "ctx": "legal.html <h3>",
+  "ja": "翻訳について"
+ },
+ {
+  "id": "s0693",
+  "ctx": "legal.html <p>",
+  "ja": "日本語以外のページにはAI翻訳を使用しています。内容に相違がある場合は日本語版が優先します（応募規約および本ページは日本語版・英語版が正文）。"
+ },
+ {
+  "id": "s0694",
+  "ctx": "legal.html <h3>",
+  "ja": "準拠法"
+ },
+ {
+  "id": "s0695",
+  "ctx": "legal.html <p>",
+  "ja": "本サイトの利用および本規約には日本法が適用されます。本サイトまたは映画祭に関して紛争が生じた場合は、札幌地方裁判所を第一審の専属的合意管轄裁判所とします。"
+ },
+ {
+  "id": "s0696",
+  "ctx": "legal.html <p>",
+  "ja": "制定日：2026年10月12日"
+ },
+ {
+  "id": "s0697",
+  "ctx": "privacy.html <title>",
+  "ja": "プライバシーポリシー | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0698",
+  "ctx": "privacy.html <meta content>",
+  "ja": "札幌国際AI映画祭 公式サイトのプライバシーポリシー。取得する情報、利用目的、アクセス解析（Cloudflare Web Analytics）について。"
+ },
+ {
+  "id": "s0699",
+  "ctx": "privacy.html <li>",
+  "ja": "<a href=\"privacy.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0700",
+  "ctx": "privacy.html <h1>",
+  "ja": "<span class=\"nb\">プライバシー</span><span class=\"nb\">ポリシー</span>"
+ },
+ {
+  "id": "s0701",
+  "ctx": "privacy.html <p>",
+  "ja": "当サイトはアクセス解析のためのCookieやローカルストレージを使用しません。"
+ },
+ {
+  "id": "s0702",
+  "ctx": "privacy.html <li>",
+  "ja": "<a href=\"#collect\">取得する情報</a>"
+ },
+ {
+  "id": "s0703",
+  "ctx": "privacy.html <li>",
+  "ja": "<a href=\"#purpose\">利用目的</a>"
+ },
+ {
+  "id": "s0704",
+  "ctx": "privacy.html <li>",
+  "ja": "<a href=\"#analytics\">アクセス解析について</a>"
+ },
+ {
+  "id": "s0705",
+  "ctx": "privacy.html <li>",
+  "ja": "<a href=\"#storage\">ブラウザに保存する情報</a>"
+ },
+ {
+  "id": "s0706",
+  "ctx": "privacy.html <li>",
+  "ja": "<a href=\"#rights\">開示・訂正・削除</a>"
+ },
+ {
+  "id": "s0707",
+  "ctx": "privacy.html <h2>",
+  "ja": "事業者"
+ },
+ {
+  "id": "s0884",
+  "ctx": "privacy.html <p>",
+  "ja": "札幌国際AI映画祭実行委員会（以下「当委員会」）<br>所在地：請求があった場合、遅滞なく開示します 個人情報保護管理者：岸本悠佑"
+ },
+ {
+  "id": "s0709",
+  "ctx": "privacy.html <h2>",
+  "ja": "取得する情報"
+ },
+ {
+  "id": "s0710",
+  "ctx": "privacy.html <li>",
+  "ja": "お問い合わせ・協賛のご相談時（メール）：氏名、所属、メールアドレス、お問い合わせ内容"
+ },
+ {
+  "id": "s0711",
+  "ctx": "privacy.html <li>",
+  "ja": "サイト閲覧時：アクセス解析のための情報（詳細は「<a href=\"#analytics\">アクセス解析について</a>」）"
+ },
+ {
+  "id": "s0712",
+  "ctx": "privacy.html <p>",
+  "ja": "作品応募およびチケット購入に伴う個人情報・決済情報は、それぞれの外部サービス（応募フォーム、クラウドファンディングサイト、チケット販売サイト）が取得し、各サービスのプライバシーポリシーが適用されます。当委員会は、運営に必要な範囲でこれらのサービスから情報の提供を受けます。"
+ },
+ {
+  "id": "s0713",
+  "ctx": "privacy.html <h2>",
+  "ja": "利用目的"
+ },
+ {
+  "id": "s0714",
+  "ctx": "privacy.html <li>",
+  "ja": "映画祭に関するご案内、応募締切・チケット発売等の通知"
+ },
+ {
+  "id": "s0715",
+  "ctx": "privacy.html <li>",
+  "ja": "応募作品の審査、結果の通知、選考通過者・受賞者へのご連絡"
+ },
+ {
+  "id": "s0716",
+  "ctx": "privacy.html <li>",
+  "ja": "お問い合わせ・協賛に関するご相談への対応"
+ },
+ {
+  "id": "s0717",
+  "ctx": "privacy.html <li>",
+  "ja": "サイトおよび映画祭運営の改善のための統計的な分析"
+ },
+ {
+  "id": "s0718",
+  "ctx": "privacy.html <h2>",
+  "ja": "第三者提供・委託"
+ },
+ {
+  "id": "s0719",
+  "ctx": "privacy.html <p>",
+  "ja": "法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。メール、アクセス解析等の運用のため、外部サービス事業者に取り扱いを委託する場合があります（国外の事業者を含みます）。"
+ },
+ {
+  "id": "s0720",
+  "ctx": "privacy.html <h2>",
+  "ja": "アクセス解析について"
+ },
+ {
+  "id": "s0721",
+  "ctx": "privacy.html <p>",
+  "ja": "当サイトでは、サイトの利用状況および表示パフォーマンスを把握し、サービスを改善するため、Cloudflare, Inc.が提供する「Cloudflare Web Analytics」を利用しています。"
+ },
+ {
+  "id": "s0722",
+  "ctx": "privacy.html <p>",
+  "ja": "Cloudflare Web Analyticsは、アクセス解析のためのCookie、localStorageその他の永続的な識別情報をブラウザに保存せず、個々の利用者を継続的に追跡することを目的としないアクセス解析サービスです。"
+ },
+ {
+  "id": "s0723",
+  "ctx": "privacy.html <p>",
+  "ja": "当サイトの閲覧に伴い、閲覧したページに関する情報、アクセス元に関する情報、ブラウザや端末に関する情報、ページの表示パフォーマンスに関する情報等がCloudflareへ送信・処理される場合があります。"
+ },
+ {
+  "id": "s0724",
+  "ctx": "privacy.html <p>",
+  "ja": "これらの情報は、当サイトの利用状況の把握、表示品質の確認およびサイト改善のために利用します。"
+ },
+ {
+  "id": "s0725",
+  "ctx": "privacy.html <p>",
+  "ja": "Cloudflareによる情報の取扱いについては、<a href=\"https://www.cloudflare.com/privacypolicy/\" target=\"_blank\" rel=\"noopener\">Cloudflareのプライバシーポリシー</a>をご確認ください。"
+ },
+ {
+  "id": "s0726",
+  "ctx": "privacy.html <h2>",
+  "ja": "ブラウザに保存する情報"
+ },
+ {
+  "id": "s0727",
+  "ctx": "privacy.html <p>",
+  "ja": "当サイトは、アクセス解析や広告のためのCookie・localStorage・sessionStorage・フィンガープリント等を使用せず、Google Analytics、Google Tag Manager、Meta Pixel等の解析・広告タグも設置していません。同意バナーを表示しないのはこのためです。"
+ },
+ {
+  "id": "s0728",
+  "ctx": "privacy.html <p>",
+  "ja": "サイトの機能のためにのみ、次の情報をお使いのブラウザに保存することがあります。いずれも個人を特定せず、外部に送信されません。"
+ },
+ {
+  "id": "s0729",
+  "ctx": "privacy.html <li>",
+  "ja": "言語スイッチャーで選択した表示言語（次回以降も同じ言語で表示するため）"
+ },
+ {
+  "id": "s0730",
+  "ctx": "privacy.html <li>",
+  "ja": "言語案内バナーを閉じたこと（再表示しないため）"
+ },
+ {
+  "id": "s0731",
+  "ctx": "privacy.html <h2>",
+  "ja": "EU・英国等にお住まいの方へ（GDPR）"
+ },
+ {
+  "id": "s0732",
+  "ctx": "privacy.html <p>",
+  "ja": "当委員会は、契約の履行（応募・参加）、正当な利益（運営・改善、アクセス解析）を法的根拠として個人データを取り扱います。ご本人は、アクセス、訂正、削除、処理の制限、データポータビリティ、異議申立て、同意の撤回の権利を有します。"
+ },
+ {
+  "id": "s0733",
+  "ctx": "privacy.html <h2>",
+  "ja": "開示・訂正・削除、お問い合わせ"
+ },
+ {
+  "id": "s0734",
+  "ctx": "privacy.html <p>",
+  "ja": "ご自身の個人情報の開示・訂正・削除のご希望は、メール（<a href=\"mailto:info@sugoiai.org?subject=%E3%80%90%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9BAI%E6%98%A0%E7%94%BB%E7%A5%AD%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B\">info@sugoiai.org</a>）にてご連絡ください。"
+ },
+ {
+  "id": "s0735",
+  "ctx": "privacy.html <h2>",
+  "ja": "改定"
+ },
+ {
+  "id": "s0736",
+  "ctx": "privacy.html <p>",
+  "ja": "本ポリシーは、法令の変更やサービスの変更に応じて改定することがあります。重要な変更は本ページでお知らせします。<br><span class=\"muted small\">制定日：2026年10月12日</span>"
+ },
+ {
+  "id": "s0737",
+  "ctx": "privacy.html <p>",
+  "ja": "<a class=\"text-link\" href=\"legal.html\">特定商取引法に基づく表記・サイト利用条件</a>"
+ },
+ {
+  "id": "s0738",
+  "ctx": "guideline.html <title>",
+  "ja": "制作ガイドライン | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0739",
+  "ctx": "guideline.html <meta content>",
+  "ja": "札幌国際AI映画祭 2027 制作ガイドライン。AIの使い方、法令遵守、著作権・権利、上映・配信での使用許諾、プライバシー、禁止コンテンツ、透明性、主催者の判断について。"
+ },
+ {
+  "id": "s0740",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"guideline.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0741",
+  "ctx": "guideline.html <h1>",
+  "ja": "<span class=\"nb\">制作</span><span class=\"nb\">ガイドライン</span>"
+ },
+ {
+  "id": "s0742",
+  "ctx": "guideline.html <p>",
+  "ja": "札幌国際AI映画祭 2027 に応募するすべての作品に適用されます。AI映像制作を楽しく・正直に・互いが気持ちよくいられるための最低限のルールです。応募前に一読してください。"
+ },
+ {
+  "id": "s0743",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#ai\">01 AIの使い方</a>"
+ },
+ {
+  "id": "s0744",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#law\">02 法令遵守</a>"
+ },
+ {
+  "id": "s0745",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#rights\">03 著作権・権利</a>"
+ },
+ {
+  "id": "s0746",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#rights-use\">04 帰属と使用</a>"
+ },
+ {
+  "id": "s0747",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#privacy\">05 プライバシー</a>"
+ },
+ {
+  "id": "s0748",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#prohibited\">06 禁止コンテンツ</a>"
+ },
+ {
+  "id": "s0749",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#transparency\">07 透明性</a>"
+ },
+ {
+  "id": "s0750",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"#decision\">08 主催者の判断</a>"
+ },
+ {
+  "id": "s0751",
+  "ctx": "guideline.html <p>",
+  "ja": "<a class=\"text-link\" href=\"submit.html#categories\">応募ページへ戻る</a>"
+ },
+ {
+  "id": "s0752",
+  "ctx": "guideline.html <p>",
+  "ja": "本ガイドラインの正文は日本語版とします。その他の言語は参考訳であり、解釈に相違がある場合は正文に従います。"
+ },
+ {
+  "id": "s0753",
+  "ctx": "guideline.html <p>",
+  "ja": "本映画祭の応募作品はすべて<strong>全年齢対象</strong>とします。子どもから大人まで、誰もが安心して鑑賞できる作品をお待ちしています。"
+ },
+ {
+  "id": "s0754",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">00</span>応募規定（要点）"
+ },
+ {
+  "id": "s0755",
+  "ctx": "guideline.html <dt>",
+  "ja": "応募窓口"
+ },
+ {
+  "id": "s0756",
+  "ctx": "guideline.html <dd>",
+  "ja": "FilmFreeway（公開リスティング）。他の応募経路は設けません。"
+ },
+ {
+  "id": "s0757",
+  "ctx": "guideline.html <dd>",
+  "ja": "1人（1チーム）1本。最大2本まで。"
+ },
+ {
+  "id": "s0758",
+  "ctx": "guideline.html <dd>",
+  "ja": "$10。FilmFreeway 上で決済。"
+ },
+ {
+  "id": "s0759",
+  "ctx": "guideline.html <dt>",
+  "ja": "締切"
+ },
+ {
+  "id": "s0760",
+  "ctx": "guideline.html <dd>",
+  "ja": "2027年3月31日（水）23:59 日本時間"
+ },
+ {
+  "id": "s0761",
+  "ctx": "guideline.html <dt>",
+  "ja": "選考"
+ },
+ {
+  "id": "s0762",
+  "ctx": "guideline.html <dd>",
+  "ja": "一次審査 → 二次選考通過 → 最終選考通過（劇場上映・各賞の対象）。2027年4月15日に発表。通過本数は非公開。"
+ },
+ {
+  "id": "s0763",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">01</span>AIの使い方について"
+ },
+ {
+  "id": "s0764",
+  "ctx": "guideline.html <p>",
+  "ja": "本映画祭は、<strong>生成AIを主要な制作手法として用いた映像作品</strong>を対象としています。編集補助や軽微な補正のみにAIを使った作品は、趣旨に合わない場合があります。"
+ },
+ {
+  "id": "s0765",
+  "ctx": "guideline.html <p>",
+  "ja": "使用するAIツールの種類や数に制限はありません。触りたてのツール一本でも構いません。どのAIをどう使ったか、FilmFreeway の作品情報（説明欄・質問欄）に書いてください。"
+ },
+ {
+  "id": "s0766",
+  "ctx": "guideline.html <p>",
+  "ja": "一部AI生成・一部実写の組み合わせも可です。「AIで生成した映像に実写を合成した」「実写をベースにAIで加工した」といった作品も歓迎します。"
+ },
+ {
+  "id": "s0767",
+  "ctx": "guideline.html <p>",
+  "ja": "作品内で使用する言語は自由です。日本語・英語にかぎらず、架空の言語・人造言語・存在しない言語など、どんな言語表現も認めます（日本語以外・日本語が不自然な作品には日本語字幕を付けてください）。"
+ },
+ {
+  "id": "s0768",
+  "ctx": "guideline.html <li>",
+  "ja": "ノイズ除去・アップスケールなど「目立たない補正」のみにAIを用いた作品は、本映画祭の趣旨上「AI作品」とは認められない場合があります。"
+ },
+ {
+  "id": "s0769",
+  "ctx": "guideline.html <li>",
+  "ja": "使用するAIツールの利用規約（商用利用可否・生成物の権利関係等）は、応募前に応募者自身でご確認ください。利用規約上、映像への使用や公開配信が制限されているツールの使用には注意が必要です。"
+ },
+ {
+  "id": "s0770",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">02</span>法令遵守について"
+ },
+ {
+  "id": "s0771",
+  "ctx": "guideline.html <p>",
+  "ja": "応募者は、日本の著作権法・個人情報保護法その他関連法令を遵守して生成AIを利用してください。AIで作ったから何でもOK、ということにはなりません。"
+ },
+ {
+  "id": "s0772",
+  "ctx": "guideline.html <p>",
+  "ja": "また、経済産業省・総務省が示す「AI事業者ガイドライン」の精神――人間中心・安全・透明・説明可能――を意識したAI利用を心がけてください。堅く考えすぎなくていいですが、「これ大丈夫かな？」と思ったら立ち止まる習慣が大事です。"
+ },
+ {
+  "id": "s0773",
+  "ctx": "guideline.html <p>",
+  "ja": "参考リンク（いずれも外部サイト）"
+ },
+ {
+  "id": "s0774",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html\" target=\"_blank\" rel=\"noopener\">文化庁「AIと著作権に関する考え方」</a>"
+ },
+ {
+  "id": "s0775",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"https://www.bunka.go.jp/seisaku/chosakuken/pdf/94097701_01.pdf\" target=\"_blank\" rel=\"noopener\">文化庁「AIと著作権に関するチェックリスト＆ガイダンス」（PDF）</a>"
+ },
+ {
+  "id": "s0776",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html\" target=\"_blank\" rel=\"noopener\">経済産業省「AI事業者ガイドライン」</a>"
+ },
+ {
+  "id": "s0777",
+  "ctx": "guideline.html <li>",
+  "ja": "<a href=\"https://www.meti.go.jp/policy/mono_info_service/contents/ai_guidebook_set.pdf\" target=\"_blank\" rel=\"noopener\">経済産業省「コンテンツ制作のための生成AI利活用ガイドブック」（PDF）</a>"
+ },
+ {
+  "id": "s0778",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">03</span>著作権・権利について"
+ },
+ {
+  "id": "s0779",
+  "ctx": "guideline.html <p>",
+  "ja": "応募作品はオリジナルであり、第三者の著作物・商標・キャラクター等を無断で利用してはなりません。AIで生成した素材であっても、既存の著作物を実質的に模倣・再現するような利用は著作権侵害にあたる可能性があります。文化庁が示す趣旨を尊重し、AIの学習・生成に関わる権利者の利益を不当に害さないよう配慮してください。"
+ },
+ {
+  "id": "s0780",
+  "ctx": "guideline.html <p>",
+  "ja": "以下の権利処理は、応募前に自身で確認・完了しておいてください。"
+ },
+ {
+  "id": "s0781",
+  "ctx": "guideline.html <li>",
+  "ja": "映像・静止画・脚本・アートなどの著作権"
+ },
+ {
+  "id": "s0782",
+  "ctx": "guideline.html <li>",
+  "ja": "作中で使用する音楽・効果音の著作権・原盤権（本映画祭は会場上映に加え、YouTube等でのオンライン配信を予定しています。YouTubeオーディオライブラリ・CC0・適切な許諾を得たもの等、配信に対応したライセンスであることを確認してください）"
+ },
+ {
+  "id": "s0783",
+  "ctx": "guideline.html <li>",
+  "ja": "出演者がいる場合の肖像権・パブリシティ権"
+ },
+ {
+  "id": "s0784",
+  "ctx": "guideline.html <li>",
+  "ja": "実在の施設・建物・展示物等を撮影して使用する場合の撮影許可・利用許可"
+ },
+ {
+  "id": "s0785",
+  "ctx": "guideline.html <li>",
+  "ja": "企業ロゴ・ブランド名・商品名等を使用する場合の商標権・著作権への配慮"
+ },
+ {
+  "id": "s0786",
+  "ctx": "guideline.html <li>",
+  "ja": "特定の作家・イラストレーター等を名指しで模倣するプロンプトの使用（権利侵害の観点から避けることを強く推奨します）"
+ },
+ {
+  "id": "s0787",
+  "ctx": "guideline.html <li>",
+  "ja": "使用するAIツールの学習データに関する問題（各ツール提供事業者のポリシーに従うものとし、主催者はこれに起因するトラブルの責任を負いません）"
+ },
+ {
+  "id": "s0788",
+  "ctx": "guideline.html <p>",
+  "ja": "権利処理はすべて応募者自身の責任で行うものとします。応募者は、本作品が第三者の権利を侵害していないこと、および本ガイドラインに違反していないことを保証するものとします。上映・配信後に権利侵害等の問題が判明した場合、主催者は該当作品の公開停止・削除等の対応を行うことがあります。"
+ },
+ {
+  "id": "s0789",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">04</span>著作権の帰属と運営による使用について"
+ },
+ {
+  "id": "s0790",
+  "ctx": "guideline.html <p>",
+  "ja": "応募作品の著作権は、<strong>引き続き応募者本人に帰属します</strong>。主催者が権利を取得することはありません。"
+ },
+ {
+  "id": "s0791",
+  "ctx": "guideline.html <p>",
+  "ja": "ただし、応募をもって、主催者が以下の目的で作品を使用・公開することを許諾いただいたものとみなします。"
+ },
+ {
+  "id": "s0792",
+  "ctx": "guideline.html <li>",
+  "ja": "映画祭当日の会場（札幌文化芸術劇場 hitaru）スクリーンでの上映（最終選考通過作品）"
+ },
+ {
+  "id": "s0793",
+  "ctx": "guideline.html <li>",
+  "ja": "映画祭当日の札幌文化芸術交流センター SCARTS（コート・スタジオA／B）での上映（二次選考通過作品）"
+ },
+ {
+  "id": "s0794",
+  "ctx": "guideline.html <li>",
+  "ja": "受賞作品の、開催後のオンライン公開（公式YouTubeおよびその他配信プラットフォームでの放映・アーカイブ公開。クラウドファンディング支援者向けの先行上映を含む）"
+ },
+ {
+  "id": "s0795",
+  "ctx": "guideline.html <li>",
+  "ja": "映画祭の事前・事後広報（SNS、公式サイト、告知動画、報道資料等）への使用"
+ },
+ {
+  "id": "s0796",
+  "ctx": "guideline.html <li>",
+  "ja": "作品への映画祭ロゴ・クレジットの貼り付け"
+ },
+ {
+  "id": "s0797",
+  "ctx": "guideline.html <li>",
+  "ja": "広報・紹介目的での部分的な切り抜きや編集"
+ },
+ {
+  "id": "s0798",
+  "ctx": "guideline.html <li>",
+  "ja": "その他、映画祭の運営上、合理的に必要と認められる使用"
+ },
+ {
+  "id": "s0799",
+  "ctx": "guideline.html <p>",
+  "ja": "上記の使用にあたり、作品の内容を本質的に改変することはありません。また、作者名（ハンドルネーム可）は可能な範囲でクレジット表記します。"
+ },
+ {
+  "id": "s0800",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">05</span>個人情報・プライバシーの尊重"
+ },
+ {
+  "id": "s0801",
+  "ctx": "guideline.html <p>",
+  "ja": "実在の個人の顔写真・音声・SNS投稿などを、本人の同意なくAIの学習・生成素材として用いることは禁止します。プライバシー権・肖像権の侵害にあたる可能性があります。"
+ },
+ {
+  "id": "s0802",
+  "ctx": "guideline.html <p>",
+  "ja": "実在人物の顔や声をAIで合成した「ディープフェイク」を含む作品を応募する場合は、当該人物本人の明確な同意を得たうえで、エンドクレジット等に「AIによる合成表現を含む」旨を明示してください。"
+ },
+ {
+  "id": "s0803",
+  "ctx": "guideline.html <p>",
+  "ja": "政治家・著名人・故人を扱う場合も、その名誉・人格への配慮を欠いた表現は認めません。"
+ },
+ {
+  "id": "s0804",
+  "ctx": "guideline.html <p>",
+  "ja": "未成年の応募者は、保護者の同意を得たうえで応募してください。"
+ },
+ {
+  "id": "s0805",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">06</span>禁止コンテンツ"
+ },
+ {
+  "id": "s0806",
+  "ctx": "guideline.html <p>",
+  "ja": "本映画祭の応募作品は全年齢対象とします。子どもを含む幅広い観客が鑑賞することを前提に制作してください。以下を含む作品の応募は禁止します。"
+ },
+ {
+  "id": "s0807",
+  "ctx": "guideline.html <li>",
+  "ja": "性的な表現、過度に暴力的・残虐的・グロテスクな表現、過度な恐怖表現など、全年齢対象の上映にふさわしくない内容"
+ },
+ {
+  "id": "s0808",
+  "ctx": "guideline.html <li>",
+  "ja": "法令に反する内容、犯罪の教唆・助長"
+ },
+ {
+  "id": "s0809",
+  "ctx": "guideline.html <li>",
+  "ja": "差別・ヘイトスピーチ・暴力の扇動"
+ },
+ {
+  "id": "s0810",
+  "ctx": "guideline.html <li>",
+  "ja": "虚偽情報の意図的な拡散を目的とする表現"
+ },
+ {
+  "id": "s0811",
+  "ctx": "guideline.html <li>",
+  "ja": "児童ポルノ・リベンジポルノ、その他重大な人権侵害"
+ },
+ {
+  "id": "s0812",
+  "ctx": "guideline.html <li>",
+  "ja": "ジェンダー・人種・出自・障がい等に関するステレオタイプを無批判に増幅させる表現"
+ },
+ {
+  "id": "s0813",
+  "ctx": "guideline.html <li>",
+  "ja": "その他、公序良俗に反し公共の場での上映が憚られる内容"
+ },
+ {
+  "id": "s0814",
+  "ctx": "guideline.html <p>",
+  "ja": "AIで生成した素材であっても、上記の禁止事項が適用されます。生成AIの使用を理由に、違法・不当なコンテンツが正当化されることはありません。"
+ },
+ {
+  "id": "s0815",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">07</span>透明性・説明責任"
+ },
+ {
+  "id": "s0816",
+  "ctx": "guideline.html <p>",
+  "ja": "FilmFreeway の作品情報には、使用したAIツールを記載してください。どんなツールをどう使ったか詳細に書いてくれると、審査に役立ちます（主催者側も新しい使い方を知れて嬉しいです）。"
+ },
+ {
+  "id": "s0817",
+  "ctx": "guideline.html <p>",
+  "ja": "主催者が権利侵害やガイドライン違反の疑義を持った場合、追加の説明や資料提出を求めることがあります。正当な理由なく説明を拒んだ場合、選考対象外となる可能性があります。"
+ },
+ {
+  "id": "s0818",
+  "ctx": "guideline.html <h2>",
+  "ja": "<span class=\"num\">08</span>主催者の判断について"
+ },
+ {
+  "id": "s0819",
+  "ctx": "guideline.html <li>",
+  "ja": "本ガイドラインに重大に反すると判断した場合、主催者は応募受理後であっても、選考対象からの除外・上映中止・受賞取消などの措置を行うことがあります。その際は、可能な範囲で応募者に理由を通知します。"
+ },
+ {
+  "id": "s0820",
+  "ctx": "guideline.html <li>",
+  "ja": "応募数が想定を大きく上回った場合、上映枠や上映方法を主催者判断で調整する場合があります。"
+ },
+ {
+  "id": "s0821",
+  "ctx": "guideline.html <li>",
+  "ja": "応募後の作品差し替えについては、主催者の判断により認められる場合があります。"
+ },
+ {
+  "id": "s0822",
+  "ctx": "guideline.html <li>",
+  "ja": "ガイドラインの解釈・適用に関する最終判断は主催者に委ねられます。不明点があれば、応募前にお気軽に Discord でご相談ください。"
+ },
+ {
+  "id": "s0823",
+  "ctx": "guideline.html <li>",
+  "ja": "技術的トラブル・通信環境・会場設備の都合等により、上映・配信が中断または内容・日程が変更となる場合があります。あらかじめご了承ください。"
+ },
+ {
+  "id": "s0824",
+  "ctx": "guideline.html <h3>",
+  "ja": "ご不明な点は Discord でお気軽にどうぞ"
+ },
+ {
+  "id": "s0825",
+  "ctx": "guideline.html <p>",
+  "ja": "主催：札幌国際AI映画祭実行委員会／札幌すごいAI会"
+ },
+ {
+  "id": "s0826",
+  "ctx": "archive.html <title>",
+  "ja": "アーカイブ | 札幌国際AI映画祭"
+ },
+ {
+  "id": "s0827",
+  "ctx": "archive.html <meta content>",
+  "ja": "札幌国際AI映画祭 第1回の受賞作品と開催記録。"
+ },
+ {
+  "id": "s0828",
+  "ctx": "archive.html <li>",
+  "ja": "<a href=\"archive.html\" lang=\"ja\" aria-current=\"true\">日本語</a>"
+ },
+ {
+  "id": "s0829",
+  "ctx": "archive.html <h1>",
+  "ja": "第1回 受賞作品・開催記録"
+ },
+ {
+  "id": "s0830",
+  "ctx": "archive.html <p>",
+  "ja": "2027年5月4日、札幌文化芸術劇場 hitaru。最初の炎の記録。<span class=\"tbd\">＜Phase 4 で公開。内容はすべて仮＞</span>"
+ },
+ {
+  "id": "s0831",
+  "ctx": "archive.html <li>",
+  "ja": "<a href=\"#winners\">受賞作品</a>"
+ },
+ {
+  "id": "s0832",
+  "ctx": "archive.html <li>",
+  "ja": "<a href=\"#report\">開催レポート</a>"
+ },
+ {
+  "id": "s0833",
+  "ctx": "archive.html <li>",
+  "ja": "<a href=\"#next\">次回に向けて</a>"
+ },
+ {
+  "id": "s0834",
+  "ctx": "archive.html <h2>",
+  "ja": "受賞作品"
+ },
+ {
+  "id": "s0835",
+  "ctx": "archive.html <div aria-label>",
+  "ja": "グランプリ作品の予告編（プレースホルダー）"
+ },
+ {
+  "id": "s0836",
+  "ctx": "archive.html text in <div>",
+  "ja": "グランプリ作品 予告編／スチル"
+ },
+ {
+  "id": "s0837",
+  "ctx": "archive.html text in <div>",
+  "ja": "16:9＜プレースホルダー＞"
+ },
+ {
+  "id": "s0838",
+  "ctx": "archive.html <h3>",
+  "ja": "グランプリ作品タイトル＜仮＞"
+ },
+ {
+  "id": "s0839",
+  "ctx": "archive.html <p>",
+  "ja": "監督：クリエイター名＜仮＞｜国・地域＜仮＞｜00分"
+ },
+ {
+  "id": "s0840",
+  "ctx": "archive.html <p>",
+  "ja": "あらすじ＜仮＞。作品の概要がここに入ります。"
+ },
+ {
+  "id": "s0841",
+  "ctx": "archive.html <p>",
+  "ja": "<strong>審査員講評＜仮＞</strong><br>講評文がここに入ります。"
+ },
+ {
+  "id": "s0842",
+  "ctx": "archive.html <div aria-label>",
+  "ja": "受賞作品スチル（プレースホルダー）"
+ },
+ {
+  "id": "s0843",
+  "ctx": "archive.html text in <div>",
+  "ja": "作品スチル＜プレースホルダー＞"
+ },
+ {
+  "id": "s0844",
+  "ctx": "archive.html <h3>",
+  "ja": "作品タイトル＜仮＞"
+ },
+ {
+  "id": "s0845",
+  "ctx": "archive.html <p>",
+  "ja": "クリエイター名＜仮＞｜国・地域＜仮＞"
+ },
+ {
+  "id": "s0846",
+  "ctx": "archive.html <p>",
+  "ja": "本編のオンライン公開は、制作者の個別の同意を得た作品のみ行います（<a href=\"guideline.html#rights-use\">制作ガイドライン 04</a>）。"
+ },
+ {
+  "id": "s0847",
+  "ctx": "archive.html <h2>",
+  "ja": "開催レポート"
+ },
+ {
+  "id": "s0848",
+  "ctx": "archive.html <span>",
+  "ja": "来場者数＜仮＞"
+ },
+ {
+  "id": "s0849",
+  "ctx": "archive.html <span>",
+  "ja": "応募作品数＜仮＞"
+ },
+ {
+  "id": "s0850",
+  "ctx": "archive.html <span>",
+  "ja": "応募国・地域数＜仮＞"
+ },
+ {
+  "id": "s0851",
+  "ctx": "archive.html <span>",
+  "ja": "上映作品数＜仮＞"
+ },
+ {
+  "id": "s0852",
+  "ctx": "archive.html <div aria-label>",
+  "ja": "当日の記録写真（プレースホルダー）"
+ },
+ {
+  "id": "s0853",
+  "ctx": "archive.html text in <div>",
+  "ja": "記録写真：上映＜プレースホルダー＞"
+ },
+ {
+  "id": "s0854",
+  "ctx": "archive.html text in <div>",
+  "ja": "記録写真：講演・トーク＜プレースホルダー＞"
+ },
+ {
+  "id": "s0855",
+  "ctx": "archive.html text in <div>",
+  "ja": "記録写真：交流会＜プレースホルダー＞"
+ },
+ {
+  "id": "s0856",
+  "ctx": "archive.html <h2>",
+  "ja": "次は、あなたの物語を。"
+ },
+ {
+  "id": "s0857",
+  "ctx": "archive.html <p>",
+  "ja": "観客として参加した方が、いつか作品を応募する側になっているかもしれない。今後の開催・募集に関する情報をお届けします。"
+ },
+ {
+  "id": "s0858",
+  "ctx": "archive.html <a>",
+  "ja": "次回の協賛について"
+ },
+ {
+  "id": "s0859",
+  "ctx": "assets/js/data.js",
+  "ja": "審査員長"
+ },
+ {
+  "id": "s0860",
+  "ctx": "assets/js/data.js",
+  "ja": "株式会社EQUES 北海道支社長"
+ },
+ {
+  "id": "s0861",
+  "ctx": "assets/js/data.js",
+  "ja": "実行委員長"
+ },
+ {
+  "id": "s0862",
+  "ctx": "assets/js/data.js",
+  "ja": "広報部長"
+ },
+ {
+  "id": "s0863",
+  "ctx": "assets/js/data.js",
+  "ja": "内藤紗由里"
+ },
+ {
+  "id": "s0864",
+  "ctx": "assets/js/data.js",
+  "ja": "株式会社desiign 代表取締役"
+ },
+ {
+  "id": "s0865",
+  "ctx": "assets/js/data.js",
+  "ja": "AIクリエイティブ部長"
+ },
+ {
+  "id": "s0866",
+  "ctx": "assets/js/data.js",
+  "ja": "赤獅子屋"
+ },
+ {
+  "id": "s0867",
+  "ctx": "assets/js/data.js",
+  "ja": "AIクリエイター"
+ },
+ {
+  "id": "s0868",
+  "ctx": "assets/js/data.js",
+  "ja": "公式サイトを公開しました。作品募集は12月に開始します"
+ },
+ {
+  "id": "s0869",
+  "ctx": "assets/js/data.js",
+  "ja": "2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS にて第1回を開催します。作品応募は12月から FilmFreeway で受け付けます（応募料は$10）。チケットの先行支援は10月下旬から CAMPFIRE で受け付けます。"
+ },
+ {
+  "id": "s0870",
+  "ctx": "assets/js/data.js",
+  "ja": "スポンサー募集へ"
+ },
+ {
+  "id": "s0871",
+  "ctx": "assets/js/data.js",
+  "ja": "AI駆動開発勉強会 札幌支部"
+ },
+ {
+  "id": "s0872",
+  "ctx": "assets/js/site.js",
+  "ja": "準備中"
+ },
+ {
+  "id": "s0873",
+  "ctx": "assets/js/site.js",
+  "ja": " の写真（プレースホルダー）"
+ },
+ {
+  "id": "s0874",
+  "ctx": "assets/js/site.js",
+  "ja": "ポートレート写真\n3:4＜プレースホルダー＞"
+ },
+ {
+  "id": "s0875",
+  "ctx": "assets/js/site.js",
+  "ja": "チケット"
+ },
+ {
+  "id": "s0876",
+  "ctx": "assets/js/site.js",
+  "ja": "プログラム"
+ },
+ {
+  "id": "s0877",
+  "ctx": "assets/js/site.js",
+  "ja": "応募"
+ },
+ {
+  "id": "s0878",
+  "ctx": "assets/js/site.js",
+  "ja": "詳しく見る"
+ },
+ {
+  "id": "s0879",
+  "ctx": "assets/js/site.js",
+  "ja": "（表記名なし）"
+ },
+ {
+  "id": "s0880",
+  "ctx": "assets/js/site.js",
+  "ja": "予告編（プレースホルダー）"
+ },
+ {
+  "id": "s0881",
+  "ctx": "assets/js/site.js",
+  "ja": "予告編の埋め込み位置（lite-embedで遅延ロード）\n16:9＜プレースホルダー＞"
+ }
+]

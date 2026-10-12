@@ -33,6 +33,7 @@ sitemap.xml / robots.txt
 assets/
   css/style.css   デザイントークン＋全スタイル
   js/config.js    ★サイト設定（フェーズ、日付、外部リンク、言語）
+  js/i18n/        言語版が読む訳語辞書（生成物。tools/i18n.py build）
   js/data.js      ★共通データ（審査員・登壇者／News／パートナー）
   js/supporters.js ★クラファン支援者（種火ナンバー・表記名・コース）。支援が入るたびに1行追記
   js/site.js      共通スクリプト（ヘッダー、固定CTAバー、カウントダウン、火の粉、モーダル等）
@@ -58,6 +59,17 @@ python3 build.py --check  # 展開漏れがあれば exit 1（コミット前・
 | `partials/cta-bar.html` | モバイル固定CTAバー |
 
 partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#only submit,tickets}} … {{/only}}`（列挙ページのみ出力）／`{{#except sponsors}} … {{/except}}`（列挙ページを除外）が使える。応募ページ・チケットページのCTAが外部サイトへ直行する、協賛ページのバーがメール問い合わせ（mailto:info@sugoiai.org）になる、といったページ差はこのブロックで表現している。新しいページを作るときは、既存ページからマーカーごとコピーして `build.py` を実行すればよい。
+
+## 多言語（en／fr／de／zh-hans）
+言語版ページ（`en/*.html` など）と `assets/js/i18n/<lang>.js` は **生成物**。直接編集せず、次の手順で更新する。
+
+1. 日本語ページ（ルートの `*.html`）・`data.js`・`site.js` を編集し、`python3 build.py` で partials を反映
+2. `python3 tools/i18n.py extract` … 翻訳対象の文字列を `i18n/ja.json`（id→原文）と `i18n/catalog.json`（翻訳者向け・文脈つき）に集める。新しい文字列には新しい id が付く
+3. `i18n/<lang>.json`（id→訳文）に訳を足す。ルールと固定訳は `i18n/GLOSSARY.md`。HTMLタグ・href は原文どおり残す
+4. `python3 tools/i18n.py build` … 言語版ページ、`assets/js/i18n/<lang>.js`、ルートページの hreflang、`sitemap.xml` を生成。未翻訳は日本語のまま出力して件数を表示する
+5. `python3 tools/i18n.py check` … 訳文のタグ・リンクが原文と一致するか検査（CI用。警告があれば exit 1）
+
+翻訳の単位はブロック要素の中身（インラインタグを含む）。英独仏では `<span class="nb">` を生成時に外す。JS が描画する文字列（役職・ニュース・ティア名など）は `site.js` の `t()` が `window.SAIFF_I18N` で置き換える。言語版は `config.js` の `currentLocale` をページ側で上書きし、アセットは `../assets/` を参照する。
 
 ## 運用で触るのは基本この2ファイル
 
@@ -124,7 +136,6 @@ HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェー�
 - コメントアウト中のセクション：about プレスキット、submit 応募条件／手順／FAQ、tickets 札幌滞在ガイド、program ファイナリスト8作品
 - 画像：Hero 動画（未配置のままでよい）、実行委員会ロゴは logo.png で代用（このままでよい）
 - archive.html（Phase 4 用。全文ダミー）
-- 多言語版（ヘッダーの English／Français／Deutsch／简体中文 は「準備中」）
 - クラファン支援者リスト（supporters.js は空。10/17 以降に追記）
 
 サイト内では金色の `＜仮＞`（`.tbd`）で明示。`grep -rn "＜" *.html assets/js` で一覧できる。
@@ -141,8 +152,8 @@ HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェー�
 | 項目 | 状態 |
 |---|---|
 | SSG（Astro推奨） | **素の HTML/CSS/JS に変更**（ユーザー判断）。共通パーツ（head共通・ヘッダー・フッター・モバイルCTAバー）は `partials/` に1か所で持ち、`python3 build.py` で全11ページに展開する（下記「共通パーツの編集」） |
-| 5言語展開 | **第1段階は日本語のみ**。言語スイッチャー（他言語は「準備中」表示）、`locales` 設定、初回訪問バナー、同一ページ同一位置への遷移ロジックは実装済み。翻訳パイプライン・用語集・`i18n/*.json` は未作成 |
-| 言語の追加手順 | ① `/en/` などのディレクトリに同名HTMLを置く（`<html lang>`、アセットパスを `../assets/` に、`config.js` の `currentLocale` をページ側で上書き）② `locales` の `available` を `true` に ③ 各ページの `hreflang` と `sitemap.xml` に alternate を追加（`x-default` は `/en/`） |
+| 5言語展開 | ja に加え en／fr／de／zh-hans を公開。言語版は `tools/i18n.py` が日本語ページから生成する（下記「多言語」） |
+| 言語の追加手順 | `tools/i18n.py` の `LOCALES` に追加 → `extract` → `i18n/<lang>.json` を用意 → `build`。`config.js` の `locales` にも追加する |
 | 映像埋め込みの lite-embed | モーダル内は予告編プレースホルダーのみ（実URL確定後に実装） |
 | Git連携CMS | 未導入（データは `data.js` を直接編集） |
 | 送信ドメイン認証 | サイト外の作業（SPF／DKIM／DMARC） |
