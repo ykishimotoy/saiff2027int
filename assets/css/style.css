@@ -432,7 +432,6 @@ a[aria-disabled="true"]:not(.btn) { opacity: .5; pointer-events: none; text-deco
 .flow__sub { font-size: .82rem; color: var(--color-text-muted); letter-spacing: .1em; margin-bottom: 16px; }
 .flow__text { font-size: .95rem; color: var(--color-text-muted); text-align: left; }
 .flow-loop { margin-top: 44px; text-align: center; font-family: var(--font-serif); color: var(--color-text-muted); letter-spacing: .12em; font-size: .98rem; }
-.flow-loop::before { content: ""; display: block; width: min(66.6%, 720px); height: 26px; margin: 0 auto 14px; border: 1px solid var(--line-gold); border-top: 0; border-radius: 0 0 14px 14px; }
 .flow-loop b { color: var(--color-gold-light); font-weight: 500; }
 @media (max-width: 860px) {
   .flow { grid-template-columns: 1fr; gap: 44px; }
@@ -608,6 +607,9 @@ a.logo:hover { border-color: var(--color-gold); }
 .cta-panel .h3 { margin-bottom: 10px; }
 .cta-panel p { color: var(--color-text-muted); font-size: .92rem; max-width: 600px; margin-inline: auto; }
 .cta-panel .btn-row { margin-top: 24px; }
+/* 左寄せ版：中の段落を中央寄せ（max-width+auto margin）しない */
+.cta-panel--left { text-align: left; }
+.cta-panel--left p { max-width: none; margin-inline: 0; }
 .next-cta { margin-top: 48px; text-align: center; }
 
 .fv-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line-gold); margin: 40px auto 32px; max-width: 880px; background: rgba(13, 9, 9, .6); }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>作品応募 | 札幌国際AI映画祭</title>
-<meta name="description" content="AIを創作に用いた映像作品を世界中から募集。応募窓口は FilmFreeway。応募料は$10。締切 2027年3月31日。賞、審査基準、形式、応募条件、FAQ。">
+<meta name="description" content="AIを創作に用いた映像作品を世界中から募集。応募窓口は FilmFreeway。応募料は$10。締切 2027年3月31日。賞、審査基準、募集作品・形式、スケジュール。">
 <meta name="theme-color" content="#0D0909">
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://www.sapporo-ai.com/submit.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="札幌国際AI映画祭">
 <meta property="og:title" content="作品応募 | 札幌国際AI映画祭">
-<meta property="og:description" content="AIを創作に用いた映像作品を世界中から募集。応募窓口は FilmFreeway。応募料は$10。締切 2027年3月31日。賞、審査基準、形式、応募条件、FAQ。">
+<meta property="og:description" content="AIを創作に用いた映像作品を世界中から募集。応募窓口は FilmFreeway。応募料は$10。締切 2027年3月31日。賞、審査基準、募集作品・形式、スケジュール。">
 <meta property="og:url" content="https://www.sapporo-ai.com/submit.html">
 <meta property="og:image" content="https://www.sapporo-ai.com/assets/img/ogp-1200.jpg">
 <meta property="og:locale" content="ja_JP">
@@ -43,13 +43,16 @@
     </a>
     <div class="gnav__cta">
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#follow">最新情報を受け取る</a>
+      <!-- 並び順：チケット（左）→ 作品応募（右） -->
+      <!-- チケット -->
+      <a class="btn btn--ghost btn--sm btn--stack" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
+      <a class="btn btn--ghost btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
+      <!-- 作品応募 -->
       <a class="btn btn--gold btn--sm" data-show="1" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#follow">最新情報を受け取る</a>
       <!-- 受付開始前（config.js submissions:"soon"）：応募ページへ誘導する2段ボタン。FilmFreeway 承認後に "open" へ -->
-      <a class="btn btn--ghost btn--stack btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品応募<span class="soon-tag">12月受付開始予定</span></a>
+      <a class="btn btn--gold btn--stack btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品応募<span class="soon-tag">12月受付開始予定</span></a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" data-ext="submit" data-target="creator" data-pos="header" href="https://filmfreeway.com/">作品を応募する</a>
-      <a class="btn btn--ghost btn--sm btn--stack" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
-      <a class="btn btn--ghost btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
       <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
     </div>
@@ -193,7 +196,7 @@
     </div>
   </section>
 
-  <!-- ============ 募集作品・形式（単一部門「ボーダレス部門」） ============ -->
+  <!-- ============ 募集作品・形式（単一部門「メインセレクション」） ============ -->
   <section class="section" id="categories">
     <div class="container">
       <header class="sec-head reveal">
@@ -203,11 +206,12 @@
       </header>
       <p class="notice reveal" style="max-width:880px;margin-inline:auto"><strong>以下は現時点の概要です。</strong>募集作品・形式とスケジュールは変更になる場合があります。応募条件・応募手順の詳細は、決定次第このページで公開します。</p>
 
-      <div class="cta-panel reveal" style="text-align:left;max-width:880px;margin-inline:auto">
-        <p class="card__label">All Genres Welcome</p>
-        <h3 class="h3 h3--gold" style="margin-bottom:14px">ボーダレス部門 ―― ジャンル・言語・手法、すべて不問</h3>
+      <div class="cta-panel cta-panel--left reveal" style="max-width:880px;margin-inline:auto">
+        <p class="card__label">Main Selection</p>
+        <h3 class="h3 h3--gold" style="margin-bottom:14px">メインセレクション</h3>
+        <p class="muted" style="margin:-6px 0 14px;letter-spacing:.06em">ジャンルを問わず、AIと人間の創造性が生み出す、新たな物語を選出する。</p>
         <p class="spec-line"><b>上映時間</b>3分〜15分　／　<b>アスペクト比</b>16:9（1080p以上推奨）</p>
-        <p style="max-width:none;margin-inline:0;color:var(--color-text);margin-top:16px">ストーリー、アート、MV、アニメーション、ドキュメンタリー、実験映像……ジャンルは何でもOK（内容は全年齢対象の範囲で）。AI生成を主要手法として作られた映像作品なら応募できます。一部実写との組み合わせも可。言語自由・架空言語もOK（日本語以外・不自然な日本語の作品は日本語字幕必須）。</p>
+        <p style="color:var(--color-text);margin-top:16px">ストーリー、アート、MV、アニメーション、ドキュメンタリー、実験映像……ジャンルは何でもOK（内容は全年齢対象の範囲で）。AI生成を主要手法として作られた映像作品なら応募できます。一部実写との組み合わせも可。言語自由・架空言語もOK（日本語以外・不自然な日本語の作品は日本語字幕必須）。</p>
       </div>
 
       <div class="grid grid--2" style="margin-top:40px">
@@ -364,8 +368,8 @@
         <ul>
           <li><a href="about.html">理念</a></li>
           <li data-show="2 3 4"><a href="program.html">プログラム</a></li>
-          <li data-show="1 2 3 4"><a href="submit.html">作品応募</a></li>
           <li data-show="2 3 4"><a href="tickets.html">チケット</a></li>
+          <li data-show="1 2 3 4"><a href="submit.html">作品応募</a></li>
           <li data-show="4"><a href="archive.html">アーカイブ</a></li>
         </ul>
       </nav>
