@@ -41,6 +41,8 @@ window.SAIFF_DATA = {
     { tier: "Platinum Partners", items: ["協賛企業ロゴ＜仮＞"] },
     { tier: "Gold Partners",     items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
     { tier: "Silver Partners",   items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
+    { tier: "Supporter Partners", items: ["協賛企業ロゴ＜仮＞", "協賛企業ロゴ＜仮＞"] },
+    { tier: "Creator Invitation Partners", items: ["協賛企業ロゴ＜仮＞"] },
     { tier: "Support / 後援・協力", items: ["後援団体ロゴ＜仮＞", "後援団体ロゴ＜仮＞", "協力団体ロゴ＜仮＞"] }
   ]
 };
