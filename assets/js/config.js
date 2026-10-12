@@ -1,7 +1,7 @@
 /* ==========================================================================
    サイト設定（ここ1か所を直せば全ページに反映される）
    - <head> 内で同期ロードし、描画前に <html> へ data-phase 等を付与する
-   - ＜仮＞ の値は確定次第差し替えること
+   - ext の値が空文字のリンクは「準備中」として押せない状態になる（site.js initExtLinks）
    ========================================================================== */
 window.SAIFF = {
   /* ---- フェーズ（手動フラグ。日付による自動切替はしない） ----
@@ -45,15 +45,14 @@ window.SAIFF = {
   /* ---- 外部サービス（CVはすべて外部。サイトは説得と送客に専念） ----
      HTML側は <a data-ext="キー"> と書く。URLはここで一元管理し、UTMも自動付与される */
   ext: {
-    submit:       "https://filmfreeway.com/",            // ＜仮＞作品応募（FilmFreeway のリスティング。承認後に実URLへ差し替え。Google フォームは併用しない）
-    discord:      "https://discord.com/",                // ＜仮＞クリエイター向けDiscord招待
-    crowdfunding: "https://camp-fire.jp/",               // ＜仮＞先行支援（CAMPFIRE プロジェクトページ。10/17〜11/30。公開後に実URLへ）
-    tickets:      "https://teket.jp/",                   // ＜仮＞一般販売（teket イベントページ。12月公開・4/15 本格販売。公開後に実URLへ）
+    submit:       "",                                   // 作品応募（FilmFreeway）。URL未確定のため空＝ボタンは押せない状態。承認後に実URLを入れると有効化される
+    discord:      "https://discord.gg/Ve2tQeN7cw",       // クリエイター向け Discord 招待（確定）
+    crowdfunding: "",                                   // 先行支援（CAMPFIRE プロジェクトページ。10/17〜11/30）。URL未確定のため空＝ボタンは押せない状態
+    tickets:      "",                                   // 一般販売（teket イベントページ。12月公開）。URL未確定のため空＝ボタンは押せない状態
     // ニュースレター（メール配信）・通知フォームは廃止（2026-10-12）。最新情報は X（ext.x）と Discord（ext.discord）に送客する
     // 協賛の問い合わせはフォーム・面談予約ではなく mailto:info@sugoiai.org（sponsors.html と partials/cta-bar.html に直書き。data-ext は使わない）
     // お問い合わせは全種別 mailto:info@sugoiai.org（外部フォームは使わない方針。about#contact・footer に直書き）
-    x:            "https://x.com/ykishimotoy",           // X（実行委員長アカウント。公式アカウント開設時に差し替え）
-    note:         "https://note.com/"                    // ＜仮＞長文レポート掲載先
+    x:            "https://x.com/ykishimotoy"            // X（実行委員長アカウント。公式アカウント開設時に差し替え）
   },
 
   /* ---- 計測 ----

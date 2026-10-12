@@ -7,16 +7,16 @@
 <meta name="description" content="物語を解き放て。魂を揺さぶれ。種火はもう、その手にある。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS にて開催。AIを創作に用いた映像作品の国際映画祭。劇場入場1,000円・指定席。先行支援はCAMPFIREで受付中。">
 <meta name="theme-color" content="#0D0909">
 <meta name="color-scheme" content="dark">
-<link rel="canonical" href="https://saiff.example/">
+<link rel="canonical" href="https://www.sapporo-ai.com/">
 <!-- hreflang：各言語版を公開したら1行ずつ追加する（x-default は /en/ 公開後に /en/ へ変更） -->
-<link rel="alternate" hreflang="ja" href="https://saiff.example/">
-<link rel="alternate" hreflang="x-default" href="https://saiff.example/">
+<link rel="alternate" hreflang="ja" href="https://www.sapporo-ai.com/">
+<link rel="alternate" hreflang="x-default" href="https://www.sapporo-ai.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="札幌国際AI映画祭">
 <meta property="og:title" content="札幌国際AI映画祭 | Sapporo International AI Film Festival &amp; Incubation">
 <meta property="og:description" content="物語を解き放て。魂を揺さぶれ。種火はもう、その手にある。2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS にて開催。AIを創作に用いた映像作品の国際映画祭。劇場入場1,000円・指定席。先行支援はCAMPFIREで受付中。">
-<meta property="og:url" content="https://saiff.example/">
-<meta property="og:image" content="https://saiff.example/assets/img/ogp.jpg"><!-- ＜仮＞OGP画像 1200×630 未配置 -->
+<meta property="og:url" content="https://www.sapporo-ai.com/">
+<meta property="og:image" content="https://www.sapporo-ai.com/assets/img/ogp-1200.jpg">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <!-- @partial head-assets -->
@@ -65,11 +65,11 @@
     "name": "劇場入場（指定席）",
     "price": "2000",
     "priceCurrency": "JPY",
-    "url": "https://saiff.example/tickets.html",
+    "url": "https://www.sapporo-ai.com/tickets.html",
     "availability": "https://schema.org/PreOrder"
   },
-  "image": "https://saiff.example/assets/img/ogp.jpg",
-  "url": "https://saiff.example/",
+  "image": "https://www.sapporo-ai.com/assets/img/ogp-1200.jpg",
+  "url": "https://www.sapporo-ai.com/",
   "inLanguage": "ja"
 }
 </script>
@@ -91,10 +91,10 @@
       <a class="btn btn--primary btn--sm" data-show="0" href="index.html#follow">最新情報を受け取る</a>
       <a class="btn btn--gold btn--sm" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost btn--sm" data-show="1" href="index.html#follow">最新情報を受け取る</a>
-      <!-- 受付開始前（config.js submissions:"soon"）：グレーアウト。FilmFreeway 承認後に "open" へ -->
-      <a class="btn btn--soon btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品を応募する <span class="soon-tag">12月受付開始予定</span></a>
+      <!-- 受付開始前（config.js submissions:"soon"）：応募ページへ誘導する2段ボタン。FilmFreeway 承認後に "open" へ -->
+      <a class="btn btn--ghost btn--stack btn--sm" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品応募<span class="soon-tag">12月受付開始予定</span></a>
       <a class="btn btn--gold btn--sm" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary btn--sm" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary btn--sm btn--stack" data-show="2" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
       <a class="btn btn--primary btn--sm" data-show="2" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary btn--sm" data-show="3" href="program.html#timetable">本日のタイムテーブル</a>
       <a class="btn btn--primary btn--sm" data-show="4" href="archive.html">受賞作を見る</a>
@@ -102,23 +102,25 @@
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニュー"><span></span><span></span><span></span></button>
     <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
       <ul class="gnav__list">
-        <li><a href="about.html">映画祭について</a></li>
+        <li><a href="about.html">理念</a></li>
         <li data-show="2 3 4"><a href="program.html">プログラム</a></li>
-        <li><a href="sponsors.html">スポンサー</a></li>
         <li data-show="2 3 4"><a href="tickets.html">チケット</a></li>
-        <li><a href="supporters.html">支援者紹介</a></li>
+        <li><a href="submit.html">作品応募</a></li>
+        <li><a href="sponsors.html">スポンサー募集</a></li>
+        <li><a href="supporters.html">支援者</a></li>
       </ul>
-      <details class="lang">
-        <summary aria-label="言語を選択 / Language" title="言語を選択 / Language"><svg class="lang__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18M5 7.5c3 1.6 11 1.6 14 0M5 16.5c3-1.6 11-1.6 14 0"/></svg><span class="sr-only">日本語</span></summary>
-        <ul>
-          <li><a href="index.html" lang="ja" aria-current="true">日本語</a></li>
-          <li><span lang="en">English <small>準備中</small></span></li>
-          <li><span lang="fr">Français <small>準備中</small></span></li>
-          <li><span lang="de">Deutsch <small>準備中</small></span></li>
-          <li><span lang="zh-Hans">简体中文 <small>準備中</small></span></li>
-        </ul>
-      </details>
     </nav>
+    <!-- 言語切替：nav の外に置き、モバイルではハンバーガーの左に出す（order で位置を制御） -->
+    <details class="lang">
+      <summary aria-label="言語を選択 / Language" title="言語を選択 / Language"><svg class="lang__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18M5 7.5c3 1.6 11 1.6 14 0M5 16.5c3-1.6 11-1.6 14 0"/></svg><span class="sr-only">日本語</span></summary>
+      <ul>
+        <li><a href="index.html" lang="ja" aria-current="true">日本語</a></li>
+        <li><span lang="en">English <small>準備中</small></span></li>
+        <li><span lang="fr">Français <small>準備中</small></span></li>
+        <li><span lang="de">Deutsch <small>準備中</small></span></li>
+        <li><span lang="zh-Hans">简体中文 <small>準備中</small></span></li>
+      </ul>
+    </details>
   </div>
 </header>
 <div class="lang-banner" hidden><a href="#"></a><button type="button" aria-label="閉じる">×</button></div>
@@ -161,7 +163,7 @@
           <span class="countdown__unit"><b data-s>--</b>秒</span>
         </div>
         <a class="btn btn--gold btn--lg" data-show="1" data-submit="on" href="submit.html">作品を応募する</a>
-        <span class="btn btn--soon btn--lg" data-show="1" data-submit="soon" aria-disabled="true">作品を応募する <span class="soon-tag">12月受付開始予定</span></span>
+        <a class="btn btn--ghost btn--stack btn--lg" data-show="1" data-submit="soon" href="submit.html">作品応募<span class="soon-tag">12月受付開始予定</span></a>
 
         <!-- Phase 2 選考結果発表・チケット販売 -->
         <div class="countdown countdown--inline" data-show="2" data-submit="on" data-countdown="submitDeadline" role="timer" aria-label="応募締切までの残り時間">
@@ -179,9 +181,9 @@
           <span class="countdown__unit"><b data-s>--</b>秒</span>
         </div>
         <div class="btn-row btn-row--center" data-show="2">
-          <a class="btn btn--primary btn--lg" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+          <a class="btn btn--primary btn--lg btn--stack" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
           <a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a>
-          <span class="btn btn--soon btn--lg" data-submit="soon" aria-disabled="true">作品を応募する <span class="soon-tag">12月受付開始予定</span></span>
+          <a class="btn btn--ghost btn--stack btn--lg" data-submit="soon" href="submit.html">作品応募<span class="soon-tag">12月受付開始予定</span></a>
           <a class="btn btn--primary btn--lg" data-sale="general" href="tickets.html">チケットを買う</a>
           <a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a>
         </div>
@@ -270,13 +272,13 @@
         <a class="gate__card reveal" href="#follow" data-show="0 1">
           <span class="gate__en">For Audiences</span>
           <h3 class="gate__title">観る人へ</h3>
-          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。物語を、全身で浴びる一日。10月17日から、クラウドファンディング（CAMPFIRE）で先行支援を受け付けます。劇場入場1,000円・指定席。</p>
+          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。物語を、全身で浴びる一日。10月下旬から、クラウドファンディング（CAMPFIRE）で先行支援を受け付けます。劇場入場1,000円・指定席。</p>
           <span class="gate__go">先行販売の通知を受け取る</span>
         </a>
         <a class="gate__card reveal" href="tickets.html" data-show="2 3 4">
           <span class="gate__en">For Audiences</span>
           <h3 class="gate__title">観る人へ</h3>
-          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。隣の誰かが息を呑み、笑い、泣く。物語を、全身で浴びる一日。<span data-sale="off presale">先行支援受付中（CAMPFIRE・11月30日まで）。</span>劇場入場1,000円・指定席。<span data-sale="off presale">一般販売は12月から。</span><span data-selection="on">SCARTSでのセレクション上映は無料。</span></p>
+          <p class="gate__text">暗闇の中で、大スクリーンに世界が立ち上がる。隣の誰かが息を呑み、笑い、泣く。物語を、全身で浴びる一日。<span data-sale="off presale">先行支援受付中（CAMPFIRE・11月下旬まで）。</span>劇場入場1,000円・指定席。<span data-sale="off presale">一般販売は12月から。</span><span data-selection="on">SCARTSでのセレクション上映は無料。</span></p>
           <span class="gate__go" data-sale="off presale">チケット先行販売・来場案内</span>
           <span class="gate__go" data-sale="general">チケット・来場案内</span>
         </a>
@@ -346,8 +348,8 @@
       <div class="btn-row btn-row--center" data-show="1"><a class="btn btn--primary btn--lg" href="submit.html">応募要項を見る</a><a class="btn btn--ghost btn--lg" href="submit.html#awards">賞・審査基準</a></div>
 
       <h2 class="band__title" data-show="2"><span class="nb">同じ時間、同じ場所で、</span><span class="nb">一つの物語を。</span></h2>
-      <p class="band__text" data-show="2">2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。劇場入場1,000円・指定席。<span data-selection="on">SCARTSでのセレクション上映は無料。</span><span data-sale="off presale">先行支援は CAMPFIRE で受付中（11月30日まで）。</span><span data-sale="general">チケットは teket で販売中。</span><span data-submit="on">作品の応募も受付中です。</span><span data-submit="soon">作品応募は11月に受付開始予定です。</span></p>
-      <div class="btn-row btn-row--center" data-show="2"><a class="btn btn--primary btn--lg" data-sale="off presale" href="tickets.html#buy">チケット先行販売</a><a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a><span class="btn btn--soon btn--lg" data-submit="soon" aria-disabled="true">作品を応募する <span class="soon-tag">12月受付開始予定</span></span><a class="btn btn--primary btn--lg" data-sale="general" href="tickets.html#buy">チケットを買う</a><a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a></div>
+      <p class="band__text" data-show="2">2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS。劇場入場1,000円・指定席。<span data-selection="on">SCARTSでのセレクション上映は無料。</span><span data-sale="off presale">先行支援は CAMPFIRE で受付中（11月下旬まで）。</span><span data-sale="general">チケットは teket で販売中。</span><span data-submit="on">作品の応募も受付中です。</span><span data-submit="soon">作品応募は11月に受付開始予定です。</span></p>
+      <div class="btn-row btn-row--center" data-show="2"><a class="btn btn--primary btn--lg btn--stack" data-sale="off presale" href="tickets.html#buy">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a><a class="btn btn--gold btn--lg" data-submit="on" href="submit.html">作品を応募する</a><a class="btn btn--ghost btn--stack btn--lg" data-submit="soon" href="submit.html">作品応募<span class="soon-tag">12月受付開始予定</span></a><a class="btn btn--primary btn--lg" data-sale="general" href="tickets.html#buy">チケットを買う</a><a class="btn btn--ghost btn--lg" data-submit="off" href="program.html">プログラムを見る</a></div>
 
       <h2 class="band__title" data-show="3">本日、開催中。</h2>
       <p class="band__text" data-show="3">チケット・タイムテーブル・会場アクセスはこちら。<span data-selection="on">SCARTSでの上映は無料・入場自由です。</span></p>
@@ -365,8 +367,8 @@
       <header class="sec-head reveal">
         <span class="sec-head__en">Crowdfunding</span>
         <h2 class="sec-head__ja"><span class="nb">最初の炎を、</span><span class="nb">いっしょに。</span></h2>
-        <p class="sec-head__lead" data-sale="off presale">第1回の開催資金を、クラウドファンディング（CAMPFIRE）で募っています。チケットの先行支援もここで。<strong>2026年10月17日〜11月30日</strong>。</p>
-        <p class="sec-head__lead" data-sale="general">クラウドファンディング（CAMPFIRE・2026年10月17日〜11月30日）は終了しました。ご支援いただいた皆さまは、種火ナンバーとともに支援者紹介ページに掲載しています。</p>
+        <p class="sec-head__lead" data-sale="off presale">第1回の開催資金を、クラウドファンディング（CAMPFIRE）で募っています。チケットの先行支援もここで。<strong>2026年10月下旬〜11月下旬</strong>。</p>
+        <p class="sec-head__lead" data-sale="general">クラウドファンディング（CAMPFIRE・2026年10月下旬〜11月下旬）は終了しました。ご支援いただいた皆さまは、種火ナンバーとともに支援者紹介ページに掲載しています。</p>
       </header>
       <div class="grid grid--3" data-sale="off presale">
         <article class="card card--gold reveal"><p class="card__label">Theater</p><h3 class="h4">劇場入場（指定席）</h3><p class="price" style="font-size:1.4rem;color:var(--color-text)">1,000円</p><p>最終選考通過作品の上映・授賞式（hitaru・12:00〜15:00）。先行枠300席。座席は12月に teket の引換コードで選べます。</p></article>
@@ -375,7 +377,7 @@
       </div>
       <p class="notice reveal" data-sale="off presale">支援者全員に<strong>種火ナンバー</strong>を付与し、<a href="supporters.html">支援者紹介ページ</a>に表記名を掲載します（少なくとも開催後1年間）。受賞作品は、支援者に開催翌日から1週間の先行上映のあと、オンラインで一般公開します。1万円コースは「プレミアムサポーター」、5万円コースは「ファウンディングサポーター」。</p>
       <div class="btn-row btn-row--center reveal" data-sale="off presale">
-        <a class="btn btn--primary btn--lg" data-ext="crowdfunding" data-target="audience" data-pos="cf" href="https://camp-fire.jp/">チケット先行販売 <span class="ext" aria-hidden="true">↗</span></a>
+        <a class="btn btn--primary btn--lg btn--stack" data-ext="crowdfunding" data-target="audience" data-pos="cf" href="https://camp-fire.jp/">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
         <a class="btn btn--ghost btn--lg" href="tickets.html#buy">券種・料金を見る</a>
         <a class="btn btn--ghost btn--lg" href="supporters.html">支援者紹介</a>
       </div>
@@ -468,7 +470,7 @@
       </header>
       <div class="btn-row btn-row--center reveal">
         <a class="btn btn--primary btn--lg" data-ext="x" data-target="general" data-pos="follow" href="https://x.com/ykishimotoy">X をフォローする <span class="ext" aria-hidden="true">↗</span></a>
-        <a class="btn btn--ghost btn--lg" data-ext="discord" data-target="creator" data-pos="follow" href="https://discord.com/">Discord に参加する <span class="ext" aria-hidden="true">↗</span></a>
+        <a class="btn btn--ghost btn--lg" data-ext="discord" data-target="creator" data-pos="follow" href="https://discord.gg/Ve2tQeN7cw">Discord に参加する <span class="ext" aria-hidden="true">↗</span></a>
       </div>
       <span class="ext-note reveal">いずれも外部サービスに移動します。</span>
     </div>
@@ -489,7 +491,7 @@
       <nav class="footer-col" aria-label="フッター：映画祭">
         <h2>映画祭</h2>
         <ul>
-          <li><a href="about.html">映画祭について</a></li>
+          <li><a href="about.html">理念</a></li>
           <li data-show="2 3 4"><a href="program.html">プログラム</a></li>
           <li data-show="1 2 3 4"><a href="submit.html">作品応募</a></li>
           <li data-show="2 3 4"><a href="tickets.html">チケット</a></li>
@@ -500,7 +502,7 @@
         <h2>インフォメーション</h2>
         <ul>
           <li><a href="sponsors.html">スポンサー募集</a></li>
-          <li><a href="supporters.html">支援者紹介</a></li>
+          <li><a href="supporters.html">支援者</a></li>
           <li data-show="1 2 3 4"><a href="news.html">お知らせ</a></li>
           <li><a href="mailto:info@sugoiai.org?subject=%E3%80%90%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9BAI%E6%98%A0%E7%94%BB%E7%A5%AD%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">お問い合わせ（info@sugoiai.org）</a></li>
           <li><a href="privacy.html">プライバシーポリシー</a></li>
@@ -511,7 +513,7 @@
         <h2>フォロー</h2>
         <ul>
           <li><a data-ext="x" data-target="general" data-pos="footer" href="https://x.com/ykishimotoy">X（@ykishimotoy）</a></li>
-          <li><a data-ext="discord" data-target="creator" data-pos="footer" href="https://discord.com/">Discord（クリエイター向け）</a></li>
+          <li><a data-ext="discord" data-target="creator" data-pos="footer" href="https://discord.gg/Ve2tQeN7cw">Discord（クリエイター向け）</a></li>
         </ul>
       </nav>
     </div>
@@ -527,9 +529,9 @@
       <a class="btn btn--primary" data-show="0" href="index.html#follow">最新情報を受け取る</a>
       <a class="btn btn--gold" data-show="1" href="submit.html">作品を応募する</a>
       <a class="btn btn--ghost" data-show="1" href="index.html#follow">最新情報を受け取る</a>
-      <a class="btn btn--soon" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品を応募する <span class="soon-tag">12月受付開始予定</span></a>
+      <a class="btn btn--ghost btn--stack" data-show="1 2 3" data-submit="soon" href="submit.html" title="作品応募は12月受付開始予定">作品応募<span class="soon-tag">12月受付開始予定</span></a>
       <a class="btn btn--gold" data-show="2 3" data-submit="on" href="submit.html">作品を応募する</a>
-      <a class="btn btn--primary" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売</a>
+      <a class="btn btn--primary btn--stack" data-show="2 3" data-sale="off presale" href="tickets.html">チケット先行販売<span class="soon-tag">10月下旬開始予定</span></a>
       <a class="btn btn--primary" data-show="2 3" data-sale="general" href="tickets.html">チケットを買う</a>
       <a class="btn btn--primary" data-show="4" href="archive.html">受賞作を見る</a>
   </div>

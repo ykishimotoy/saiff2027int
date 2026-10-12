@@ -46,6 +46,10 @@
     $$("a[data-ext]", root).forEach(function (a, i) {
       var key = a.getAttribute("data-ext");
       var url = (S.ext || {})[key];
+      if (url === "") { // URL未確定：押せない状態にする（config.js ext に実URLを入れると有効化）
+        a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); a.setAttribute("title", "準備中"); a.classList.add("is-pending");
+        return;
+      }
       if (url) a.href = withUtm(url, page + "_" + key + "_" + (a.getAttribute("data-pos") || i));
       a.target = "_blank";
       a.rel = "noopener";
