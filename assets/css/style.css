@@ -853,7 +853,7 @@ a[aria-disabled="true"] { opacity: .5; pointer-events: none; }
 :lang(ko) p, :lang(ko) li, :lang(ko) dd { word-break: keep-all; overflow-wrap: anywhere; }
 :lang(zh-Hans) h1, :lang(zh-Hans) h2, :lang(zh-Hans) h3, :lang(zh-Hans) .h3, :lang(zh-Hans) .gnav__list a, :lang(zh-Hans) .concept .ask, :lang(zh-Hans) .concept__statement { font-family: "Noto Serif SC", "Songti SC", "SimSun", "Noto Serif JP", serif; }
 /* 欧文は和文向けの広い字間を詰める */
-:lang(en) .gnav__list a, :lang(fr) .gnav__list a, :lang(de) .gnav__list a { letter-spacing: .01em; font-size: .86rem; }
+:lang(en) .gnav__list a, :lang(fr) .gnav__list a, :lang(de) .gnav__list a { letter-spacing: 0; font-size: .84rem; }
 /* 欧文はナビが長いので、ヘッダーの余白と英字ブランド名を詰める */
 html:not(:lang(ja)) .site-header .brand__en { display: none; }
 html:not(:lang(ja)) .site-header__inner { gap: 14px; }
@@ -861,7 +861,7 @@ html:not(:lang(ja)) .gnav, html:not(:lang(ja)) .gnav__list { gap: 16px; }
 html:not(:lang(ja)) .gnav__cta { gap: 8px; }
 html:not(:lang(ja)) .gnav__cta .btn { padding: 6px 12px; font-size: .8rem; }
 html:not(:lang(ja)) .gnav__cta .btn--stack .soon-tag { font-size: .62em; }
-@media (max-width: 1340px) {
+@media (max-width: 1480px) {
   html:not(:lang(ja)) .site-header .brand__text { display: none; }
   html:not(:lang(ja)) .gnav, html:not(:lang(ja)) .gnav__list { gap: 12px; }
 }
@@ -872,3 +872,15 @@ html:not(:lang(ja)) .gnav__cta .btn--stack .soon-tag { font-size: .62em; }
 :lang(en) .concept .ask, :lang(fr) .concept .ask, :lang(de) .concept .ask, :lang(en) .concept__lead, :lang(fr) .concept__lead, :lang(de) .concept__lead { letter-spacing: .04em; line-height: 1.7; }
 :lang(en) .spec dt, :lang(fr) .spec dt, :lang(de) .spec dt { letter-spacing: .06em; }
 @media (max-width: 1100px) { :lang(en) .gnav__list a, :lang(fr) .gnav__list a, :lang(de) .gnav__list a { font-size: .8rem; } }
+
+/* 言語版：スマホで横はみ出しを起こす要素を折り返し可能にする */
+@media (max-width: 640px) {
+  .countdown--inline { flex-wrap: wrap; gap: 4px 12px; }
+  .countdown--inline .countdown__label { width: 100%; min-width: 0; text-align: center; }
+  html:not(:lang(ja)) .cta-bar__inner > .btn, html:not(:lang(ja)) .cta-bar .btn-row .btn { white-space: normal; font-size: .8rem; letter-spacing: .02em; line-height: 1.2; }
+  html:not(:lang(ja)) .cta-bar .btn--stack .soon-tag { font-size: .62rem; }
+  html:not(:lang(ja)) .tbd { white-space: normal; }
+}
+/* フッターのブランド名は長い言語でも折り返す（ヘッダーは nowrap のまま） */
+.site-footer .brand__ja, .site-footer .brand__en { white-space: normal; }
+.site-footer .footer-col a, .site-footer .footer-col h2 { overflow-wrap: anywhere; }

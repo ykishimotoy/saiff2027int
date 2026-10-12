@@ -60,7 +60,7 @@ python3 build.py --check  # 展開漏れがあれば exit 1（コミット前・
 
 partial 内では `{{page}}`（ページID）と、行単位のブロック `{{#only submit,tickets}} … {{/only}}`（列挙ページのみ出力）／`{{#except sponsors}} … {{/except}}`（列挙ページを除外）が使える。応募ページ・チケットページのCTAが外部サイトへ直行する、協賛ページのバーがメール問い合わせ（mailto:info@sugoiai.org）になる、といったページ差はこのブロックで表現している。新しいページを作るときは、既存ページからマーカーごとコピーして `build.py` を実行すればよい。
 
-## 多言語（en／fr／de／zh-hans）
+## 多言語（en／fr／de／zh-hans／ko）
 言語版ページ（`en/*.html` など）と `assets/js/i18n/<lang>.js` は **生成物**。直接編集せず、次の手順で更新する。
 
 1. 日本語ページ（ルートの `*.html`）・`data.js`・`site.js` を編集し、`python3 build.py` で partials を反映
@@ -152,7 +152,7 @@ HTML側の仕組み：`data-show="1 2"` を付けた要素は、そのフェー�
 | 項目 | 状態 |
 |---|---|
 | SSG（Astro推奨） | **素の HTML/CSS/JS に変更**（ユーザー判断）。共通パーツ（head共通・ヘッダー・フッター・モバイルCTAバー）は `partials/` に1か所で持ち、`python3 build.py` で全11ページに展開する（下記「共通パーツの編集」） |
-| 5言語展開 | ja に加え en／fr／de／zh-hans を公開。言語版は `tools/i18n.py` が日本語ページから生成する（下記「多言語」） |
+| 6言語展開 | ja に加え en／fr／de／zh-hans／ko を公開。言語版は `tools/i18n.py` が日本語ページから生成する（下記「多言語」） |
 | 言語の追加手順 | `tools/i18n.py` の `LOCALES` に追加 → `extract` → `i18n/<lang>.json` を用意 → `build`。`config.js` の `locales` にも追加する |
 | 映像埋め込みの lite-embed | モーダル内は予告編プレースホルダーのみ（実URL確定後に実装） |
 | Git連携CMS | 未導入（データは `data.js` を直接編集） |

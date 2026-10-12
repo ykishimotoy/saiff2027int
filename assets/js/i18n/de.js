@@ -1,0 +1,28 @@
+/* 生成物（tools/i18n.py build）。手で編集せず i18n/de.json を直す。JS が描画する文字列（data.js の見出し・役職・ニュース等）の訳 */
+window.SAIFF_I18N = {
+ "審査員長": "Juryvorsitzender",
+ "岸本悠佑": "Yusuke Kishimoto",
+ "株式会社EQUES 北海道支社長": "Leiter der Niederlassung Hokkaido, EQUES Inc.",
+ "実行委員長": "Vorsitzender",
+ "広報部長": "Leiterin PR",
+ "内藤紗由里": "Sayuri Naito",
+ "株式会社desiign 代表取締役": "Geschäftsführerin, desiign Inc.",
+ "AIクリエイティブ部長": "Leiter AI Creative",
+ "赤獅子屋": "Akajishiya",
+ "AIクリエイター": "KI-Creator",
+ "お知らせ": "Aktuelles",
+ "公式サイトを公開しました。作品募集は12月に開始します": "Offizielle Website online. Die Einreichung startet im Dezember",
+ "2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS にて第1回を開催します。作品応募は12月から FilmFreeway で受け付けます（応募料は$10）。チケットの先行支援は10月下旬から CAMPFIRE で受け付けます。": "Am 4. Mai 2027 findet die erste Ausgabe im Sapporo Cultural Arts Theater hitaru / SCARTS statt. Filme können ab Dezember über FilmFreeway eingereicht werden (Einreichgebühr $10). Die Vorab-Unterstützung für Tickets läuft ab Ende Oktober über CAMPFIRE.",
+ "スポンサー募集へ": "Zum Sponsoring",
+ "AI駆動開発勉強会 札幌支部": "Studiengruppe für KI-gestützte Entwicklung – Sektion Sapporo",
+ "準備中": "Demnächst",
+ " の写真（プレースホルダー）": " – Foto (Platzhalter)",
+ "ポートレート写真\n3:4＜プレースホルダー＞": "Porträtfoto\n3:4 ＜Platzhalter＞",
+ "チケット": "Tickets",
+ "プログラム": "Programm",
+ "応募": "Einreichen",
+ "詳しく見る": "Mehr erfahren",
+ "（表記名なし）": "(ohne Anzeigenamen)",
+ "予告編（プレースホルダー）": "Trailer (Platzhalter)",
+ "予告編の埋め込み位置（lite-embedで遅延ロード）\n16:9＜プレースホルダー＞": "Einbettungsposition für den Trailer (Lazy Load mit lite-embed)\n16:9 ＜Platzhalter＞"
+};
