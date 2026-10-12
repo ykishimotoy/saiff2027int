@@ -141,7 +141,19 @@
     $("button", banner).addEventListener("click", function () { banner.hidden = true; store("saiff-lang-banner", "dismissed"); });
   }
 
-  /* ---------- 共通コンポーネント：審査員・登壇者 ---------- */
+  /* ---------- 共通コンポーネント：人物カード（審査員・登壇者・実行委員） ---------- */
+  function personCard(p, withBio) {
+    var photo = p.img
+      ? h("div", { class: "photo photo--square" + (p.round ? " photo--round" : "") }, [h("img", { src: p.img, alt: p.name, width: "480", height: "480", loading: "lazy", decoding: "async" })])
+      : h("div", { class: "ph ph--portrait", role: "img", "aria-label": p.name + " の写真（プレースホルダー）", text: "ポートレート写真\n3:4＜プレースホルダー＞" });
+    return h("article", { class: "person reveal" }, [
+      photo,
+      h("p", { class: "person__role", text: p.role }),
+      h("h3", { class: "person__name", text: p.name }),
+      p.title ? h("p", { class: "person__title", text: p.title }) : null,
+      withBio && p.bio ? h("p", { class: "person__bio", text: p.bio }) : null
+    ]);
+  }
   function renderPeople() {
     $$('[data-component="people"]').forEach(function (box) {
       var kind = box.getAttribute("data-kind"); // jury | speaker | (空=全員)
@@ -149,15 +161,11 @@
       var withBio = box.hasAttribute("data-bio");
       var list = (D.people || []).filter(function (p) { return !kind || p.kind === kind; }).slice(0, limit);
       box.textContent = "";
-      list.forEach(function (p) {
-        box.appendChild(h("article", { class: "person reveal" }, [
-          h("div", { class: "ph ph--portrait", role: "img", "aria-label": p.name + " の写真（プレースホルダー）", text: "ポートレート写真\n3:4＜プレースホルダー＞" }),
-          h("p", { class: "person__role", text: p.role }),
-          h("h3", { class: "person__name", text: p.name }),
-          h("p", { class: "person__title", text: p.title }),
-          withBio ? h("p", { class: "person__bio", text: p.bio }) : null
-        ]));
-      });
+      list.forEach(function (p) { box.appendChild(personCard(p, withBio)); });
+    });
+    $$('[data-component="committee"]').forEach(function (box) {
+      box.textContent = "";
+      (D.committee || []).forEach(function (p) { box.appendChild(personCard(p, false)); });
     });
   }
 
@@ -208,16 +216,19 @@
   }
 
   /* ---------- 共通コンポーネント：スポンサーロゴ ---------- */
-  function renderPartners() {
-    $$('[data-component="partners"]').forEach(function (box) {
+  function renderSponsors() {
+    $$('[data-component="sponsors"]').forEach(function (box) {
       box.textContent = "";
-      (D.partners || []).forEach(function (t, i) {
+      (D.sponsors || []).forEach(function (t) {
         box.appendChild(h("p", { class: "tier", text: t.tier }));
-        var grid = h("div", { class: i < 2 ? "logos logos--lg" : "logos" });
-        if (i < 2) grid.style.maxWidth = i === 0 ? "360px" : "720px";
+        // 枠の大きさはティア名で決める（順番に依存しない）。少数のときは中央寄せ
+        var big = /platinum/i.test(t.tier), mid = /gold/i.test(t.tier), n = t.items.length;
+        var grid = h("div", { class: big || mid ? "logos logos--lg" : "logos" });
         grid.style.marginInline = "auto";
-        if (i === 0) grid.style.gridTemplateColumns = "1fr";
-        if (i === 1) grid.style.gridTemplateColumns = "1fr 1fr";
+        grid.style.justifyContent = "center";
+        if (big) { grid.style.maxWidth = "360px"; grid.style.gridTemplateColumns = "1fr"; }
+        else if (mid) { grid.style.maxWidth = "720px"; grid.style.gridTemplateColumns = "1fr 1fr"; }
+        else if (n < 5) { grid.style.gridTemplateColumns = "repeat(" + n + ", minmax(0, 220px))"; }
         t.items.forEach(function (item) {
           if (typeof item === "string") {
             grid.appendChild(h("div", { class: "ph ph--logo", role: "img", "aria-label": item, text: item }));
@@ -336,18 +347,6 @@
     });
   }
 
-  /* ---------- ニュースレター：セグメント（創る／観る／支える）を付けて外部フォームへ ---------- */
-  function initNewsletter() {
-    $$("form[data-ext-form]").forEach(function (form) {
-      var url = (S.ext || {})[form.getAttribute("data-ext-form")];
-      if (url) form.action = url;
-      form.addEventListener("submit", function () {
-        var segs = $$("input[name=segment]:checked", form).map(function (i) { return i.value; });
-        track("outbound_click", { ext: "newsletter", target: segs.join("+") || "unselected", pos: form.getAttribute("data-pos") || "" });
-      });
-    });
-  }
-
   /* ---------- スクロール時のフェードイン（控えめ） ---------- */
   function initReveal() {
     var els = $$(".reveal");
@@ -376,8 +375,8 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    renderPeople(); renderNews(); renderPartners(); renderSupporters();
-    initHeader(); initLang(); initExtLinks(); initNewsletter();
+    renderPeople(); renderNews(); renderSponsors(); renderSupporters();
+    initHeader(); initLang(); initExtLinks(); 
     initCountdown(); initEmbers(); initFilmModal(); initTimetableNow();
     initReveal(); initPhasePreview();
     var y = $("[data-year]"); if (y) y.textContent = new Date().getFullYear();

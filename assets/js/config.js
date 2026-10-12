@@ -5,7 +5,7 @@
    ========================================================================== */
 window.SAIFF = {
   /* ---- フェーズ（手動フラグ。日付による自動切替はしない） ----
-     0: ティザー            … Hero主CTA「最新情報を受け取る」
+     0: ティザー            … Hero主CTA「最新情報を受け取る」（#follow：X・Discord）
      1: 応募受付            … 「作品を応募する」＋締切カウントダウン
      2: 選考結果発表・チケット販売 … 「チケット先行販売／チケットを買う」＋開催日カウントダウン
      3: 会期中              … 「本日のタイムテーブル」
@@ -14,32 +14,30 @@ window.SAIFF = {
   phase: 2,
 
   /* チケット販売状態（手動で切り替える）
-     "off"     … 販売前。/tickets の購入ボタンが「先行販売の通知を受け取る」になる
+     "off"     … 販売前。/tickets の購入ボタンが「発売情報は X で」になる
      "presale" … 先行支援（CAMPFIRE・2026/10/17〜11/30）。常時CTAは「チケット先行販売」
      "general" … 一般販売（teket・12月〜）。常時CTAは「チケットを買う」
      HTML側は data-sale="off|presale|general"（空白区切りで複数指定可） */
   ticketSale: "presale",
 
   /* 作品応募の受付状態（フェーズとは独立）
-     "soon"   … 受付開始前（公式サイト公開〜FilmFreeway承認まで）。応募ボタンはグレーアウトし「11月受付開始予定」と表示
+     "soon"   … 受付開始前（12月の受付開始まで）。応募ボタンはグレーアウトし「12月受付開始予定」と表示
      "open"   … 受付中。応募ボタンが FilmFreeway（ext.submit）へ直行する。FilmFreeway 承認後に切り替える
      "closed" … 締切後（2027-03-31 以降）
      HTML側は data-submit="soon|on|off"（open→on、closed→off） */
   submissions: "soon",
 
   /* セレクション上映（二次選考通過作品の SCARTS での無料上映）の掲載フラグ
-     クラウドファンディングの 50万円ストレッチゴール達成で解放される演出。達成前は一切掲載しない（false）。
-     達成したら true にし、各HTMLの <html data-selection="off"> も "on" に揃える（JS無効時の表示用）
-     HTML側は data-selection="on"（達成後にだけ出す）／ data-selection="off"（未達のときだけ出す） */
-  selectionScreening: false,
+     二次選考通過作品の SCARTS 上映は確定（2026-10-12）のため true。各HTMLの <html data-selection="on"> と揃える（JS無効時の表示用）
+     HTML側は data-selection="on"（掲載時に出す）／ data-selection="off"（非掲載のときだけ出す） */
+  selectionScreening: true,
 
   /* 各ページが公開される最小フェーズ（未公開フェーズで直接開かれたらトップへ戻す） */
-  pageMinPhase: { index: 0, about: 0, partners: 0, legal: 0, privacy: 0, supporters: 0, submit: 1, guideline: 1, news: 1, program: 2, tickets: 2, archive: 4 },
+  pageMinPhase: { index: 0, about: 0, sponsors: 0, legal: 0, privacy: 0, supporters: 0, submit: 1, guideline: 1, news: 1, program: 2, tickets: 2, archive: 4 },
 
   /* ---- 日付 ---- */
   dates: {
-    festival: "2027-05-04T11:30:00+09:00",        // 開催日（確定）。11:30＝劇場開場（上映・授賞式は12:00〜）。セレクション上映を掲載する場合は 10:00 に戻す
-    earlyBirdEnd: "2027-01-31T23:59:59+09:00",    // 応募料 Early Bird（$0）の終了。2/1〜3/31 は Regular（$10）
+    festival: "2027-05-04T10:00:00+09:00",        // 開催日（確定）。10:00＝セレクション上映開始（SCARTS）。劇場開場は 11:30、上映・授賞式は 12:00〜
     crowdfundingEnd: "2026-11-30T23:59:59+09:00", // CAMPFIRE 先行支援の終了
     submitDeadline: "2027-03-31T23:59:59+09:00"   // 応募締切（確定：2027年3月31日 水 23:59 JST）
   },
@@ -48,18 +46,13 @@ window.SAIFF = {
      HTML側は <a data-ext="キー"> と書く。URLはここで一元管理し、UTMも自動付与される */
   ext: {
     submit:       "https://filmfreeway.com/",            // ＜仮＞作品応募（FilmFreeway のリスティング。承認後に実URLへ差し替え。Google フォームは併用しない）
-    remind:       "https://tally.so/",                   // ＜仮＞締切リマインド登録フォーム
     discord:      "https://discord.com/",                // ＜仮＞クリエイター向けDiscord招待
     crowdfunding: "https://camp-fire.jp/",               // ＜仮＞先行支援（CAMPFIRE プロジェクトページ。10/17〜11/30。公開後に実URLへ）
     tickets:      "https://teket.jp/",                   // ＜仮＞一般販売（teket イベントページ。12月公開・4/15 本格販売。公開後に実URLへ）
-    ticketNotify: "https://tally.so/",                   // ＜仮＞先行販売・発売通知の登録フォーム
-    newsletter:   "https://tally.so/",                   // ＜仮＞ニュースレター登録フォーム（?segment= を受け取る）
-    sponsorForm:  "https://tally.so/",                   // ＜仮＞協賛資料請求フォーム
-    sponsorMeet:  "https://timerex.net/",                // ＜仮＞面談予約
-    contact:      "https://tally.so/",                   // ＜仮＞問い合わせフォーム
-    x:            "https://x.com/",                      // ＜仮＞公式X
-    instagram:    "https://www.instagram.com/",          // ＜仮＞
-    youtube:      "https://www.youtube.com/",            // ＜仮＞
+    // ニュースレター（メール配信）・通知フォームは廃止（2026-10-12）。最新情報は X（ext.x）と Discord（ext.discord）に送客する
+    // 協賛の問い合わせはフォーム・面談予約ではなく mailto:info@sugoiai.org（sponsors.html と partials/cta-bar.html に直書き。data-ext は使わない）
+    // お問い合わせは全種別 mailto:info@sugoiai.org（外部フォームは使わない方針。about#contact・footer に直書き）
+    x:            "https://x.com/ykishimotoy",           // X（実行委員長アカウント。公式アカウント開設時に差し替え）
     note:         "https://note.com/"                    // ＜仮＞長文レポート掲載先
   },
 
