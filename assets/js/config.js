@@ -15,7 +15,7 @@ window.SAIFF = {
 
   /* チケット販売状態（手動で切り替える）
      "off"     … 販売前。/tickets の購入ボタンが「発売情報は X で」になる
-     "presale" … 先行支援（CAMPFIRE・2026/10/17〜11/30）。常時CTAは「チケット先行販売」
+     "presale" … 先行支援（CAMPFIRE・2026/12〜2027/1）。常時CTAは「チケット先行販売」
      "general" … 一般販売（teket・12月〜）。常時CTAは「チケットを買う」
      HTML側は data-sale="off|presale|general"（空白区切りで複数指定可） */
   ticketSale: "presale",
@@ -38,7 +38,7 @@ window.SAIFF = {
   /* ---- 日付 ---- */
   dates: {
     festival: "2027-05-04T10:00:00+09:00",        // 開催日（確定）。10:00＝セレクション上映開始（SCARTS）。劇場開場は 11:30、上映・授賞式は 12:00〜
-    crowdfundingEnd: "2026-11-30T23:59:59+09:00", // CAMPFIRE 先行支援の終了
+    crowdfundingEnd: "2027-01-31T23:59:59+09:00", // CAMPFIRE 先行支援の終了
     submitDeadline: "2027-03-31T23:59:59+09:00"   // 応募締切（確定：2027年3月31日 水 23:59 JST）
   },
 
@@ -47,7 +47,7 @@ window.SAIFF = {
   ext: {
     submit:       "",                                   // 作品応募（FilmFreeway）。URL未確定のため空＝ボタンは押せない状態。承認後に実URLを入れると有効化される
     discord:      "https://discord.gg/Ve2tQeN7cw",       // クリエイター向け Discord 招待（確定）
-    crowdfunding: "",                                   // 先行支援（CAMPFIRE プロジェクトページ。10/17〜11/30）。URL未確定のため空＝ボタンは押せない状態
+    crowdfunding: "",                                   // 先行支援（CAMPFIRE プロジェクトページ。2026/12〜2027/1）。URL未確定のため空＝ボタンは押せない状態
     tickets:      "",                                   // 一般販売（teket イベントページ。12月公開）。URL未確定のため空＝ボタンは押せない状態
     // ニュースレター（メール配信）・通知フォームは廃止（2026-10-12）。最新情報は X（ext.x）と Discord（ext.discord）に送客する
     // 協賛の問い合わせはフォーム・面談予約ではなく mailto:info@sugoiai.org（sponsors.html と partials/cta-bar.html に直書き。data-ext は使わない）

@@ -80,7 +80,7 @@
 | プライバシーポリシー | Privacy Policy | Politique de confidentialité | Datenschutzerklärung | 隐私政策 |
 | 準備中 | Coming soon | Bientôt | Demnächst | 准备中 |
 | 12月受付開始予定 | Opens in December | Ouverture en décembre | Start im Dezember | 预计12月开放 |
-| 10月下旬開始予定 | Opens late October | Fin octobre | Ab Ende Oktober | 预计10月下旬开始 |
+| 12月開始予定 | Opens in December | En décembre | Ab Dezember | 预计12月开始 |
 | ＜仮＞／＜調整中＞／＜順次発表＞ | ＜TBC＞ / ＜under coordination＞ / ＜to be announced＞ | ＜à confirmer＞ / ＜en cours＞ / ＜annonce à venir＞ | ＜vorläufig＞ / ＜in Abstimmung＞ / ＜wird bekannt gegeben＞ | ＜暂定＞ / ＜调整中＞ / ＜陆续公布＞ |
 | 2027年5月4日（火・祝） | May 4, 2027 (Tue, national holiday) | 4 mai 2027 (mardi, jour férié) | 4. Mai 2027 (Di., Feiertag) | 2027年5月4日（周二·节假日） |
 | 日本語・英語の2言語字幕 | Japanese and English subtitles | sous-titres japonais et anglais | japanische und englische Untertitel | 日英双语字幕 |
@@ -123,7 +123,7 @@
 | 劇場入場（指定席）／オンラインアーカイブ／現地フル参加 | 극장 입장(지정석) / 온라인 아카이브 / 현장 풀 참가 |
 | 応募料／応募締切／制作ガイドライン | 참가비 / 공모 마감 / 제작 가이드라인 |
 | 法的表記／プライバシーポリシー | 법적 고지 / 개인정보 처리방침 |
-| 準備中／12月受付開始予定／10月下旬開始予定 | 준비 중 / 12월 접수 시작 예정 / 10월 하순 시작 예정 |
+| 準備中／12月受付開始予定／12月開始予定 | 준비 중 / 12월 접수 시작 예정 / 12월 시작 예정 |
 | ＜仮＞／＜調整中＞／＜順次発表＞ | ＜미정＞ / ＜조정 중＞ / ＜순차 발표＞ |
 | 2027年5月4日（火・祝）／1,000円 | 2027년 5월 4일(화·공휴일) / 1,000엔 |
 | 文体 | 존댓말(합쇼체 기본, 안내문은 해요체 가능). 見出し・タグラインは簡潔に。 |

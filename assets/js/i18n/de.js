@@ -12,7 +12,7 @@ window.SAIFF_I18N = {
  "AIクリエイター": "KI-Creator",
  "お知らせ": "Aktuelles",
  "公式サイトを公開しました。作品募集は12月に開始します": "Offizielle Website online. Die Einreichung startet im Dezember",
- "2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS にて第1回を開催します。作品応募は12月から FilmFreeway で受け付けます（応募料は$10）。チケットの先行支援は10月下旬から CAMPFIRE で受け付けます。": "Am 4. Mai 2027 findet die erste Ausgabe im Sapporo Cultural Arts Theater hitaru / SCARTS statt. Filme können ab Dezember über FilmFreeway eingereicht werden (Einreichgebühr $10). Die Vorab-Unterstützung für Tickets läuft ab Ende Oktober über CAMPFIRE.",
+ "2027年5月4日、札幌文化芸術劇場 hitaru／SCARTS にて第1回を開催します。作品応募は12月から FilmFreeway で受け付けます（応募料は$10）。チケットの先行支援は12月から CAMPFIRE で受け付けます。": "Am 4. Mai 2027 findet die erste Ausgabe im Sapporo Cultural Arts Theater hitaru / SCARTS statt. Filme können ab Dezember über FilmFreeway eingereicht werden (Einreichgebühr $10). Die Vorab-Unterstützung für Tickets läuft ab Dezember über CAMPFIRE.",
  "スポンサー募集へ": "Zum Sponsoring",
  "AI駆動開発勉強会 札幌支部": "Studiengruppe für KI-gestützte Entwicklung – Sektion Sapporo",
  "準備中": "Demnächst",
